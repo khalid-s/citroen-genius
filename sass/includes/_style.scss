@@ -1,0 +1,201 @@
+@import "../vars/vars";
+@import "compass";
+// @import "compass/reset";
+@import "normalize";
+@import "susy";
+@import "breakpoint";
+
+
+
+/********************************* FONTS *************************************************/
+
+@include font-face("citroenlight", font-files("citroen_light-webfont.eot", "citroen_light-webfont.woff", "citroen_light-webfont.ttf", "citroen_light-webfont.svg" ));
+@include font-face("citroenlight_italic", font-files("citroen_light_italic-webfont.eot", "citroen_light_italic-webfont.woff", "citroen_light_italic-webfont.ttf", "citroen_light_italic-webfont.svg" ));
+@include font-face("citroenbold_italic", font-files("citroen_bold_italic-webfont.eot", "citroen_bold_italic-webfont.woff", "citroen_bold_italic-webfont.ttf", "citroen_bold_italic-webfont.svg" ));
+@include font-face("citroenbold", font-files("citroen_bold-webfont.eot", "citroen_bold-webfont.woff", "citroen_bold-webfont.ttf", "citroen_bold-webfont.svg" ));
+@include font-face("citroenitalic", font-files("citroen_italic-webfont.eot", "citroen_italic-webfont.woff", "citroen_italic-webfont.ttf", "citroen_italic-webfont.svg" ));
+@include font-face("citroenregular", font-files("citroen_regular-webfont.eot", "citroen_regular-webfont.woff", "citroen_regular-webfont.ttf", "citroen_regular-webfont.svg" ));
+
+
+/*********************************End  FONTS *************************************************/
+
+body
+{
+    color: $first-color;
+}
+
+.clear
+{
+    clear: both;
+}
+
+a
+{
+    text-decoration: none;
+    color:inherit;
+}
+
+.wrapper
+{
+    max-width: $xl-screen;
+    margin: 0 auto;
+    // background:rgba(255,0,0,0.1);
+}
+
+header, div,nav,ul,li,footer
+{
+    margin:0;
+    padding:0;
+}
+
+
+
+#pre-header
+{
+    min-height: 32px;
+    #accnt
+    {
+        float: right;
+        background:rgba(0, 0, 0, 0.3);
+        min-height: 32px;
+        width: 190px;
+
+
+        i
+        {
+            display: inline-block;
+            margin: 5px 10px 0px;
+            width: 22px;
+            height: 19px;
+            background:url(../img/accnt-ico.png) no-repeat;
+            float: left;
+        }
+        span
+        {
+            display: inline-block;
+            line-height: 30px;
+            width: 148px;
+            float: right;
+            // word-wrap:d
+        }
+    }
+
+
+    background:$first-color;
+    color: white;
+    text-transform: uppercase;
+    font-family: "citroenlight";
+    font-size: 12px;
+    font-weight: 400;
+    ul
+    {
+        margin:0;
+        padding: 0;
+        li
+        {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 0;
+            margin-left: 16px;
+
+            &:first-child
+            {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+header
+{
+    margin-top: 10px;
+    .wrapper
+    {
+        max-width: 940px;
+        // background: rgba(255,0,0,0.1);
+        height: 150px;
+        div.logo
+        {
+            float: left;
+        }
+
+        nav
+        {
+            float: left;
+            margin: 20px 0px 0 80px;
+            font-family: "citroenlight";
+            font-size: 20px;
+            text-transform: uppercase;
+            // background: rgba(255,0,0,0.2);
+
+            ul
+            {
+                li
+                {
+                    display: inline-block;
+                    margin: 0 21px;
+
+                    &:first-child
+                    {
+                        margin-left: 0px;
+                    }
+                    &:last-child
+                    {
+                        margin-right: 0;
+                    }
+                    a
+                    {
+                        display: inline-block;
+                        position: relative;
+                        height: 56px;
+                        text-align: center;
+                        img
+                        {
+
+                            position: inline-block;
+                            // top:0;
+                        }
+                        span
+                        {
+                            display: block;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.search
+        {
+            float: right;
+            width: 150px;
+            height: 27px;
+            overflow: hidden;
+            // background:rgba(0,0,0,0.1);
+            position: relative;
+            margin-top: 50px;
+
+                    border-bottom: 1px solid black;
+            form
+            {
+                input
+                {
+                    border:none;
+                    outline: none;
+                    background:transparent;
+                    width: 125px;
+                    height: 27px;
+                }
+                button
+                {
+                    border:none;
+                    outline: none;
+                    background:url(../img/btn-search.png) no-repeat;
+                    width: 14px;
+                    height: 14px;
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+}

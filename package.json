@@ -1,0 +1,23 @@
+{
+  "name": "psa",
+  "version": "0.0.0",
+  "description": "Intégration HTML CSS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khalid-bd/citroen-genius.git"
+  },
+  "author": "Khalid Sookia",
+  "license": "Business Decision",
+  "bugs": {
+    "url": "https://github.com/khalid-bd/citroen-genius/issues"
+  },
+  "homepage": "https://github.com/khalid-bd/citroen-genius",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
