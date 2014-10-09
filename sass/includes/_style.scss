@@ -48,7 +48,6 @@ a
     background:$first-color;
     color: white;
 
-    @include border-radius(4px);
 }
 
 header, div,nav,ul,li,footer
@@ -62,11 +61,12 @@ header, div,nav,ul,li,footer
 #pre-header
 {
     min-height: 32px;
+    line-height: 12px;
     #accnt
     {
         float: right;
         background:rgba(0, 0, 0, 0.3);
-        min-height: 34px;
+        min-height: 32px;
         width: 190px;
         position: relative;
         cursor: pointer;
@@ -93,7 +93,7 @@ header, div,nav,ul,li,footer
         {
             position: absolute;
             display: none;
-            margin-top: 4px;
+            margin-top: 2px;
             background:red;
 
             ul
@@ -242,7 +242,7 @@ footer
 {
     min-height: 500px;
     background: $footer_bg;
-    padding-top: 50px;
+    padding-top: 42px;
     text-transform: uppercase;
 
     .wrapper
@@ -282,7 +282,7 @@ footer
                 line-height: 17px;
                 // list-style-image: url(../img/footer-li.png);
                 border-bottom: 1px solid #f0f0f0;
-                padding: 20px 0 20px 15px;
+                padding: 19px 0 19px 15px;
 
                 &:before
                 {
@@ -308,15 +308,17 @@ footer
         font-size: 15px;
         line-height: 15px;
         padding: 10px 25px;
-        margin-top: 30px;
+        margin-top: 24px;
         text-transform: initial;
+        @include border-radius(3px);
+
     }
 
     #sub-footer
     {
         background:#ebebeb;
         height: 37px;
-        margin-top: 60px;
+        margin-top: 70px;
 
         .wrapper
         {
