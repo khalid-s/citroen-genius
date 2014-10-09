@@ -42,6 +42,15 @@ a
     // background:rgba(255,0,0,0.1);
 }
 
+.btn
+{
+    display: inline-block;
+    background:$first-color;
+    color: white;
+
+    @include border-radius(4px);
+}
+
 header, div,nav,ul,li,footer
 {
     margin:0;
@@ -57,9 +66,10 @@ header, div,nav,ul,li,footer
     {
         float: right;
         background:rgba(0, 0, 0, 0.3);
-        min-height: 32px;
+        min-height: 34px;
         width: 190px;
-
+        position: relative;
+        cursor: pointer;
 
         i
         {
@@ -77,6 +87,38 @@ header, div,nav,ul,li,footer
             width: 148px;
             float: right;
             // word-wrap:d
+        }
+
+        .accnt-option
+        {
+            position: absolute;
+            display: none;
+            margin-top: 4px;
+            background:red;
+
+            ul
+            {
+                margin:0;
+                padding: 0;
+                background:$first-color - 30;
+
+                li
+                {
+                    margin:0;
+                    padding:0;
+                    line-height: 22px;
+
+                    i.my-accnt
+                    {
+                        background:url(../img/my-accnt.png) no-repeat;
+                    }
+
+                    i.disconnect
+                    {
+                        background:url(../img/disconnect.png) no-repeat;
+                    }
+                }
+            }
         }
     }
 
@@ -112,8 +154,6 @@ header
     .wrapper
     {
         max-width: 940px;
-        // background: rgba(255,0,0,0.1);
-        height: 150px;
         div.logo
         {
             float: left;
@@ -126,40 +166,35 @@ header
             font-family: "citroenlight";
             font-size: 20px;
             text-transform: uppercase;
-            // background: rgba(255,0,0,0.2);
 
             ul
             {
                 li
                 {
                     display: inline-block;
-                    margin: 0 21px;
+                    padding: 0 21px;
+                    position: relative;
+                    height: 56px;
+                    text-align: center;
+                    cursor: pointer;
 
                     &:first-child
                     {
-                        margin-left: 0px;
+                        padding-left: 0px;
                     }
                     &:last-child
                     {
-                        margin-right: 0;
+                        padding-right: 0;
                     }
-                    a
+                    img
                     {
-                        display: inline-block;
-                        position: relative;
-                        height: 56px;
-                        text-align: center;
-                        img
-                        {
 
-                            position: inline-block;
-                            // top:0;
-                        }
-                        span
-                        {
-                            display: block;
-                            margin-top: 5px;
-                        }
+                        position: inline-block;
+                    }
+                    span
+                    {
+                        display: block;
+                        margin-top: 5px;
                     }
                 }
             }
@@ -171,9 +206,11 @@ header
             width: 150px;
             height: 27px;
             overflow: hidden;
-            // background:rgba(0,0,0,0.1);
             position: relative;
             margin-top: 50px;
+            color: $first-color;
+            font-family: "citroenlight";
+            font-size: 20px;
 
                     border-bottom: 1px solid black;
             form
@@ -197,5 +234,147 @@ header
                 }
             }
         }
+    }
+}
+
+
+footer
+{
+    min-height: 500px;
+    background: $footer_bg;
+    padding-top: 50px;
+    text-transform: uppercase;
+
+    .wrapper
+    {
+        width: 915px;
+        position: relative;
+
+        h3
+        {
+            font-family: "citroenbold";
+            font-size: 22px;
+            font-weight: 200;
+            margin:0;
+            position: relative;
+            letter-spacing: 3px;
+
+            &:before
+            {
+                content: url('../img/h3-bg.png');
+                position: absolute;
+                margin-top: 20px;
+            }
+        }
+
+        ul
+        {
+            margin-top: 30px;
+            // margin-left: 15px;
+
+            li
+            {
+                font-family: "citroenlight";
+                font-size: 17px;
+                list-style: none;
+                color:#302b28;
+                width: 420px;
+                line-height: 17px;
+                // list-style-image: url(../img/footer-li.png);
+                border-bottom: 1px solid #f0f0f0;
+                padding: 20px 0 20px 15px;
+
+                &:before
+                {
+                    content: url(../img/footer-li.png);
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .left
+        {
+            float: left;
+        }
+        .right
+        {
+            float: right;
+        }
+    }
+
+    a.btn
+    {
+        font-family: "citroenregular";
+        font-size: 15px;
+        line-height: 15px;
+        padding: 10px 25px;
+        margin-top: 30px;
+        text-transform: initial;
+    }
+
+    #sub-footer
+    {
+        background:#ebebeb;
+        height: 37px;
+        margin-top: 60px;
+
+        .wrapper
+        {
+            text-align: center;
+            ul
+            {
+                li
+                {
+                    font-family: arial;
+                    font-size: 11px;
+                    line-height: 11px;
+                    color: #ababab;
+                    display: inline-block;
+                    border:none;
+                    margin:0;
+                    padding:0;
+                    list-style: none;
+                    margin-top: 14px;
+                    width: auto;
+                    width: initial;
+                    text-transform: initial;
+
+                    &:before
+                    {
+                        content:"-";
+                        margin:0 4px 0 0px;
+                    }
+
+                    &:first-child
+                    {
+                        &:before
+                        {
+                            content:"";
+                            margin:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+.up-btn
+{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background:url(../img/up-btn.png) no-repeat;
+    right: -165px;
+    bottom: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+main#home
+{
+    .wrapper
+    {
+        max-width: 900px;
     }
 }

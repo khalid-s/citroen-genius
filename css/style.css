@@ -294,7 +294,7 @@ th {
 /*********************************End  FONTS *************************************************/
 /* line 22, ../sass/includes/_style.scss */
 body {
-  color: #184254;
+  color: #194254;
 }
 
 /* line 27, ../sass/includes/_style.scss */
@@ -315,29 +315,41 @@ a {
 }
 
 /* line 45, ../sass/includes/_style.scss */
+.btn {
+  display: inline-block;
+  background: #194254;
+  color: white;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 54, ../sass/includes/_style.scss */
 header, div, nav, ul, li, footer {
   margin: 0;
   padding: 0;
 }
 
-/* line 53, ../sass/includes/_style.scss */
+/* line 62, ../sass/includes/_style.scss */
 #pre-header {
   min-height: 32px;
-  background: #184254;
+  background: #194254;
   color: white;
   text-transform: uppercase;
   font-family: "citroenlight";
   font-size: 12px;
   font-weight: 400;
 }
-/* line 56, ../sass/includes/_style.scss */
+/* line 65, ../sass/includes/_style.scss */
 #pre-header #accnt {
   float: right;
   background: rgba(0, 0, 0, 0.3);
-  min-height: 32px;
+  min-height: 34px;
   width: 190px;
+  position: relative;
+  cursor: pointer;
 }
-/* line 64, ../sass/includes/_style.scss */
+/* line 74, ../sass/includes/_style.scss */
 #pre-header #accnt i {
   display: inline-block;
   margin: 5px 10px 0px;
@@ -346,44 +358,70 @@ header, div, nav, ul, li, footer {
   background: url(../img/accnt-ico.png) no-repeat;
   float: left;
 }
-/* line 73, ../sass/includes/_style.scss */
+/* line 83, ../sass/includes/_style.scss */
 #pre-header #accnt span {
   display: inline-block;
   line-height: 30px;
   width: 148px;
   float: right;
 }
-/* line 90, ../sass/includes/_style.scss */
+/* line 92, ../sass/includes/_style.scss */
+#pre-header #accnt .accnt-option {
+  position: absolute;
+  display: none;
+  margin-top: 4px;
+  background: red;
+}
+/* line 99, ../sass/includes/_style.scss */
+#pre-header #accnt .accnt-option ul {
+  margin: 0;
+  padding: 0;
+  background: #002436;
+}
+/* line 105, ../sass/includes/_style.scss */
+#pre-header #accnt .accnt-option ul li {
+  margin: 0;
+  padding: 0;
+  line-height: 22px;
+}
+/* line 111, ../sass/includes/_style.scss */
+#pre-header #accnt .accnt-option ul li i.my-accnt {
+  background: url(../img/my-accnt.png) no-repeat;
+}
+/* line 116, ../sass/includes/_style.scss */
+#pre-header #accnt .accnt-option ul li i.disconnect {
+  background: url(../img/disconnect.png) no-repeat;
+}
+/* line 132, ../sass/includes/_style.scss */
 #pre-header ul {
   margin: 0;
   padding: 0;
 }
-/* line 94, ../sass/includes/_style.scss */
+/* line 136, ../sass/includes/_style.scss */
 #pre-header ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 0;
   margin-left: 16px;
 }
-/* line 101, ../sass/includes/_style.scss */
+/* line 143, ../sass/includes/_style.scss */
 #pre-header ul li:first-child {
   margin-left: 25px;
 }
 
-/* line 109, ../sass/includes/_style.scss */
+/* line 151, ../sass/includes/_style.scss */
 header {
   margin-top: 10px;
 }
-/* line 112, ../sass/includes/_style.scss */
+/* line 154, ../sass/includes/_style.scss */
 header .wrapper {
   max-width: 940px;
-  height: 150px;
 }
-/* line 117, ../sass/includes/_style.scss */
+/* line 157, ../sass/includes/_style.scss */
 header .wrapper div.logo {
   float: left;
 }
-/* line 122, ../sass/includes/_style.scss */
+/* line 162, ../sass/includes/_style.scss */
 header .wrapper nav {
   float: left;
   margin: 20px 0px 0 80px;
@@ -391,36 +429,33 @@ header .wrapper nav {
   font-size: 20px;
   text-transform: uppercase;
 }
-/* line 133, ../sass/includes/_style.scss */
+/* line 172, ../sass/includes/_style.scss */
 header .wrapper nav ul li {
   display: inline-block;
-  margin: 0 21px;
-}
-/* line 138, ../sass/includes/_style.scss */
-header .wrapper nav ul li:first-child {
-  margin-left: 0px;
-}
-/* line 142, ../sass/includes/_style.scss */
-header .wrapper nav ul li:last-child {
-  margin-right: 0;
-}
-/* line 146, ../sass/includes/_style.scss */
-header .wrapper nav ul li a {
-  display: inline-block;
+  padding: 0 21px;
   position: relative;
   height: 56px;
   text-align: center;
+  cursor: pointer;
 }
-/* line 152, ../sass/includes/_style.scss */
-header .wrapper nav ul li a img {
+/* line 181, ../sass/includes/_style.scss */
+header .wrapper nav ul li:first-child {
+  padding-left: 0px;
+}
+/* line 185, ../sass/includes/_style.scss */
+header .wrapper nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 189, ../sass/includes/_style.scss */
+header .wrapper nav ul li img {
   position: inline-block;
 }
-/* line 158, ../sass/includes/_style.scss */
-header .wrapper nav ul li a span {
+/* line 194, ../sass/includes/_style.scss */
+header .wrapper nav ul li span {
   display: block;
   margin-top: 5px;
 }
-/* line 168, ../sass/includes/_style.scss */
+/* line 203, ../sass/includes/_style.scss */
 header .wrapper div.search {
   float: right;
   width: 150px;
@@ -428,9 +463,12 @@ header .wrapper div.search {
   overflow: hidden;
   position: relative;
   margin-top: 50px;
+  color: #194254;
+  font-family: "citroenlight";
+  font-size: 20px;
   border-bottom: 1px solid black;
 }
-/* line 181, ../sass/includes/_style.scss */
+/* line 218, ../sass/includes/_style.scss */
 header .wrapper div.search form input {
   border: none;
   outline: none;
@@ -438,7 +476,7 @@ header .wrapper div.search form input {
   width: 125px;
   height: 27px;
 }
-/* line 189, ../sass/includes/_style.scss */
+/* line 226, ../sass/includes/_style.scss */
 header .wrapper div.search form button {
   border: none;
   outline: none;
@@ -446,4 +484,122 @@ header .wrapper div.search form button {
   width: 14px;
   height: 14px;
   padding-top: 12px;
+}
+
+/* line 241, ../sass/includes/_style.scss */
+footer {
+  min-height: 500px;
+  background: #fafafa;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+/* line 248, ../sass/includes/_style.scss */
+footer .wrapper {
+  width: 915px;
+  position: relative;
+}
+/* line 253, ../sass/includes/_style.scss */
+footer .wrapper h3 {
+  font-family: "citroenbold";
+  font-size: 22px;
+  font-weight: 200;
+  margin: 0;
+  position: relative;
+  letter-spacing: 3px;
+}
+/* line 262, ../sass/includes/_style.scss */
+footer .wrapper h3:before {
+  content: url("../img/h3-bg.png");
+  position: absolute;
+  margin-top: 20px;
+}
+/* line 270, ../sass/includes/_style.scss */
+footer .wrapper ul {
+  margin-top: 30px;
+}
+/* line 275, ../sass/includes/_style.scss */
+footer .wrapper ul li {
+  font-family: "citroenlight";
+  font-size: 17px;
+  list-style: none;
+  color: #302b28;
+  width: 420px;
+  line-height: 17px;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 0 20px 15px;
+}
+/* line 287, ../sass/includes/_style.scss */
+footer .wrapper ul li:before {
+  content: url(../img/footer-li.png);
+  margin-right: 20px;
+}
+/* line 295, ../sass/includes/_style.scss */
+footer .wrapper .left {
+  float: left;
+}
+/* line 299, ../sass/includes/_style.scss */
+footer .wrapper .right {
+  float: right;
+}
+/* line 305, ../sass/includes/_style.scss */
+footer a.btn {
+  font-family: "citroenregular";
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px 25px;
+  margin-top: 30px;
+  text-transform: initial;
+}
+/* line 315, ../sass/includes/_style.scss */
+footer #sub-footer {
+  background: #ebebeb;
+  height: 37px;
+  margin-top: 60px;
+}
+/* line 321, ../sass/includes/_style.scss */
+footer #sub-footer .wrapper {
+  text-align: center;
+}
+/* line 326, ../sass/includes/_style.scss */
+footer #sub-footer .wrapper ul li {
+  font-family: arial;
+  font-size: 11px;
+  line-height: 11px;
+  color: #ababab;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 14px;
+  width: auto;
+  width: initial;
+  text-transform: initial;
+}
+/* line 342, ../sass/includes/_style.scss */
+footer #sub-footer .wrapper ul li:before {
+  content: "-";
+  margin: 0 4px 0 0px;
+}
+/* line 350, ../sass/includes/_style.scss */
+footer #sub-footer .wrapper ul li:first-child:before {
+  content: "";
+  margin: 0;
+}
+
+/* line 362, ../sass/includes/_style.scss */
+.up-btn {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: url(../img/up-btn.png) no-repeat;
+  right: -165px;
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+/* line 376, ../sass/includes/_style.scss */
+main#home .wrapper {
+  max-width: 900px;
 }
