@@ -327,7 +327,27 @@ header, div, nav, ul, li, footer {
   padding: 0;
 }
 
-/* line 61, ../sass/includes/_style.scss */
+/* line 58, ../sass/includes/_style.scss */
+li {
+  list-style: none;
+}
+
+/* line 63, ../sass/includes/_style.scss */
+h3 {
+  font-family: "citroenbold";
+  font-size: 22px;
+  font-weight: 200;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+/* line 72, ../sass/includes/_style.scss */
+h3:before {
+  content: url("../img/h3-bg.png");
+  position: absolute;
+}
+
+/* line 81, ../sass/includes/_style.scss */
 #pre-header {
   min-height: 32px;
   line-height: 12px;
@@ -338,7 +358,7 @@ header, div, nav, ul, li, footer {
   font-size: 12px;
   font-weight: 400;
 }
-/* line 65, ../sass/includes/_style.scss */
+/* line 85, ../sass/includes/_style.scss */
 #pre-header #accnt {
   float: right;
   background: rgba(0, 0, 0, 0.3);
@@ -347,7 +367,7 @@ header, div, nav, ul, li, footer {
   position: relative;
   cursor: pointer;
 }
-/* line 74, ../sass/includes/_style.scss */
+/* line 94, ../sass/includes/_style.scss */
 #pre-header #accnt i {
   display: inline-block;
   margin: 5px 10px 0px;
@@ -356,70 +376,70 @@ header, div, nav, ul, li, footer {
   background: url(../img/accnt-ico.png) no-repeat;
   float: left;
 }
-/* line 83, ../sass/includes/_style.scss */
+/* line 103, ../sass/includes/_style.scss */
 #pre-header #accnt span {
   display: inline-block;
   line-height: 30px;
   width: 148px;
   float: right;
 }
-/* line 92, ../sass/includes/_style.scss */
+/* line 112, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option {
   position: absolute;
   display: none;
   margin-top: 2px;
   background: red;
 }
-/* line 99, ../sass/includes/_style.scss */
+/* line 119, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul {
   margin: 0;
   padding: 0;
   background: #002436;
 }
-/* line 105, ../sass/includes/_style.scss */
+/* line 125, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul li {
   margin: 0;
   padding: 0;
   line-height: 22px;
 }
-/* line 111, ../sass/includes/_style.scss */
+/* line 131, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul li i.my-accnt {
   background: url(../img/my-accnt.png) no-repeat;
 }
-/* line 116, ../sass/includes/_style.scss */
+/* line 136, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul li i.disconnect {
   background: url(../img/disconnect.png) no-repeat;
 }
-/* line 132, ../sass/includes/_style.scss */
+/* line 152, ../sass/includes/_style.scss */
 #pre-header ul {
   margin: 0;
   padding: 0;
 }
-/* line 136, ../sass/includes/_style.scss */
+/* line 156, ../sass/includes/_style.scss */
 #pre-header ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 0;
   margin-left: 16px;
 }
-/* line 143, ../sass/includes/_style.scss */
+/* line 163, ../sass/includes/_style.scss */
 #pre-header ul li:first-child {
   margin-left: 25px;
 }
 
-/* line 151, ../sass/includes/_style.scss */
+/* line 171, ../sass/includes/_style.scss */
 header {
   margin-top: 10px;
 }
-/* line 154, ../sass/includes/_style.scss */
+/* line 174, ../sass/includes/_style.scss */
 header .wrapper {
   max-width: 940px;
 }
-/* line 157, ../sass/includes/_style.scss */
+/* line 177, ../sass/includes/_style.scss */
 header .wrapper div.logo {
   float: left;
 }
-/* line 162, ../sass/includes/_style.scss */
+/* line 182, ../sass/includes/_style.scss */
 header .wrapper nav {
   float: left;
   margin: 20px 0px 0 80px;
@@ -427,7 +447,7 @@ header .wrapper nav {
   font-size: 20px;
   text-transform: uppercase;
 }
-/* line 172, ../sass/includes/_style.scss */
+/* line 192, ../sass/includes/_style.scss */
 header .wrapper nav ul li {
   display: inline-block;
   padding: 0 21px;
@@ -436,24 +456,28 @@ header .wrapper nav ul li {
   text-align: center;
   cursor: pointer;
 }
-/* line 181, ../sass/includes/_style.scss */
+/* line 201, ../sass/includes/_style.scss */
 header .wrapper nav ul li:first-child {
   padding-left: 0px;
 }
-/* line 185, ../sass/includes/_style.scss */
+/* line 205, ../sass/includes/_style.scss */
 header .wrapper nav ul li:last-child {
   padding-right: 0;
 }
-/* line 189, ../sass/includes/_style.scss */
+/* line 209, ../sass/includes/_style.scss */
 header .wrapper nav ul li img {
   position: inline-block;
 }
-/* line 194, ../sass/includes/_style.scss */
+/* line 214, ../sass/includes/_style.scss */
 header .wrapper nav ul li span {
   display: block;
   margin-top: 5px;
 }
-/* line 203, ../sass/includes/_style.scss */
+/* line 222, ../sass/includes/_style.scss */
+header .wrapper nav ul li:hover, header .wrapper nav ul li:active {
+  color: #dc002d;
+}
+/* line 230, ../sass/includes/_style.scss */
 header .wrapper div.search {
   float: right;
   width: 150px;
@@ -466,7 +490,7 @@ header .wrapper div.search {
   font-size: 20px;
   border-bottom: 1px solid black;
 }
-/* line 218, ../sass/includes/_style.scss */
+/* line 245, ../sass/includes/_style.scss */
 header .wrapper div.search form input {
   border: none;
   outline: none;
@@ -474,7 +498,7 @@ header .wrapper div.search form input {
   width: 125px;
   height: 27px;
 }
-/* line 226, ../sass/includes/_style.scss */
+/* line 253, ../sass/includes/_style.scss */
 header .wrapper div.search form button {
   border: none;
   outline: none;
@@ -484,38 +508,32 @@ header .wrapper div.search form button {
   padding-top: 12px;
 }
 
-/* line 241, ../sass/includes/_style.scss */
+/* line 268, ../sass/includes/_style.scss */
 footer {
   min-height: 500px;
   background: #fafafa;
   padding-top: 42px;
   text-transform: uppercase;
 }
-/* line 248, ../sass/includes/_style.scss */
+/* line 275, ../sass/includes/_style.scss */
 footer .wrapper {
   width: 915px;
   position: relative;
 }
-/* line 253, ../sass/includes/_style.scss */
+/* line 280, ../sass/includes/_style.scss */
 footer .wrapper h3 {
-  font-family: "citroenbold";
-  font-size: 22px;
-  font-weight: 200;
-  margin: 0;
   position: relative;
   letter-spacing: 3px;
 }
-/* line 262, ../sass/includes/_style.scss */
+/* line 285, ../sass/includes/_style.scss */
 footer .wrapper h3:before {
-  content: url("../img/h3-bg.png");
-  position: absolute;
   margin-top: 20px;
 }
-/* line 270, ../sass/includes/_style.scss */
+/* line 292, ../sass/includes/_style.scss */
 footer .wrapper ul {
   margin-top: 30px;
 }
-/* line 275, ../sass/includes/_style.scss */
+/* line 297, ../sass/includes/_style.scss */
 footer .wrapper ul li {
   font-family: "citroenlight";
   font-size: 17px;
@@ -526,20 +544,20 @@ footer .wrapper ul li {
   border-bottom: 1px solid #f0f0f0;
   padding: 19px 0 19px 15px;
 }
-/* line 287, ../sass/includes/_style.scss */
+/* line 309, ../sass/includes/_style.scss */
 footer .wrapper ul li:before {
   content: url(../img/footer-li.png);
   margin-right: 20px;
 }
-/* line 295, ../sass/includes/_style.scss */
+/* line 317, ../sass/includes/_style.scss */
 footer .wrapper .left {
   float: left;
 }
-/* line 299, ../sass/includes/_style.scss */
+/* line 321, ../sass/includes/_style.scss */
 footer .wrapper .right {
   float: right;
 }
-/* line 305, ../sass/includes/_style.scss */
+/* line 327, ../sass/includes/_style.scss */
 footer a.btn {
   font-family: "citroenregular";
   font-size: 15px;
@@ -551,17 +569,17 @@ footer a.btn {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 317, ../sass/includes/_style.scss */
+/* line 339, ../sass/includes/_style.scss */
 footer #sub-footer {
   background: #ebebeb;
   height: 37px;
   margin-top: 70px;
 }
-/* line 323, ../sass/includes/_style.scss */
+/* line 345, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper {
   text-align: center;
 }
-/* line 328, ../sass/includes/_style.scss */
+/* line 350, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li {
   font-family: arial;
   font-size: 11px;
@@ -577,18 +595,18 @@ footer #sub-footer .wrapper ul li {
   width: initial;
   text-transform: initial;
 }
-/* line 344, ../sass/includes/_style.scss */
+/* line 366, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li:before {
   content: "-";
   margin: 0 4px 0 0px;
 }
-/* line 352, ../sass/includes/_style.scss */
+/* line 374, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li:first-child:before {
   content: "";
   margin: 0;
 }
 
-/* line 364, ../sass/includes/_style.scss */
+/* line 386, ../sass/includes/_style.scss */
 .up-btn {
   position: absolute;
   width: 65px;
@@ -600,7 +618,86 @@ footer #sub-footer .wrapper ul li:first-child:before {
   display: none;
 }
 
-/* line 378, ../sass/includes/_style.scss */
-main#home .wrapper {
-  max-width: 900px;
+/* line 4, ../sass/style.scss */
+main#home {
+  margin-top: 8px;
+}
+/* line 8, ../sass/style.scss */
+main#home .slider {
+  background: #85cddb;
+  overflow: hidden;
+}
+/* line 13, ../sass/style.scss */
+main#home .slider .wrapper {
+  width: 920px;
+}
+/* line 16, ../sass/style.scss */
+main#home .slider .wrapper .banner {
+  max-height: 165px;
+  position: relative;
+}
+/* line 23, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li {
+  float: left;
+  position: relative;
+}
+/* line 28, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 36, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li h3 {
+  display: block;
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+/* line 42, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li h3:before {
+  margin-top: 10px;
+}
+/* line 47, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li span {
+  display: block;
+  margin-top: 19px;
+  font-family: "citroenlight";
+  font-size: 20px;
+}
+/* line 54, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li a.btn {
+  margin-top: 21px;
+  margin-bottom: 23px;
+  background: transparent;
+  border: 2px solid #184254;
+  font-family: "citroenlight";
+  font-style: 15px;
+  color: #184254;
+  width: 197px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+/* line 71, ../sass/style.scss */
+main#home .slider .wrapper .banner ol {
+  position: absolute;
+  bottom: -15px;
+  padding: 0;
+  left: 50%;
+}
+/* line 77, ../sass/style.scss */
+main#home .slider .wrapper .banner ol li {
+  display: inline-block;
+  content: none;
+  background-image: url(../img/slider/position.png);
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+/* line 89, ../sass/style.scss */
+main#home .slider .wrapper .banner ol li.active {
+  background-image: url(../img/slider/position-active.png);
 }

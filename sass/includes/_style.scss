@@ -55,6 +55,26 @@ header, div,nav,ul,li,footer
     margin:0;
     padding:0;
 }
+li
+{
+    list-style: none;
+}
+
+h3
+{
+    font-family: "citroenbold";
+    font-size: 22px;
+    font-weight: 200;
+    margin:0;
+    text-transform: uppercase;
+    line-height: 22px;
+
+    &:before
+    {
+        content: url('../img/h3-bg.png');
+        position: absolute;
+    }
+}
 
 
 
@@ -196,6 +216,13 @@ header
                         display: block;
                         margin-top: 5px;
                     }
+
+                    
+
+                    &:hover, &:active
+                    {
+                        color: $first_color_hover;
+                    }
                 }
             }
         }
@@ -252,20 +279,15 @@ footer
 
         h3
         {
-            font-family: "citroenbold";
-            font-size: 22px;
-            font-weight: 200;
-            margin:0;
             position: relative;
             letter-spacing: 3px;
 
             &:before
             {
-                content: url('../img/h3-bg.png');
-                position: absolute;
                 margin-top: 20px;
             }
         }
+
 
         ul
         {
@@ -371,12 +393,4 @@ footer
     bottom: 50px;
     cursor: pointer;
     display: none;
-}
-
-main#home
-{
-    .wrapper
-    {
-        max-width: 900px;
-    }
 }

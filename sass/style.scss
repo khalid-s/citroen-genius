@@ -1,2 +1,98 @@
 @import "includes/style";
 
+
+main#home
+{
+    margin-top: 8px;
+    
+    .slider
+    {
+        background:$third_color;
+        overflow: hidden;
+        
+        .wrapper
+        {
+            width: 920px;
+            .banner
+            {
+                max-height: 165px;
+                position: relative;
+
+                ul
+                {
+                    li
+                    {
+                        float: left;
+                        position: relative;
+
+                        img
+                        {
+                            // float: right;
+                            position: absolute;
+                            right: 0;
+                            top:0;
+                        }
+
+                        h3
+                        {
+                            display: block;
+                            font-size: 30px;
+                            line-height: 30px;
+                            margin-top: 15px;
+                            &:before
+                            {
+                                margin-top: 10px;
+                            }
+                        }
+                        span
+                        {
+                            display: block;
+                            margin-top: 19px;
+                            font-family: "citroenlight";
+                            font-size: 20px;
+                        }
+                        a.btn
+                        {
+                            margin-top: 21px;
+                            margin-bottom: 23px;
+                            background:transparent;
+                            border: 2px solid $first-color;
+                            font-family: "citroenlight";
+                            font-style: 15px;
+                            color: $first-color;
+                            width: 197px;
+                            height: 30px;
+                            line-height: 30px;
+                            padding-left: 20px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                ol
+                {
+                    position: absolute;
+                    bottom: -15px;
+                    padding: 0;
+                    left: 50%;
+                    li
+                    {
+                        display: inline-block;
+                        // visibility: hidden;
+                        content: none;
+                        // background:red;
+                        background-image: url(../img/slider/position.png);
+                        width: 16px;
+                        height: 16px;
+                        text-indent: -9999px;
+                        cursor: pointer;
+
+                        &.active
+                        {
+                            background-image: url(../img/slider/position-active.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
