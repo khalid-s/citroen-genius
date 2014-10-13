@@ -150,11 +150,11 @@ main#home
 
             .scrollable
             {
-                margin-top: 14px;
+                margin-top: 46px;
 
                 form
                 {
-                    height: 357px;
+                    height: 311px;
                     overflow-y: scroll;
                 }
                 h4
@@ -201,7 +201,7 @@ main#home
 
                     &:first-child
                     {
-                        margin-top: 44px;
+                        margin-top: 0px;
                     }
                 }
 
@@ -235,6 +235,175 @@ main#home
                     {
                         background:$first-color;
                         color: white;
+                    }
+                }
+            }
+        }
+
+        .right
+        {
+            float: left;
+
+            .clndr
+            {
+                width: 372px;
+                text-align: center;
+                margin-left: 40px;
+                margin-top: 50px;
+                .clndr-controls
+                {
+                    font-family: "citroenregular";
+                    font-size: 22px;
+                    color: white;
+                    text-transform: uppercase;
+                    background:#5b2645;
+                    position: relative;
+                    padding: 14px 0;
+                    
+                    .month
+                    {
+                        width: 304px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                    .clndr-control-button
+                    {
+                        display: inline-block;
+                        span
+                        {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                table.clndr-table
+                {
+                    width: 100%;
+
+                    thead
+                    {
+                        font-family: "citroenregular";
+                        font-size: 14px;
+                        color: white;
+                        tr
+                        {
+                            td
+                            {
+                                padding: 20px 0;
+                                background:#a58899;
+                            }
+                        }
+                    }
+                    tbody
+                    {
+                        box-sizing: border-box;
+                        border: 1px solid #d7d7d7;
+                        border-top: 0;
+                        font-family: Arial;
+                        font-size:15px;
+                        color: #4b4a4d;
+                        padding: 30px;
+
+                        tr
+                        {
+                            td
+                            {
+                                width: 51px;
+                                height: 52px;
+                                cursor: pointer;
+
+                                &.adjacent-month
+                                {
+                                    color: rgba(180,181,178, 0.5);
+                                }
+
+                                &.today
+                                {
+                                    color: white;
+                                    background:url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
+                                }
+
+                                &.event
+                                {
+                                    color: white;
+                                    background:url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
+                                }
+                            }
+
+                            &:first-child
+                            {
+                                td
+                                {
+                                    padding-top: 10px;
+
+                                    &.today
+                                    {
+                                        color: white;
+                                        background:url(../img/calendar-today.png) no-repeat scroll 10px 18px transparent;
+                                    }
+
+                                    &.event
+                                    {
+                                        color: white;
+                                        background:url(../img/calendar-event.png) no-repeat scroll 10px 18px transparent;
+                                    }
+                                }
+                            }
+
+                            &:last-child
+                            {
+                                td
+                                {
+                                    padding-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .my-cal
+                {
+                    text-align: left;
+                    display: block;
+                    @include border-radius(4px);
+                    padding: 8px 10px;
+                    margin: 10px 0 15px;
+                    a
+                    {
+                        display: inline-block;
+                        font-family: "citroenregular";
+                        font-size: 15px;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+
+                        &:before
+                        {
+                            content: url("../img/calendar-link-my-cal.png");
+                            display: inline-block;
+                            width: 7px;
+                            height: 13px;
+                            margin-right: 20px;
+                            position: relative;
+                            top:2px;
+                        }
+                    }
+                }
+
+                .clndr-today-button
+                {
+                    font-size: 13px;
+                    font-family: Arial;
+                    color: #797979;
+                    text-align: left;
+                    cursor: pointer;
+
+                    &:before
+                    {
+                        content: url("../img/calendar-today-btn.png");
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 10px;
                     }
                 }
             }

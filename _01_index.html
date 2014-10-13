@@ -5,6 +5,9 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>01_index</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Import jquery in case there are some jQ code in the page which executes before doc.ready -->
+    <script type="text/javascript" src="js/libs/jquery/dist/jquery.js"></script>
 </head>
 <body>
     <div id="pre-header">
@@ -21,11 +24,10 @@
                     </div>
                 </div>
                 <ul>
-                    <li><a href="#">actualités</a></li>
                     <li><a href="#">Liens utiles</a></li>
                     <li><a href="#">contacts utiles</a></li>
-                    <li><a href="#">derniers articles</a></li>
-                    <li><a href="#">favoris</a></li>
+                    <li><a href="#">dernières publications</a></li>
+                    <li><a href="#">incontournables</a></li>
                     <li><a href="#">mon rapport</a></li>
                     <li><a href="#">agenda</a></li>
                     <li><a href="#">crm manager</a></li>
@@ -38,28 +40,10 @@
     <header>
         <div class="wrapper">
             <div class="logo">
-                <img src="img/logo.png" alt="Logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
             </div>
-
-            <nav>
-                <ul>
-                    <li>
-                        <img src="img/nav-presenter.png" alt=""><span>présenter</span>
-                    </li>
-                    <li>
-                        <img src="img/nav-animer.png" alt=""><span>animer</span>
-                    </li>
-                    <li>
-                        <img src="img/nav-vendre.png" alt=""><span>vendre</span>
-                    </li>
-                    <li>
-                        <img src="img/nav-livrer.png" alt=""><span>livrer</span>
-                    </li>
-                    <li>
-                        <img src="img/nav-piloter.png" alt=""><span>piloter</span>
-                    </li>
-                </ul>
-            </nav>
 
             <div class="search">
                 <form action="#">
@@ -67,14 +51,220 @@
                     <button type="submit"></button>
                 </form>
             </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <div class="image">
+                            <img src="img/nav-presenter.png" alt="">
+                        </div>
+                        <span>présenter</span>
+
+                        <ul>
+                            <li><a href="#">Exposition véhicules - Hall</a></li>
+                            <li><a href="#">Exposition véhicules - Extérieur et parc essais</a></li>
+                            <li><a href="#">Exposition véhicules - Aire de livraison</a></li>
+                            <li><a href="#">Hall - PLV</a></li>
+                            <li><a href="#">Hall- Outils (Malle, Config, bornes prix…)</a></li>
+                            <li><a href="#">Evénements (PO, Lancements produits…)</a></li>
+                            <li><a href="#">Communication locale (Pub, MD, CRM Manager)</a></li>
+                        </ul>
+                        
+                        <!-- Hover border effect -->
+                        <span class="hover-border"></span>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="img/nav-animer.png" alt="">
+                        </div>
+                        <span>animer</span>
+                        <!-- Hover border effect -->
+                        <span class="hover-border"></span>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="img/nav-vendre.png" alt="">
+                        </div>
+                        <span>vendre</span>
+                        <!-- Hover border effect -->
+                        <span class="hover-border"></span>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="img/nav-livrer.png" alt="">
+                        </div>
+                        <span>livrer</span>
+                        <!-- Hover border effect -->
+                        <span class="hover-border"></span>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="img/nav-piloter.png" alt="">
+                        </div>
+                        <span>piloter</span>
+
+
+
+                       <!--  <ul>
+                            <li><a href="#">Exposition véhicules - Hall</a></li>
+                            <li><a href="#">Exposition véhicules - Extérieur et parc essais</a></li>
+                            <li><a href="#">Exposition véhicules - Aire de livraison</a></li>
+                            <li><a href="#">Hall - PLV</a></li>
+                            <li><a href="#">Hall- Outils (Malle, Config, bornes prix…)</a></li>
+                            <li><a href="#">Evénements (PO, Lancements produits…)</a></li>
+                            <li><a href="#">Communication locale (Pub, MD, CRM Manager)Communication locale (Pub, MD, CRM Manager)</a></li>
+                        </ul> -->
+
+                        <!-- Hover border effect -->
+                        <span class="hover-border"></span>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
         <div class="clear"></div>
     </header>
 
 
     <main id="home">
-        <div class="wrapper">
-            <!-- div.slider -->
+        <div class="slider">
+            <div class="wrapper">
+                <div class="banner">
+                    <ul>
+                    <!-- The image can EITHER be in background set like this -->
+                        <li style="background:url(img/slider/1.png) no-repeat">
+                            <h3>Simplydrive1</h3>
+                            
+                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
+                            
+                            <a href="#" class="btn">En savoir plus</a>
+                            <!-- <img src="img/slider/1.png" /> -->
+                        </li>
+
+                        <!-- OR have the image like this. The difference is that in bg the image must be of width and height of the slider while in this one the image is set absolute to le li with position top:0 and right:0 -->
+                        <li>
+                            <h3>Simplydrive2</h3>
+                            
+                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
+
+                            
+                            <a href="#" class="btn">En savoir plus</a>
+                            <img src="img/slider/3.png" alt="">
+                        </li>
+                        <li style="background:url(img/slider/3.png) no-repeat">
+                            <h3>Simplydrive3</h3>
+                            
+                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
+                            
+                            <a href="#" class="btn">En savoir plus</a>
+                            <!-- <img src="img/slider/3.png" /> -->
+                        </li>
+                        <li style="background:url(img/slider/4.png) no-repeat">
+                            <h3>Simplydrive4</h3>
+                            
+                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
+                            
+                            <a href="#" class="btn">En savoir plus</a>
+                            <!-- <img src="img/slider/4.png" /> -->
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div><!-- end banner -->
+            </div>
+        </div><!-- end .slider -->
+
+
+
+
+        <!-- content -->
+
+        <div class="content wrapper">
+            <h2>Agenda</h2>
+            
+            <div class="left">
+                
+                <div class="selectionne">
+                    <p class="date-select">date selectionné</p>
+                    <h2 class="date">13.nov</h2>
+
+                    <a href="#" class="btn">Afficher la date du jour</a>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="clear"></div>
+                <div class="scrollable">
+                    <form action="#">
+                        <div class="section">
+                            <h4>événements</h4>
+
+                            <div class="element">
+                                <img src="img/scrollable-first.png" alt="">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="first" id="checkboxInput">
+                                </div>
+                                <span for="first">PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="element">
+                                <img src="img/scrollable-second.png" alt="">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="second" id="checkboxInput">
+                                </div>
+                                <span for="second">Présenter la C3 Brésil </span>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="element">
+                                <img src="img/scrollable-third.png" alt="">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="third" id="checkboxInput">
+                                </div>
+                                <span for="third">Livrer la C3 Brésil </span>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- end .evenements -->
+
+                        <div class="section">
+                            <h4>taches à réaliser</h4>
+                            
+                            <div class="element">
+                                <img src="img/scrollable-fourth.png" alt="">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="fourth" id="checkboxInput">
+                                </div>
+                                <span for="fourth">PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <div class="element">
+                                <img src="img/scrollable-fourth.png" alt="">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="fourth" id="checkboxInput">
+                                </div>
+                                <span for="fourth">PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <div class="element">
+                                <img src="img/scrollable-fourth.png" alt="">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="fourth" id="checkboxInput">
+                                </div>
+                                <span for="fourth">PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <a href="#" class="active btn">Tâche en cours</a>
+                    <a href="#" class="btn"><span>+</span> Ajouter une tache</a>
+                </div><!-- end .scrollable -->
+
+
+            </div><!-- end .left -->
+            <div class="clear"></div>
         </div>
     </main>
 
@@ -120,8 +310,6 @@
                     <li><a href="#">Crédits</a></li>
                     <li><a href="#">Suggestion</a></li>
                     <li><a href="#">Plan du site</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                    <li><a href="#">Plan du site</a></li>
                 </ul>
             </div>
         </div>
@@ -130,7 +318,7 @@
     
 
     <!-- block js -->
-    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/libs/unslider/src/unslider.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
 @import "normalize";
 @import "susy";
 @import "breakpoint";
+@import "jquery.mCustomScrollbar";
 
 
 
@@ -357,7 +358,7 @@ footer
     background: $footer_bg;
     padding-top: 42px;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 30px;
 
     .wrapper
     {

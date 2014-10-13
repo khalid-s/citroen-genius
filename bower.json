@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "unslider": "~1.0.0"
+    "unslider": "~1.0.0",
+    "clndr": "~1.2.2",
+    "underscore": "~1.7.0"
   }
 }

@@ -266,6 +266,1914 @@ th {
   padding: 0;
 }
 
+/*
+== malihu jquery custom scrollbar plugin ==
+Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
+*/
+/*
+CONTENTS: 
+	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited). 
+	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar. 
+	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
+	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars. 
+	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars. 
+	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS 
+		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
+*/
+/* 
+------------------------------------------------------------------------------------------------------------------------
+1. BASIC STYLE  
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 27, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollbar {
+  -ms-touch-action: none;
+  touch-action: none;
+  /* MSPointer events - direct all pointer events to js */
+}
+
+/* line 28, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollbar.mCS_no_scrollbar {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+
+/* line 30, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollBox {
+  /* contains plugin's markup */
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+}
+
+/* line 39, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container {
+  /* contains the original content */
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+2. VERTICAL SCROLLBAR 
+y-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 54, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_inside > .mCSB_container {
+  margin-right: 30px;
+}
+
+/* line 56, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+}
+
+/* non-visible scrollbar */
+/* line 58, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+/* line 63, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-left: 0;
+}
+
+/* RTL direction/left-side scrollbar */
+/* line 65, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools {
+  /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 75, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_outside + .mCSB_scrollTools {
+  right: -26px;
+}
+
+/* scrollbar position: outside */
+/* line 77, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  /* RTL direction/left-side scrollbar */
+  right: auto;
+  left: 0;
+}
+
+/* line 83, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  left: -26px;
+}
+
+/* RTL direction/left-side scrollbar (scrollbar position: outside) */
+/* line 85, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_draggerContainer {
+  /* contains the draggable element and dragger rail markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+/* line 94, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 20px 0;
+}
+
+/* line 96, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+/* line 103, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger {
+  /* the draggable element */
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  /* minimum dragger height */
+  z-index: 1;
+}
+
+/* line 110, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  /* the dragger element */
+  position: relative;
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* line 119, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 12px;
+  /* auto-expanded scrollbar */
+}
+
+/* line 122, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 8px;
+  /* auto-expanded scrollbar */
+}
+
+/* line 125, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 136, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonDown {
+  bottom: 0;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+3. HORIZONTAL SCROLLBAR 
+x-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 147, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+/* line 152, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_horizontal.mCSB_outside > .mCSB_container {
+  min-height: 100%;
+}
+
+/* line 154, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0;
+}
+
+/* non-visible scrollbar */
+/* line 156, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  width: auto;
+  height: 16px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 165, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  bottom: -26px;
+}
+
+/* scrollbar position: outside */
+/* line 168, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer {
+  margin: 0 20px;
+}
+
+/* line 170, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 2px;
+  margin: 7px 0;
+}
+
+/* line 176, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 30px;
+  /* minimum dragger width */
+  height: 100%;
+  left: 0;
+}
+
+/* line 182, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+
+/* line 188, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  height: 12px;
+  /* auto-expanded scrollbar */
+  margin: 2px auto;
+}
+
+/* line 194, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 8px;
+  /* auto-expanded scrollbar */
+  margin: 4px 0;
+}
+
+/* line 200, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 211, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+  left: 0;
+}
+
+/* line 213, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  right: 0;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+4. VERTICAL AND HORIZONTAL SCROLLBARS 
+yx-axis 
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 224, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container_wrapper {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 237, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container_wrapper > .mCSB_container {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 242, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 20px;
+}
+
+/* line 244, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 20px;
+}
+
+/* non-visible horizontal scrollbar */
+/* line 247, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 0;
+}
+
+/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+/* line 250, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 0;
+}
+
+/* RTL direction/left-side scrollbar */
+/* line 254, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 20px;
+}
+
+/* non-visible scrollbar/RTL direction/left-side scrollbar */
+/* line 257, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 0;
+}
+
+/* line 259, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+/* line 264, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container {
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 269, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container {
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 274, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+  /* non-visible scrollbar */
+  margin-left: 0;
+}
+
+/* non-visible horizontal scrollbar */
+/* line 280, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+5. TRANSITIONS  
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 290, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+/* line 302, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS  
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* 
+----------------------------------------
+6.1 THEMES 
+----------------------------------------
+*/
+/* default theme ("light") */
+/* line 340, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+
+/* line 342, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 0;
+  filter: "alpha(opacity=0)";
+  -ms-filter: "alpha(opacity=0)";
+}
+
+/* line 345, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
+
+/* line 352, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+}
+
+/* line 357, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+
+/* line 362, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  filter: "alpha(opacity=85)";
+  -ms-filter: "alpha(opacity=85)";
+}
+
+/* line 366, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+}
+
+/* line 372, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-image: url(mCSB_buttons.png);
+  /* css sprites */
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+}
+
+/* line 381, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: 0 0;
+  /* 
+  sprites locations 
+  light: 0 0, -16px 0, -32px 0, -48px 0, 0 -72px, -16px -72px, -32px -72px
+  dark: -80px 0, -96px 0, -112px 0, -128px 0, -80px -72px, -96px -72px, -112px -72px
+  */
+}
+
+/* line 390, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: 0 -20px;
+  /* 
+  sprites locations
+  light: 0 -20px, -16px -20px, -32px -20px, -48px -20px, 0 -92px, -16px -92px, -32px -92px
+  dark: -80px -20px, -96px -20px, -112px -20px, -128px -20px, -80px -92px, -96px -92px, -112 -92px
+  */
+}
+
+/* line 399, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: 0 -40px;
+  /* 
+  sprites locations 
+  light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
+  dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
+  */
+}
+
+/* line 408, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: 0 -56px;
+  /* 
+  sprites locations 
+  light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
+  dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
+  */
+}
+
+/* line 417, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+
+/* line 422, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active {
+  opacity: 0.9;
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+}
+
+/* theme: "dark" */
+/* line 430, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 432, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 434, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 436, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 439, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px 0;
+}
+
+/* line 441, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -20px;
+}
+
+/* line 443, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -40px;
+}
+
+/* line 445, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -56px;
+}
+
+/* ---------------------------------------- */
+/* theme: "light-2", "dark-2" */
+/* line 453, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 460, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 467, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+
+/* line 476, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 478, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 481, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px 0;
+}
+
+/* line 483, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -20px;
+}
+
+/* line 485, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -40px;
+}
+
+/* line 487, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -56px;
+}
+
+/* theme: "dark-2" */
+/* line 492, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 497, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 502, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 504, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 507, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px 0;
+}
+
+/* line 509, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -20px;
+}
+
+/* line 511, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -40px;
+}
+
+/* line 513, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -56px;
+}
+
+/* ---------------------------------------- */
+/* theme: "light-thick", "dark-thick" */
+/* line 521, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 528, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 535, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+}
+
+/* line 542, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 6px;
+  margin: 5px auto;
+}
+
+/* line 549, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 551, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 554, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -16px 0;
+}
+
+/* line 556, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -16px -20px;
+}
+
+/* line 558, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -20px -40px;
+}
+
+/* line 560, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -20px -56px;
+}
+
+/* theme: "dark-thick" */
+/* line 565, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 570, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 575, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 577, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 580, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -96px 0;
+}
+
+/* line 582, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -96px -20px;
+}
+
+/* line 584, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -100px -40px;
+}
+
+/* line 586, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -100px -56px;
+}
+
+/* ---------------------------------------- */
+/* theme: "light-thin", "dark-thin" */
+/* line 594, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 596, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 2px;
+}
+
+/* line 599, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+}
+
+/* line 602, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 2px;
+  margin: 7px auto;
+}
+
+/* theme "dark-thin" */
+/* line 612, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 614, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 616, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 618, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 621, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px 0;
+}
+
+/* line 623, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -20px;
+}
+
+/* line 625, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -40px;
+}
+
+/* line 627, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -56px;
+}
+
+/* ---------------------------------------- */
+/* theme "rounded", "rounded-dark", "rounded-dots", "rounded-dots-dark" */
+/* line 635, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* line 637, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger {
+  height: 14px;
+}
+
+/* line 642, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 14px;
+  margin: 0 1px;
+}
+
+/* line 650, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 14px;
+}
+
+/* line 655, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  height: 14px;
+  margin: 1px 0;
+}
+
+/* line 663, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 16px;
+  /* auto-expanded scrollbar */
+  height: 16px;
+  margin: -1px 0;
+}
+
+/* line 672, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 4px;
+  /* auto-expanded scrollbar */
+}
+
+/* line 677, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  height: 16px;
+  /* auto-expanded scrollbar */
+  width: 16px;
+  margin: 0 -1px;
+}
+
+/* line 686, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 4px;
+  /* auto-expanded scrollbar */
+  margin: 6px 0;
+}
+
+/* line 694, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: 0 -72px;
+}
+
+/* line 696, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: 0 -92px;
+}
+
+/* line 698, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: 0 -112px;
+}
+
+/* line 700, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: 0 -128px;
+}
+
+/* theme "rounded-dark", "rounded-dots-dark" */
+/* line 705, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 708, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 710, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 713, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 718, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px -72px;
+}
+
+/* line 720, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -92px;
+}
+
+/* line 722, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -112px;
+}
+
+/* line 724, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -128px;
+}
+
+/* theme "rounded-dots", "rounded-dots-dark" */
+/* line 729, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools_vertical .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_vertical .mCSB_draggerRail {
+  width: 4px;
+}
+
+/* line 732, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  background-color: transparent;
+  background-position: center;
+}
+
+/* line 740, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANElEQVQYV2NkIAAYiVbw//9/Y6DiM1ANJoyMjGdBbLgJQAX/kU0DKgDLkaQAvxW4HEvQFwCRcxIJK1XznAAAAABJRU5ErkJggg==");
+  background-repeat: repeat-y;
+  opacity: 0.3;
+  filter: "alpha(opacity=30)";
+  -ms-filter: "alpha(opacity=30)";
+}
+
+/* line 748, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  height: 4px;
+  margin: 6px 0;
+  background-repeat: repeat-x;
+}
+
+/* line 755, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -16px -72px;
+}
+
+/* line 757, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -16px -92px;
+}
+
+/* line 759, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -20px -112px;
+}
+
+/* line 761, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -20px -128px;
+}
+
+/* theme "rounded-dots-dark" */
+/* line 766, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALElEQVQYV2NkIAAYSVFgDFR8BqrBBEifBbGRTfiPZhpYjiQFBK3A6l6CvgAAE9kGCd1mvgEAAAAASUVORK5CYII=");
+}
+
+/* line 770, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -96px -72px;
+}
+
+/* line 772, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -96px -92px;
+}
+
+/* line 774, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -100px -112px;
+}
+
+/* line 776, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -100px -128px;
+}
+
+/* ---------------------------------------- */
+/* theme "3d", "3d-dark", "3d-thick", "3d-thick-dark" */
+/* line 784, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-repeat: repeat-y;
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* line 797, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* theme "3d", "3d-dark" */
+/* line 813, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools_vertical .mCSB_dragger,
+.mCS-3d-dark.mCSB_scrollTools_vertical .mCSB_dragger {
+  height: 70px;
+}
+
+/* line 816, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 70px;
+}
+
+/* line 819, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools,
+.mCS-3d-dark.mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=30)";
+  -ms-filter: "alpha(opacity=30)";
+}
+
+/* line 825, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+/* line 830, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail {
+  width: 8px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.5), inset -1px 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* line 837, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #555;
+}
+
+/* line 846, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 8px;
+}
+
+/* line 849, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 8px;
+  margin: 4px 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* line 857, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 8px;
+  margin: 4px auto;
+}
+
+/* line 864, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+
+/* line 866, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+
+/* line 868, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+
+/* line 870, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+
+/* theme "3d-dark" */
+/* line 875, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 880, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 882, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+
+/* line 884, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+
+/* line 886, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+
+/* line 888, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+
+/* ---------------------------------------- */
+/* theme: "3d-thick", "3d-thick-dark" */
+/* line 896, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools,
+.mCS-3d-thick-dark.mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=30)";
+  -ms-filter: "alpha(opacity=30)";
+}
+
+/* line 902, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools,
+.mCS-3d-thick-dark.mCSB_scrollTools,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+/* line 907, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 910, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_inside + .mCS-3d-thick.mCSB_scrollTools_vertical,
+.mCSB_inside + .mCS-3d-thick-dark.mCSB_scrollTools_vertical {
+  right: 1px;
+}
+
+/* line 913, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools_vertical,
+.mCS-3d-thick-dark.mCSB_scrollTools_vertical {
+  box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+/* line 916, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools_horizontal,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal {
+  bottom: 1px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+/* line 922, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4);
+  width: 12px;
+  margin: 2px;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 935, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* line 938, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #555;
+}
+
+/* line 943, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  height: 12px;
+  width: auto;
+}
+
+/* line 949, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 1px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* line 954, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+/* line 956, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+
+/* line 958, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+
+/* line 960, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+
+/* line 962, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+
+/* theme: "3d-thick-dark" */
+/* line 967, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools {
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+/* line 969, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+/* line 971, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4), inset -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 973, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 975, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #777;
+}
+
+/* line 980, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer {
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 1px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* line 985, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+/* line 987, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+
+/* line 989, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+
+/* line 991, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+
+/* line 993, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+
+/* ---------------------------------------- */
+/* theme: "minimal", "minimal-dark" */
+/* line 1001, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical,
+.mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+  right: 0;
+  margin: 12px 0;
+}
+
+/* line 1007, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCustomScrollBox.mCS-minimal + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal-dark + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal-dark + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  bottom: 0;
+  margin: 0 12px;
+}
+
+/* RTL direction/left-side scrollbar */
+/* line 1016, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical,
+.mCS-dir-rtl > .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+  left: 0;
+  right: auto;
+}
+
+/* line 1022, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-minimal.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+/* line 1025, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger,
+.mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
+  height: 50px;
+}
+
+/* line 1028, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-minimal.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-minimal-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 50px;
+}
+
+/* line 1031, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)";
+}
+
+/* line 1036, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: "alpha(opacity=50)";
+  -ms-filter: "alpha(opacity=50)";
+}
+
+/* theme: "minimal-dark" */
+/* line 1045, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)";
+}
+
+/* line 1050, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: "alpha(opacity=50)";
+  -ms-filter: "alpha(opacity=50)";
+}
+
+/* ---------------------------------------- */
+/* theme "light-3", "dark-3" */
+/* line 1062, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  width: 6px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 1068, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+}
+
+/* line 1071, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 6px;
+  margin: 5px 0;
+}
+
+/* line 1080, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 12px;
+}
+
+/* line 1087, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 12px;
+  margin: 2px 0;
+}
+
+/* line 1095, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+
+/* line 1097, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+
+/* line 1099, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+
+/* line 1101, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+
+/* theme "dark-3" */
+/* line 1106, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 1108, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 1110, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 1113, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 1115, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+
+/* line 1117, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+
+/* line 1119, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+
+/* line 1121, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+
+/* ---------------------------------------- */
+/* theme "inset", "inset-dark", "inset-2", "inset-2-dark", "inset-3", "inset-3-dark" */
+/* line 1129, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  width: 12px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 1139, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  margin: 3px 5px;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 1155, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  height: 6px;
+  margin: 5px 3px;
+  position: absolute;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 1171, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 12px;
+  margin: 2px 0;
+}
+
+/* line 1182, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+
+/* line 1186, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+
+/* line 1190, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+
+/* line 1194, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+
+/* theme "inset-dark", "inset-2-dark", "inset-3-dark" */
+/* line 1201, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 1205, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 1209, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 1216, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 1220, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+
+/* line 1224, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+
+/* line 1228, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+
+/* line 1232, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+
+/* theme "inset-2", "inset-2-dark" */
+/* line 1239, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1249, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+  border-color: #000;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* theme "inset-3", "inset-3-dark" */
+/* line 1254, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 1256, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 1258, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 1260, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 1262, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 1265, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 1267, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 1269, ../sass/includes/_jquery.mCustomScrollbar.scss */
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ---------------------------------------- */
 /********************************* FONTS *************************************************/
 @font-face {
   font-family: "citroenlight";
@@ -292,47 +2200,47 @@ th {
   src: url('../fonts/citroen_regular-webfont.eot?1403149886') format('embedded-opentype'), url('../fonts/citroen_regular-webfont.woff?1403149886') format('woff'), url('../fonts/citroen_regular-webfont.ttf?1403149886') format('truetype'), url('../fonts/citroen_regular-webfont.svg?1403149886') format('svg');
 }
 /*********************************End  FONTS *************************************************/
-/* line 28, ../sass/includes/_style.scss */
+/* line 29, ../sass/includes/_style.scss */
 body {
   color: #184254;
 }
 
-/* line 33, ../sass/includes/_style.scss */
+/* line 34, ../sass/includes/_style.scss */
 .clear {
   clear: both;
 }
 
-/* line 38, ../sass/includes/_style.scss */
+/* line 39, ../sass/includes/_style.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 44, ../sass/includes/_style.scss */
+/* line 45, ../sass/includes/_style.scss */
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-/* line 51, ../sass/includes/_style.scss */
+/* line 52, ../sass/includes/_style.scss */
 .btn {
   display: inline-block;
   background: #184254;
   color: white;
 }
 
-/* line 59, ../sass/includes/_style.scss */
+/* line 60, ../sass/includes/_style.scss */
 header, div, nav, ul, li, footer, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
 
-/* line 64, ../sass/includes/_style.scss */
+/* line 65, ../sass/includes/_style.scss */
 li {
   list-style: none;
 }
 
-/* line 70, ../sass/includes/_style.scss */
+/* line 71, ../sass/includes/_style.scss */
 h2 {
   color: #5b2645;
   position: relative;
@@ -342,7 +2250,7 @@ h2 {
   font-weight: 200;
   letter-spacing: 5px;
 }
-/* line 79, ../sass/includes/_style.scss */
+/* line 80, ../sass/includes/_style.scss */
 h2:before {
   content: url("../img/h3-bg-purple.png");
   position: absolute;
@@ -350,7 +2258,7 @@ h2:before {
   left: -2px;
 }
 
-/* line 88, ../sass/includes/_style.scss */
+/* line 89, ../sass/includes/_style.scss */
 h3 {
   font-family: "citroenbold";
   font-size: 22px;
@@ -359,13 +2267,13 @@ h3 {
   text-transform: uppercase;
   line-height: 22px;
 }
-/* line 97, ../sass/includes/_style.scss */
+/* line 98, ../sass/includes/_style.scss */
 h3:before {
   content: url("../img/h3-bg.png");
   position: absolute;
 }
 
-/* line 106, ../sass/includes/_style.scss */
+/* line 107, ../sass/includes/_style.scss */
 #pre-header {
   min-height: 32px;
   line-height: 12px;
@@ -376,7 +2284,7 @@ h3:before {
   font-size: 12px;
   font-weight: 400;
 }
-/* line 110, ../sass/includes/_style.scss */
+/* line 111, ../sass/includes/_style.scss */
 #pre-header #accnt {
   float: right;
   background: #002d3d;
@@ -385,7 +2293,7 @@ h3:before {
   position: relative;
   cursor: pointer;
 }
-/* line 119, ../sass/includes/_style.scss */
+/* line 120, ../sass/includes/_style.scss */
 #pre-header #accnt i {
   display: inline-block;
   margin: 5px 10px 0px;
@@ -394,27 +2302,27 @@ h3:before {
   background: url(../img/accnt-ico.png) no-repeat;
   float: left;
 }
-/* line 128, ../sass/includes/_style.scss */
+/* line 129, ../sass/includes/_style.scss */
 #pre-header #accnt span {
   display: inline-block;
   line-height: 30px;
   width: 148px;
   float: right;
 }
-/* line 137, ../sass/includes/_style.scss */
+/* line 138, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option {
   position: absolute;
   display: none;
   margin-top: 2px;
   background: red;
 }
-/* line 144, ../sass/includes/_style.scss */
+/* line 145, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul {
   margin: 0;
   padding: 9px 0;
   background: #001f2f;
 }
-/* line 150, ../sass/includes/_style.scss */
+/* line 151, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul li {
   margin: 0;
   padding: 0;
@@ -422,43 +2330,43 @@ h3:before {
   display: inline-block;
   width: 100%;
 }
-/* line 159, ../sass/includes/_style.scss */
+/* line 160, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul li i.my-accnt {
   margin: 6px 5px 0px 15px;
   background: url(../img/my-accnt.png) no-repeat;
 }
-/* line 165, ../sass/includes/_style.scss */
+/* line 166, ../sass/includes/_style.scss */
 #pre-header #accnt .accnt-option ul li i.disconnect {
   margin: 6px 5px 0px 15px;
   background: url(../img/disconnect.png) no-repeat;
 }
-/* line 182, ../sass/includes/_style.scss */
+/* line 183, ../sass/includes/_style.scss */
 #pre-header ul {
   margin: 0;
   padding: 0;
 }
-/* line 186, ../sass/includes/_style.scss */
+/* line 187, ../sass/includes/_style.scss */
 #pre-header ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 0;
   margin-left: 16px;
 }
-/* line 193, ../sass/includes/_style.scss */
+/* line 194, ../sass/includes/_style.scss */
 #pre-header ul li:first-child {
   margin-left: 25px;
 }
 
-/* line 201, ../sass/includes/_style.scss */
+/* line 202, ../sass/includes/_style.scss */
 header {
   margin-top: 10px;
 }
-/* line 207, ../sass/includes/_style.scss */
+/* line 208, ../sass/includes/_style.scss */
 header .wrapper div.logo {
   float: left;
   margin-left: 25px;
 }
-/* line 213, ../sass/includes/_style.scss */
+/* line 214, ../sass/includes/_style.scss */
 header .wrapper nav {
   font-family: "citroenlight";
   font-size: 20px;
@@ -466,7 +2374,7 @@ header .wrapper nav {
   text-align: center;
   padding-top: 22px;
 }
-/* line 225, ../sass/includes/_style.scss */
+/* line 226, ../sass/includes/_style.scss */
 header .wrapper nav ul li {
   display: inline-block;
   margin: 0 21px;
@@ -475,20 +2383,20 @@ header .wrapper nav ul li {
   text-align: center;
   cursor: pointer;
 }
-/* line 243, ../sass/includes/_style.scss */
+/* line 244, ../sass/includes/_style.scss */
 header .wrapper nav ul li div.image {
   height: 25px;
 }
-/* line 247, ../sass/includes/_style.scss */
+/* line 248, ../sass/includes/_style.scss */
 header .wrapper nav ul li span {
   display: block;
   margin-top: 5px;
 }
-/* line 253, ../sass/includes/_style.scss */
+/* line 254, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul {
   display: none;
 }
-/* line 257, ../sass/includes/_style.scss */
+/* line 258, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active {
   display: block;
   position: absolute;
@@ -502,7 +2410,7 @@ header .wrapper nav ul li ul.active {
   font-size: 15px;
   padding: 13px 28px;
 }
-/* line 269, ../sass/includes/_style.scss */
+/* line 270, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active li {
   text-align: left;
   display: inline-block;
@@ -513,19 +2421,19 @@ header .wrapper nav ul li ul.active li {
   width: 334px;
   color: #184254;
 }
-/* line 280, ../sass/includes/_style.scss */
+/* line 281, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active li:hover {
   color: #dc002d;
 }
-/* line 285, ../sass/includes/_style.scss */
+/* line 286, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active li:last-child {
   border-bottom: none;
 }
-/* line 291, ../sass/includes/_style.scss */
+/* line 292, ../sass/includes/_style.scss */
 header .wrapper nav ul li:hover, header .wrapper nav ul li:active {
   color: #dc002d;
 }
-/* line 295, ../sass/includes/_style.scss */
+/* line 296, ../sass/includes/_style.scss */
 header .wrapper nav ul li:hover .hover-border, header .wrapper nav ul li:active .hover-border {
   display: inline-block;
   width: 100%;
@@ -535,7 +2443,7 @@ header .wrapper nav ul li:hover .hover-border, header .wrapper nav ul li:active 
   left: 0;
   bottom: 0;
 }
-/* line 316, ../sass/includes/_style.scss */
+/* line 317, ../sass/includes/_style.scss */
 header .wrapper div.search {
   float: right;
   width: 150px;
@@ -548,7 +2456,7 @@ header .wrapper div.search {
   font-size: 20px;
   border-bottom: 1px solid black;
 }
-/* line 331, ../sass/includes/_style.scss */
+/* line 332, ../sass/includes/_style.scss */
 header .wrapper div.search form input {
   border: none;
   outline: none;
@@ -556,7 +2464,7 @@ header .wrapper div.search form input {
   width: 125px;
   height: 27px;
 }
-/* line 339, ../sass/includes/_style.scss */
+/* line 340, ../sass/includes/_style.scss */
 header .wrapper div.search form button {
   border: none;
   outline: none;
@@ -566,33 +2474,33 @@ header .wrapper div.search form button {
   padding-top: 12px;
 }
 
-/* line 354, ../sass/includes/_style.scss */
+/* line 355, ../sass/includes/_style.scss */
 footer {
   min-height: 500px;
   background: #fafafa;
   padding-top: 42px;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 30px;
 }
-/* line 362, ../sass/includes/_style.scss */
+/* line 363, ../sass/includes/_style.scss */
 footer .wrapper {
   width: 922px;
   position: relative;
 }
-/* line 367, ../sass/includes/_style.scss */
+/* line 368, ../sass/includes/_style.scss */
 footer .wrapper h3 {
   position: relative;
   letter-spacing: 3px;
 }
-/* line 372, ../sass/includes/_style.scss */
+/* line 373, ../sass/includes/_style.scss */
 footer .wrapper h3:before {
   margin-top: 20px;
 }
-/* line 379, ../sass/includes/_style.scss */
+/* line 380, ../sass/includes/_style.scss */
 footer .wrapper ul {
   margin-top: 30px;
 }
-/* line 384, ../sass/includes/_style.scss */
+/* line 385, ../sass/includes/_style.scss */
 footer .wrapper ul li {
   font-family: "citroenlight";
   font-size: 17px;
@@ -601,31 +2509,31 @@ footer .wrapper ul li {
   width: 400px;
   border-bottom: 1px solid #f0f0f0;
 }
-/* line 393, ../sass/includes/_style.scss */
+/* line 394, ../sass/includes/_style.scss */
 footer .wrapper ul li a {
   padding: 19px 0 19px 15px;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-/* line 400, ../sass/includes/_style.scss */
+/* line 401, ../sass/includes/_style.scss */
 footer .wrapper ul li a:before {
   content: url(../img/footer-li.png);
   margin-right: 20px;
 }
-/* line 406, ../sass/includes/_style.scss */
+/* line 407, ../sass/includes/_style.scss */
 footer .wrapper ul li a:hover {
   background: #ececec;
 }
-/* line 414, ../sass/includes/_style.scss */
+/* line 415, ../sass/includes/_style.scss */
 footer .wrapper .left {
   float: left;
 }
-/* line 418, ../sass/includes/_style.scss */
+/* line 419, ../sass/includes/_style.scss */
 footer .wrapper .right {
   float: right;
 }
-/* line 424, ../sass/includes/_style.scss */
+/* line 425, ../sass/includes/_style.scss */
 footer a.btn {
   font-family: "citroenregular";
   font-size: 15px;
@@ -637,27 +2545,27 @@ footer a.btn {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 434, ../sass/includes/_style.scss */
+/* line 435, ../sass/includes/_style.scss */
 footer a.btn:hover, footer a.btn:active {
   background: #001022;
 }
-/* line 440, ../sass/includes/_style.scss */
+/* line 441, ../sass/includes/_style.scss */
 footer #sub-footer {
   background: #ebebeb;
   height: 37px;
   margin-top: 70px;
 }
-/* line 446, ../sass/includes/_style.scss */
+/* line 447, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper {
   text-align: center;
 }
-/* line 451, ../sass/includes/_style.scss */
+/* line 452, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li {
   border: none;
   display: inline-block;
   width: auto;
 }
-/* line 456, ../sass/includes/_style.scss */
+/* line 457, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li a {
   font-family: arial;
   font-size: 11px;
@@ -673,29 +2581,29 @@ footer #sub-footer .wrapper ul li a {
   width: initial;
   text-transform: initial;
 }
-/* line 471, ../sass/includes/_style.scss */
+/* line 472, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li a:before {
   content: "";
   margin: 0;
 }
-/* line 479, ../sass/includes/_style.scss */
+/* line 480, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li a:first-child:before {
   content: "";
   margin: 0;
 }
-/* line 487, ../sass/includes/_style.scss */
+/* line 488, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li:before {
   content: "-";
   margin: 0 4px 0 0px;
   color: #ababab;
 }
-/* line 496, ../sass/includes/_style.scss */
+/* line 497, ../sass/includes/_style.scss */
 footer #sub-footer .wrapper ul li:first-child:before {
   content: "";
   margin: 0;
 }
 
-/* line 508, ../sass/includes/_style.scss */
+/* line 509, ../sass/includes/_style.scss */
 .up-btn {
   position: absolute;
   width: 65px;
@@ -839,11 +2747,11 @@ main#home .content .left .selectionne a {
 }
 /* line 151, ../sass/style.scss */
 main#home .content .left .scrollable {
-  margin-top: 14px;
+  margin-top: 46px;
 }
 /* line 155, ../sass/style.scss */
 main#home .content .left .scrollable form {
-  height: 357px;
+  height: 311px;
   overflow-y: scroll;
 }
 /* line 160, ../sass/style.scss */
@@ -885,7 +2793,7 @@ main#home .content .left .scrollable .section {
 }
 /* line 202, ../sass/style.scss */
 main#home .content .left .scrollable .section:first-child {
-  margin-top: 44px;
+  margin-top: 0px;
 }
 /* line 208, ../sass/style.scss */
 main#home .content .left .scrollable a {
@@ -917,4 +2825,146 @@ main#home .content .left .scrollable a:first-child {
 main#home .content .left .scrollable a.active {
   background: #184254;
   color: white;
+}
+/* line 243, ../sass/style.scss */
+main#home .content .right {
+  float: left;
+}
+/* line 247, ../sass/style.scss */
+main#home .content .right .clndr {
+  width: 372px;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+/* line 253, ../sass/style.scss */
+main#home .content .right .clndr .clndr-controls {
+  font-family: "citroenregular";
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  background: #5b2645;
+  position: relative;
+  padding: 14px 0;
+}
+/* line 263, ../sass/style.scss */
+main#home .content .right .clndr .clndr-controls .month {
+  width: 304px;
+  text-align: center;
+  display: inline-block;
+}
+/* line 269, ../sass/style.scss */
+main#home .content .right .clndr .clndr-controls .clndr-control-button {
+  display: inline-block;
+}
+/* line 272, ../sass/style.scss */
+main#home .content .right .clndr .clndr-controls .clndr-control-button span {
+  display: inline-block;
+}
+/* line 279, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table {
+  width: 100%;
+}
+/* line 283, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table thead {
+  font-family: "citroenregular";
+  font-size: 14px;
+  color: white;
+}
+/* line 290, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table thead tr td {
+  padding: 20px 0;
+  background: #a58899;
+}
+/* line 297, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody {
+  box-sizing: border-box;
+  border: 1px solid #d7d7d7;
+  border-top: 0;
+  font-family: Arial;
+  font-size: 15px;
+  color: #4b4a4d;
+  padding: 30px;
+}
+/* line 309, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr td {
+  width: 51px;
+  height: 52px;
+  cursor: pointer;
+}
+/* line 315, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr td.adjacent-month {
+  color: rgba(180, 181, 178, 0.5);
+}
+/* line 320, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr td.today {
+  color: white;
+  background: url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
+}
+/* line 326, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr td.event {
+  color: white;
+  background: url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
+}
+/* line 335, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr:first-child td {
+  padding-top: 10px;
+}
+/* line 339, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr:first-child td.today {
+  color: white;
+  background: url(../img/calendar-today.png) no-repeat scroll 10px 18px transparent;
+}
+/* line 345, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr:first-child td.event {
+  color: white;
+  background: url(../img/calendar-event.png) no-repeat scroll 10px 18px transparent;
+}
+/* line 355, ../sass/style.scss */
+main#home .content .right .clndr table.clndr-table tbody tr:last-child td {
+  padding-bottom: 10px;
+}
+/* line 364, ../sass/style.scss */
+main#home .content .right .clndr .my-cal {
+  text-align: left;
+  display: block;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin: 10px 0 15px;
+}
+/* line 371, ../sass/style.scss */
+main#home .content .right .clndr .my-cal a {
+  display: inline-block;
+  font-family: "citroenregular";
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 380, ../sass/style.scss */
+main#home .content .right .clndr .my-cal a:before {
+  content: url("../img/calendar-link-my-cal.png");
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  margin-right: 20px;
+  position: relative;
+  top: 2px;
+}
+/* line 393, ../sass/style.scss */
+main#home .content .right .clndr .clndr-today-button {
+  font-size: 13px;
+  font-family: Arial;
+  color: #797979;
+  text-align: left;
+  cursor: pointer;
+}
+/* line 401, ../sass/style.scss */
+main#home .content .right .clndr .clndr-today-button:before {
+  content: url("../img/calendar-today-btn.png");
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
 }
