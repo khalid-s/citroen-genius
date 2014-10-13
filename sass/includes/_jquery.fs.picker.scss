@@ -19,7 +19,6 @@
 .picker {
   cursor: pointer;
   margin: 0;
-  overflow: visible;
   float: right;
   margin-right: -20px;
 }
@@ -36,12 +35,13 @@
           user-select: none;
 }
 .picker .picker-handle {
-  border: 1px solid #d0d0d0;
+  background: #ffffff url(../img/jquery.fs.picker-icon.png) no-repeat center;
   display: block;
   float: left;
-  height: 11px;
   margin: 0 5px 0 0;
-  width: 11px;
+  width: 18px;
+  height: 16px;
+  overflow: visible;
 }
 .no-touch .picker:hover .picker-label {
   color: #555;
@@ -89,8 +89,11 @@
   margin: 0;
   width: 100%;
 }
-.picker.picker-checkbox.checked .picker-flag {
+.picker.picker-checkbox .picker-flag {
   background: #ffffff url(../img/jquery.fs.picker-icon.png) no-repeat center;
+}
+.picker.picker-checkbox.checked .picker-flag {
+  background: #ffffff url(../img/jquery.fs.picker-icon-active.png) no-repeat center;
 }
 .picker.picker-toggle {
   padding: 20px 0 0;

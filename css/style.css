@@ -2199,12 +2199,11 @@ yx-axis
 .picker {
   cursor: pointer;
   margin: 0;
-  overflow: visible;
   float: right;
   margin-right: -20px;
 }
 
-/* line 26, ../sass/includes/_jquery.fs.picker.scss */
+/* line 25, ../sass/includes/_jquery.fs.picker.scss */
 .picker .picker-label {
   color: #888;
   cursor: pointer;
@@ -2218,14 +2217,15 @@ yx-axis
   user-select: none;
 }
 
-/* line 38, ../sass/includes/_jquery.fs.picker.scss */
+/* line 37, ../sass/includes/_jquery.fs.picker.scss */
 .picker .picker-handle {
-  border: 1px solid #d0d0d0;
+  background: #ffffff url(../img/jquery.fs.picker-icon.png) no-repeat center;
   display: block;
   float: left;
-  height: 11px;
   margin: 0 5px 0 0;
-  width: 11px;
+  width: 18px;
+  height: 16px;
+  overflow: visible;
 }
 
 /* line 46, ../sass/includes/_jquery.fs.picker.scss */
@@ -2258,17 +2258,22 @@ yx-axis
 }
 
 /* line 92, ../sass/includes/_jquery.fs.picker.scss */
-.picker.picker-checkbox.checked .picker-flag {
+.picker.picker-checkbox .picker-flag {
   background: #ffffff url(../img/jquery.fs.picker-icon.png) no-repeat center;
 }
 
 /* line 95, ../sass/includes/_jquery.fs.picker.scss */
+.picker.picker-checkbox.checked .picker-flag {
+  background: #ffffff url(../img/jquery.fs.picker-icon-active.png) no-repeat center;
+}
+
+/* line 98, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle {
   padding: 20px 0 0;
   position: relative;
 }
 
-/* line 99, ../sass/includes/_jquery.fs.picker.scss */
+/* line 102, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle .picker-toggle-label {
   color: #999;
   font-size: 12px;
@@ -2277,30 +2282,30 @@ yx-axis
   top: 0;
 }
 
-/* line 106, ../sass/includes/_jquery.fs.picker.scss */
+/* line 109, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle .picker-toggle-label.on {
   left: 0;
 }
 
-/* line 109, ../sass/includes/_jquery.fs.picker.scss */
+/* line 112, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle .picker-toggle-label.off {
   color: #333;
   right: 0;
 }
 
-/* line 113, ../sass/includes/_jquery.fs.picker.scss */
+/* line 116, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle .picker-label {
   display: none;
 }
 
-/* line 116, ../sass/includes/_jquery.fs.picker.scss */
+/* line 119, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle .picker-handle {
   height: 20px;
   position: relative;
   width: 100%;
 }
 
-/* line 122, ../sass/includes/_jquery.fs.picker.scss */
+/* line 125, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle .picker-flag {
   background: #666;
   display: block;
@@ -2314,40 +2319,40 @@ yx-axis
   transition: left 0.1s linear;
 }
 
-/* line 135, ../sass/includes/_jquery.fs.picker.scss */
+/* line 138, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle.checked .picker-toggle-label.on {
   color: #333;
 }
 
-/* line 138, ../sass/includes/_jquery.fs.picker.scss */
+/* line 141, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle.checked .picker-toggle-label.off {
   color: #999;
 }
 
-/* line 141, ../sass/includes/_jquery.fs.picker.scss */
+/* line 144, ../sass/includes/_jquery.fs.picker.scss */
 .picker.picker-toggle.checked .picker-flag {
   background: #666;
   left: 0;
 }
 
-/* line 145, ../sass/includes/_jquery.fs.picker.scss */
+/* line 148, ../sass/includes/_jquery.fs.picker.scss */
 .picker.disabled {
   cursor: default;
   opacity: 0.5;
 }
 
-/* line 149, ../sass/includes/_jquery.fs.picker.scss */
+/* line 152, ../sass/includes/_jquery.fs.picker.scss */
 .picker.disabled .picker-label,
 .picker.disabled .picker-handle {
   cursor: default;
 }
 
-/* line 153, ../sass/includes/_jquery.fs.picker.scss */
+/* line 156, ../sass/includes/_jquery.fs.picker.scss */
 .no-touch .picker.disabled:hover .picker-label {
   color: #888;
 }
 
-/* line 156, ../sass/includes/_jquery.fs.picker.scss */
+/* line 159, ../sass/includes/_jquery.fs.picker.scss */
 .no-touch .picker.disabled:hover .picker-handle {
   border-color: #ccc;
 }
@@ -2950,30 +2955,37 @@ main#home .content .left .scrollable .element {
   position: relative;
 }
 /* line 178, ../sass/style.scss */
-main#home .content .left .scrollable .element img {
+main#home .content .left .scrollable .element .elmt-img {
   float: left;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
 }
-/* line 183, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
+main#home .content .left .scrollable .element .elmt-img img {
+  display: inline-block;
+  width: auto;
+}
+/* line 193, ../sass/style.scss */
 main#home .content .left .scrollable .element span {
   display: inline-block;
-  width: 415px;
-  float: right;
+  float: left;
 }
-/* line 190, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 main#home .content .left .scrollable .element input[type=checkbox] {
   float: right;
   margin-right: 25px;
   position: relative;
 }
-/* line 198, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 main#home .content .left .scrollable .section {
   margin-top: 30px;
 }
-/* line 202, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 main#home .content .left .scrollable .section:first-child {
   margin-top: 0px;
 }
-/* line 208, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 main#home .content .left .scrollable a {
   background: transparent;
   padding: 7px 0;
@@ -2989,33 +3001,33 @@ main#home .content .left .scrollable a {
   text-align: center;
   margin-top: 14px;
 }
-/* line 222, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 main#home .content .left .scrollable a span {
   display: inline-block;
   margin-right: 5px;
   font-family: Arial;
 }
-/* line 229, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 main#home .content .left .scrollable a:first-child {
   margin-right: 0;
 }
-/* line 234, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 main#home .content .left .scrollable a.active {
   background: #184254;
   color: white;
 }
-/* line 243, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 main#home .content .right {
   float: left;
 }
-/* line 247, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 main#home .content .right .clndr {
   width: 372px;
   text-align: center;
   margin-left: 40px;
   margin-top: 50px;
 }
-/* line 253, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls {
   font-family: "citroenregular";
   font-size: 22px;
@@ -3025,36 +3037,36 @@ main#home .content .right .clndr .clndr-controls {
   position: relative;
   padding: 14px 0;
 }
-/* line 263, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .month {
   width: 304px;
   text-align: center;
   display: inline-block;
 }
-/* line 269, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button {
   display: inline-block;
 }
-/* line 272, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button span {
   display: inline-block;
 }
-/* line 279, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table {
   width: 100%;
 }
-/* line 283, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead {
   font-family: "citroenregular";
   font-size: 14px;
   color: white;
 }
-/* line 290, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead tr td {
   padding: 20px 0;
   background: #a58899;
 }
-/* line 297, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody {
   box-sizing: border-box;
   border: 1px solid #d7d7d7;
@@ -3064,45 +3076,45 @@ main#home .content .right .clndr table.clndr-table tbody {
   color: #4b4a4d;
   padding: 30px;
 }
-/* line 309, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td {
   width: 51px;
   height: 52px;
   cursor: pointer;
 }
-/* line 315, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.adjacent-month {
   color: rgba(180, 181, 178, 0.5);
 }
-/* line 320, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 326, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 335, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td {
   padding-top: 10px;
 }
-/* line 339, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 345, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 355, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:last-child td {
   padding-bottom: 10px;
 }
-/* line 364, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 main#home .content .right .clndr .my-cal {
   text-align: left;
   display: block;
@@ -3112,7 +3124,7 @@ main#home .content .right .clndr .my-cal {
   padding: 8px 10px;
   margin: 10px 0 15px;
 }
-/* line 371, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a {
   display: inline-block;
   font-family: "citroenregular";
@@ -3121,7 +3133,7 @@ main#home .content .right .clndr .my-cal a {
   height: 100%;
   position: relative;
 }
-/* line 380, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a:before {
   content: url("../img/calendar-link-my-cal.png");
   display: inline-block;
@@ -3131,7 +3143,7 @@ main#home .content .right .clndr .my-cal a:before {
   position: relative;
   top: 2px;
 }
-/* line 393, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button {
   font-size: 13px;
   font-family: Arial;
@@ -3139,7 +3151,7 @@ main#home .content .right .clndr .clndr-today-button {
   text-align: left;
   cursor: pointer;
 }
-/* line 401, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button:before {
   content: url("../img/calendar-today-btn.png");
   width: 14px;

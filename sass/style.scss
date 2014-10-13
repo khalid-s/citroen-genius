@@ -175,16 +175,25 @@ main#home
                     padding: 21px 0;
                     position: relative;
 
-                    img
+                    .elmt-img
                     {
                         float: left;
+                        width: 50px;
+                        display: inline-block;
+                        text-align: center;
+
+                        img
+                        {
+                            display: inline-block;
+                            width: auto;
+                        }
                     }
+
 
                     span
                     {
                         display: inline-block;
-                        width: 415px;
-                        float: right;
+                        float: left;
                     }
 
                     input[type=checkbox]
