@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
 // Toggle the account's options 
-    $( "#accnt" ).click(function() {
+    $( "#accnt" ).hover(function() {
         $( ".accnt-option" ).stop().toggle(150);
     });
-// ------------ End -----------------------
+// ------------ End toggle accounts -----------------------
 
 // Move back up the page button
     var offset = 220;
@@ -31,16 +31,26 @@ jQuery(document).ready(function() {
         dots: true,
         fluid: false
     });
-// --------------- End move up page -----------------
+// --------------- End slider -----------------
 
 // nav icons hover and active. Rename the src by adding -active to the png
-        $("nav ul li")
-            .mouseover(function() { 
-                var src = $(this).find('img').attr("src").replace(".png", "-active.png");
-                $(this).find('img').attr("src", src);
-            }).stop()
-            .mouseout(function() {
-                var src = $(this).find('img').attr("src").replace("-active.png", ".png");
-                $(this).find('img').attr("src", src);
-            }).stop();
+    $("nav > ul > li")
+        .mouseover(function() { 
+            var src = $('img', this).attr("src").replace(".png", "-active.png");
+            $('img', this).attr("src", src);
+        }).stop()
+        .mouseout(function() {
+            var src = $('img', this).attr("src").replace("-active.png", ".png");
+            $('img', this).attr("src", src);
+        }).stop();
+// --------------- End nav icons hover -----------------
+
+// nav sub menus
+    $("nav ul li")
+        .mouseover(function(){
+            $('ul', this).addClass("active");
+        }).stop().mouseout(function(){
+            $('ul', this).removeClass('active');
+        }).stop();
+
 });

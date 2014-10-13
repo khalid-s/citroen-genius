@@ -10,11 +10,17 @@
 /********************************* FONTS *************************************************/
 
 @include font-face("citroenlight", font-files("citroen_light-webfont.eot", "citroen_light-webfont.woff", "citroen_light-webfont.ttf", "citroen_light-webfont.svg" ));
+
 @include font-face("citroenlight_italic", font-files("citroen_light_italic-webfont.eot", "citroen_light_italic-webfont.woff", "citroen_light_italic-webfont.ttf", "citroen_light_italic-webfont.svg" ));
+
 @include font-face("citroenbold_italic", font-files("citroen_bold_italic-webfont.eot", "citroen_bold_italic-webfont.woff", "citroen_bold_italic-webfont.ttf", "citroen_bold_italic-webfont.svg" ));
+
 @include font-face("citroenbold", font-files("citroen_bold-webfont.eot", "citroen_bold-webfont.woff", "citroen_bold-webfont.ttf", "citroen_bold-webfont.svg" ));
+
 @include font-face("citroenitalic", font-files("citroen_italic-webfont.eot", "citroen_italic-webfont.woff", "citroen_italic-webfont.ttf", "citroen_italic-webfont.svg" ));
+
 @include font-face("citroenregular", font-files("citroen_regular-webfont.eot", "citroen_regular-webfont.woff", "citroen_regular-webfont.ttf", "citroen_regular-webfont.svg" ));
+
 
 
 /*********************************End  FONTS *************************************************/
@@ -50,7 +56,7 @@ a
 
 }
 
-header, div,nav,ul,li,footer
+header, div,nav,ul,li,footer,h1,h2,h3,h4,h5,h6,p
 {
     margin:0;
     padding:0;
@@ -58,6 +64,25 @@ header, div,nav,ul,li,footer
 li
 {
     list-style: none;
+}
+
+
+h2
+{
+    color: $second_color;
+    position: relative;
+    font-family: "citroenbold";
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 5px;
+    &:before
+    {
+        content: url('../img/h3-bg-purple.png');
+        position: absolute;
+        top:10px;
+        left: -2px;
+    }
 }
 
 h3
@@ -85,7 +110,7 @@ h3
     #accnt
     {
         float: right;
-        background:rgba(0, 0, 0, 0.3);
+        background: #002d3d;
         min-height: 32px;
         width: 190px;
         position: relative;
@@ -119,22 +144,27 @@ h3
             ul
             {
                 margin:0;
-                padding: 0;
-                background:$first-color - 30;
+                padding: 9px 0;
+                background:#001f2f;
 
                 li
                 {
                     margin:0;
                     padding:0;
                     line-height: 22px;
+                    display: inline-block;
+                    width: 100%;
+                    // background:$first-color;
 
                     i.my-accnt
                     {
+                        margin: 6px 5px 0px 15px;
                         background:url(../img/my-accnt.png) no-repeat;
                     }
 
                     i.disconnect
                     {
+                        margin: 6px 5px 0px 15px;
                         background:url(../img/disconnect.png) no-repeat;
                     }
                 }
@@ -173,43 +203,46 @@ header
     margin-top: 10px;
     .wrapper
     {
-        max-width: 940px;
+        // max-width: 940px;
         div.logo
         {
             float: left;
+            margin-left: 25px;
         }
 
         nav
         {
-            float: left;
-            margin: 20px 0px 0 80px;
+            // float: left;
+            // margin: 20px 0 0 0;
             font-family: "citroenlight";
             font-size: 20px;
             text-transform: uppercase;
+            text-align: center;
+            padding-top: 22px;
 
             ul
             {
                 li
                 {
                     display: inline-block;
-                    padding: 0 21px;
+                    margin: 0 21px;
                     position: relative;
-                    height: 56px;
+                    height: 64px;
                     text-align: center;
                     cursor: pointer;
 
-                    &:first-child
-                    {
-                        padding-left: 0px;
-                    }
-                    &:last-child
-                    {
-                        padding-right: 0;
-                    }
-                    img
-                    {
+                    // &:first-child
+                    // {
+                    //     padding-left: 0px;
+                    // }
+                    // &:last-child
+                    // {
+                    //     padding-right: 0;
+                    // }
 
-                        position: inline-block;
+                    div.image
+                    {
+                        height: 25px;
                     }
                     span
                     {
@@ -217,11 +250,64 @@ header
                         margin-top: 5px;
                     }
 
-                    
+                    ul
+                    {
+                        display: none;
+                    }
+                    ul.active
+                    {
+                        display: block;
+                        position: absolute;
+                        float: left;
+                        top:64px;
+                        background:white;
+                        @include box-shadow(#e6e6e6 3px 3px 6px);
+                        z-index: 2000;
+                        font-size: 15px;
+                        padding: 13px 28px;
 
+                        li
+                        {
+                            text-align: left;
+                            display: inline-block;
+                            margin:0;
+                            padding: 5px 0;
+                            line-height: 20px;
+                            height: auto;
+                            width: 334px;
+                            color:$first-color;
+
+                            &:hover
+                            {
+                                color: $first_color_hover;
+                            }
+
+                            &:last-child
+                            {
+                                border-bottom: none;
+                            }
+                        }
+                    }
                     &:hover, &:active
                     {
                         color: $first_color_hover;
+
+                        .hover-border
+                        {
+                            display: inline-block;
+                            width: 100%;
+                            height: 3px;
+                            background:$first_color_hover;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+
+                        // ul
+                        // {
+                        //     display: block;
+                        //     position: absolute;
+                        // }
                     }
                 }
             }
@@ -271,10 +357,11 @@ footer
     background: $footer_bg;
     padding-top: 42px;
     text-transform: uppercase;
+    margin-top: 10px;
 
     .wrapper
     {
-        width: 915px;
+        width: 922px;
         position: relative;
 
         h3
@@ -300,16 +387,26 @@ footer
                 font-size: 17px;
                 list-style: none;
                 color:#302b28;
-                width: 420px;
-                line-height: 17px;
-                // list-style-image: url(../img/footer-li.png);
+                width: 400px;
                 border-bottom: 1px solid #f0f0f0;
-                padding: 19px 0 19px 15px;
 
-                &:before
+                a
                 {
-                    content: url(../img/footer-li.png);
-                    margin-right: 20px;
+                    padding: 19px 0 19px 15px;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+
+                    &:before
+                    {
+                        content: url(../img/footer-li.png);
+                        margin-right: 20px;
+                    }
+
+                    &:hover
+                    {
+                        background:#ececec;
+                    }
                 }
             }
         }
@@ -333,7 +430,11 @@ footer
         margin-top: 24px;
         text-transform: initial;
         @include border-radius(3px);
-
+        
+        &:hover, &:active
+        {
+            background:$first-color - 50;
+        }
     }
 
     #sub-footer
@@ -349,24 +450,45 @@ footer
             {
                 li
                 {
-                    font-family: arial;
-                    font-size: 11px;
-                    line-height: 11px;
-                    color: #ababab;
-                    display: inline-block;
-                    border:none;
-                    margin:0;
-                    padding:0;
-                    list-style: none;
-                    margin-top: 14px;
-                    width: auto;
-                    width: initial;
-                    text-transform: initial;
+                        border: none;
+                        display: inline-block;
+                        width: auto;
+                    a
+                    {
+                        font-family: arial;
+                        font-size: 11px;
+                        line-height: 11px;
+                        color: #ababab;
+                        display: inline-block;
+                        border:none;
+                        margin:0;
+                        padding:0;
+                        list-style: none;
+                        margin-top: 14px;
+                        width: auto;
+                        width: initial;
+                        text-transform: initial;
+                        &:before
+                        {
+                            content:"";
+                            margin:0;
+                        }
+
+                        &:first-child
+                        {
+                            &:before
+                            {
+                                content:"";
+                                margin:0;
+                            }
+                        }
+                    }
 
                     &:before
                     {
                         content:"-";
                         margin:0 4px 0 0px;
+                        color: #ababab;
                     }
 
                     &:first-child
@@ -389,8 +511,8 @@ footer
     width: 65px;
     height: 65px;
     background:url(../img/up-btn.png) no-repeat;
-    right: -165px;
-    bottom: 50px;
+    right: -174px;
+    bottom: 0;
     cursor: pointer;
     display: none;
 }

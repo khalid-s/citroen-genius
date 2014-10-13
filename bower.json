@@ -1,0 +1,21 @@
+{
+  "name": "psa",
+  "version": "0.0.0",
+  "homepage": "https://github.com/khalid-bd/citroen-genius",
+  "authors": [
+    "Khalid Sookia"
+  ],
+  "license": "Business Decision",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "unslider": "~1.0.0"
+  }
+}
