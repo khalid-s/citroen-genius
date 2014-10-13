@@ -58,12 +58,19 @@ jQuery(document).ready(function() {
 
 // styled scroll bar
     $("#home .content .left .scrollable form").mCustomScrollbar({
-        theme:"minimal-dark",
-        alwaysShowScrollbar : 1
+        theme:"minimal-dark"
     }).removeClass('mCS-autoHide');
     
 // --------------- End styled scroll bar -----------------
 
+// checkboxes
+    $("input[type=checkbox]").picker();
+
+    $(window).one("pronto.load", function() {
+        $("input[type=checkbox]").picker("destroy");
+    });
+
+// --------------- End checkboxes -----------------
 // calendar on home page
 
     var calendars = {};
