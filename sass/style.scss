@@ -106,7 +106,7 @@ main#home
 
         .left
         {
-            width: 508px;
+            width: 525px;
             float: left;
             .left-content
             {
@@ -180,6 +180,12 @@ main#home
                         font-size: 15px;
                         text-decoration: underline;
 
+                        &:hover
+                        {
+                            color: $second_color_hover;
+                            // font-weight: 600;
+                        }
+
                         // @include border-radius(4px);
                     }
                 }
@@ -191,7 +197,7 @@ main#home
 
                 form
                 {
-                    height: 311px;
+                    height: 313px;
                     overflow-y: scroll;
                 }
                 h4
@@ -201,6 +207,7 @@ main#home
                     font-size: 14px;
                     color:$second_color;
                     font-weight: 200;
+                    margin-left: 20px;
                 }
 
                 .element
@@ -209,8 +216,10 @@ main#home
                     font-size: 13px;
                     border-bottom: 1px solid #f2f2f2;
                     line-height: 19px;
-                    padding: 18px 0;
+                    padding: 19px 0;
                     position: relative;
+                    width: 466px;
+                    margin-left: 15px;
 
                     .elmt-img
                     {
@@ -236,7 +245,7 @@ main#home
                     input[type=checkbox]
                     {
                         float: right;
-                        margin-right: 25px;
+                        // margin-right: 25px;
                         position: relative;
                     }
                 }
@@ -264,7 +273,9 @@ main#home
                 margin-right: 20px;
                 width: 152px;
                 text-align: center;
-                margin-top: 14px;
+                margin-top: 10px;
+                background:$second_color;
+                color: white;
 
                 span
                 {
@@ -278,10 +289,9 @@ main#home
                     margin-right: 0;
                 }
 
-                &.active
+                &:hover
                 {
-                    background:$second_color;
-                    color: white;
+                    background:$second_color_hover;
                 }
             }
         }
@@ -294,7 +304,7 @@ main#home
             {
                 width: 372px;
                 text-align: center;
-                margin-left: 40px;
+                margin-left: 23px;
                 margin-top: 25px;
                 .clndr-controls
                 {
@@ -363,16 +373,25 @@ main#home
                                     color: rgba(180,181,178, 0.5);
                                 }
 
-                                &.today
-                                {
-                                    color: white;
-                                    background:url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
-                                }
-
                                 &.event
                                 {
                                     color: white;
                                     background:url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
+
+                                    &.past
+                                    {
+                                        background:url(../img/calendar-past-event.png) no-repeat scroll 10px 8px transparent;
+                                    }
+
+                                    &.adjacent-month
+                                    {
+                                        background:url(../img/calendar-event-adjacent-month.png) no-repeat scroll 10px 8px transparent;
+                                    }
+                                }
+                                &.today
+                                {
+                                    color: white;
+                                    background:url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
                                 }
                             }
 
@@ -392,7 +411,13 @@ main#home
                                     {
                                         color: white;
                                         background:url(../img/calendar-event.png) no-repeat scroll 10px 18px transparent;
+                                        
+                                        &.adjacent-month
+                                        {
+                                            background:url(../img/calendar-event-adjacent-month.png) no-repeat scroll 10px 18px transparent;
+                                        }
                                     }
+
                                 }
                             }
 
@@ -415,6 +440,11 @@ main#home
                     padding: 8px 10px;
                     margin: 10px 0 15px;
                     background:$second_color;
+
+                    &:hover
+                    {
+                        background:$second_color_hover;
+                    }
                     a
                     {
                         display: inline-block;
