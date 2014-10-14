@@ -103,18 +103,6 @@
                         </div>
                         <span>piloter</span>
 
-
-
-                       <!--  <ul>
-                            <li><a href="#">Exposition véhicules - Hall</a></li>
-                            <li><a href="#">Exposition véhicules - Extérieur et parc essais</a></li>
-                            <li><a href="#">Exposition véhicules - Aire de livraison</a></li>
-                            <li><a href="#">Hall - PLV</a></li>
-                            <li><a href="#">Hall- Outils (Malle, Config, bornes prix…)</a></li>
-                            <li><a href="#">Evénements (PO, Lancements produits…)</a></li>
-                            <li><a href="#">Communication locale (Pub, MD, CRM Manager)Communication locale (Pub, MD, CRM Manager)</a></li>
-                        </ul> -->
-
                         <!-- Hover border effect -->
                         <span class="hover-border"></span>
                     </li>
@@ -198,28 +186,22 @@
                             <h4>événements</h4>
 
                             <div class="element">
-                                <img src="img/scrollable-first.png" alt="">
-                                <div class="checkbox">
-                                    <input type="checkbox" name="first" id="checkboxInput">
-                                </div>
+                                <div class="elmt-img"><img src="img/scrollable-first.png" alt=""></div>
+                                
                                 <span for="first">PLV Installer dans le showroom</span>
                                 <div class="clear"></div>
                             </div>
 
                             <div class="element">
-                                <img src="img/scrollable-second.png" alt="">
-                                <div class="checkbox">
-                                    <input type="checkbox" name="second" id="checkboxInput">
-                                </div>
+                                <div class="elmt-img"><img src="img/scrollable-second.png" alt=""></div>
+
                                 <span for="second">Présenter la C3 Brésil </span>
                                 <div class="clear"></div>
                             </div>
 
                             <div class="element">
-                                <img src="img/scrollable-third.png" alt="">
-                                <div class="checkbox">
-                                    <input type="checkbox" name="third" id="checkboxInput">
-                                </div>
+                                <div class="elmt-img"><img src="img/scrollable-third.png" alt=""></div>
+
                                 <span for="third">Livrer la C3 Brésil </span>
                                 <div class="clear"></div>
                             </div>
@@ -229,28 +211,31 @@
                             <h4>taches à réaliser</h4>
                             
                             <div class="element">
-                                <img src="img/scrollable-fourth.png" alt="">
-                                <div class="checkbox">
-                                    <input type="checkbox" name="fourth" id="checkboxInput">
-                                </div>
+                                <div class="elmt-img"><img src="img/scrollable-fourth.png" alt=""></div>
+                                
+                                <input checked="checked" class="checkbox" id="checkbox_4" name="checkbox_4" type="checkbox" value="One">
+                                <label for="checkbox_4"></label>
+
                                 <span for="fourth">PLV Installer dans le showroom</span>
                                 <div class="clear"></div>
                             </div>
                             
                             <div class="element">
-                                <img src="img/scrollable-fourth.png" alt="">
-                                <div class="checkbox">
-                                    <input type="checkbox" name="fourth" id="checkboxInput">
-                                </div>
+                                <div class="elmt-img"><img src="img/scrollable-fourth.png" alt=""></div>
+                                
+                                <input class="checkbox" id="checkbox_5" name="checkbox_5" type="checkbox" value="One">
+                                <label for="checkbox_5"></label>
+
                                 <span for="fourth">PLV Installer dans le showroom</span>
                                 <div class="clear"></div>
                             </div>
                             
                             <div class="element">
-                                <img src="img/scrollable-fourth.png" alt="">
-                                <div class="checkbox">
-                                    <input type="checkbox" name="fourth" id="checkboxInput">
-                                </div>
+                                <div class="elmt-img"><img src="img/scrollable-fourth.png" alt=""></div>
+                                
+                                <input class="checkbox" id="checkbox_6" name="checkbox_6" type="checkbox" value="One">
+                                <label for="checkbox_6"></label>
+
                                 <span for="fourth">PLV Installer dans le showroom</span>
                                 <div class="clear"></div>
                             </div>
@@ -264,6 +249,56 @@
 
 
             </div><!-- end .left -->
+
+            <div class="right">
+                <div class="cal">
+                    <script type="text/template" id="template-calendar">
+                        <div class="clndr-controls">
+                            <div class='clndr-control-button'>
+                                <span class='clndr-previous-button'><img src="img/calendar-previous.png" alt=""></span>
+                            </div>
+
+                            <div class='month'>
+                                <%= month %> <%= year %>
+                            </div>
+
+                            <div class='clndr-control-button rightalign'>   
+                                <span class='clndr-next-button'><img src="img/calendar-next.png" alt=""></span>
+                            </div>
+                        </div>
+
+                        <table class='clndr-table' border='0' cellspacing='0' cellpadding='0'>
+                            <thead>
+                                <tr class='header-days'>
+                                    <% for(var i = 0; i < daysOfTheWeek.length; i++) { %>
+                                        <td class='header-day'><%= daysOfTheWeek[i] %></td>
+                                    <% } %>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <% for(var i = 0; i < numberOfRows; i++){ %>
+                                    <tr>
+                                        <% for(var j = 0; j < 7; j++){ %>
+                                            <% var d = j + i * 7; %>
+                                            <td class='<%= days[d].classes %>'>
+                                                <div class='day-contents'>
+                                                    <%= days[d].day %>
+                                                </div>
+                                            </td>
+                                        <% } %>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+
+                        <div class="my-cal btn">
+                            <a href="#">Mon calendrier</a>
+                        </div>
+                        <div class="clndr-today-button">Aujourd''hui</div>
+                    </script>
+                </div>
+            </div>
             <div class="clear"></div>
         </div>
     </main>
@@ -319,6 +354,13 @@
 
     <!-- block js -->
     <script type="text/javascript" src="js/libs/unslider/src/unslider.js"></script>
+    <script type="text/javascript" src="js/libs/moment/moment.js"></script>
+    <script type="text/javascript" src="js/libs/underscore/underscore.js"></script>
+    <script type="text/javascript" src="js/libs/clndr/src/clndr.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/libs/Picker/jquery.fs.picker.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

@@ -108,49 +108,86 @@ main#home
         {
             width: 508px;
             float: left;
-
-            .selectionne
+            .left-content
             {
-                color: $second_color;
-                .date-select
+                border: 1px solid #d7d7d7;
+                margin-top: 25px;
+                @include border-radius(4px 0 0 0);
+                // padding-bottom: 4px;
+                .selectionne
                 {
-                    font-size: 14px;
-                    font-family: "citroenlight";
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    line-height: 21px;
-                    margin-top: 30px;
-                }
-                h2.date
-                {
-                    font-size: 46px;
-                    font-family: "citroenbold";
-                    line-height: 36px;
-                    float: left;
-
-                    &:before
-                    {
-                        top: 15px;
-                    }
-                }
-                a
-                {
-                    display: inline-block;
-                    float: right;
-                    background:transparent;
                     color: $second_color;
-                    padding: 5px 10px;
-                    border: 1px solid $second_color;
-                    font-family: "citroenregular";
-                    font-size: 15px;
+                    // margin-top: 25px;
 
-                    @include border-radius(4px);
+                    .date
+                    {
+                        border: 1px solid $second_color;
+                        width: auto;
+                        display: inline-block;
+                        position: relative;
+                        @include border-radius(4px);
+                        span
+                        {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .day
+                        {
+                            font-family: "citroenbold";
+                            font-size: 22px;
+                            line-height: 56px;
+                            height: 56px;
+                            width: 66px;
+                            text-align: center;
+                            display: inline-block;
+        
+                        }
+                        .month
+                        {
+                            font-family: "citroenregular";
+                            font-size: 22px;
+                            color: white;
+                            background:$second_color;
+                            display: inline-block;
+                            width: 244px;
+                            height: 58px;
+                            line-height: 58px;
+                            text-transform: uppercase;
+                            padding-left: 20px;
+                        }
+                        .year
+                        {
+                            display: inline-block;
+                            position: absolute;
+                            font-family: "citroenregular";
+                            color:white;
+                            font-size: 10px;
+                            top:23px;
+                            right: 3px;
+
+                            @include transform( rotate(-90deg) );
+                        }
+                    }
+                    a.agenda.today
+                    {
+                        display: inline-block;
+                        float: right;
+                        background:transparent;
+                        color: $second_color;
+                        margin: 25px 10px 0 0;
+                        border: none;
+                        font-family: "citroenregular";
+                        font-size: 15px;
+                        text-decoration: underline;
+
+                        // @include border-radius(4px);
+                    }
                 }
             }
 
             .scrollable
             {
-                margin-top: 46px;
+                margin-top: 20px;
 
                 form
                 {
@@ -172,7 +209,7 @@ main#home
                     font-size: 13px;
                     border-bottom: 1px solid #f2f2f2;
                     line-height: 19px;
-                    padding: 21px 0;
+                    padding: 18px 0;
                     position: relative;
 
                     .elmt-img
@@ -206,7 +243,7 @@ main#home
 
                 .section
                 {
-                    margin-top: 30px;
+                    margin-top: 35px;
 
                     &:first-child
                     {
@@ -214,37 +251,37 @@ main#home
                     }
                 }
 
-                a
+            }
+            a
+            {
+                background:transparent;
+                padding: 7px 0;
+                border: 1px solid $second_color;
+                font-family: "citroenregular";
+                font-size: 15px;
+                color: $second_color;
+                @include border-radius(4px);
+                margin-right: 20px;
+                width: 152px;
+                text-align: center;
+                margin-top: 14px;
+
+                span
                 {
-                    background:transparent;
-                    padding: 7px 0;
-                    border: 1px solid $first-color;
-                    font-family: "citroenregular";
-                    font-size: 15px;
-                    color: $first-color;
-                    @include border-radius(4px);
-                    margin-right: 20px;
-                    width: 152px;
-                    text-align: center;
-                    margin-top: 14px;
+                    display: inline-block;
+                    margin-right: 5px;
+                    font-family: Arial;
+                }
 
-                    span
-                    {
-                        display: inline-block;
-                        margin-right: 5px;
-                        font-family: Arial;
-                    }
+                &:first-child
+                {
+                    margin-right: 0;
+                }
 
-                    &:first-child
-                    {
-                        margin-right: 0;
-                    }
-
-                    &.active
-                    {
-                        background:$first-color;
-                        color: white;
-                    }
+                &.active
+                {
+                    background:$second_color;
+                    color: white;
                 }
             }
         }
@@ -258,7 +295,7 @@ main#home
                 width: 372px;
                 text-align: center;
                 margin-left: 40px;
-                margin-top: 50px;
+                margin-top: 25px;
                 .clndr-controls
                 {
                     font-family: "citroenregular";
@@ -377,6 +414,7 @@ main#home
                     @include border-radius(4px);
                     padding: 8px 10px;
                     margin: 10px 0 15px;
+                    background:$second_color;
                     a
                     {
                         display: inline-block;

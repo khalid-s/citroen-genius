@@ -2890,54 +2890,92 @@ main#home .content .left {
   width: 508px;
   float: left;
 }
-/* line 112, ../sass/style.scss */
-main#home .content .left .selectionne {
+/* line 111, ../sass/style.scss */
+main#home .content .left .left-content {
+  border: 1px solid #d7d7d7;
+  margin-top: 25px;
+  -moz-border-radius: 4px 0 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 0 0 0;
+}
+/* line 117, ../sass/style.scss */
+main#home .content .left .left-content .selectionne {
   color: #5b2645;
 }
-/* line 115, ../sass/style.scss */
-main#home .content .left .selectionne .date-select {
-  font-size: 14px;
-  font-family: "citroenlight";
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 21px;
-  margin-top: 30px;
-}
-/* line 124, ../sass/style.scss */
-main#home .content .left .selectionne h2.date {
-  font-size: 46px;
-  font-family: "citroenbold";
-  line-height: 36px;
-  float: left;
-}
-/* line 131, ../sass/style.scss */
-main#home .content .left .selectionne h2.date:before {
-  top: 15px;
-}
-/* line 136, ../sass/style.scss */
-main#home .content .left .selectionne a {
-  display: inline-block;
-  float: right;
-  background: transparent;
-  color: #5b2645;
-  padding: 5px 10px;
+/* line 122, ../sass/style.scss */
+main#home .content .left .left-content .selectionne .date {
   border: 1px solid #5b2645;
-  font-family: "citroenregular";
-  font-size: 15px;
+  width: auto;
+  display: inline-block;
+  position: relative;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 151, ../sass/style.scss */
-main#home .content .left .scrollable {
-  margin-top: 46px;
+/* line 129, ../sass/style.scss */
+main#home .content .left .left-content .selectionne .date span {
+  margin: 0;
+  padding: 0;
 }
-/* line 155, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
+main#home .content .left .left-content .selectionne .date .day {
+  font-family: "citroenbold";
+  font-size: 22px;
+  line-height: 56px;
+  height: 56px;
+  width: 66px;
+  text-align: center;
+  display: inline-block;
+}
+/* line 145, ../sass/style.scss */
+main#home .content .left .left-content .selectionne .date .month {
+  font-family: "citroenregular";
+  font-size: 22px;
+  color: white;
+  background: #5b2645;
+  display: inline-block;
+  width: 244px;
+  height: 58px;
+  line-height: 58px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+/* line 158, ../sass/style.scss */
+main#home .content .left .left-content .selectionne .date .year {
+  display: inline-block;
+  position: absolute;
+  font-family: "citroenregular";
+  color: white;
+  font-size: 10px;
+  top: 23px;
+  right: 3px;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* line 171, ../sass/style.scss */
+main#home .content .left .left-content .selectionne a.agenda.today {
+  display: inline-block;
+  float: right;
+  background: transparent;
+  color: #5b2645;
+  margin: 25px 10px 0 0;
+  border: none;
+  font-family: "citroenregular";
+  font-size: 15px;
+  text-decoration: underline;
+}
+/* line 188, ../sass/style.scss */
+main#home .content .left .scrollable {
+  margin-top: 20px;
+}
+/* line 192, ../sass/style.scss */
 main#home .content .left .scrollable form {
   height: 311px;
   overflow-y: scroll;
 }
-/* line 160, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 main#home .content .left .scrollable h4 {
   font-family: "citroenregular";
   text-transform: uppercase;
@@ -2945,54 +2983,54 @@ main#home .content .left .scrollable h4 {
   color: #5b2645;
   font-weight: 200;
 }
-/* line 169, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 main#home .content .left .scrollable .element {
   font-family: Arial;
   font-size: 13px;
   border-bottom: 1px solid #f2f2f2;
   line-height: 19px;
-  padding: 21px 0;
+  padding: 18px 0;
   position: relative;
 }
-/* line 178, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 main#home .content .left .scrollable .element .elmt-img {
   float: left;
   width: 50px;
   display: inline-block;
   text-align: center;
 }
-/* line 185, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 main#home .content .left .scrollable .element .elmt-img img {
   display: inline-block;
   width: auto;
 }
-/* line 193, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 main#home .content .left .scrollable .element span {
   display: inline-block;
   float: left;
 }
-/* line 199, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 main#home .content .left .scrollable .element input[type=checkbox] {
   float: right;
   margin-right: 25px;
   position: relative;
 }
-/* line 207, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 main#home .content .left .scrollable .section {
-  margin-top: 30px;
+  margin-top: 35px;
 }
-/* line 211, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 main#home .content .left .scrollable .section:first-child {
   margin-top: 0px;
 }
-/* line 217, ../sass/style.scss */
-main#home .content .left .scrollable a {
+/* line 255, ../sass/style.scss */
+main#home .content .left a {
   background: transparent;
   padding: 7px 0;
-  border: 1px solid #184254;
+  border: 1px solid #5b2645;
   font-family: "citroenregular";
   font-size: 15px;
-  color: #184254;
+  color: #5b2645;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -3001,33 +3039,33 @@ main#home .content .left .scrollable a {
   text-align: center;
   margin-top: 14px;
 }
-/* line 231, ../sass/style.scss */
-main#home .content .left .scrollable a span {
+/* line 269, ../sass/style.scss */
+main#home .content .left a span {
   display: inline-block;
   margin-right: 5px;
   font-family: Arial;
 }
-/* line 238, ../sass/style.scss */
-main#home .content .left .scrollable a:first-child {
+/* line 276, ../sass/style.scss */
+main#home .content .left a:first-child {
   margin-right: 0;
 }
-/* line 243, ../sass/style.scss */
-main#home .content .left .scrollable a.active {
-  background: #184254;
+/* line 281, ../sass/style.scss */
+main#home .content .left a.active {
+  background: #5b2645;
   color: white;
 }
-/* line 252, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 main#home .content .right {
   float: left;
 }
-/* line 256, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 main#home .content .right .clndr {
   width: 372px;
   text-align: center;
   margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
-/* line 262, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls {
   font-family: "citroenregular";
   font-size: 22px;
@@ -3037,36 +3075,36 @@ main#home .content .right .clndr .clndr-controls {
   position: relative;
   padding: 14px 0;
 }
-/* line 272, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .month {
   width: 304px;
   text-align: center;
   display: inline-block;
 }
-/* line 278, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button {
   display: inline-block;
 }
-/* line 281, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button span {
   display: inline-block;
 }
-/* line 288, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table {
   width: 100%;
 }
-/* line 292, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead {
   font-family: "citroenregular";
   font-size: 14px;
   color: white;
 }
-/* line 299, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead tr td {
   padding: 20px 0;
   background: #a58899;
 }
-/* line 306, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody {
   box-sizing: border-box;
   border: 1px solid #d7d7d7;
@@ -3076,45 +3114,45 @@ main#home .content .right .clndr table.clndr-table tbody {
   color: #4b4a4d;
   padding: 30px;
 }
-/* line 318, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td {
   width: 51px;
   height: 52px;
   cursor: pointer;
 }
-/* line 324, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.adjacent-month {
   color: rgba(180, 181, 178, 0.5);
 }
-/* line 329, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 335, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 344, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td {
   padding-top: 10px;
 }
-/* line 348, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 354, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 364, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:last-child td {
   padding-bottom: 10px;
 }
-/* line 373, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 main#home .content .right .clndr .my-cal {
   text-align: left;
   display: block;
@@ -3123,8 +3161,9 @@ main#home .content .right .clndr .my-cal {
   border-radius: 4px;
   padding: 8px 10px;
   margin: 10px 0 15px;
+  background: #5b2645;
 }
-/* line 380, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a {
   display: inline-block;
   font-family: "citroenregular";
@@ -3133,7 +3172,7 @@ main#home .content .right .clndr .my-cal a {
   height: 100%;
   position: relative;
 }
-/* line 389, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a:before {
   content: url("../img/calendar-link-my-cal.png");
   display: inline-block;
@@ -3143,7 +3182,7 @@ main#home .content .right .clndr .my-cal a:before {
   position: relative;
   top: 2px;
 }
-/* line 402, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button {
   font-size: 13px;
   font-family: Arial;
@@ -3151,7 +3190,7 @@ main#home .content .right .clndr .clndr-today-button {
   text-align: left;
   cursor: pointer;
 }
-/* line 410, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button:before {
   content: url("../img/calendar-today-btn.png");
   width: 14px;
