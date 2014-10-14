@@ -83,7 +83,7 @@ jQuery(document).ready(function() {
     var eventArray = [
         { startDate: thisMonth + '-17', endDate: thisMonth + '-17', title: 'Another Multi-Day Event' },
         { startDate: thisMonth + '-10', endDate: thisMonth + '-10', title: 'Another Multi-Day Event' },
-        { startDate: thisMonth + '-31', endDate: '2014-11-01', title: 'Another Multi-Day Event' },
+        { startDate: thisMonth + '-31', endDate: '2014-10-31', title: 'Another Multi-Day Event' },
         { startDate: '2015-03-01', endDate: '2015-03-01', title: 'Another Multi-Day Event' },
         { startDate: '2015-03-31', endDate: '2015-03-31', title: 'Another Multi-Day Event' }
     ];

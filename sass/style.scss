@@ -199,6 +199,8 @@ main#home
                 {
                     height: 313px;
                     overflow-y: scroll;
+                    width: 500px;
+                    margin: 0 5px 0 18px;
                 }
                 h4
                 {
@@ -207,7 +209,7 @@ main#home
                     font-size: 14px;
                     color:$second_color;
                     font-weight: 200;
-                    margin-left: 20px;
+                    // margin-left: 20px;
                 }
 
                 .element
@@ -218,8 +220,8 @@ main#home
                     line-height: 19px;
                     padding: 19px 0;
                     position: relative;
-                    width: 466px;
-                    margin-left: 15px;
+                    width: 473px;
+                    // margin-left: 15px;
 
                     .elmt-img
                     {
@@ -264,14 +266,14 @@ main#home
             a
             {
                 background:transparent;
-                padding: 7px 0;
+                padding: 7px 19px;
                 border: 1px solid $second_color;
                 font-family: "citroenregular";
                 font-size: 15px;
                 color: $second_color;
                 @include border-radius(4px);
                 margin-right: 20px;
-                width: 152px;
+                // width: 152px;
                 text-align: center;
                 margin-top: 10px;
                 background:$second_color;
@@ -290,6 +292,11 @@ main#home
                 }
 
                 &:hover
+                {
+                    background:$second_color_hover;
+                }
+
+                &.active
                 {
                     background:$second_color_hover;
                 }
