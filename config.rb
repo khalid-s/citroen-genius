@@ -8,9 +8,6 @@ require 'breakpoint'
 http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
-images_path = "img"
-http_images_path = ""
-http_images_dir = "../img"
 images_dir = "img"
 javascripts_dir = "js"
 output_style = :expanded

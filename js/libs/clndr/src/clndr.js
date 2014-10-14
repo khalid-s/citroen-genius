@@ -228,10 +228,12 @@
         this.eventsThisMonth = $(this.options.events).filter( function() {
 //          return this._clndrStartDateObject.format("YYYY-MM") <= currentMonth.format("YYYY-MM")
 //          || currentMonth.format("YYYY-MM") <= this._clndrEndDateObject.format("YYYY-MM");
-            if ( this._clndrStartDateObject.format("YYYY-MM") === currentMonth.format("YYYY-MM") || this._clndrEndDateObject.format("YYYY-MM") === currentMonth.format("YYYY-MM") ) {
+            if ( this._clndrStartDateObject.format("YYYY-MM") === currentMonth.format("YYYY-MM")
+                    || this._clndrEndDateObject.format("YYYY-MM") === currentMonth.format("YYYY-MM") ) {
                 return true;
             }
-            if ( this._clndrStartDateObject.format("YYYY-MM") <= currentMonth.format("YYYY-MM") && this._clndrEndDateObject.format("YYYY-MM") >= currentMonth.format("YYYY-MM") ) {
+            if ( this._clndrStartDateObject.format("YYYY-MM") <= currentMonth.format("YYYY-MM")
+                    && this._clndrEndDateObject.format("YYYY-MM") >= currentMonth.format("YYYY-MM") ) {
                 return true;
             }
 
@@ -244,10 +246,12 @@
           this.eventsLastMonth = $(this.options.events).filter( function() {
 //            return this._clndrStartDateObject.format("YYYY-MM") <= lastMonth.format("YYYY-MM")
 //          || lastMonth.format("YYYY-MM") <= this._clndrEndDateObject.format("YYYY-MM");
-            if ( this._clndrStartDateObject.format("YYYY-MM") === lastMonth.format("YYYY-MM") || this._clndrEndDateObject.format("YYYY-MM") === lastMonth.format("YYYY-MM") ) {
+            if ( this._clndrStartDateObject.format("YYYY-MM") === lastMonth.format("YYYY-MM")
+                    || this._clndrEndDateObject.format("YYYY-MM") === lastMonth.format("YYYY-MM") ) {
                 return true;
             }
-            if ( this._clndrStartDateObject.format("YYYY-MM") <= lastMonth.format("YYYY-MM") && this._clndrEndDateObject.format("YYYY-MM") >= lastMonth.format("YYYY-MM") ) {
+            if ( this._clndrStartDateObject.format("YYYY-MM") <= lastMonth.format("YYYY-MM")
+                    && this._clndrEndDateObject.format("YYYY-MM") >= lastMonth.format("YYYY-MM") ) {
                 return true;
             }
 
@@ -257,10 +261,12 @@
           this.eventsNextMonth = $(this.options.events).filter( function() {
 //            return this._clndrStartDateObject.format("YYYY-MM") <= nextMonth.format("YYYY-MM")
 //          || nextMonth.format("YYYY-MM") <= this._clndrEndDateObject.format("YYYY-MM");
-            if ( this._clndrStartDateObject.format("YYYY-MM") === nextMonth.format("YYYY-MM") || this._clndrEndDateObject.format("YYYY-MM") === nextMonth.format("YYYY-MM") ) {
+            if ( this._clndrStartDateObject.format("YYYY-MM") === nextMonth.format("YYYY-MM")
+                    || this._clndrEndDateObject.format("YYYY-MM") === nextMonth.format("YYYY-MM") ) {
                 return true;
             }
-            if ( this._clndrStartDateObject.format("YYYY-MM") <= nextMonth.format("YYYY-MM") && this._clndrEndDateObject.format("YYYY-MM") >= nextMonth.format("YYYY-MM") ) {
+            if ( this._clndrStartDateObject.format("YYYY-MM") <= nextMonth.format("YYYY-MM")
+                    && this._clndrEndDateObject.format("YYYY-MM") >= nextMonth.format("YYYY-MM") ) {
                 return true;
             }
 
@@ -544,7 +550,7 @@
       .on('click', '.'+this.options.targets.todayButton, { context: this }, this.todayAction)
       .on('click', '.'+this.options.targets.nextYearButton, { context: this }, this.nextYearAction)
       .on('click', '.'+this.options.targets.previousYearButton, { context: this }, this.previousYearAction);
-  };
+  }
 
   // If the user provided a click callback we'd like to give them something nice to work with.
   // buildTargetObject takes the DOM element that was clicked and returns an object with
@@ -592,7 +598,7 @@
     }
 
     return target;
-  };
+  }
 
   // the click handlers in bindEvents need a context, so these are wrappers
   // to the actual functions. Todo: better way to handle this?
@@ -751,7 +757,7 @@
     }
 
     return this;
-  };
+  }
 
   Clndr.prototype.back = function(options) {
     this.month.subtract(1, 'months');
@@ -768,7 +774,7 @@
     }
 
     return this;
-  };
+  }
 
   // alternate names for convenience
   Clndr.prototype.next = function(options) {
@@ -779,7 +785,7 @@
   Clndr.prototype.previous = function(options) {
     this.back(options);
     return this;
-  };
+  }
 
   Clndr.prototype.setMonth = function(newMonth, options) {
     // accepts 0 - 11 or a full/partial month name e.g. "Jan", "February", "Mar"
@@ -791,7 +797,7 @@
       }
     }
     return this;
-  };
+  }
 
   Clndr.prototype.nextYear = function(options) {
     this.month.add(1, 'year');
@@ -802,7 +808,7 @@
       }
     }
     return this;
-  };
+  }
 
   Clndr.prototype.previousYear = function(options) {
     this.month.subtract(1, 'year');
@@ -813,7 +819,7 @@
       }
     }
     return this;
-  };
+  }
 
   Clndr.prototype.setYear = function(newYear, options) {
     this.month.year(newYear);
@@ -824,7 +830,7 @@
       }
     }
     return this;
-  };
+  }
 
   Clndr.prototype.setEvents = function(events) {
     // go through each event and add a moment object
@@ -859,7 +865,7 @@
       events[i]._clndrDateObject = moment( events[i][self.options.dateParameter] );
     }
     return events;
-  };
+  }
 
   Clndr.prototype.addMultiDayMomentObjectsToEvents = function(events) {
     var self = this;
@@ -869,12 +875,12 @@
       events[i]._clndrEndDateObject = moment( events[i][self.options.multiDayEvents.endDate] );
     }
     return events;
-  };
+  }
 
   Clndr.prototype.calendarDay = function(options) {
     var defaults = { day: "", classes: this.options.targets.empty, events: [], date: null };
     return $.extend({}, defaults, options);
-  };
+  }
 
   $.fn.clndr = function(options) {
     if(this.length === 1) {
@@ -886,6 +892,6 @@
     } else if(this.length > 1) {
       throw new Error("CLNDR does not support multiple elements yet. Make sure your clndr selector returns only one element.");
     }
-  };
+  }
 
 }));

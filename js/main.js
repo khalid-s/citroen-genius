@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
     jQuery('.up-btn').click(function(event) {
         jQuery('html, body').animate({scrollTop: 0}, duration);
         return false;
-    });
+    })
 // --------------- End move up page -----------------
 
 // slider init and options
