@@ -106,7 +106,7 @@ main#home
 
         .left
         {
-            width: 508px;
+            width: 523px;
             float: left;
             .left-content
             {
@@ -180,7 +180,10 @@ main#home
                         font-size: 15px;
                         text-decoration: underline;
 
-                        // @include border-radius(4px);
+                        &:hover
+                        {
+                            color: $second_color_hover;
+                        }
                     }
                 }
             }
@@ -191,7 +194,7 @@ main#home
 
                 form
                 {
-                    height: 311px;
+                    height: 313px;
                     overflow-y: scroll;
                 }
                 h4
@@ -201,6 +204,7 @@ main#home
                     font-size: 14px;
                     color:$second_color;
                     font-weight: 200;
+                    padding-left: 20px;
                 }
 
                 .element
@@ -209,7 +213,7 @@ main#home
                     font-size: 13px;
                     border-bottom: 1px solid #f2f2f2;
                     line-height: 19px;
-                    padding: 18px 0;
+                    padding: 19px 0;
                     position: relative;
 
                     .elmt-img
@@ -218,6 +222,7 @@ main#home
                         width: 50px;
                         display: inline-block;
                         text-align: center;
+                        margin-left: 20px;
 
                         img
                         {
@@ -264,7 +269,7 @@ main#home
                 margin-right: 20px;
                 width: 152px;
                 text-align: center;
-                margin-top: 14px;
+                margin-top: 10px;
 
                 span
                 {
@@ -283,6 +288,10 @@ main#home
                     background:$second_color;
                     color: white;
                 }
+                &:hover
+                {
+                    background:$second_color_hover;
+                }
             }
         }
 
@@ -294,7 +303,7 @@ main#home
             {
                 width: 372px;
                 text-align: center;
-                margin-left: 40px;
+                margin-left: 23px;
                 margin-top: 25px;
                 .clndr-controls
                 {
