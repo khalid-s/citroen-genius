@@ -74,7 +74,7 @@ main#home
                 ol
                 {
                     position: absolute;
-                    bottom: -15px;
+                    bottom: -18px;
                     padding: 0;
                     left: 50%;
                     li
@@ -332,6 +332,7 @@ main#home
                     .clndr-control-button
                     {
                         display: inline-block;
+                        cursor: pointer;
                         span
                         {
                             display: inline-block;

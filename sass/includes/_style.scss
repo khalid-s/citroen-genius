@@ -109,92 +109,97 @@ h3
 {
     min-height: 32px;
     line-height: 12px;
-    #accnt
+
+    .wrapper
     {
-        float: right;
-        background: #002d3d;
-        min-height: 32px;
-        width: 190px;
-        position: relative;
-        cursor: pointer;
-
-        i
+        max-width: none;
+        #accnt
         {
-            display: inline-block;
-            margin: 5px 10px 0px;
-            width: 22px;
-            height: 19px;
-            background:url(../img/accnt-ico.png) no-repeat;
-            float: left;
-        }
-        span
-        {
-            display: inline-block;
-            line-height: 30px;
-            width: 148px;
             float: right;
-            // word-wrap:d
-        }
+            background: #002d3d;
+            min-height: 32px;
+            width: 190px;
+            position: relative;
+            cursor: pointer;
 
-        .accnt-option
-        {
-            position: absolute;
-            display: none;
-            margin-top: 2px;
-            background:red;
-
-            ul
+            i
             {
-                margin:0;
-                padding: 9px 0;
-                background:#001f2f;
+                display: inline-block;
+                margin: 5px 10px 0px;
+                width: 22px;
+                height: 19px;
+                background:url(../img/accnt-ico.png) no-repeat;
+                float: left;
+            }
+            span
+            {
+                display: inline-block;
+                line-height: 30px;
+                width: 148px;
+                float: right;
+                // word-wrap:d
+            }
 
-                li
+            .accnt-option
+            {
+                position: absolute;
+                display: none;
+                margin-top: 2px;
+                background:red;
+
+                ul
                 {
                     margin:0;
-                    padding:0;
-                    line-height: 22px;
-                    display: inline-block;
-                    width: 100%;
-                    // background:$first-color;
+                    padding: 9px 0;
+                    background:#001f2f;
 
-                    i.my-accnt
+                    li
                     {
-                        margin: 6px 5px 0px 15px;
-                        background:url(../img/my-accnt.png) no-repeat;
-                    }
+                        margin:0;
+                        padding:0;
+                        line-height: 22px;
+                        display: inline-block;
+                        width: 100%;
+                        // background:$first-color;
 
-                    i.disconnect
-                    {
-                        margin: 6px 5px 0px 15px;
-                        background:url(../img/disconnect.png) no-repeat;
+                        i.my-accnt
+                        {
+                            margin: 6px 5px 0px 15px;
+                            background:url(../img/my-accnt.png) no-repeat;
+                        }
+
+                        i.disconnect
+                        {
+                            margin: 6px 5px 0px 15px;
+                            background:url(../img/disconnect.png) no-repeat;
+                        }
                     }
                 }
             }
         }
-    }
 
 
-    background:$first-color;
-    color: white;
-    text-transform: uppercase;
-    font-family: "citroenlight";
-    font-size: 12px;
-    font-weight: 400;
-    ul
-    {
-        margin:0;
-        padding: 0;
-        li
+        background:$first-color;
+        color: white;
+        text-transform: uppercase;
+        font-family: "citroenlight";
+        font-size: 12px;
+        font-weight: 400;
+        ul
         {
-            list-style: none;
-            display: inline-block;
-            padding: 10px 0;
-            margin-left: 16px;
-
-            &:first-child
+            margin:0;
+            padding: 0;
+            li
             {
-                margin-left: 25px;
+                list-style: none;
+                display: inline-block;
+                padding: 10px 0;
+                margin-left: 16px;
+
+                &:first-child
+                {
+                    margin-left: 25px;
+                }
             }
         }
     }
@@ -205,11 +210,11 @@ header
     margin-top: 10px;
     .wrapper
     {
-        // max-width: 940px;
+        max-width: 920px;
         div.logo
         {
             float: left;
-            margin-left: 25px;
+            // margin-left: 25px;
         }
 
         nav

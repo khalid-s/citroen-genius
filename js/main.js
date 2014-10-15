@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
     jQuery('.up-btn').click(function(event) {
         jQuery('html, body').animate({scrollTop: 0}, duration);
         return false;
-    })
+    });
 // --------------- End move up page -----------------
 
 // slider init and options
@@ -58,7 +58,9 @@ jQuery(document).ready(function() {
 
 // styled scroll bar
     $("#home .content .left .scrollable form").mCustomScrollbar({
-        theme:"minimal-dark"
+        theme:"minimal-dark",
+        mouseWheel:{ scrollAmount: 128 },
+        scrollInertia: 300
     }).removeClass('mCS-autoHide');
     
 // --------------- End styled scroll bar -----------------
@@ -77,9 +79,6 @@ jQuery(document).ready(function() {
 
     var thisMonth = moment().format('YYYY-MM');
 
-    var events = [
-            { date: "YYYY-MM-DD or some other ISO Date format", and: "anything else" }
-        ]
     var eventArray = [
         { startDate: thisMonth + '-17', endDate: thisMonth + '-17', title: 'Another Multi-Day Event' },
         { startDate: thisMonth + '-10', endDate: thisMonth + '-10', title: 'Another Multi-Day Event' },
@@ -150,11 +149,6 @@ jQuery(document).ready(function() {
             calendars.clndr.forward();
         }
     });
-
-    // $('.clndr-previous-button').html('<img src="img/calendar-previous.png" alt="">');
-
-    // $('.clndr-next-button').html('<img src="img/calendar-next.png" alt="">');
-
 
 // --------------- End calendar -----------------
 });
