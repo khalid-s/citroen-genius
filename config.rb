@@ -1,5 +1,4 @@
 require 'compass'
-require 'compass-normalize'
 require 'susy'
 require 'breakpoint'
 # Require any additional compass plugins here.
