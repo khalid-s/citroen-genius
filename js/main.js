@@ -1,5 +1,8 @@
-// init calendars in case there are many
 jQuery(document).ready(function() {
+// Toggle info-content on login page
+    $(".info").hover(function(){
+        $(".info-content", this).stop().toggle();
+    });
 // Toggle the account's options 
     $( "#accnt" ).hover(function() {
         $( ".accnt-option" ).stop().toggle(150);
@@ -149,6 +152,5 @@ jQuery(document).ready(function() {
             calendars.clndr.forward();
         }
     });
-
 // --------------- End calendar -----------------
 });

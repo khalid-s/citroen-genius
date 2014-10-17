@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>01_login</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Import jquery 2.1.1 in case there are some jQ code in the page which executes before doc.ready -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/dist/jquery.min.js"><\/script>')</script>
+    </head>
+</head>
+<body>
+
+    <main id="login">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../img/logo.png" alt="logo">
+            </div>
+
+            <form action="#">
+                <div class="identifiant">
+                    <label for="identifiant">identifiant</label>
+                    <input type="text" name="identifiant">
+                    <span class="info identifiant">
+                        <span class="info-content identifiant">
+                            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                        </span>
+                    </span>
+                    
+                </div><!--  end .identifiant -->
+
+                <div class="mdp">
+                    <label for="mdp">mot de passe</label>
+                    <input type="password" class="mdp" name="mdp">
+                    <span class="info mdp">
+                        <span class="info-content mdp">
+                            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                        </span>
+                    </span>
+                    
+                </div><!--  end .mdp -->
+
+                <div class="btn-submit">
+                    <button type="submit" class="btn">Connexion</button>
+                </div>
+
+                <div class="remember">
+                    <input class="checkbox" id="remember_me" name="remember_me" type="checkbox" value="One">
+                    <label for="remember_me">Se souvenir de moi</label>
+                </div>
+            </div><!-- end wrapper -->
+        </form>
+    </main>
+
+    <div id="sub-footer" class="login">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Crédits</a></li>
+                <li><a href="#">Suggestion</a></li>
+                <li><a href="#">Plan du site</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- block js -->
+    <script type="text/javascript" src="../js/libs/unslider/src/unslider.js"></script>
+    <script type="text/javascript" src="../js/libs/moment/moment.js"></script>
+    <script type="text/javascript" src="../js/libs/underscore/underscore.js"></script>
+    <script type="text/javascript" src="../js/libs/clndr/src/clndr.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="../js/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="../js/libs/Picker/jquery.fs.picker.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <!-- <script src="../js/dist/min.js"></script> -->
+
+</body>
+</html>

@@ -1,6 +1,135 @@
 @import "includes/style";
 
+#sub-footer.login
+{
+    width: 100%;
+    margin-top: 188px;
+    
+    .wrapper
+    {
+        max-width: 618px;
+    }
+}
 
+main#login
+{
+    .wrapper
+    {
+        text-align: center;
+        margin-top: 100px;
+        max-width: 618px;
+    }
+
+    .logo
+    {
+        margin-bottom: 80px;
+    }
+    form
+    {
+        display: inline-block;
+        width: 315px;
+        text-align: left;
+
+        label
+        {
+            display: none;
+        }
+
+        input
+        {
+            border:none;
+            outline: none;
+            background:#f3f3f3;
+            padding: 0;
+            margin: 10px 0;
+
+        }
+
+        input[type=text]
+        {
+            width: 271px;
+            padding: 7px 0 7px ;
+        }
+        input[type=password]
+        {
+            width: 271px;
+            padding: 7px 0;
+        }
+
+        div.identifiant
+        {
+            position: relative;
+        }
+
+        div.mdp
+        {
+            position: relative;
+        }
+
+        span.info
+        {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            top: 14px;
+            background:url(../img/info.png) transparent no-repeat;
+            cursor: pointer;
+        }
+        span.info-content
+        {
+            display: none;
+            position: absolute;
+            width: 300px;
+            top: -87px;
+            right: -150px;
+            background:#313131;
+            font-family: "citroenlight";
+            font-size: 15px;
+            padding: 9px 16px;
+            color: white;
+            z-index: 1;
+
+            &:after
+            {
+                position: absolute;
+                width: 27px;
+                height: 27px;
+                display: block;
+                content: url("../img/info-popup-bg.png");
+                z-index: 0;
+                top: 53px;
+                left: 162px;
+            }
+        }
+
+        button
+        {
+            margin: 6px 0 0;
+            width: 271px;
+            padding: 8px 0;
+
+        }
+
+        .remember
+        {
+            margin-top: 18px;
+            label
+            {
+                display: inline-block;
+                font-family: "citroenlight";
+                font-family: 14px;
+                color: #737373;
+            }
+
+            .picker
+            {
+                float: initial;
+            }
+        }
+    }
+}
 main#home
 {
     // margin-top: 8px;
@@ -68,6 +197,7 @@ main#home
                             padding-left: 20px;
                             text-transform: uppercase;
                             z-index: 1;
+                            @include border-radius(0);
                         }
                     }
                 }
@@ -271,7 +401,6 @@ main#home
                 font-family: "citroenregular";
                 font-size: 15px;
                 color: $second_color;
-                @include border-radius(4px);
                 margin-right: 20px;
                 // width: 152px;
                 text-align: center;
@@ -444,7 +573,6 @@ main#home
                 {
                     text-align: left;
                     display: block;
-                    @include border-radius(4px);
                     padding: 8px 10px;
                     margin: 10px 0 15px;
                     background:$second_color;

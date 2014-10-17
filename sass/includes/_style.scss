@@ -55,7 +55,12 @@ a
     display: inline-block;
     background:$first-color;
     color: white;
-
+    border: none;
+    outline: none;
+    padding:0;
+    margin: 0;
+    
+    @include border-radius(4px);
 }
 
 header, div,nav,ul,li,footer,h1,h2,h3,h4,h5,h6,p
@@ -436,66 +441,51 @@ footer
         padding: 10px 25px;
         margin-top: 24px;
         text-transform: initial;
-        @include border-radius(3px);
         
         &:hover, &:active
         {
             background:$first-color - 50;
         }
     }
-
     #sub-footer
     {
         background:#ebebeb;
-        height: 37px;
-        margin-top: 70px;
+    }
+}
+#sub-footer
+{
+    height: 37px;
+    margin-top: 70px;
 
-        .wrapper
+    .wrapper
+    {
+        text-align: center;
+        ul
         {
-            text-align: center;
-            ul
+            li
             {
-                li
+                    border: none;
+                    display: inline-block;
+                    width: auto;
+                a
                 {
-                        border: none;
-                        display: inline-block;
-                        width: auto;
-                    a
-                    {
-                        font-family: arial;
-                        font-size: 11px;
-                        line-height: 11px;
-                        color: #ababab;
-                        display: inline-block;
-                        border:none;
-                        margin:0;
-                        padding:0;
-                        list-style: none;
-                        margin-top: 14px;
-                        width: auto;
-                        width: initial;
-                        text-transform: initial;
-                        &:before
-                        {
-                            content:"";
-                            margin:0;
-                        }
-
-                        &:first-child
-                        {
-                            &:before
-                            {
-                                content:"";
-                                margin:0;
-                            }
-                        }
-                    }
-
+                    font-family: arial;
+                    font-size: 11px;
+                    line-height: 11px;
+                    color: #ababab;
+                    display: inline-block;
+                    border:none;
+                    margin:0;
+                    padding:0;
+                    list-style: none;
+                    margin-top: 14px;
+                    width: auto;
+                    width: initial;
+                    text-transform: initial;
                     &:before
                     {
-                        content:"-";
-                        margin:0 4px 0 0px;
-                        color: #ababab;
+                        content:"";
+                        margin:0;
                     }
 
                     &:first-child
@@ -507,10 +497,25 @@ footer
                         }
                     }
                 }
+
+                &:before
+                {
+                    content:"-";
+                    margin:0 4px 0 0px;
+                    color: #ababab;
+                }
+
+                &:first-child
+                {
+                    &:before
+                    {
+                        content:"";
+                        margin:0;
+                    }
+                }
             }
         }
     }
-
 }
 .up-btn
 {
