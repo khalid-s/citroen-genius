@@ -1,18 +1,9 @@
 @import "includes/style";
 
-#sub-footer.login
-{
-    width: 100%;
-    margin-top: 188px;
-    
-    .wrapper
-    {
-        max-width: 618px;
-    }
-}
 
 main#login
 {
+    margin-bottom: 188px;
     .wrapper
     {
         text-align: center;
@@ -402,7 +393,6 @@ main#home
                 font-size: 15px;
                 color: $second_color;
                 margin-right: 20px;
-                // width: 152px;
                 text-align: center;
                 margin-top: 10px;
                 background:$second_color;

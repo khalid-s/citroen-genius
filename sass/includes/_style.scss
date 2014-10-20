@@ -363,7 +363,7 @@ header
 }
 
 
-footer
+.home-prefooter
 {
     min-height: 500px;
     background: $footer_bg;
@@ -447,13 +447,10 @@ footer
             background:$first-color - 50;
         }
     }
-    #sub-footer
-    {
-        background:#ebebeb;
-    }
 }
 #sub-footer
 {
+    background:#ebebeb;
     height: 37px;
     margin-top: 70px;
 
