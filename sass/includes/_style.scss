@@ -362,98 +362,78 @@ header
     }
 }
 
-
-footer
+#breadcrumb
 {
-    min-height: 500px;
-    background: $footer_bg;
-    padding-top: 42px;
+    border-top: 1px solid #d5d3d5;
+    background:#f2f2f2;
+    font-family: "citroenlight";
+    font-size: 12px;
     text-transform: uppercase;
-    margin-top: 40px;
+    height: 29px;
 
-    .wrapper
+    ul
     {
-        width: 922px;
-        position: relative;
-
-        h3
+        // height: 
+        li
         {
+            display: inline-block;
+            padding: 7px 0;
             position: relative;
-            letter-spacing: 3px;
+            margin: 0 16px;
+            color: #929292;
 
             &:before
             {
-                margin-top: 20px;
+                display: inline-block;
+                width: 12px;
+                height: 29px;
+                content: url("../img/breadcrumb-seperator.png");
+                position: absolute;
+                top: 0;
+                left: -22px;
             }
-        }
 
-
-        ul
-        {
-            margin-top: 30px;
-            // margin-left: 15px;
-
-            li
+            &:last-child
             {
-                font-family: "citroenlight";
-                font-size: 17px;
-                list-style: none;
-                color:#302b28;
-                width: 400px;
-                border-bottom: 1px solid #f0f0f0;
+                margin-right: 0;
+                color: $first_color_hover;
+            }
 
-                a
+            &:first-child
+            {
+                margin-left: 0;
+
+                &:before
                 {
-                    padding: 19px 0 19px 15px;
-                    display: inline-block;
-                    width: 100%;
-                    height: 100%;
-
-                    &:before
-                    {
-                        content: url(../img/footer-li.png);
-                        margin-right: 20px;
-                    }
-
-                    &:hover
-                    {
-                        background:#ececec;
-                    }
+                    content: "";
+                    width: 0;
+                    height: 0;
                 }
             }
-        }
 
-        .left
-        {
-            float: left;
         }
-        .right
-        {
-            float: right;
-        }
-    }
-
-    a.btn
-    {
-        font-family: "citroenregular";
-        font-size: 15px;
-        line-height: 15px;
-        padding: 10px 25px;
-        margin-top: 24px;
-        text-transform: initial;
-        
-        &:hover, &:active
-        {
-            background:$first-color - 50;
-        }
-    }
-    #sub-footer
-    {
-        background:#ebebeb;
     }
 }
+
+
+#options
+{
+    float: right;
+    li
+    {
+        display: inline-block;
+        margin-right: 15px;
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+    }
+}
+
 #sub-footer
 {
+    background:#ebebeb;
     height: 37px;
     margin-top: 70px;
 
