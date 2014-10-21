@@ -760,3 +760,57 @@ main#rubrique
         }
     }
 }
+.rubrique-niveau-2-pre-footer.wrapper
+{
+    text-align: center;
+    margin-top: 35px;
+    article
+    {
+        display: inline-block;
+        width: 169px;
+        height: 148px;
+        background:$first-color;
+        font-family: "citroenregular";
+        font-size: 17px;
+        color:white;
+        box-sizing:border-box;
+        position: relative;
+        z-index: 0;
+        text-transform: uppercase;
+        margin-right: 20px;
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+
+        div.img
+        {
+            width:30px;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            z-index: 100;
+            height: 50px;
+            vertical-align: middle;
+            margin-top: 35px;
+        }
+
+        p
+        {
+            position: relative;
+            z-index: 1000;
+        }
+
+        a
+        {
+            position: absolute;
+            z-index: 10000;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
