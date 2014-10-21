@@ -3398,3 +3398,81 @@ main#home .content .right .clndr .clndr-today-button:before {
 .home-prefooter a.btn:hover, .home-prefooter a.btn:active {
   background: #001022;
 }
+
+/* line 702, ../sass/style.scss */
+main#rubrique {
+  margin-top: 15px;
+}
+/* line 706, ../sass/style.scss */
+main#rubrique section.wrapper {
+  clear: both;
+  font-family: "citroenregular";
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .one {
+  background: #008896;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .two {
+  background: #149caa;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .three {
+  background: #28b0be;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .four {
+  background: #3cc4d2;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .five {
+  background: #50d8e6;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .six {
+  background: #64ecfa;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .seven {
+  background: #78ffff;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .eight {
+  background: #8cffff;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .nine {
+  background: #a0ffff;
+}
+/* line 731, ../sass/style.scss */
+main#rubrique section.wrapper div.article .ten {
+  background: #b4ffff;
+}
+/* line 736, ../sass/style.scss */
+main#rubrique section.wrapper div.article a {
+  padding: 27px;
+  margin: 8px 0;
+  height: 76px;
+  background: #first_color_hover;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 749, ../sass/style.scss */
+main#rubrique section.wrapper div.article a:after {
+  display: inline-block;
+  position: absolute;
+  width: 15;
+  height: 29px;
+  content: url("../img/page_rubrique_puce.png");
+  right: 30px;
+}
