@@ -698,3 +698,119 @@ main#home
         }
     }
 }
+
+main#rubrique
+{
+    margin-top: 15px;
+
+    section.wrapper
+    {
+        clear: both;
+        font-family: "citroenregular";
+        font-size: 22px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color:white;
+
+        div.article
+        {
+            @each $div in 
+            (
+                one $first_color_hover,
+                two $first_color_hover + 20,
+                three $first_color_hover + 40,
+                four $first_color_hover + 60,
+                five $first_color_hover + 80,
+                six $first_color_hover + 100,
+                seven $first_color_hover + 120,
+                eight $first_color_hover + 140,
+                nine $first_color_hover + 160,
+                ten $first_color_hover + 180,
+            )
+            {
+                .#{nth($div, 1)}
+                {
+                    background: #{nth($div,2)}
+                }
+            }
+            a
+            {
+                padding: 27px;
+                margin: 8px 0;
+                height: 76px;
+                background: #first_color_hover;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                @include border-radius(5px);
+                box-sizing: border-box;
+                position: relative;
+
+                &:after
+                {
+                    display: inline-block;
+                    position: absolute;
+                    width: 15;
+                    height: 29px;
+                    content: url('../img/page_rubrique_puce.png');
+                    right: 30px;
+                    // top: 0;
+                }
+            }
+        }
+    }
+}
+.rubrique-niveau-2-pre-footer.wrapper
+{
+    text-align: center;
+    margin-top: 35px;
+    article
+    {
+        display: inline-block;
+        width: 169px;
+        height: 148px;
+        background:$first-color;
+        font-family: "citroenregular";
+        font-size: 17px;
+        color:white;
+        box-sizing:border-box;
+        position: relative;
+        z-index: 0;
+        text-transform: uppercase;
+        margin-right: 20px;
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+
+        div.img
+        {
+            width:30px;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            z-index: 100;
+            height: 50px;
+            vertical-align: middle;
+            margin-top: 35px;
+        }
+
+        p
+        {
+            position: relative;
+            z-index: 1000;
+        }
+
+        a
+        {
+            position: absolute;
+            z-index: 10000;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}

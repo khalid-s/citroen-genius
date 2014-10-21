@@ -30,6 +30,7 @@
 body
 {
     color: $first-color;
+    position: relative;
 }
 
 .clear
@@ -47,6 +48,7 @@ a
 {
     max-width: $xl-screen;
     margin: 0 auto;
+    position: relative;
     // background:rgba(255,0,0,0.1);
 }
 
@@ -497,14 +499,41 @@ header
         }
     }
 }
-.up-btn
+
+// The wrong way of doing things but respects the design.
+.up-btn-wrapper
 {
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    background:url(../img/up-btn.png) no-repeat;
-    right: -174px;
-    bottom: 0;
-    cursor: pointer;
-    display: none;
+    max-width: 920px;
+    position: relative;
+    margin: 0 auto;
+    .up-btn
+    {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        background:url(../img/up-btn.png) no-repeat;
+        right: -174px;
+        bottom: 0px;
+        cursor: pointer;
+        display: none;
+
+    }
 }
+// Follows the wright way of doing the moving up btn but does not respect the design entirely and should use a breakpoint.
+// .up-btn-wrapper
+// {
+//     max-width: 920px;
+//     position: relative;
+//     .up-btn
+//     {
+//         position: fixed;
+//         width: 65px;
+//         height: 65px;
+//         background:url(../img/up-btn.png) no-repeat;
+//         right: 70px;
+//         top: 75%;
+//         // bottom: 0;
+//         cursor: pointer;
+//         display: none;
+//  }
+// }
