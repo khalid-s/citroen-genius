@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <title>07_agenda_semaine</title>
+    <title>07_agenda_month</title>
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- Import jquery 2.1.1 in case there are some jQ code in the page which executes before doc.ready -->
@@ -167,13 +167,14 @@
                 </div><!-- end .left-content -->
                 
                 <!-- possibility to add class active to the 2 following links to keep the hover effect on  -->
-                <a href="#" class="btn">Tâche en cours</a>
+                <a href="#" class="btn btn-style-2">Tâche en cours</a>
                 
-                <a href="#" class="btn"><span>+</span> Ajouter une tache</a>
+                <a href="#" class="btn btn-style-2"><span>+</span> Ajouter une tache</a>
 
             </div><!-- end .left -->
 
             <div class="right">
+                <a href="#" class="btn btn-style-2">Revenir à la date du jour</a>
                 <div class="scrollable">
                     <form action="#">
                         <div class="section">
@@ -238,9 +239,57 @@
                     </form>
 
                 </div><!-- end .scrollable -->
-            </div>
+            </div><!-- end .right -->
+            
             <div class="clear"></div>
-        </div>
+            <section class="cal-month">
+                
+                <div class="cal">
+                    <script type="text/template" id="template-calendar">
+                        <div class="clndr-controls">
+                            <div class='clndr-control-button leftalign'>
+                                <span class='clndr-previous-button'><img src="../img/calendar-big-previous.png" alt=""></span>
+                            </div>
+
+                            <div class='month'>
+                                <%= month %> <%= year %>
+                            </div>
+
+                            <div class='clndr-control-button rightalign'>   
+                                <span class='clndr-next-button'><img src="../img/calendar-big-next.png" alt=""></span>
+                            </div>
+                        </div>
+
+                        <table class='clndr-table' border='0' cellspacing='0' cellpadding='0'>
+                            <thead>
+                                <tr class='header-days'>
+                                    <% for(var i = 0; i < daysOfTheWeek.length; i++) { %>
+                                        <td class='header-day'><%= daysOfTheWeek[i] %></td>
+                                    <% } %>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <% for(var i = 0; i < numberOfRows; i++){ %>
+                                    <tr>
+                                        <% for(var j = 0; j < 7; j++){ %>
+                                            <% var d = j + i * 7; %>
+                                            <td class='<%= days[d].classes + " " + daysOfTheWeek[j] %>'>
+                                                <div class='day-contents'>
+                                                    <span class='day'><%= days[d].day %></span>
+                                                </div>
+                                            </td>
+                                        <% } %>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </script>
+                        <!-- <div class="clndr-today-button">Aujourd''hui</div> -->
+                </div>
+            </section>
+            <div class="clear"></div>
+        </div><!-- end .content.wrapper -->
     </main>
 
     <div class="pre-footer-two wrapper">

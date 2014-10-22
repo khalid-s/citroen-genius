@@ -504,6 +504,36 @@ header
     }
 
 }
+.btn-style-2
+{
+    background:transparent;
+    padding: 7px 19px;
+    border: 1px solid $second_color;
+    font-family: "citroenregular";
+    font-size: 15px;
+    color: $second_color;
+    text-align: center;
+    margin-top: 10px;
+    background:$second_color;
+    color: white;
+
+    span
+    {
+        display: inline-block;
+        margin-right: 5px;
+        font-family: Arial;
+    }
+
+    &:hover
+    {
+        background:$second_color_hover;
+    }
+
+    &.active
+    {
+        background:$second_color_hover;
+    }
+}
 
 .pre-footer-two.wrapper
 {

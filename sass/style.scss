@@ -313,38 +313,11 @@ main#home
             }
             a
             {
-                background:transparent;
-                padding: 7px 19px;
-                border: 1px solid $second_color;
-                font-family: "citroenregular";
-                font-size: 15px;
-                color: $second_color;
                 margin-right: 20px;
-                text-align: center;
-                margin-top: 10px;
-                background:$second_color;
-                color: white;
-
-                span
-                {
-                    display: inline-block;
-                    margin-right: 5px;
-                    font-family: Arial;
-                }
 
                 &:first-child
                 {
                     margin-right: 0;
-                }
-
-                &:hover
-                {
-                    background:$second_color_hover;
-                }
-
-                &.active
-                {
-                    background:$second_color_hover;
                 }
             }
         }
@@ -765,10 +738,132 @@ main#agenda
                 }
             }
         }
+        a.btn-style-2
+        {
+            text-transform: initial;
+            padding: 7px 18px;
+        }
     }
 
     .right
     {
         float: right;
+        background:#f5f5f5;
+        margin-top: 30px;
+        width: 617px;
+
+        form
+        {
+            width: 595px;
+
+            .element
+            {
+                width: 565px;
+            }
+        }
+    }
+
+    section.cal-month
+    {
+        width: 100%;
+
+        .clndr
+        {
+            width: 100%;
+            text-align: center;
+
+            .clndr-controls
+            {
+                font-family: "citroenregular";
+                font-size: 22px;
+                color: $second_color;
+                text-transform: uppercase;
+                position: relative;
+                .month
+                {
+                    text-align: center;
+                    display: inline-block;
+                }
+                .clndr-control-button
+                {
+                    display: inline-block;
+                    cursor: pointer;
+                    span
+                    {
+                        display: inline-block;
+                    }
+
+                    &.leftalign
+                    {
+                        float: left;
+                    }
+
+                    &.rightalign
+                    {
+                        float: right;
+                    }
+                }
+            }
+
+            table.clndr-table
+            {
+                width: 100%;
+
+                thead
+                {
+                    font-family: "citroenregular";
+                    font-size: 15px;
+                    color: $second_color;
+                    text-transform: lowercase;
+                }
+                tbody
+                {
+                    font-family: Arial;
+                    font-size: 10px;
+                    color: #2e2e2e;
+                    text-align: left;
+
+                    td
+                    {
+                        border: 1px solid #d7d7d7;
+                        height: 100px;
+                        width: (100% / 7);
+                        vertical-align: top;
+                        overflow: hidden;
+
+                        &.Sam
+                        {
+                            background:#fafafa;
+                        }
+
+                        &.Dim
+                        {
+                            background:#fafafa;
+                        }
+
+                        &.event
+                        {
+
+                            .day-contents
+                            {
+                                .day
+                                {
+                                    background:$second_color;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .day
+                        {
+                                    box-sizing:border-box;
+                                    display: inline-block;
+                                    width: 100%;
+                                    padding: 8px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
