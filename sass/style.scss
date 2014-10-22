@@ -311,79 +311,6 @@ main#home
                     }
                 }
             }
-
-            .scrollable
-            {
-                margin-top: 20px;
-
-                form
-                {
-                    height: 313px;
-                    overflow-y: scroll;
-                    width: 500px;
-                    margin: 0 5px 0 18px;
-                }
-                h4
-                {
-                    font-family: "citroenregular";
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    color:$second_color;
-                    font-weight: 200;
-                    // margin-left: 20px;
-                }
-
-                .element
-                {
-                    font-family: Arial;
-                    font-size: 13px;
-                    border-bottom: 1px solid #f2f2f2;
-                    line-height: 19px;
-                    padding: 19px 0;
-                    position: relative;
-                    width: 473px;
-                    // margin-left: 15px;
-
-                    .elmt-img
-                    {
-                        float: left;
-                        width: 50px;
-                        display: inline-block;
-                        text-align: center;
-
-                        img
-                        {
-                            display: inline-block;
-                            width: auto;
-                        }
-                    }
-
-
-                    span
-                    {
-                        display: inline-block;
-                        float: left;
-                    }
-
-                    input[type=checkbox]
-                    {
-                        float: right;
-                        // margin-right: 25px;
-                        position: relative;
-                    }
-                }
-
-                .section
-                {
-                    margin-top: 35px;
-
-                    &:first-child
-                    {
-                        margin-top: 0px;
-                    }
-                }
-
-            }
             a
             {
                 background:transparent;
@@ -760,57 +687,88 @@ main#rubrique
         }
     }
 }
-.rubrique-niveau-2-pre-footer.wrapper
+main#agenda
 {
-    text-align: center;
-    margin-top: 35px;
-    article
+    .left
     {
-        display: inline-block;
-        width: 169px;
-        height: 148px;
-        background:$first-color;
+        box-sizing: border-box;
+        width: 279px;
         font-family: "citroenregular";
-        font-size: 17px;
-        color:white;
-        box-sizing:border-box;
-        position: relative;
-        z-index: 0;
         text-transform: uppercase;
-        margin-right: 20px;
+        text-align: center;
+        margin: 30px 0 0 0;
+        float: left;
 
-        &:last-child
+        .left-content
         {
-            margin-right: 0;
-        }
+            margin-bottom: 30px;
+            .selectionne
+            {
+                span, div
+                {
+                    display: block;
+                    box-sizing: border-box;
+                }
+                .day-word
+                {
+                    height: 95px;
+                    background:$second_color;
+                    // display: block;
+                    color:white;
+                    font-size: 40px;
+                    padding-top: 20px;
+                }
+                .date
+                {
+                    border: 1px solid #d2d2d2;
+                    border-top: none;
+                    height: 276px;
 
-        div.img
-        {
-            width:30px;
-            text-align: center;
-            display: inline-block;
-            position: relative;
-            z-index: 100;
-            height: 50px;
-            vertical-align: middle;
-            margin-top: 35px;
-        }
+                    .day
+                    {
+                        font-size: 129px;
+                        line-height: 95px;
+                        color: $second_color;
+                        padding-top: 35px;
+                    }
+                    .month
+                    {
+                        font-size: 62px;
+                        line-height: 62px;
+                        color: $second_color;
+                        padding-top: 10px;
+                    }
+                    .year
+                    {
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $second_color;
+                        padding-top: 50px;
+                        position: relative;
 
-        p
-        {
-            position: relative;
-            z-index: 1000;
-        }
+                        &:after
+                        {
+                            content: url(../img/agenda-year-puce.png);
+                            position: relative;
+                            bottom: 2px;
+                            left: 5px;
+                        }
 
-        a
-        {
-            position: absolute;
-            z-index: 10000;
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
+                        &:before
+                        {
+                            content: url(../img/agenda-year-puce.png);
+                            position: relative;
+                            bottom: 2px;
+                            right: 5px;
+                        }
+                    }
+                }
+            }
         }
+    }
+
+    .right
+    {
+        float: right;
     }
 }

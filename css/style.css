@@ -2730,23 +2730,134 @@ header .wrapper div.search form button {
   margin-right: 0;
 }
 
-/* line 436, ../sass/includes/_style.scss */
+/* line 435, ../sass/includes/_style.scss */
+.scrollable {
+  margin-top: 20px;
+}
+/* line 439, ../sass/includes/_style.scss */
+.scrollable form {
+  height: 313px;
+  overflow-y: scroll;
+  width: 500px;
+  margin: 0 5px 0 18px;
+}
+/* line 446, ../sass/includes/_style.scss */
+.scrollable h4 {
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #5b2645;
+  font-weight: 200;
+}
+/* line 456, ../sass/includes/_style.scss */
+.scrollable .element {
+  font-family: Arial;
+  font-size: 13px;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 19px;
+  padding: 19px 0;
+  position: relative;
+  width: 473px;
+}
+/* line 467, ../sass/includes/_style.scss */
+.scrollable .element .elmt-img {
+  float: left;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 474, ../sass/includes/_style.scss */
+.scrollable .element .elmt-img img {
+  display: inline-block;
+  width: auto;
+}
+/* line 482, ../sass/includes/_style.scss */
+.scrollable .element span {
+  display: inline-block;
+  float: left;
+}
+/* line 488, ../sass/includes/_style.scss */
+.scrollable .element input[type=checkbox] {
+  float: right;
+  position: relative;
+}
+/* line 496, ../sass/includes/_style.scss */
+.scrollable .section {
+  margin-top: 35px;
+}
+/* line 500, ../sass/includes/_style.scss */
+.scrollable .section:first-child {
+  margin-top: 0px;
+}
+
+/* line 508, ../sass/includes/_style.scss */
+.pre-footer-two.wrapper {
+  text-align: center;
+  margin-top: 35px;
+}
+/* line 512, ../sass/includes/_style.scss */
+.pre-footer-two.wrapper article {
+  display: inline-block;
+  width: 169px;
+  height: 148px;
+  background: #184254;
+  font-family: "citroenregular";
+  font-size: 17px;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 527, ../sass/includes/_style.scss */
+.pre-footer-two.wrapper article:last-child {
+  margin-right: 0;
+}
+/* line 532, ../sass/includes/_style.scss */
+.pre-footer-two.wrapper article div.img {
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: 35px;
+}
+/* line 544, ../sass/includes/_style.scss */
+.pre-footer-two.wrapper article p {
+  position: relative;
+  z-index: 1000;
+}
+/* line 550, ../sass/includes/_style.scss */
+.pre-footer-two.wrapper article a {
+  position: absolute;
+  z-index: 10000;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 562, ../sass/includes/_style.scss */
 #sub-footer {
   background: #ebebeb;
   height: 37px;
   margin-top: 70px;
 }
-/* line 442, ../sass/includes/_style.scss */
+/* line 568, ../sass/includes/_style.scss */
 #sub-footer .wrapper {
   text-align: center;
 }
-/* line 447, ../sass/includes/_style.scss */
+/* line 573, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li {
   border: none;
   display: inline-block;
   width: auto;
 }
-/* line 452, ../sass/includes/_style.scss */
+/* line 578, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li a {
   font-family: arial;
   font-size: 11px;
@@ -2762,35 +2873,35 @@ header .wrapper div.search form button {
   width: initial;
   text-transform: initial;
 }
-/* line 467, ../sass/includes/_style.scss */
+/* line 593, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li a:before {
   content: "";
   margin: 0;
 }
-/* line 475, ../sass/includes/_style.scss */
+/* line 601, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li a:first-child:before {
   content: "";
   margin: 0;
 }
-/* line 483, ../sass/includes/_style.scss */
+/* line 609, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li:before {
   content: "-";
   margin: 0 4px 0 0px;
   color: #ababab;
 }
-/* line 492, ../sass/includes/_style.scss */
+/* line 618, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li:first-child:before {
   content: "";
   margin: 0;
 }
 
-/* line 504, ../sass/includes/_style.scss */
+/* line 630, ../sass/includes/_style.scss */
 .up-btn-wrapper {
   max-width: 920px;
   position: relative;
   margin: 0 auto;
 }
-/* line 509, ../sass/includes/_style.scss */
+/* line 635, ../sass/includes/_style.scss */
 .up-btn-wrapper .up-btn {
   position: absolute;
   width: 65px;
@@ -3085,66 +3196,7 @@ main#home .content .left .left-content .selectionne a.agenda.today {
 main#home .content .left .left-content .selectionne a.agenda.today:hover {
   color: #3b0628;
 }
-/* line 315, ../sass/style.scss */
-main#home .content .left .scrollable {
-  margin-top: 20px;
-}
-/* line 319, ../sass/style.scss */
-main#home .content .left .scrollable form {
-  height: 313px;
-  overflow-y: scroll;
-  width: 500px;
-  margin: 0 5px 0 18px;
-}
-/* line 326, ../sass/style.scss */
-main#home .content .left .scrollable h4 {
-  font-family: "citroenregular";
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #5b2645;
-  font-weight: 200;
-}
-/* line 336, ../sass/style.scss */
-main#home .content .left .scrollable .element {
-  font-family: Arial;
-  font-size: 13px;
-  border-bottom: 1px solid #f2f2f2;
-  line-height: 19px;
-  padding: 19px 0;
-  position: relative;
-  width: 473px;
-}
-/* line 347, ../sass/style.scss */
-main#home .content .left .scrollable .element .elmt-img {
-  float: left;
-  width: 50px;
-  display: inline-block;
-  text-align: center;
-}
-/* line 354, ../sass/style.scss */
-main#home .content .left .scrollable .element .elmt-img img {
-  display: inline-block;
-  width: auto;
-}
-/* line 362, ../sass/style.scss */
-main#home .content .left .scrollable .element span {
-  display: inline-block;
-  float: left;
-}
-/* line 368, ../sass/style.scss */
-main#home .content .left .scrollable .element input[type=checkbox] {
-  float: right;
-  position: relative;
-}
-/* line 376, ../sass/style.scss */
-main#home .content .left .scrollable .section {
-  margin-top: 35px;
-}
-/* line 380, ../sass/style.scss */
-main#home .content .left .scrollable .section:first-child {
-  margin-top: 0px;
-}
-/* line 387, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 main#home .content .left a {
   background: transparent;
   padding: 7px 19px;
@@ -3158,36 +3210,36 @@ main#home .content .left a {
   background: #5b2645;
   color: white;
 }
-/* line 401, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 main#home .content .left a span {
   display: inline-block;
   margin-right: 5px;
   font-family: Arial;
 }
-/* line 408, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 main#home .content .left a:first-child {
   margin-right: 0;
 }
-/* line 413, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 main#home .content .left a:hover {
   background: #3b0628;
 }
-/* line 418, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 main#home .content .left a.active {
   background: #3b0628;
 }
-/* line 425, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 main#home .content .right {
   float: left;
 }
-/* line 429, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 main#home .content .right .clndr {
   width: 372px;
   text-align: center;
   margin-left: 23px;
   margin-top: 25px;
 }
-/* line 435, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls {
   font-family: "citroenregular";
   font-size: 22px;
@@ -3197,37 +3249,37 @@ main#home .content .right .clndr .clndr-controls {
   position: relative;
   padding: 14px 0;
 }
-/* line 445, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .month {
   width: 304px;
   text-align: center;
   display: inline-block;
 }
-/* line 451, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button {
   display: inline-block;
   cursor: pointer;
 }
-/* line 455, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button span {
   display: inline-block;
 }
-/* line 462, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table {
   width: 100%;
 }
-/* line 466, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead {
   font-family: "citroenregular";
   font-size: 14px;
   color: white;
 }
-/* line 473, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead tr td {
   padding: 20px 0;
   background: #a58899;
 }
-/* line 480, ../sass/style.scss */
+/* line 407, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody {
   box-sizing: border-box;
   border: 1px solid #d7d7d7;
@@ -3237,57 +3289,57 @@ main#home .content .right .clndr table.clndr-table tbody {
   color: #4b4a4d;
   padding: 30px;
 }
-/* line 492, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td {
   width: 51px;
   height: 52px;
   cursor: pointer;
 }
-/* line 498, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.adjacent-month {
   color: rgba(180, 181, 178, 0.5);
 }
-/* line 503, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 508, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event.past {
   background: url(../img/calendar-past-event.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 513, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event.adjacent-month {
   background: url(../img/calendar-event-adjacent-month.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 518, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 527, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td {
   padding-top: 10px;
 }
-/* line 531, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 537, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 542, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.event.adjacent-month {
   background: url(../img/calendar-event-adjacent-month.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 553, ../sass/style.scss */
+/* line 480, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:last-child td {
   padding-bottom: 10px;
 }
-/* line 562, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 main#home .content .right .clndr .my-cal {
   text-align: left;
   display: block;
@@ -3295,11 +3347,11 @@ main#home .content .right .clndr .my-cal {
   margin: 10px 0 15px;
   background: #5b2645;
 }
-/* line 570, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 main#home .content .right .clndr .my-cal:hover {
   background: #3b0628;
 }
-/* line 574, ../sass/style.scss */
+/* line 501, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a {
   display: inline-block;
   font-family: "citroenregular";
@@ -3308,7 +3360,7 @@ main#home .content .right .clndr .my-cal a {
   height: 100%;
   position: relative;
 }
-/* line 583, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a:before {
   content: url("../img/calendar-link-my-cal.png");
   display: inline-block;
@@ -3318,7 +3370,7 @@ main#home .content .right .clndr .my-cal a:before {
   position: relative;
   top: 2px;
 }
-/* line 596, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button {
   font-size: 13px;
   font-family: Arial;
@@ -3326,7 +3378,7 @@ main#home .content .right .clndr .clndr-today-button {
   text-align: left;
   cursor: pointer;
 }
-/* line 604, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button:before {
   content: url("../img/calendar-today-btn.png");
   width: 14px;
@@ -3334,7 +3386,7 @@ main#home .content .right .clndr .clndr-today-button:before {
   margin-right: 10px;
 }
 
-/* line 616, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 .home-prefooter {
   min-height: 500px;
   background: #fafafa;
@@ -3342,25 +3394,25 @@ main#home .content .right .clndr .clndr-today-button:before {
   text-transform: uppercase;
   margin-top: 40px;
 }
-/* line 624, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 .home-prefooter .wrapper {
   width: 922px;
   position: relative;
 }
-/* line 629, ../sass/style.scss */
+/* line 556, ../sass/style.scss */
 .home-prefooter .wrapper h3 {
   position: relative;
   letter-spacing: 3px;
 }
-/* line 634, ../sass/style.scss */
+/* line 561, ../sass/style.scss */
 .home-prefooter .wrapper h3:before {
   margin-top: 20px;
 }
-/* line 641, ../sass/style.scss */
+/* line 568, ../sass/style.scss */
 .home-prefooter .wrapper ul {
   margin-top: 30px;
 }
-/* line 646, ../sass/style.scss */
+/* line 573, ../sass/style.scss */
 .home-prefooter .wrapper ul li {
   font-family: "citroenlight";
   font-size: 17px;
@@ -3369,31 +3421,31 @@ main#home .content .right .clndr .clndr-today-button:before {
   width: 400px;
   border-bottom: 1px solid #f0f0f0;
 }
-/* line 655, ../sass/style.scss */
+/* line 582, ../sass/style.scss */
 .home-prefooter .wrapper ul li a {
   padding: 19px 0 19px 15px;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-/* line 662, ../sass/style.scss */
+/* line 589, ../sass/style.scss */
 .home-prefooter .wrapper ul li a:before {
   content: url(../img/footer-li.png);
   margin-right: 20px;
 }
-/* line 668, ../sass/style.scss */
+/* line 595, ../sass/style.scss */
 .home-prefooter .wrapper ul li a:hover {
   background: #ececec;
 }
-/* line 676, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 .home-prefooter .wrapper .left {
   float: left;
 }
-/* line 680, ../sass/style.scss */
+/* line 607, ../sass/style.scss */
 .home-prefooter .wrapper .right {
   float: right;
 }
-/* line 686, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 .home-prefooter a.btn {
   font-family: "citroenregular";
   font-size: 15px;
@@ -3402,16 +3454,16 @@ main#home .content .right .clndr .clndr-today-button:before {
   margin-top: 24px;
   text-transform: initial;
 }
-/* line 695, ../sass/style.scss */
+/* line 622, ../sass/style.scss */
 .home-prefooter a.btn:hover, .home-prefooter a.btn:active {
   background: #001022;
 }
 
-/* line 702, ../sass/style.scss */
+/* line 629, ../sass/style.scss */
 main#rubrique {
   margin-top: 15px;
 }
-/* line 706, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 main#rubrique section.wrapper {
   clear: both;
   font-family: "citroenregular";
@@ -3420,47 +3472,47 @@ main#rubrique section.wrapper {
   text-transform: uppercase;
   color: white;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .one {
   background: #008896;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .two {
   background: #149caa;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .three {
   background: #28b0be;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .four {
   background: #3cc4d2;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .five {
   background: #50d8e6;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .six {
   background: #64ecfa;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .seven {
   background: #78ffff;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .eight {
   background: #8cffff;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .nine {
   background: #a0ffff;
 }
-/* line 731, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 main#rubrique section.wrapper div.article .ten {
   background: #b4ffff;
 }
-/* line 736, ../sass/style.scss */
+/* line 663, ../sass/style.scss */
 main#rubrique section.wrapper div.article a {
   padding: 27px;
   margin: 8px 0;
@@ -3475,7 +3527,7 @@ main#rubrique section.wrapper div.article a {
   box-sizing: border-box;
   position: relative;
 }
-/* line 749, ../sass/style.scss */
+/* line 676, ../sass/style.scss */
 main#rubrique section.wrapper div.article a:after {
   display: inline-block;
   position: absolute;
@@ -3485,53 +3537,76 @@ main#rubrique section.wrapper div.article a:after {
   right: 30px;
 }
 
-/* line 763, ../sass/style.scss */
-.rubrique-niveau-2-pre-footer.wrapper {
-  text-align: center;
-  margin-top: 35px;
-}
-/* line 767, ../sass/style.scss */
-.rubrique-niveau-2-pre-footer.wrapper article {
-  display: inline-block;
-  width: 169px;
-  height: 148px;
-  background: #184254;
-  font-family: "citroenregular";
-  font-size: 17px;
-  color: white;
+/* line 692, ../sass/style.scss */
+main#agenda .left {
   box-sizing: border-box;
-  position: relative;
-  z-index: 0;
+  width: 279px;
+  font-family: "citroenregular";
   text-transform: uppercase;
-  margin-right: 20px;
-}
-/* line 782, ../sass/style.scss */
-.rubrique-niveau-2-pre-footer.wrapper article:last-child {
-  margin-right: 0;
-}
-/* line 787, ../sass/style.scss */
-.rubrique-niveau-2-pre-footer.wrapper article div.img {
-  width: 30px;
   text-align: center;
-  display: inline-block;
-  position: relative;
-  z-index: 100;
-  height: 50px;
-  vertical-align: middle;
-  margin-top: 35px;
+  margin: 30px 0 0 0;
+  float: left;
 }
-/* line 799, ../sass/style.scss */
-.rubrique-niveau-2-pre-footer.wrapper article p {
-  position: relative;
-  z-index: 1000;
+/* line 702, ../sass/style.scss */
+main#agenda .left .left-content {
+  margin-bottom: 30px;
 }
-/* line 805, ../sass/style.scss */
-.rubrique-niveau-2-pre-footer.wrapper article a {
-  position: absolute;
-  z-index: 10000;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+/* line 707, ../sass/style.scss */
+main#agenda .left .left-content .selectionne span, main#agenda .left .left-content .selectionne div {
+  display: block;
+  box-sizing: border-box;
+}
+/* line 712, ../sass/style.scss */
+main#agenda .left .left-content .selectionne .day-word {
+  height: 95px;
+  background: #5b2645;
+  color: white;
+  font-size: 40px;
+  padding-top: 20px;
+}
+/* line 721, ../sass/style.scss */
+main#agenda .left .left-content .selectionne .date {
+  border: 1px solid #d2d2d2;
+  border-top: none;
+  height: 276px;
+}
+/* line 727, ../sass/style.scss */
+main#agenda .left .left-content .selectionne .date .day {
+  font-size: 129px;
+  line-height: 95px;
+  color: #5b2645;
+  padding-top: 35px;
+}
+/* line 734, ../sass/style.scss */
+main#agenda .left .left-content .selectionne .date .month {
+  font-size: 62px;
+  line-height: 62px;
+  color: #5b2645;
+  padding-top: 10px;
+}
+/* line 741, ../sass/style.scss */
+main#agenda .left .left-content .selectionne .date .year {
+  font-size: 14px;
+  line-height: 14px;
+  color: #5b2645;
+  padding-top: 50px;
+  position: relative;
+}
+/* line 749, ../sass/style.scss */
+main#agenda .left .left-content .selectionne .date .year:after {
+  content: url(../img/agenda-year-puce.png);
+  position: relative;
+  bottom: 2px;
+  left: 5px;
+}
+/* line 757, ../sass/style.scss */
+main#agenda .left .left-content .selectionne .date .year:before {
+  content: url(../img/agenda-year-puce.png);
+  position: relative;
+  bottom: 2px;
+  right: 5px;
+}
+/* line 770, ../sass/style.scss */
+main#agenda .right {
+  float: right;
 }

@@ -60,7 +60,7 @@ jQuery(document).ready(function() {
 // --------------- End nav sub menus -----------------
 
 // styled scroll bar
-    $("#home .content .left .scrollable form").mCustomScrollbar({
+    $(".scrollable form").mCustomScrollbar({
         theme:"minimal-dark",
         mouseWheel:{ scrollAmount: 128 },
         scrollInertia: 300
