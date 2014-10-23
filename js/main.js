@@ -84,11 +84,13 @@ jQuery(document).ready(function() {
 
     var eventArray = [
         { startDate: thisMonth + '-17', endDate: thisMonth + '-17', title: 'Another Multi-Day Event' },
+        { startDate: thisMonth + '-03', endDate: thisMonth + '-03', title: 'Another Multi-Day Event', img:'../img/nav-animer.png', url: 'http://citroen.fr' },
         { startDate: thisMonth + '-10', endDate: thisMonth + '-10', title: 'Another Multi-Day Event' },
         { startDate: thisMonth + '-31', endDate: '2014-10-31', title: 'Another Multi-Day Event' },
         { startDate: '2015-03-01', endDate: '2015-03-01', title: 'Another Multi-Day Event' },
         { startDate: '2015-03-31', endDate: '2015-03-31', title: 'Another Multi-Day Event' }
     ];
+    console.log(eventArray);
       // the order of the click handlers is predictable.
       // direct click action callbacks come first: click, nextMonth, previousMonth, nextYear, previousYear, or today.
       // then onMonthChange (if the month changed).
@@ -114,24 +116,24 @@ jQuery(document).ready(function() {
                 //   console.log('VALID datepicker date.');
                 // }
             },
-            nextMonth: function() {
-            console.log('next month.');
-            },
-            previousMonth: function() {
-            console.log('previous month.');
-            },
-            onMonthChange: function() {
-            console.log('month changed.');
-            },
-            nextYear: function() {
-            console.log('next year.');
-            },
-            previousYear: function() {
-            console.log('previous year.');
-            },
-            onYearChange: function() {
-            console.log('year changed.');
-            }
+            // nextMonth: function() {
+            // console.log('next month.');
+            // },
+            // previousMonth: function() {
+            // console.log('previous month.');
+            // },
+            // onMonthChange: function() {
+            // console.log('month changed.');
+            // },
+            // nextYear: function() {
+            // console.log('next year.');
+            // },
+            // previousYear: function() {
+            // console.log('previous year.');
+            // },
+            // onYearChange: function() {
+            // console.log('year changed.');
+            // }
         },
         multiDayEvents: {
             startDate: 'startDate',

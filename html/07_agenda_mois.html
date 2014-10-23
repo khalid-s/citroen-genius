@@ -276,7 +276,7 @@
                                             <% var d = j + i * 7; %>
                                             <td class='<%= days[d].classes + " " + daysOfTheWeek[j] %>'>
                                                 <div class='day-contents'>
-                                                    <span class='day'><%= days[d].day %></span>
+                                                    <div class='day'><%= days[d].day %></div>
                                                 </div>
                                             </td>
                                         <% } %>
@@ -285,6 +285,8 @@
                             </tbody>
                         </table>
                     </script>
+<!--                                                     <div class='event-today'><i><img src="../img/event-today-image-1.png" alt=""></i><span>A long event</span></div>
+                                                    <div class='event-today'><i><img src="../img/event-today-image-2.png" alt=""></i><span>A long event</span></div> -->
                         <!-- <div class="clndr-today-button">Aujourd''hui</div> -->
                 </div>
             </section>

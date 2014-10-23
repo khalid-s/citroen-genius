@@ -829,7 +829,7 @@ main#agenda
                         height: 100px;
                         width: (100% / 7);
                         vertical-align: top;
-                        overflow: hidden;
+                        // overflow: hidden;
 
                         &.Sam
                         {
@@ -853,13 +853,34 @@ main#agenda
                                 }
                             }
                         }
-
-                        .day
+                        div
                         {
-                            box-sizing:border-box;
-                            display: inline-block;
-                            width: 100%;
-                            padding: 8px;
+
+                            div.day
+                            {
+                                box-sizing:border-box;
+                                padding: 5px 8px;
+                                margin-bottom: 10px;
+                            }
+                            .event-today
+                            {
+                                box-sizing:border-box;
+                                padding: 0 8px 0 0;
+                                position: relative;
+                                height: 32px;
+                                i
+                                {
+                                    position: relative;
+                                    top: 15%;
+                                    display: inline-block;
+                                    width: 37px;
+                                    text-align: center;
+                                }
+                                span
+                                {
+                                    display: inline-block;
+                                }
+                            }
                         }
                     }
                 }

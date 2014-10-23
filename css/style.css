@@ -3693,7 +3693,6 @@ main#agenda section.cal-month .clndr table.clndr-table tbody td {
   height: 100px;
   width: 14.28571%;
   vertical-align: top;
-  overflow: hidden;
 }
 /* line 834, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td.Sam {
@@ -3708,10 +3707,28 @@ main#agenda section.cal-month .clndr table.clndr-table tbody td.event .day-conte
   background: #5b2645;
   color: white;
 }
-/* line 857, ../sass/style.scss */
-main#agenda section.cal-month .clndr table.clndr-table tbody td .day {
+/* line 859, ../sass/style.scss */
+main#agenda section.cal-month .clndr table.clndr-table tbody td div div.day {
   box-sizing: border-box;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+}
+/* line 865, ../sass/style.scss */
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-today {
+  box-sizing: border-box;
+  padding: 0 8px 0 0;
+  position: relative;
+  height: 32px;
+}
+/* line 871, ../sass/style.scss */
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-today i {
+  position: relative;
+  top: 15%;
   display: inline-block;
-  width: 100%;
-  padding: 8px;
+  width: 37px;
+  text-align: center;
+}
+/* line 879, ../sass/style.scss */
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-today span {
+  display: inline-block;
 }

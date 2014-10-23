@@ -433,7 +433,6 @@
       date: day
     });
   };
-
   Clndr.prototype.render = function() {
     // get rid of the previous set of calendar parts.
     // TODO: figure out if this is the right way to ensure proper garbage collection?
