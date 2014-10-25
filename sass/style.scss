@@ -311,113 +311,13 @@ main#home
                     }
                 }
             }
-
-            .scrollable
-            {
-                margin-top: 20px;
-
-                form
-                {
-                    height: 313px;
-                    overflow-y: scroll;
-                    width: 500px;
-                    margin: 0 5px 0 18px;
-                }
-                h4
-                {
-                    font-family: "citroenregular";
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    color:$second_color;
-                    font-weight: 200;
-                    // margin-left: 20px;
-                }
-
-                .element
-                {
-                    font-family: Arial;
-                    font-size: 13px;
-                    border-bottom: 1px solid #f2f2f2;
-                    line-height: 19px;
-                    padding: 19px 0;
-                    position: relative;
-                    width: 473px;
-                    // margin-left: 15px;
-
-                    .elmt-img
-                    {
-                        float: left;
-                        width: 50px;
-                        display: inline-block;
-                        text-align: center;
-
-                        img
-                        {
-                            display: inline-block;
-                            width: auto;
-                        }
-                    }
-
-
-                    span
-                    {
-                        display: inline-block;
-                        float: left;
-                    }
-
-                    input[type=checkbox]
-                    {
-                        float: right;
-                        // margin-right: 25px;
-                        position: relative;
-                    }
-                }
-
-                .section
-                {
-                    margin-top: 35px;
-
-                    &:first-child
-                    {
-                        margin-top: 0px;
-                    }
-                }
-
-            }
             a
             {
-                background:transparent;
-                padding: 7px 19px;
-                border: 1px solid $second_color;
-                font-family: "citroenregular";
-                font-size: 15px;
-                color: $second_color;
                 margin-right: 20px;
-                text-align: center;
-                margin-top: 10px;
-                background:$second_color;
-                color: white;
-
-                span
-                {
-                    display: inline-block;
-                    margin-right: 5px;
-                    font-family: Arial;
-                }
 
                 &:first-child
                 {
                     margin-right: 0;
-                }
-
-                &:hover
-                {
-                    background:$second_color_hover;
-                }
-
-                &.active
-                {
-                    background:$second_color_hover;
                 }
             }
         }
@@ -760,57 +660,231 @@ main#rubrique
         }
     }
 }
-.rubrique-niveau-2-pre-footer.wrapper
+main#agenda
 {
-    text-align: center;
-    margin-top: 35px;
-    article
+    .left
     {
-        display: inline-block;
-        width: 169px;
-        height: 148px;
-        background:$first-color;
+        box-sizing: border-box;
+        width: 279px;
         font-family: "citroenregular";
-        font-size: 17px;
-        color:white;
-        box-sizing:border-box;
-        position: relative;
-        z-index: 0;
         text-transform: uppercase;
-        margin-right: 20px;
+        text-align: center;
+        margin: 30px 0 0 0;
+        float: left;
 
-        &:last-child
+        .left-content
         {
-            margin-right: 0;
+            margin-bottom: 30px;
+            .selectionne
+            {
+                span, div
+                {
+                    display: block;
+                    box-sizing: border-box;
+                }
+                .day-word
+                {
+                    height: 95px;
+                    background:$second_color;
+                    // display: block;
+                    color:white;
+                    font-size: 40px;
+                    padding-top: 20px;
+                }
+                .date
+                {
+                    border: 1px solid #d2d2d2;
+                    border-top: none;
+                    height: 276px;
+
+                    .day
+                    {
+                        font-size: 129px;
+                        line-height: 95px;
+                        color: $second_color;
+                        padding-top: 35px;
+                    }
+                    .month
+                    {
+                        font-size: 62px;
+                        line-height: 62px;
+                        color: $second_color;
+                        padding-top: 10px;
+                    }
+                    .year
+                    {
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $second_color;
+                        padding-top: 50px;
+                        position: relative;
+
+                        &:after
+                        {
+                            content: url(../img/agenda-year-puce.png);
+                            position: relative;
+                            bottom: 2px;
+                            left: 5px;
+                        }
+
+                        &:before
+                        {
+                            content: url(../img/agenda-year-puce.png);
+                            position: relative;
+                            bottom: 2px;
+                            right: 5px;
+                        }
+                    }
+                }
+            }
         }
-
-        div.img
+        a.btn-style-2
         {
-            width:30px;
-            text-align: center;
-            display: inline-block;
-            position: relative;
-            z-index: 100;
-            height: 50px;
-            vertical-align: middle;
-            margin-top: 35px;
+            text-transform: initial;
+            padding: 7px 18px;
         }
+    }
 
-        p
+    .right
+    {
+        float: right;
+        background:#f5f5f5;
+        margin-top: 30px;
+        width: 617px;
+
+        form
         {
-            position: relative;
-            z-index: 1000;
+            width: 595px;
+
+            .element
+            {
+                width: 565px;
+            }
         }
+    }
 
-        a
+    section.cal-month
+    {
+        width: 100%;
+
+        .clndr
         {
-            position: absolute;
-            z-index: 10000;
-            display: inline-block;
             width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
+            text-align: center;
+
+            .clndr-controls
+            {
+                font-family: "citroenregular";
+                font-size: 22px;
+                color: $second_color;
+                text-transform: uppercase;
+                position: relative;
+                .month
+                {
+                    text-align: center;
+                    display: inline-block;
+                }
+                .clndr-control-button
+                {
+                    display: inline-block;
+                    cursor: pointer;
+                    span
+                    {
+                        display: inline-block;
+                    }
+
+                    &.leftalign
+                    {
+                        float: left;
+                    }
+
+                    &.rightalign
+                    {
+                        float: right;
+                    }
+                }
+            }
+
+            table.clndr-table
+            {
+                width: 100%;
+
+                thead
+                {
+                    font-family: "citroenregular";
+                    font-size: 15px;
+                    color: $second_color;
+                    text-transform: lowercase;
+                }
+                tbody
+                {
+                    font-family: Arial;
+                    font-size: 10px;
+                    color: #2e2e2e;
+                    text-align: left;
+
+                    td
+                    {
+                        border: 1px solid #d7d7d7;
+                        height: 100px;
+                        width: (100% / 7);
+                        vertical-align: top;
+                        // overflow: hidden;
+
+                        &.Sam
+                        {
+                            background:#fafafa;
+                        }
+
+                        &.Dim
+                        {
+                            background:#fafafa;
+                        }
+
+                        &.event
+                        {
+
+                            .day-contents
+                            {
+                                .day
+                                {
+                                    background:$second_color;
+                                    color: white;
+                                }
+                            }
+                        }
+                        div
+                        {
+
+                            div.day
+                            {
+                                box-sizing:border-box;
+                                padding: 5px 8px;
+                                margin-bottom: 10px;
+                            }
+                            .event-today
+                            {
+                                box-sizing:border-box;
+                                padding: 0 8px 0 0;
+                                position: relative;
+                                height: 32px;
+                                i
+                                {
+                                    position: relative;
+                                    top: 15%;
+                                    display: inline-block;
+                                    width: 37px;
+                                    text-align: center;
+                                }
+                                span
+                                {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

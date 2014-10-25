@@ -432,7 +432,163 @@ header
         }
     }
 }
+.scrollable
+{
+    margin-top: 20px;
 
+    form
+    {
+        height: 313px;
+        overflow-y: scroll;
+        width: 500px;
+        margin: 0 5px 0 18px;
+    }
+    h4
+    {
+        font-family: "citroenregular";
+        text-transform: uppercase;
+        font-size: 14px;
+        color:$second_color;
+        font-weight: 200;
+        // margin-left: 20px;
+    }
+
+    .element
+    {
+        font-family: Arial;
+        font-size: 13px;
+        border-bottom: 1px solid #f2f2f2;
+        line-height: 19px;
+        padding: 19px 0;
+        position: relative;
+        width: 473px;
+        // margin-left: 15px;
+
+        .elmt-img
+        {
+            float: left;
+            width: 50px;
+            display: inline-block;
+            text-align: center;
+
+            img
+            {
+                display: inline-block;
+                width: auto;
+            }
+        }
+
+
+        span
+        {
+            display: inline-block;
+            float: left;
+        }
+
+        input[type=checkbox]
+        {
+            float: right;
+            // margin-right: 25px;
+            position: relative;
+        }
+    }
+
+    .section
+    {
+        margin-top: 35px;
+
+        &:first-child
+        {
+            margin-top: 0px;
+        }
+    }
+
+}
+.btn-style-2
+{
+    background:transparent;
+    padding: 7px 19px;
+    border: 1px solid $second_color;
+    font-family: "citroenregular";
+    font-size: 15px;
+    color: $second_color;
+    text-align: center;
+    margin-top: 10px;
+    background:$second_color;
+    color: white;
+
+    span
+    {
+        display: inline-block;
+        margin-right: 5px;
+        font-family: Arial;
+    }
+
+    &:hover
+    {
+        background:$second_color_hover;
+    }
+
+    &.active
+    {
+        background:$second_color_hover;
+    }
+}
+
+.pre-footer-two.wrapper
+{
+    text-align: center;
+    margin-top: 35px;
+    article
+    {
+        display: inline-block;
+        width: 169px;
+        height: 148px;
+        background:$first-color;
+        font-family: "citroenregular";
+        font-size: 17px;
+        color:white;
+        box-sizing:border-box;
+        position: relative;
+        z-index: 0;
+        text-transform: uppercase;
+        margin-right: 20px;
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+
+        div.img
+        {
+            width:30px;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            z-index: 100;
+            height: 50px;
+            vertical-align: middle;
+            margin-top: 35px;
+        }
+
+        p
+        {
+            position: relative;
+            z-index: 1000;
+        }
+
+        a
+        {
+            position: absolute;
+            z-index: 10000;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
 #sub-footer
 {
     background:#ebebeb;

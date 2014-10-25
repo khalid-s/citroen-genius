@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <title>02_home</title>
+    <title>07_agenda_semaine</title>
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- Import jquery 2.1.1 in case there are some jQ code in the page which executes before doc.ready -->
@@ -117,54 +117,29 @@
     </header>
 
 
-    <main id="home">
-        <div class="slider">
-            <div class="wrapper">
-                <div class="banner">
-                    <ul>
-                    <!-- The image can EITHER be in background set like this -->
-                        <li style="background:url(../img/slider/1.png) no-repeat">
-                            <h3>Simplydrive1</h3>
-                            
-                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
-                            
-                            <a href="#" class="btn">En savoir plus</a>
-                            <!-- <img src="../img/slider/1.png" /> -->
-                        </li>
-
-                        <!-- OR have the image like this. The difference is that in bg the image must be of width and height of the slider while in this one the image is set absolute to le li with position top:0 and right:0 -->
-                        <li>
-                            <h3>Simplydrive2</h3>
-                            
-                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
-
-                            
-                            <a href="#" class="btn">En savoir plus</a>
-                            <img src="../img/slider/3.png" alt="">
-                        </li>
-                        <li style="background:url(../img/slider/3.png) no-repeat">
-                            <h3>Simplydrive3</h3>
-                            
-                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
-                            
-                            <a href="#" class="btn">En savoir plus</a>
-                            <!-- <img src="../img/slider/3.png" /> -->
-                        </li>
-                        <li style="background:url(../img/slider/4.png) no-repeat">
-                            <h3>Simplydrive4</h3>
-                            
-                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
-                            
-                            <a href="#" class="btn">En savoir plus</a>
-                            <!-- <img src="../img/slider/4.png" /> -->
-                        </li>
-                    </ul>
-                    <div class="clear"></div>
-                </div><!-- end banner -->
-            </div>
-        </div><!-- end .slider -->
-
-
+    <main id="agenda">
+        <div class="wrapper">
+            <div id="options">
+                
+                <ul>
+                    <li class="first">
+                        <a href="#">
+                            <img src="../img/options-first.png" alt="#">
+                        </a>
+                    </li>
+                    <li class="second">
+                        <a href="#">
+                            <img src="../img/options-second.png" alt="#">
+                        </a>
+                    </li>
+                    <li class="third">
+                        <a href="#">
+                            <img src="../img/options-third.png" alt="#">
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- End #options -->
+        </div><!-- End .wrapper -->
 
 
         <!-- content -->
@@ -176,81 +151,19 @@
                 
                 <div class="left-content">
                     <div class="selectionne">
+                        <span class="day-word">Dix Manche</span>
                         <div class="date">
                             <span class="day">13</span>
-                            <span class="month">november</span>
+                            <span class="month">oct</span>
                             <span class="year">2014</span>
                         </div>
 
-                        <a href="#" class="agenda today btn">Afficher la date du jour</a>
+                        <!-- <a href="#" class="agenda today btn">Afficher la date du jour</a> -->
                         <div class="clear"></div>
                     </div>
                     
                     <div class="clear"></div>
-                    <div class="scrollable">
-                        <form action="#">
-                            <div class="section">
-                                <h4>événements</h4>
-
-                                <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-first.png" alt=""></div>
-                                    
-                                    <span>PLV Installer dans le showroom</span>
-                                    <div class="clear"></div>
-                                </div>
-
-                                <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-second.png" alt=""></div>
-
-                                    <span>Présenter la C3 Brésil </span>
-                                    <div class="clear"></div>
-                                </div>
-
-                                <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-third.png" alt=""></div>
-
-                                    <span>Livrer la C3 Brésil </span>
-                                    <div class="clear"></div>
-                                </div>
-                            </div><!-- end .evenements -->
-
-                            <div class="section">
-                                <h4>taches à réaliser</h4>
-                                
-                                <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
-                                    
-                                    <input checked="checked" class="checkbox" id="checkbox_4" name="checkbox_4" type="checkbox" value="One">
-                                    <label for="checkbox_4"></label>
-
-                                    <span>PLV Installer dans le showroom</span>
-                                    <div class="clear"></div>
-                                </div>
-                                
-                                <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
-                                    
-                                    <input class="checkbox" id="checkbox_5" name="checkbox_5" type="checkbox" value="One">
-                                    <label for="checkbox_5"></label>
-
-                                    <span>PLV Installer dans le showroom</span>
-                                    <div class="clear"></div>
-                                </div>
-                                
-                                <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
-                                    
-                                    <input class="checkbox" id="checkbox_6" name="checkbox_6" type="checkbox" value="One">
-                                    <label for="checkbox_6"></label>
-
-                                    <span>PLV Installer dans le showroom</span>
-                                    <div class="clear"></div>
-                                </div>
-
-                            </div>
-                        </form>
-
-                    </div><!-- end .scrollable -->
+                    
                 </div><!-- end .left-content -->
                 
                 <!-- possibility to add class active to the 2 following links to keep the hover effect on  -->
@@ -261,11 +174,81 @@
             </div><!-- end .left -->
 
             <div class="right">
-                <div class="cal">
+                <a href="#" class="btn btn-style-2">Revenir à la date du jour</a>
+                <div class="scrollable">
+                    <form action="#">
+                        <div class="section">
+                            <h4>événements</h4>
+
+                            <div class="element">
+                                <div class="elmt-img"><img src="../img/scrollable-first.png" alt=""></div>
+                                
+                                <span>PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="element">
+                                <div class="elmt-img"><img src="../img/scrollable-second.png" alt=""></div>
+
+                                <span>Présenter la C3 Brésil </span>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="element">
+                                <div class="elmt-img"><img src="../img/scrollable-third.png" alt=""></div>
+
+                                <span>Livrer la C3 Brésil </span>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- end .evenements -->
+
+                        <div class="section">
+                            <h4>taches à réaliser</h4>
+                            
+                            <div class="element">
+                                <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                
+                                <input checked="checked" class="checkbox" id="checkbox_4" name="checkbox_4" type="checkbox" value="One">
+                                <label for="checkbox_4"></label>
+
+                                <span>PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <div class="element">
+                                <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                
+                                <input class="checkbox" id="checkbox_5" name="checkbox_5" type="checkbox" value="One">
+                                <label for="checkbox_5"></label>
+
+                                <span>PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <div class="element">
+                                <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                
+                                <input class="checkbox" id="checkbox_6" name="checkbox_6" type="checkbox" value="One">
+                                <label for="checkbox_6"></label>
+
+                                <span>PLV Installer dans le showroom</span>
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div><!-- end .scrollable -->
+            </div><!-- end .right -->
+            
+            <div class="clear"></div>
+            <section class="cal-month">
+                
+                <div class="cal-agenda">
                     <script type="text/template" id="template-calendar">
                         <div class="clndr-controls">
-                            <div class='clndr-control-button'>
-                                <span class='clndr-previous-button'><img src="../img/calendar-previous.png" alt=""></span>
+                            <div class='clndr-control-button leftalign'>
+                                <span class='clndr-previous-button'><img src="../img/calendar-big-previous.png" alt=""></span>
                             </div>
 
                             <div class='month'>
@@ -273,15 +256,24 @@
                             </div>
 
                             <div class='clndr-control-button rightalign'>   
-                                <span class='clndr-next-button'><img src="../img/calendar-next.png" alt=""></span>
+                                <span class='clndr-next-button'><img src="../img/calendar-big-next.png" alt=""></span>
                             </div>
                         </div>
 
                         <table class='clndr-table' border='0' cellspacing='0' cellpadding='0'>
                             <thead>
                                 <tr class='header-days'>
-                                    <% for(var i = 0; i < daysOfTheWeek.length; i++) { %>
-                                        <td class='header-day'><%= daysOfTheWeek[i] %></td>
+                                    <% for(var i = 0; i < numberOfRows; i++){ %>
+                                        <tr>
+                                            <% for(var j = 0; j < 7; j++){ %>
+                                                <% var d = j + i * 7; %>
+                                                <td class='<%= days[d].classes + " " + daysOfTheWeek[j] %>'>
+                                                    <div class='day-contents'>
+                                                        <div class='day'><%= daysOfTheWeek[j] + ' '+ days[d].day %></div>
+                                                    </div>
+                                                </td>
+                                            <% } %>
+                                        </tr>
                                     <% } %>
                                 </tr>
                             </thead>
@@ -291,9 +283,9 @@
                                     <tr>
                                         <% for(var j = 0; j < 7; j++){ %>
                                             <% var d = j + i * 7; %>
-                                            <td class='<%= days[d].classes %>'>
+                                            <td class='<%= days[d].classes + " " + daysOfTheWeek[j] %>'>
                                                 <div class='day-contents'>
-                                                    <%= days[d].day %>
+                                                    <div class='day'><%= days[d].day %></div>
                                                 </div>
                                             </td>
                                         <% } %>
@@ -301,58 +293,50 @@
                                 <% } %>
                             </tbody>
                         </table>
-
-                        <div class="my-cal btn">
-                            <a href="#">Mon calendrier</a>
-                        </div>
                     </script>
+<!--                                                     <div class='event-today'><i><img src="../img/event-today-image-1.png" alt=""></i><span>A long event</span></div>
+                                                    <div class='event-today'><i><img src="../img/event-today-image-2.png" alt=""></i><span>A long event</span></div> -->
                         <!-- <div class="clndr-today-button">Aujourd''hui</div> -->
                 </div>
-            </div><!-- end .right -->
+            </section>
             <div class="clear"></div>
-        </div>
+        </div><!-- end .content.wrapper -->
     </main>
 
-    <div class="home-prefooter">
-        <div class="wrapper">
-            <div class="left">
-                <h3>incontournables</h3>
+    <div class="pre-footer-two wrapper">
+        <article class="one">
+            <div class="img">
+                <img src="../img/rubrique-niveau-2-one.png" alt="">
+            </div>
 
-                <ul>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                </ul>
+            <p>incontournables</p>
+            <a href="#"></a>
+        </article>
+        <article class="two">
+            <div class="img">
+                <img src="../img/rubrique-niveau-2-two.png" alt="">
+            </div>
 
-                <a href="#" class="btn">Tous mes incontournables</a>
-            </div><!-- end left -->
+            <p>actualités</p>
+            <a href="#"></a>
+        </article>
+        <article class="three">
+            <div class="img">
+                <img src="../img/rubrique-niveau-2-three.png" alt="">
+            </div>
 
-            <div class="right">
-                <h3>dernières publication</h3>
-
-                <ul>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                    <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
-                </ul>
-
-                <a href="#" class="btn">Toutes les publications</a>
-            </div><!-- end right -->
-
-            <!-- <div class="up-btn"></div> -->
-            
-            <div class="clear"></div>
-        </div><!-- end wrapper -->
+            <p>agenda</p>
+            <a href="#"></a>
+        </article>
+        
+        <div class="clear"></div>
+    </div>
     
-        <div class="up-btn-wrapper">
-            
-            <div class="up-btn"></div>
-            
-        </div>
+    <div class="up-btn-wrapper">
+        
+        <div class="up-btn"></div>
+        
+    </div>
 
         <div id="sub-footer">
             <div class="wrapper">
