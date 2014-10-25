@@ -83,7 +83,7 @@ jQuery(document).ready(function() {
     var thisMonth = moment().format('YYYY-MM');
 
     var eventArray = [
-        { startDate: thisMonth + '-03', endDate: thisMonth + '-03', title: 'An Event2', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: thisMonth + '-03', endDate: thisMonth + '-03', startTime: '09:30', endTime: '10:30', title: 'An Event2', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
         { startDate: thisMonth + '-03', endDate: thisMonth + '-03', title: 'An Event3', img:'../img/event-today-image-2.png', url: 'http://citroen.fr' },
         { startDate: thisMonth + '-11', endDate: thisMonth + '-11', title: 'An Event4', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
         { startDate: thisMonth + '-10', endDate: thisMonth + '-10', title: 'An Event42', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
@@ -93,6 +93,7 @@ jQuery(document).ready(function() {
         { startDate: '2015-03-01', endDate: '2015-03-01', title: 'An Event6', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
         { startDate: '2015-03-31', endDate: '2015-03-31', title: 'An Event7', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' }
     ];
+    console.info(eventArray);
       // the order of the click handlers is predictable.
       // direct click action callbacks come first: click, nextMonth, previousMonth, nextYear, previousYear, or today.
       // then onMonthChange (if the month changed).
