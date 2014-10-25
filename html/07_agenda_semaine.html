@@ -242,7 +242,63 @@
             </div><!-- end .right -->
             
             <div class="clear"></div>
-            
+            <section class="cal-month">
+                
+                <div class="cal-agenda">
+                    <script type="text/template" id="template-calendar">
+                        <div class="clndr-controls">
+                            <div class='clndr-control-button leftalign'>
+                                <span class='clndr-previous-button'><img src="../img/calendar-big-previous.png" alt=""></span>
+                            </div>
+
+                            <div class='month'>
+                                <%= month %> <%= year %>
+                            </div>
+
+                            <div class='clndr-control-button rightalign'>   
+                                <span class='clndr-next-button'><img src="../img/calendar-big-next.png" alt=""></span>
+                            </div>
+                        </div>
+
+                        <table class='clndr-table' border='0' cellspacing='0' cellpadding='0'>
+                            <thead>
+                                <tr class='header-days'>
+                                    <% for(var i = 0; i < numberOfRows; i++){ %>
+                                        <tr>
+                                            <% for(var j = 0; j < 7; j++){ %>
+                                                <% var d = j + i * 7; %>
+                                                <td class='<%= days[d].classes + " " + daysOfTheWeek[j] %>'>
+                                                    <div class='day-contents'>
+                                                        <div class='day'><%= daysOfTheWeek[j] + ' '+ days[d].day %></div>
+                                                    </div>
+                                                </td>
+                                            <% } %>
+                                        </tr>
+                                    <% } %>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <% for(var i = 0; i < numberOfRows; i++){ %>
+                                    <tr>
+                                        <% for(var j = 0; j < 7; j++){ %>
+                                            <% var d = j + i * 7; %>
+                                            <td class='<%= days[d].classes + " " + daysOfTheWeek[j] %>'>
+                                                <div class='day-contents'>
+                                                    <div class='day'><%= days[d].day %></div>
+                                                </div>
+                                            </td>
+                                        <% } %>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </script>
+<!--                                                     <div class='event-today'><i><img src="../img/event-today-image-1.png" alt=""></i><span>A long event</span></div>
+                                                    <div class='event-today'><i><img src="../img/event-today-image-2.png" alt=""></i><span>A long event</span></div> -->
+                        <!-- <div class="clndr-today-button">Aujourd''hui</div> -->
+                </div>
+            </section>
             <div class="clear"></div>
         </div><!-- end .content.wrapper -->
     </main>

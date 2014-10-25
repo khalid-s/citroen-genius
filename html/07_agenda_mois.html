@@ -277,6 +277,21 @@
                                             <td class='<%= days[d].classes + " " + daysOfTheWeek[j] %>'>
                                                 <div class='day-contents'>
                                                     <div class='day'><%= days[d].day %></div>
+
+                                                    <% if(days[d].events.length > 0) { %>
+                                                        <div class='event-today'>
+                                                            <i><img src="<%= days[d].events[0].img %>" alt=""></i>
+                                                            <span><%= days[d].events[0].title %></span>
+                                                        </div>
+                                                    <% } %>
+                                                    <% if(days[d].events.length > 1) { %>
+                                                        <div class='event-today'>
+                                                            <i><img src="<%= days[d].events[1].img %>" alt=""></i>
+                                                            <span><%= days[d].events[1].title %></span>
+                                                        </div>
+                                                    <% } %>
+
+
                                                 </div>
                                             </td>
                                         <% } %>

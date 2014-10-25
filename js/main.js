@@ -76,26 +76,30 @@ jQuery(document).ready(function() {
     });
 
 // --------------- End checkboxes -----------------
-// calendar on home page
+// calendar
 
     var calendars = {};
 
     var thisMonth = moment().format('YYYY-MM');
 
     var eventArray = [
-        { startDate: thisMonth + '-17', endDate: thisMonth + '-17', title: 'Another Multi-Day Event' },
-        { startDate: thisMonth + '-03', endDate: thisMonth + '-03', title: 'Another Multi-Day Event', img:'../img/nav-animer.png', url: 'http://citroen.fr' },
-        { startDate: thisMonth + '-10', endDate: thisMonth + '-10', title: 'Another Multi-Day Event' },
-        { startDate: thisMonth + '-31', endDate: '2014-10-31', title: 'Another Multi-Day Event' },
-        { startDate: '2015-03-01', endDate: '2015-03-01', title: 'Another Multi-Day Event' },
-        { startDate: '2015-03-31', endDate: '2015-03-31', title: 'Another Multi-Day Event' }
+        { startDate: thisMonth + '-03', endDate: thisMonth + '-03', title: 'An Event2', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: thisMonth + '-03', endDate: thisMonth + '-03', title: 'An Event3', img:'../img/event-today-image-2.png', url: 'http://citroen.fr' },
+        { startDate: thisMonth + '-11', endDate: thisMonth + '-11', title: 'An Event4', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: thisMonth + '-10', endDate: thisMonth + '-10', title: 'An Event42', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: thisMonth + '-10', endDate: thisMonth + '-10', title: 'An Event43', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: thisMonth + '-17', endDate: thisMonth + '-17', title: 'An Event17', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: thisMonth + '-31', endDate: '2014-10-31', title: 'An Event5', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: '2015-03-01', endDate: '2015-03-01', title: 'An Event6', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' },
+        { startDate: '2015-03-31', endDate: '2015-03-31', title: 'An Event7', img:'../img/event-today-image-1.png', url: 'http://citroen.fr' }
     ];
-    console.log(eventArray);
       // the order of the click handlers is predictable.
       // direct click action callbacks come first: click, nextMonth, previousMonth, nextYear, previousYear, or today.
       // then onMonthChange (if the month changed).
       // finally onYearChange (if the year changed).
 
+
+    // calendar config for home page .cal
     calendars.clndr = $('.cal').clndr({
         daysOfTheWeek: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
         // set weekOffset to 0 to begin the calendar on sunday instead of monday
@@ -108,7 +112,7 @@ jQuery(document).ready(function() {
         // },
         clickEvents: {
             click: function(target) {
-                console.log(target);
+                // console.log(target);
                 // if you turn the `constraints` option on, try this out:
                 // if($(target.element).hasClass('inactive')) {
                 //   console.log('not a valid datepicker date.');
@@ -138,6 +142,24 @@ jQuery(document).ready(function() {
         multiDayEvents: {
             startDate: 'startDate',
             endDate: 'endDate'
+        },
+        showAdjacentMonths: true,
+        adjacentDaysChangeMonth: false
+    });
+
+    
+
+    // calendar config for agenda page
+    calendars.clndr = $('.cal-agenda').clndr({
+        daysOfTheWeek: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+        // set weekOffset to 0 to begin the calendar on sunday instead of monday
+        weekOffset: 1,
+        template: $('#template-calendar').html(),
+        events: eventArray,
+        multiDayEvents: {
+            startDate: 'startDate',
+            endDate: 'endDate',
+            location: 'url'
         },
         showAdjacentMonths: true,
         adjacentDaysChangeMonth: false
