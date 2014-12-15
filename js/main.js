@@ -9,6 +9,14 @@ jQuery(document).ready(function() {
     });
 // ------------ End toggle accounts -----------------------
 
+// Placeholder for old browser
+// This placeholder is initiated here but uses the library jquery-placeholder.js
+$('input, textarea').placeholder();
+
+// -------------------------------------------
+
+
+
 // Move back up the page button
     var offset = 220;
     var duration = 500;

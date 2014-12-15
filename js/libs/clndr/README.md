@@ -204,8 +204,6 @@ $('.parent-element').clndr({
   // field in your event object containing a date string.
   // It's set to 'date' by default.
   dateParameter: 'date',
-  // show the numbers of days in months adjacent to the current month
-  // (and populate them with their events). defaults to true.
   // CLNDR can accept events lasting more than one day!
   // just pass in the multiDayEvents option and specify what the start and
   // end fields are called within your event objects. See the example file
@@ -378,6 +376,12 @@ myCalendar.setEvents(newEventsArray);
 
 // Add events. Note that this triggers a re-render of the calendar.
 myCalendar.addEvents(additionalEventsArray);
+
+// Remove events.  All events for which the passed in function returns true will be removed from the calendar.
+// Note that this triggers a re-render of the calendar.
+myCalendar.removeEvents(function(event){
+  return event.id == idToRemove;
+});
 ```
 
 If you are taking advantage of the `onMonthChange` and `onYearChange` callbacks, you might want them to fire whenver you call `setMonth`, `setYear`, `forward`, `back`, etc. Just pass in an object as an argument with `withCallbacks: true` like this:
@@ -510,6 +514,11 @@ Todo
 
 Changelog
 =========
+
+`v1.2.5 ~ 2014-12-01`: Reverting the previous DST code change, which introduced a bug for a large number of users.
+
+`v1.2.4 ~ 2014-11-25`: Fixed a bug related to DST in specific timezones that would cause duplicate dates to appear. Added `removeEvents` filtering function. `warning`! This version is buggy. Please upgrade to `v1.2.5` if you are currently on this version.
+
 `v1.2.3 ~ 2014-10-15`: Fixed a bug that introduced a global variable. It's possible (but very unlikely) that this might have caused some weirdness when using multiple instances of CLNDR on the same page.
 
 `v1.2.2 ~ 2014-10-01`: Updated internal usage of deprecated moment.js functions.
