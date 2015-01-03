@@ -1,0 +1,19 @@
+	.tabs li {
+			    margin: -10px 0;
+                padding: 0;
+			    list-style:none;
+			    display:inline;
+			}
+
+			.tabs a {
+			    padding:5px 5px;
+			    display:inline-block;
+			    background:#666;
+			    color:#fff;
+			    text-decoration:none;
+			}
+
+			.tabs a.active {
+			    background:#fff;
+			    color:#000;
+			}		

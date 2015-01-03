@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
-/* line 9, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+/* line 9, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 article,
 aside,
 details,
@@ -16,7 +17,7 @@ summary {
   display: block;
 }
 
-/* line 29, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+/* line 29, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 audio,
 canvas,
 progress,
@@ -25,78 +26,78 @@ video {
   vertical-align: baseline;
 }
 
-/* line 40, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+/* line 40, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 47, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+/* line 47, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 [hidden],
 template {
   display: none;
 }
 
 /*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
-/* line 11, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+/* line 11, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 19, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+/* line 19, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 body {
   margin: 0;
 }
 
 /*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
-/* line 9, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+/* line 9, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a {
   background: transparent;
 }
 
-/* line 15, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+/* line 15, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
 /*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
-/* line 9, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 9, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 15, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 15, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 22, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 29, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 29, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 36, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 36, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 43, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 43, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 small {
   font-size: 80%;
 }
 
-/* line 49, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 49, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -105,46 +106,46 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 57, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 57, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 61, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+/* line 61, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sub {
   bottom: -0.25em;
 }
 
 /*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
-/* line 9, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+/* line 9, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 img {
   border: 0;
 }
 
-/* line 15, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+/* line 15, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
 /*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
-/* line 9, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+/* line 9, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 figure {
   margin: 1em 40px;
 }
 
-/* line 15, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+/* line 15, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 23, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+/* line 23, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 pre {
   overflow: auto;
 }
 
-/* line 29, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+/* line 29, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 code,
 kbd,
 pre,
@@ -154,7 +155,7 @@ samp {
 }
 
 /*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
-/* line 15, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 15, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 input,
 optgroup,
@@ -165,18 +166,18 @@ textarea {
   margin: 0;
 }
 
-/* line 27, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 27, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button {
   overflow: visible;
 }
 
-/* line 36, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 36, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 47, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 47, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -185,38 +186,38 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 57, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 57, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 64, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 64, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 73, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 73, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input {
   line-height: normal;
 }
 
-/* line 83, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 83, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 93, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 93, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 102, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 102, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -224,48 +225,50 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 113, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 113, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 120, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 120, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 129, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 129, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 136, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 136, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 143, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+/* line 143, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 optgroup {
   font-weight: bold;
 }
 
 /*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
-/* line 9, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+/* line 9, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 14, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+/* line 14, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 td,
 th {
   padding: 0;
 }
 
+/*@import "susy";
+@import "breakpoint";*/
 /*
 == malihu jquery custom scrollbar plugin ==
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
@@ -2360,27 +2363,27 @@ yx-axis
 /********************************* FONTS *************************************************/
 @font-face {
   font-family: "citroenlight";
-  src: url('../fonts/citroen_light-webfont.eot?1403149886') format('embedded-opentype'), url('../fonts/citroen_light-webfont.woff?1403149886') format('woff'), url('../fonts/citroen_light-webfont.ttf?1403149886') format('truetype'), url('../fonts/citroen_light-webfont.svg?1403149886') format('svg');
+  src: url('../fonts/citroen_light-webfont.eot?1414173072') format('embedded-opentype'), url('../fonts/citroen_light-webfont.woff?1414173072') format('woff'), url('../fonts/citroen_light-webfont.ttf?1414173072') format('truetype'), url('../fonts/citroen_light-webfont.svg?1414173072') format('svg');
 }
 @font-face {
   font-family: "citroenlight_italic";
-  src: url('../fonts/citroen_light_italic-webfont.eot?1403149886') format('embedded-opentype'), url('../fonts/citroen_light_italic-webfont.woff?1403149886') format('woff'), url('../fonts/citroen_light_italic-webfont.ttf?1403149886') format('truetype'), url('../fonts/citroen_light_italic-webfont.svg?1403149886') format('svg');
+  src: url('../fonts/citroen_light_italic-webfont.eot?1414173072') format('embedded-opentype'), url('../fonts/citroen_light_italic-webfont.woff?1414173072') format('woff'), url('../fonts/citroen_light_italic-webfont.ttf?1414173072') format('truetype'), url('../fonts/citroen_light_italic-webfont.svg?1414173072') format('svg');
 }
 @font-face {
   font-family: "citroenbold_italic";
-  src: url('../fonts/citroen_bold_italic-webfont.eot?1403149886') format('embedded-opentype'), url('../fonts/citroen_bold_italic-webfont.woff?1403149886') format('woff'), url('../fonts/citroen_bold_italic-webfont.ttf?1403149886') format('truetype'), url('../fonts/citroen_bold_italic-webfont.svg?1403149886') format('svg');
+  src: url('../fonts/citroen_bold_italic-webfont.eot?1414173072') format('embedded-opentype'), url('../fonts/citroen_bold_italic-webfont.woff?1414173072') format('woff'), url('../fonts/citroen_bold_italic-webfont.ttf?1414173072') format('truetype'), url('../fonts/citroen_bold_italic-webfont.svg?1414173072') format('svg');
 }
 @font-face {
   font-family: "citroenbold";
-  src: url('../fonts/citroen_bold-webfont.eot?1403149886') format('embedded-opentype'), url('../fonts/citroen_bold-webfont.woff?1403149886') format('woff'), url('../fonts/citroen_bold-webfont.ttf?1403149886') format('truetype'), url('../fonts/citroen_bold-webfont.svg?1403149886') format('svg');
+  src: url('../fonts/citroen_bold-webfont.eot?1414173072') format('embedded-opentype'), url('../fonts/citroen_bold-webfont.woff?1414173072') format('woff'), url('../fonts/citroen_bold-webfont.ttf?1414173072') format('truetype'), url('../fonts/citroen_bold-webfont.svg?1414173072') format('svg');
 }
 @font-face {
   font-family: "citroenitalic";
-  src: url('../fonts/citroen_italic-webfont.eot?1403149886') format('embedded-opentype'), url('../fonts/citroen_italic-webfont.woff?1403149886') format('woff'), url('../fonts/citroen_italic-webfont.ttf?1403149886') format('truetype'), url('../fonts/citroen_italic-webfont.svg?1403149886') format('svg');
+  src: url('../fonts/citroen_italic-webfont.eot?1414173072') format('embedded-opentype'), url('../fonts/citroen_italic-webfont.woff?1414173072') format('woff'), url('../fonts/citroen_italic-webfont.ttf?1414173072') format('truetype'), url('../fonts/citroen_italic-webfont.svg?1414173072') format('svg');
 }
 @font-face {
   font-family: "citroenregular";
-  src: url('../fonts/citroen_regular-webfont.eot?1403149886') format('embedded-opentype'), url('../fonts/citroen_regular-webfont.woff?1403149886') format('woff'), url('../fonts/citroen_regular-webfont.ttf?1403149886') format('truetype'), url('../fonts/citroen_regular-webfont.svg?1403149886') format('svg');
+  src: url('../fonts/citroen_regular-webfont.eot?1414173072') format('embedded-opentype'), url('../fonts/citroen_regular-webfont.woff?1414173072') format('woff'), url('../fonts/citroen_regular-webfont.ttf?1414173072') format('truetype'), url('../fonts/citroen_regular-webfont.svg?1414173072') format('svg');
 }
 /*********************************End  FONTS *************************************************/
 /* line 30, ../sass/includes/_style.scss */
@@ -2433,7 +2436,7 @@ li {
 }
 
 /* line 79, ../sass/includes/_style.scss */
-h2 {
+main#home h2 {
   color: #5b2645;
   position: relative;
   font-family: "citroenbold";
@@ -2443,7 +2446,7 @@ h2 {
   letter-spacing: 5px;
 }
 /* line 88, ../sass/includes/_style.scss */
-h2:before {
+main#home h2:before {
   content: url("../img/h3-bg-purple.png");
   position: absolute;
   top: 10px;
@@ -2451,7 +2454,7 @@ h2:before {
 }
 
 /* line 97, ../sass/includes/_style.scss */
-h3 {
+main#home h3, .home-prefooter h3 {
   font-family: "citroenbold";
   font-size: 22px;
   font-weight: 200;
@@ -2460,7 +2463,7 @@ h3 {
   line-height: 22px;
 }
 /* line 106, ../sass/includes/_style.scss */
-h3:before {
+main#home h3:before, .home-prefooter h3:before {
   content: url("../img/h3-bg.png");
   position: absolute;
 }
@@ -2472,24 +2475,60 @@ h3:before {
 }
 /* line 120, ../sass/includes/_style.scss */
 #pre-header .wrapper {
-  max-width: none;
+  width: 100%;
   background: #184254;
   color: white;
   text-transform: uppercase;
   font-family: "citroenlight";
   font-size: 12px;
   font-weight: 400;
+  max-width: none;
 }
-/* line 123, ../sass/includes/_style.scss */
+/* line 124, ../sass/includes/_style.scss */
+#pre-header .wrapper #notifs {
+  float: right;
+  background: #002d3d;
+  min-height: 32px;
+  width: 32px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 3px;
+}
+/* line 134, ../sass/includes/_style.scss */
+#pre-header .wrapper #notifs i {
+  display: inline-block;
+  margin: 5px 0px 0px 10px;
+  width: 22px;
+  height: 19px;
+  background: url(../img/sprite.png) no-repeat 0 -415px;
+  float: left;
+}
+/* line 143, ../sass/includes/_style.scss */
+#pre-header .wrapper #notifs span.red_circle {
+  font-family: "citroenlight";
+  border-radius: 20px;
+  background: red;
+  font-size: 11px;
+  text-align: center;
+  display: block;
+  width: 13px;
+  height: 13px;
+  /*line-height: 14px;*/
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  padding-right: 2px;
+}
+/* line 159, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt {
   float: right;
   background: #002d3d;
   min-height: 32px;
-  width: 190px;
+  width: 160px;
   position: relative;
   cursor: pointer;
 }
-/* line 132, ../sass/includes/_style.scss */
+/* line 168, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt i {
   display: inline-block;
   margin: 5px 10px 0px;
@@ -2498,27 +2537,28 @@ h3:before {
   background: url(../img/accnt-ico.png) no-repeat;
   float: left;
 }
-/* line 141, ../sass/includes/_style.scss */
+/* line 177, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt span {
   display: inline-block;
   line-height: 30px;
   width: 148px;
   float: right;
 }
-/* line 150, ../sass/includes/_style.scss */
+/* line 186, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt .accnt-option {
   position: absolute;
   display: none;
   margin-top: 2px;
   background: red;
+  z-index: 3;
 }
-/* line 157, ../sass/includes/_style.scss */
+/* line 194, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt .accnt-option ul {
   margin: 0;
   padding: 9px 0;
   background: #001f2f;
 }
-/* line 163, ../sass/includes/_style.scss */
+/* line 200, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt .accnt-option ul li {
   margin: 0;
   padding: 0;
@@ -2526,46 +2566,46 @@ h3:before {
   display: inline-block;
   width: 100%;
 }
-/* line 172, ../sass/includes/_style.scss */
+/* line 209, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt .accnt-option ul li i.my-accnt {
   margin: 6px 5px 0px 15px;
   background: url(../img/my-accnt.png) no-repeat;
 }
-/* line 178, ../sass/includes/_style.scss */
+/* line 215, ../sass/includes/_style.scss */
 #pre-header .wrapper #accnt .accnt-option ul li i.disconnect {
   margin: 6px 5px 0px 15px;
   background: url(../img/disconnect.png) no-repeat;
 }
-/* line 195, ../sass/includes/_style.scss */
+/* line 232, ../sass/includes/_style.scss */
 #pre-header .wrapper ul {
   margin: 0;
   padding: 0;
 }
-/* line 199, ../sass/includes/_style.scss */
+/* line 236, ../sass/includes/_style.scss */
 #pre-header .wrapper ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 0;
   margin-left: 16px;
 }
-/* line 206, ../sass/includes/_style.scss */
+/* line 243, ../sass/includes/_style.scss */
 #pre-header .wrapper ul li:first-child {
   margin-left: 25px;
 }
 
-/* line 215, ../sass/includes/_style.scss */
+/* line 252, ../sass/includes/_style.scss */
 header {
   margin-top: 10px;
 }
-/* line 218, ../sass/includes/_style.scss */
+/* line 255, ../sass/includes/_style.scss */
 header .wrapper {
-  max-width: 920px;
+  width: 100%;
 }
-/* line 221, ../sass/includes/_style.scss */
+/* line 258, ../sass/includes/_style.scss */
 header .wrapper div.logo {
   float: left;
 }
-/* line 227, ../sass/includes/_style.scss */
+/* line 264, ../sass/includes/_style.scss */
 header .wrapper nav {
   font-family: "citroenlight";
   font-size: 20px;
@@ -2573,7 +2613,7 @@ header .wrapper nav {
   text-align: center;
   padding-top: 22px;
 }
-/* line 239, ../sass/includes/_style.scss */
+/* line 276, ../sass/includes/_style.scss */
 header .wrapper nav ul li {
   display: inline-block;
   margin: 0 21px;
@@ -2582,20 +2622,20 @@ header .wrapper nav ul li {
   text-align: center;
   cursor: pointer;
 }
-/* line 257, ../sass/includes/_style.scss */
+/* line 294, ../sass/includes/_style.scss */
 header .wrapper nav ul li div.image {
   height: 25px;
 }
-/* line 261, ../sass/includes/_style.scss */
+/* line 298, ../sass/includes/_style.scss */
 header .wrapper nav ul li span {
   display: block;
   margin-top: 5px;
 }
-/* line 267, ../sass/includes/_style.scss */
+/* line 304, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul {
   display: none;
 }
-/* line 271, ../sass/includes/_style.scss */
+/* line 308, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active {
   display: block;
   position: absolute;
@@ -2609,7 +2649,7 @@ header .wrapper nav ul li ul.active {
   font-size: 15px;
   padding: 13px 28px;
 }
-/* line 283, ../sass/includes/_style.scss */
+/* line 320, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active li {
   text-align: left;
   display: inline-block;
@@ -2620,19 +2660,20 @@ header .wrapper nav ul li ul.active li {
   width: 334px;
   color: #184254;
 }
-/* line 294, ../sass/includes/_style.scss */
+/* line 331, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active li:hover {
   color: #008896;
+  font-weight: bold;
 }
-/* line 299, ../sass/includes/_style.scss */
+/* line 337, ../sass/includes/_style.scss */
 header .wrapper nav ul li ul.active li:last-child {
   border-bottom: none;
 }
-/* line 305, ../sass/includes/_style.scss */
+/* line 343, ../sass/includes/_style.scss */
 header .wrapper nav ul li:hover, header .wrapper nav ul li:active {
   color: #008896;
 }
-/* line 309, ../sass/includes/_style.scss */
+/* line 347, ../sass/includes/_style.scss */
 header .wrapper nav ul li:hover .hover-border, header .wrapper nav ul li:active .hover-border {
   display: inline-block;
   width: 100%;
@@ -2642,7 +2683,7 @@ header .wrapper nav ul li:hover .hover-border, header .wrapper nav ul li:active 
   left: 0;
   bottom: 0;
 }
-/* line 330, ../sass/includes/_style.scss */
+/* line 369, ../sass/includes/_style.scss */
 header .wrapper div.search {
   float: right;
   width: 150px;
@@ -2655,7 +2696,7 @@ header .wrapper div.search {
   font-size: 20px;
   border-bottom: 1px solid black;
 }
-/* line 345, ../sass/includes/_style.scss */
+/* line 384, ../sass/includes/_style.scss */
 header .wrapper div.search form input {
   border: none;
   outline: none;
@@ -2663,7 +2704,7 @@ header .wrapper div.search form input {
   width: 125px;
   height: 27px;
 }
-/* line 353, ../sass/includes/_style.scss */
+/* line 392, ../sass/includes/_style.scss */
 header .wrapper div.search form button {
   border: none;
   outline: none;
@@ -2673,7 +2714,7 @@ header .wrapper div.search form button {
   padding-top: 12px;
 }
 
-/* line 367, ../sass/includes/_style.scss */
+/* line 406, ../sass/includes/_style.scss */
 #breadcrumb {
   border-top: 1px solid #d5d3d5;
   background: #f2f2f2;
@@ -2682,7 +2723,7 @@ header .wrapper div.search form button {
   text-transform: uppercase;
   height: 29px;
 }
-/* line 379, ../sass/includes/_style.scss */
+/* line 418, ../sass/includes/_style.scss */
 #breadcrumb ul li {
   display: inline-block;
   padding: 7px 0;
@@ -2690,7 +2731,7 @@ header .wrapper div.search form button {
   margin: 0 16px;
   color: #929292;
 }
-/* line 387, ../sass/includes/_style.scss */
+/* line 426, ../sass/includes/_style.scss */
 #breadcrumb ul li:before {
   display: inline-block;
   width: 12px;
@@ -2700,48 +2741,50 @@ header .wrapper div.search form button {
   top: 0;
   left: -22px;
 }
-/* line 398, ../sass/includes/_style.scss */
+/* line 437, ../sass/includes/_style.scss */
 #breadcrumb ul li:last-child {
   margin-right: 0;
   color: #008896;
 }
-/* line 404, ../sass/includes/_style.scss */
+/* line 443, ../sass/includes/_style.scss */
 #breadcrumb ul li:first-child {
   margin-left: 0;
 }
-/* line 408, ../sass/includes/_style.scss */
+/* line 447, ../sass/includes/_style.scss */
 #breadcrumb ul li:first-child:before {
   content: "";
   width: 0;
   height: 0;
 }
 
-/* line 421, ../sass/includes/_style.scss */
-#options {
+/* line 460, ../sass/includes/_style.scss */
+/* EDIT by tmenu */
+/*#options {
   float: right;
-}
-/* line 424, ../sass/includes/_style.scss */
+}*/
+/* END EDIT by tmenu */
+/* line 463, ../sass/includes/_style.scss */
 #options li {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 429, ../sass/includes/_style.scss */
+/* line 468, ../sass/includes/_style.scss */
 #options li:last-child {
   margin-right: 0;
 }
 
-/* line 435, ../sass/includes/_style.scss */
+/* line 474, ../sass/includes/_style.scss */
 .scrollable {
   margin-top: 20px;
 }
-/* line 439, ../sass/includes/_style.scss */
+/* line 478, ../sass/includes/_style.scss */
 .scrollable form {
   height: 313px;
   overflow-y: scroll;
   width: 500px;
   margin: 0 5px 0 18px;
 }
-/* line 446, ../sass/includes/_style.scss */
+/* line 485, ../sass/includes/_style.scss */
 .scrollable h4 {
   font-family: "citroenregular";
   text-transform: uppercase;
@@ -2749,7 +2792,7 @@ header .wrapper div.search form button {
   color: #5b2645;
   font-weight: 200;
 }
-/* line 456, ../sass/includes/_style.scss */
+/* line 495, ../sass/includes/_style.scss */
 .scrollable .element {
   font-family: Arial;
   font-size: 13px;
@@ -2759,38 +2802,38 @@ header .wrapper div.search form button {
   position: relative;
   width: 473px;
 }
-/* line 467, ../sass/includes/_style.scss */
+/* line 506, ../sass/includes/_style.scss */
 .scrollable .element .elmt-img {
   float: left;
   width: 50px;
   display: inline-block;
   text-align: center;
 }
-/* line 474, ../sass/includes/_style.scss */
+/* line 513, ../sass/includes/_style.scss */
 .scrollable .element .elmt-img img {
   display: inline-block;
   width: auto;
 }
-/* line 482, ../sass/includes/_style.scss */
+/* line 521, ../sass/includes/_style.scss */
 .scrollable .element span {
   display: inline-block;
   float: left;
 }
-/* line 488, ../sass/includes/_style.scss */
+/* line 527, ../sass/includes/_style.scss */
 .scrollable .element input[type=checkbox] {
   float: right;
   position: relative;
 }
-/* line 496, ../sass/includes/_style.scss */
+/* line 535, ../sass/includes/_style.scss */
 .scrollable .section {
   margin-top: 35px;
 }
-/* line 500, ../sass/includes/_style.scss */
+/* line 539, ../sass/includes/_style.scss */
 .scrollable .section:first-child {
   margin-top: 0px;
 }
 
-/* line 507, ../sass/includes/_style.scss */
+/* line 546, ../sass/includes/_style.scss */
 .btn-style-2 {
   background: transparent;
   padding: 7px 19px;
@@ -2803,27 +2846,30 @@ header .wrapper div.search form button {
   background: #5b2645;
   color: white;
 }
-/* line 520, ../sass/includes/_style.scss */
+/* line 559, ../sass/includes/_style.scss */
 .btn-style-2 span {
   display: inline-block;
   margin-right: 5px;
   font-family: Arial;
 }
-/* line 527, ../sass/includes/_style.scss */
+/* line 566, ../sass/includes/_style.scss */
 .btn-style-2:hover {
   background: #3b0628;
 }
-/* line 532, ../sass/includes/_style.scss */
+/* line 571, ../sass/includes/_style.scss */
 .btn-style-2.active {
   background: #3b0628;
 }
 
-/* line 538, ../sass/includes/_style.scss */
+/* line 577, ../sass/includes/_style.scss */
 .pre-footer-two.wrapper {
   text-align: center;
-  margin-top: 35px;
+	/* ADD by tmenu */
+  margin: 35px 0 0 0;
+  max-width: none;
+	/* END ADD by tmenu */
 }
-/* line 542, ../sass/includes/_style.scss */
+/* line 581, ../sass/includes/_style.scss */
 .pre-footer-two.wrapper article {
   display: inline-block;
   width: 169px;
@@ -2838,11 +2884,11 @@ header .wrapper div.search form button {
   text-transform: uppercase;
   margin-right: 20px;
 }
-/* line 557, ../sass/includes/_style.scss */
+/* line 596, ../sass/includes/_style.scss */
 .pre-footer-two.wrapper article:last-child {
   margin-right: 0;
 }
-/* line 562, ../sass/includes/_style.scss */
+/* line 601, ../sass/includes/_style.scss */
 .pre-footer-two.wrapper article div.img {
   width: 30px;
   text-align: center;
@@ -2853,12 +2899,12 @@ header .wrapper div.search form button {
   vertical-align: middle;
   margin-top: 35px;
 }
-/* line 574, ../sass/includes/_style.scss */
+/* line 613, ../sass/includes/_style.scss */
 .pre-footer-two.wrapper article p {
   position: relative;
   z-index: 1000;
 }
-/* line 580, ../sass/includes/_style.scss */
+/* line 619, ../sass/includes/_style.scss */
 .pre-footer-two.wrapper article a {
   position: absolute;
   z-index: 10000;
@@ -2869,23 +2915,23 @@ header .wrapper div.search form button {
   left: 0;
 }
 
-/* line 592, ../sass/includes/_style.scss */
+/* line 631, ../sass/includes/_style.scss */
 #sub-footer {
   background: #ebebeb;
   height: 37px;
   margin-top: 70px;
 }
-/* line 598, ../sass/includes/_style.scss */
+/* line 637, ../sass/includes/_style.scss */
 #sub-footer .wrapper {
   text-align: center;
 }
-/* line 603, ../sass/includes/_style.scss */
+/* line 642, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li {
   border: none;
   display: inline-block;
   width: auto;
 }
-/* line 608, ../sass/includes/_style.scss */
+/* line 647, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li a {
   font-family: arial;
   font-size: 11px;
@@ -2901,71 +2947,234 @@ header .wrapper div.search form button {
   width: initial;
   text-transform: initial;
 }
-/* line 623, ../sass/includes/_style.scss */
+/* line 662, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li a:before {
   content: "";
   margin: 0;
 }
-/* line 631, ../sass/includes/_style.scss */
+/* line 670, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li a:first-child:before {
   content: "";
   margin: 0;
 }
-/* line 639, ../sass/includes/_style.scss */
+/* line 678, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li:before {
   content: "-";
   margin: 0 4px 0 0px;
   color: #ababab;
 }
-/* line 648, ../sass/includes/_style.scss */
+/* line 687, ../sass/includes/_style.scss */
 #sub-footer .wrapper ul li:first-child:before {
   content: "";
   margin: 0;
 }
 
-/* line 660, ../sass/includes/_style.scss */
-.up-btn-wrapper {
+/* line 699, ../sass/includes/_style.scss */
+/* EDIT by tmenu */
+/*.up-btn-wrapper {
   max-width: 920px;
   position: relative;
   margin: 0 auto;
-}
-/* line 665, ../sass/includes/_style.scss */
+}*/
+/* END EDIT by tmenu */
+/* line 704, ../sass/includes/_style.scss */
 .up-btn-wrapper .up-btn {
-  position: absolute;
+	/* ADD by tmenu */
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+	/* END ADD by tmenu */
   width: 65px;
   height: 65px;
   background: url(../img/up-btn.png) no-repeat;
-  right: -174px;
-  bottom: 0px;
+	/* EDIT by tmenu */
+  /*right: -174px;
+  bottom: 0px;*/
+	/* END EDIT by tmenu */
   cursor: pointer;
   display: none;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 718, ../sass/includes/_style.scss */
+/* EDIT by tmenu */
+/*.up-btn-wrapper.DS {
+  max-width: 920px;
+  position: relative;
+  margin: 0 auto;
+}*/
+/* END EDIT by tmenu */
+/* line 723, ../sass/includes/_style.scss */
+.up-btn-wrapper.DS .up-btn {
+	/* ADD by tmenu */
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+	/* END ADD by tmenu */
+  width: 65px;
+  height: 65px;
+  background: url(../img/up-btn-DS.png) no-repeat;
+	/* EDIT by tmenu */
+  right: -174px;
+  bottom: 0px;
+	/* END EDIT by tmenu */
+  cursor: pointer;
+  display: none;
+}
+
+/* line 5, ../sass/style.scss */
+.infoB {
+  position: relative;
+  display: inline-block;
+  /*width: 27px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 15, ../sass/style.scss */
+.infoB span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: -50px;
+	/* EDIT by tmenu */
+  left: -65px;
+	/* END EDIT by tmenu */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #194254;
+  text-align: center;
+  font-family: "citroenlight";
+  background: #FFFFFF;
+  font-size: 15px;
+  padding: 9px 16px;
+  color: 194254;
+  z-index: 1;
+}
+/* line 31, ../sass/style.scss */
+.infoB span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1018px;
+  z-index: 0;
+  top: 23px;
+  left: 62px;
+}
+
+/* line 48, ../sass/style.scss */
+.infoB.prune {
+  position: relative;
+  display: inline-block;
+  /*width: 30px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 58, ../sass/style.scss */
+.infoB.prune span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 130px;
+  height: 17px;
+  bottom: 40px;
+	/* EDIT by tmenu */
+  left: -70px;
+	/* END EDIT by tmenu */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #5b2646;
+  text-align: center;
+  font-family: "citroenlight";
+  background: #FFFFFF;
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #5b2646;
+  z-index: 1;
+}
+/* line 75, ../sass/style.scss */
+.infoB.prune span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1088px;
+  z-index: 0;
+  top: 23px;
+  left: 68px;
+}
+
+/* line 92, ../sass/style.scss */
+.paddingTop5 {
+  padding-top: 5px;
+}
+
+/* line 95, ../sass/style.scss */
 main#login {
   margin-bottom: 188px;
 }
-/* line 7, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 main#login .wrapper {
   text-align: center;
   margin-top: 100px;
   max-width: 618px;
 }
-/* line 14, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 main#login .logo {
   margin-bottom: 80px;
 }
-/* line 18, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 main#login form {
   display: inline-block;
-  width: 315px;
+  width: 271px;
   text-align: left;
 }
-/* line 24, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 main#login form label {
   display: none;
 }
-/* line 29, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
+main#login form .identifiant input {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+  font-family: 'citroenlight_italic';
+  color: #7c7c7c;
+}
+/* line 128, ../sass/style.scss */
+main#login form .mdp input {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 8px -24px;
+  font-family: 'citroenlight_italic';
+  color: #7c7c7c;
+}
+
+/* ADD by tmenu */
+main#login form .error {
+  display: inline-block;
+  width: 200px;
+  position: absolute;
+  top: 15px;
+  left: 320px;
+  color: #a94442;
+  font-weight: 600;
+  font-family: 'citroenlight_italic';
+}
+main#login form .error.identifiant {
+  display: none;
+}
+/* END EDIT by tmenu */
+
+/* line 136, ../sass/style.scss */
 main#login form input {
   border: none;
   outline: none;
@@ -2973,25 +3182,25 @@ main#login form input {
   padding: 0;
   margin: 10px 0;
 }
-/* line 39, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 main#login form input[type=text] {
-  width: 271px;
-  padding: 7px 0 7px;
+  width: 241px;
+  padding: 6px 0 7px 30px;
 }
-/* line 44, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 main#login form input[type=password] {
-  width: 271px;
-  padding: 7px 0;
+  width: 241px;
+  padding: 6px 0 7px 30px;
 }
-/* line 50, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 main#login form div.identifiant {
   position: relative;
 }
-/* line 55, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 main#login form div.mdp {
   position: relative;
 }
-/* line 60, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 main#login form span.info {
   display: inline-block;
   width: 30px;
@@ -3002,100 +3211,129 @@ main#login form span.info {
   background: url(../img/info.png) transparent no-repeat;
   cursor: pointer;
 }
-/* line 71, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 main#login form span.info-content {
   display: none;
   position: absolute;
   width: 300px;
   top: -87px;
   right: -143px;
-  background: #313131;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #194254;
+  background: white;
   font-family: "citroenlight";
   font-size: 15px;
   padding: 9px 16px;
-  color: white;
+  color: 194254;
   z-index: 1;
 }
-/* line 85, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 main#login form span.info-content:after {
   position: absolute;
   width: 27px;
   height: 27px;
   display: block;
-  content: url("../img/info-popup-bg.png");
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1018px;
   z-index: 0;
-  top: 53px;
+  top: 58px;
   left: 162px;
 }
-/* line 98, ../sass/style.scss */
-main#login form button {
+/* line 209, ../sass/style.scss */
+main#login form input.btn {
   margin: 6px 0 0;
   width: 271px;
   padding: 8px 0;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  background: #184254;
 }
-/* line 106, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 main#login form .remember {
   margin-top: 18px;
+  height: 18px;
 }
-/* line 109, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 main#login form .remember label {
   display: inline-block;
   font-family: "citroenlight";
   font-family: 14px;
   color: #737373;
 }
-/* line 117, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 main#login form .remember .picker {
-  float: initial;
+  float: left;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 592, ../sass/includes/_style.scss */
+/* line 241, ../sass/style.scss */
+#sub-footer {
+  background: #ebebeb;
+  height: 37px;
+}
+
+/* line 245, ../sass/style.scss */
+#sub-footer.login {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 255, ../sass/style.scss */
 main#home .slider {
   background: #85cddb;
   overflow: hidden;
 }
-/* line 133, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 main#home .slider .wrapper {
   width: 920px;
 }
-/* line 136, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 main#home .slider .wrapper .banner {
   max-height: 165px;
   position: relative;
 }
-/* line 143, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 main#home .slider .wrapper .banner ul li {
   float: left;
   position: relative;
   z-index: 0;
 }
-/* line 149, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 main#home .slider .wrapper .banner ul li img {
   position: absolute;
   right: 0;
   top: 0;
   z-index: -1;
 }
-/* line 158, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li a.linkban {
+  display: block;
+  width: 920px;
+  height: 165px;
+}
+/* line 291, ../sass/style.scss */
 main#home .slider .wrapper .banner ul li h3 {
   display: block;
   font-size: 30px;
   line-height: 30px;
   margin-top: 15px;
 }
-/* line 164, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 main#home .slider .wrapper .banner ul li h3:before {
   margin-top: 10px;
 }
-/* line 169, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 main#home .slider .wrapper .banner ul li span {
   display: block;
   margin-top: 19px;
   font-family: "citroenlight";
   font-size: 20px;
 }
-/* line 176, ../sass/style.scss */
-main#home .slider .wrapper .banner ul li a.btn {
+/* line 309, ../sass/style.scss */
+main#home .slider .wrapper .banner ul li span.btn {
   margin-top: 21px;
   margin-bottom: 23px;
   background: transparent;
@@ -3113,14 +3351,14 @@ main#home .slider .wrapper .banner ul li a.btn {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-/* line 195, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 main#home .slider .wrapper .banner ol {
   position: absolute;
   bottom: -5px;
   padding: 0;
   left: 50%;
 }
-/* line 201, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 main#home .slider .wrapper .banner ol li {
   display: inline-block;
   content: none;
@@ -3130,21 +3368,21 @@ main#home .slider .wrapper .banner ol li {
   text-indent: -9999px;
   cursor: pointer;
 }
-/* line 213, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 main#home .slider .wrapper .banner ol li.active {
   background-image: url(../img/slider/position-active.png);
 }
-/* line 223, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 main#home .content {
   width: 920px;
   margin-top: 36px;
 }
-/* line 228, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 main#home .content .left {
   width: 525px;
   float: left;
 }
-/* line 232, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 main#home .content .left .left-content {
   border: 1px solid #d7d7d7;
   margin-top: 25px;
@@ -3152,11 +3390,11 @@ main#home .content .left .left-content {
   -webkit-border-radius: 4px;
   border-radius: 4px 0 0 0;
 }
-/* line 238, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 main#home .content .left .left-content .selectionne {
   color: #5b2645;
 }
-/* line 243, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 main#home .content .left .left-content .selectionne .date {
   border: 1px solid #5b2645;
   width: auto;
@@ -3166,12 +3404,12 @@ main#home .content .left .left-content .selectionne .date {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 250, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 main#home .content .left .left-content .selectionne .date span {
   margin: 0;
   padding: 0;
 }
-/* line 255, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 main#home .content .left .left-content .selectionne .date .day {
   font-family: "citroenbold";
   font-size: 22px;
@@ -3181,7 +3419,7 @@ main#home .content .left .left-content .selectionne .date .day {
   text-align: center;
   display: inline-block;
 }
-/* line 266, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 main#home .content .left .left-content .selectionne .date .month {
   font-family: "citroenregular";
   font-size: 22px;
@@ -3194,7 +3432,7 @@ main#home .content .left .left-content .selectionne .date .month {
   text-transform: uppercase;
   padding-left: 20px;
 }
-/* line 279, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 main#home .content .left .left-content .selectionne .date .year {
   display: inline-block;
   position: absolute;
@@ -3208,7 +3446,7 @@ main#home .content .left .left-content .selectionne .date .year {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 292, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 main#home .content .left .left-content .selectionne a.agenda.today {
   display: inline-block;
   float: right;
@@ -3220,30 +3458,30 @@ main#home .content .left .left-content .selectionne a.agenda.today {
   font-size: 15px;
   text-decoration: underline;
 }
-/* line 304, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 main#home .content .left .left-content .selectionne a.agenda.today:hover {
   color: #3b0628;
 }
-/* line 314, ../sass/style.scss */
+/* line 447, ../sass/style.scss */
 main#home .content .left a {
   margin-right: 20px;
 }
-/* line 318, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 main#home .content .left a:first-child {
   margin-right: 0;
 }
-/* line 325, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 main#home .content .right {
   float: left;
 }
-/* line 329, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 main#home .content .right .clndr {
   width: 372px;
   text-align: center;
   margin-left: 23px;
   margin-top: 25px;
 }
-/* line 335, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls {
   font-family: "citroenregular";
   font-size: 22px;
@@ -3253,37 +3491,37 @@ main#home .content .right .clndr .clndr-controls {
   position: relative;
   padding: 14px 0;
 }
-/* line 345, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .month {
   width: 304px;
   text-align: center;
   display: inline-block;
 }
-/* line 351, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button {
   display: inline-block;
   cursor: pointer;
 }
-/* line 355, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 main#home .content .right .clndr .clndr-controls .clndr-control-button span {
   display: inline-block;
 }
-/* line 362, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table {
   width: 100%;
 }
-/* line 366, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead {
   font-family: "citroenregular";
   font-size: 14px;
   color: white;
 }
-/* line 373, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table thead tr td {
   padding: 20px 0;
   background: #a58899;
 }
-/* line 380, ../sass/style.scss */
+/* line 513, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody {
   box-sizing: border-box;
   border: 1px solid #d7d7d7;
@@ -3293,57 +3531,71 @@ main#home .content .right .clndr table.clndr-table tbody {
   color: #4b4a4d;
   padding: 30px;
 }
-/* line 392, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td {
   width: 51px;
   height: 52px;
   cursor: pointer;
 }
-/* line 398, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.adjacent-month {
   color: rgba(180, 181, 178, 0.5);
 }
-/* line 403, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 408, ../sass/style.scss */
+/* line 541, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event.past {
-  background: url(../img/calendar-past-event.png) no-repeat scroll 10px 8px transparent;
+	/* EDIT by tmenu */
+  background: url(../img/calendar-event.png) no-repeat scroll 10px 8px transparent;
+	/* END EDIT by tmenu */
 }
-/* line 413, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.event.adjacent-month {
   background: url(../img/calendar-event-adjacent-month.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 418, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 8px transparent;
 }
-/* line 427, ../sass/style.scss */
+/* ADD by tmenu */
+main#home .content .right .clndr table.clndr-table tbody tr td.day.selected {
+  color: white;
+  background: url(../img/calendar-selected.png) no-repeat scroll 10px 8px transparent;
+}
+/* END ADD by tmenu */
+/* line 560, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td {
   padding-top: 10px;
 }
-/* line 431, ../sass/style.scss */
+/* line 564, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.today {
   color: white;
   background: url(../img/calendar-today.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 437, ../sass/style.scss */
+/* line 570, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.event {
   color: white;
   background: url(../img/calendar-event.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 442, ../sass/style.scss */
+/* ADD by tmenu */
+main#home .content .right .clndr table.clndr-table tbody tr:first-child td.day.selected {
+  color: white;
+  background: url(../img/calendar-selected.png) no-repeat scroll 10px 18px transparent;
+}
+/* END ADD by tmenu */
+/* line 575, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:first-child td.event.adjacent-month {
   background: url(../img/calendar-event-adjacent-month.png) no-repeat scroll 10px 18px transparent;
 }
-/* line 453, ../sass/style.scss */
+/* line 586, ../sass/style.scss */
 main#home .content .right .clndr table.clndr-table tbody tr:last-child td {
   padding-bottom: 10px;
 }
-/* line 462, ../sass/style.scss */
+/* line 595, ../sass/style.scss */
 main#home .content .right .clndr .my-cal {
   text-align: left;
   display: block;
@@ -3351,11 +3603,11 @@ main#home .content .right .clndr .my-cal {
   margin: 10px 0 15px;
   background: #5b2645;
 }
-/* line 470, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 main#home .content .right .clndr .my-cal:hover {
   background: #3b0628;
 }
-/* line 474, ../sass/style.scss */
+/* line 607, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a {
   display: inline-block;
   font-family: "citroenregular";
@@ -3364,7 +3616,7 @@ main#home .content .right .clndr .my-cal a {
   height: 100%;
   position: relative;
 }
-/* line 483, ../sass/style.scss */
+/* line 616, ../sass/style.scss */
 main#home .content .right .clndr .my-cal a:before {
   content: url("../img/calendar-link-my-cal.png");
   display: inline-block;
@@ -3374,7 +3626,7 @@ main#home .content .right .clndr .my-cal a:before {
   position: relative;
   top: 2px;
 }
-/* line 496, ../sass/style.scss */
+/* line 629, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button {
   font-size: 13px;
   font-family: Arial;
@@ -3382,7 +3634,7 @@ main#home .content .right .clndr .clndr-today-button {
   text-align: left;
   cursor: pointer;
 }
-/* line 504, ../sass/style.scss */
+/* line 637, ../sass/style.scss */
 main#home .content .right .clndr .clndr-today-button:before {
   content: url("../img/calendar-today-btn.png");
   width: 14px;
@@ -3390,33 +3642,34 @@ main#home .content .right .clndr .clndr-today-button:before {
   margin-right: 10px;
 }
 
-/* line 516, ../sass/style.scss */
+/* line 649, ../sass/style.scss */
 .home-prefooter {
   min-height: 500px;
   background: #fafafa;
   padding-top: 42px;
   text-transform: uppercase;
   margin-top: 40px;
+  margin-bottom: -80px;
 }
-/* line 524, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 .home-prefooter .wrapper {
   width: 922px;
   position: relative;
 }
-/* line 529, ../sass/style.scss */
+/* line 663, ../sass/style.scss */
 .home-prefooter .wrapper h3 {
   position: relative;
   letter-spacing: 3px;
 }
-/* line 534, ../sass/style.scss */
+/* line 668, ../sass/style.scss */
 .home-prefooter .wrapper h3:before {
   margin-top: 20px;
 }
-/* line 541, ../sass/style.scss */
+/* line 675, ../sass/style.scss */
 .home-prefooter .wrapper ul {
   margin-top: 30px;
 }
-/* line 546, ../sass/style.scss */
+/* line 680, ../sass/style.scss */
 .home-prefooter .wrapper ul li {
   font-family: "citroenlight";
   font-size: 17px;
@@ -3425,31 +3678,31 @@ main#home .content .right .clndr .clndr-today-button:before {
   width: 400px;
   border-bottom: 1px solid #f0f0f0;
 }
-/* line 555, ../sass/style.scss */
+/* line 689, ../sass/style.scss */
 .home-prefooter .wrapper ul li a {
   padding: 19px 0 19px 15px;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-/* line 562, ../sass/style.scss */
+/* line 696, ../sass/style.scss */
 .home-prefooter .wrapper ul li a:before {
   content: url(../img/footer-li.png);
   margin-right: 20px;
 }
-/* line 568, ../sass/style.scss */
+/* line 702, ../sass/style.scss */
 .home-prefooter .wrapper ul li a:hover {
   background: #ececec;
 }
-/* line 576, ../sass/style.scss */
+/* line 710, ../sass/style.scss */
 .home-prefooter .wrapper .left {
   float: left;
 }
-/* line 580, ../sass/style.scss */
+/* line 714, ../sass/style.scss */
 .home-prefooter .wrapper .right {
   float: right;
 }
-/* line 586, ../sass/style.scss */
+/* line 720, ../sass/style.scss */
 .home-prefooter a.btn {
   font-family: "citroenregular";
   font-size: 15px;
@@ -3458,16 +3711,16 @@ main#home .content .right .clndr .clndr-today-button:before {
   margin-top: 24px;
   text-transform: initial;
 }
-/* line 595, ../sass/style.scss */
+/* line 729, ../sass/style.scss */
 .home-prefooter a.btn:hover, .home-prefooter a.btn:active {
   background: #001022;
 }
 
-/* line 602, ../sass/style.scss */
+/* line 736, ../sass/style.scss */
 main#rubrique {
   margin-top: 15px;
 }
-/* line 606, ../sass/style.scss */
+/* line 740, ../sass/style.scss */
 main#rubrique section.wrapper {
   clear: both;
   font-family: "citroenregular";
@@ -3476,47 +3729,47 @@ main#rubrique section.wrapper {
   text-transform: uppercase;
   color: white;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .one {
   background: #008896;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .two {
   background: #149caa;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .three {
   background: #28b0be;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .four {
   background: #3cc4d2;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .five {
   background: #50d8e6;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .six {
   background: #64ecfa;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .seven {
   background: #78ffff;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .eight {
   background: #8cffff;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .nine {
   background: #a0ffff;
 }
-/* line 631, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 main#rubrique section.wrapper div.article .ten {
   background: #b4ffff;
 }
-/* line 636, ../sass/style.scss */
+/* line 770, ../sass/style.scss */
 main#rubrique section.wrapper div.article a {
   padding: 27px;
   margin: 8px 0;
@@ -3531,36 +3784,44 @@ main#rubrique section.wrapper div.article a {
   box-sizing: border-box;
   position: relative;
 }
-/* line 649, ../sass/style.scss */
+/* line 783, ../sass/style.scss */
 main#rubrique section.wrapper div.article a:after {
   display: inline-block;
   position: absolute;
   width: 15;
   height: 29px;
-  content: url("../img/page_rubrique_puce.png");
+  /*content: url('../img/page_rubrique_puce.png');*/
   right: 30px;
 }
 
-/* line 665, ../sass/style.scss */
+/* line 799, ../sass/style.scss */
 main#agenda .left {
   box-sizing: border-box;
   width: 279px;
   font-family: "citroenregular";
-  text-transform: uppercase;
+	/* EDIT by tmenu */
+  /*text-transform: uppercase;*/
+	/* END EDIT by tmenu */
   text-align: center;
   margin: 30px 0 0 0;
   float: left;
 }
-/* line 675, ../sass/style.scss */
+/* line 809, ../sass/style.scss */
 main#agenda .left .left-content {
-  margin-bottom: 30px;
+	/* EDIT by tmenu */
+  margin-bottom: 10px;
+	/* END EDIT by tmenu */
+	/* ADD by tmenu */
+  text-transform: uppercase;
+  height: 370px;
+	/* END ADD by tmenu */
 }
-/* line 680, ../sass/style.scss */
+/* line 814, ../sass/style.scss */
 main#agenda .left .left-content .selectionne span, main#agenda .left .left-content .selectionne div {
   display: block;
   box-sizing: border-box;
 }
-/* line 685, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 main#agenda .left .left-content .selectionne .day-word {
   height: 95px;
   background: #5b2645;
@@ -3568,27 +3829,27 @@ main#agenda .left .left-content .selectionne .day-word {
   font-size: 40px;
   padding-top: 20px;
 }
-/* line 694, ../sass/style.scss */
+/* line 828, ../sass/style.scss */
 main#agenda .left .left-content .selectionne .date {
   border: 1px solid #d2d2d2;
   border-top: none;
   height: 276px;
 }
-/* line 700, ../sass/style.scss */
+/* line 834, ../sass/style.scss */
 main#agenda .left .left-content .selectionne .date .day {
   font-size: 129px;
   line-height: 95px;
   color: #5b2645;
   padding-top: 35px;
 }
-/* line 707, ../sass/style.scss */
+/* line 841, ../sass/style.scss */
 main#agenda .left .left-content .selectionne .date .month {
   font-size: 62px;
   line-height: 62px;
   color: #5b2645;
   padding-top: 10px;
 }
-/* line 714, ../sass/style.scss */
+/* line 848, ../sass/style.scss */
 main#agenda .left .left-content .selectionne .date .year {
   font-size: 14px;
   line-height: 14px;
@@ -3596,139 +3857,4307 @@ main#agenda .left .left-content .selectionne .date .year {
   padding-top: 50px;
   position: relative;
 }
-/* line 722, ../sass/style.scss */
+/* line 856, ../sass/style.scss */
 main#agenda .left .left-content .selectionne .date .year:after {
   content: url(../img/agenda-year-puce.png);
   position: relative;
   bottom: 2px;
   left: 5px;
 }
-/* line 730, ../sass/style.scss */
+/* line 864, ../sass/style.scss */
 main#agenda .left .left-content .selectionne .date .year:before {
   content: url(../img/agenda-year-puce.png);
   position: relative;
   bottom: 2px;
   right: 5px;
 }
-/* line 741, ../sass/style.scss */
+/* line 875, ../sass/style.scss */
 main#agenda .left a.btn-style-2 {
-  text-transform: initial;
-  padding: 7px 18px;
+	/* EDIT by tmenu */
+  /*text-transform: initial;*/
+  padding: 7px 16px;
+	/* END EDIT by tmenu */
 }
-/* line 748, ../sass/style.scss */
+/* line 882, ../sass/style.scss */
 main#agenda .right {
   float: right;
-  background: #f5f5f5;
   margin-top: 30px;
   width: 617px;
 }
-/* line 755, ../sass/style.scss */
+/* line 889, ../sass/style.scss */
 main#agenda .right form {
   width: 595px;
 }
-/* line 759, ../sass/style.scss */
+/* line 893, ../sass/style.scss */
 main#agenda .right form .element {
   width: 565px;
 }
-/* line 766, ../sass/style.scss */
+/* line 900, ../sass/style.scss */
 main#agenda section.cal-month {
+	/* ADD by tmenu */
+  margin-top: 50px;
+	/* END ADD by tmenu */
   width: 100%;
 }
-/* line 770, ../sass/style.scss */
+/* line 904, ../sass/style.scss */
 main#agenda section.cal-month .clndr {
   width: 100%;
   text-align: center;
 }
-/* line 775, ../sass/style.scss */
+/* line 909, ../sass/style.scss */
 main#agenda section.cal-month .clndr .clndr-controls {
   font-family: "citroenregular";
   font-size: 22px;
   color: #5b2645;
   text-transform: uppercase;
   position: relative;
+	/* ADD by tmenu */
+  margin-bottom: 20px;
+	/* END ADD by tmenu */
 }
-/* line 782, ../sass/style.scss */
+/* line 916, ../sass/style.scss */
 main#agenda section.cal-month .clndr .clndr-controls .month {
   text-align: center;
   display: inline-block;
 }
-/* line 787, ../sass/style.scss */
+/* line 921, ../sass/style.scss */
 main#agenda section.cal-month .clndr .clndr-controls .clndr-control-button {
   display: inline-block;
   cursor: pointer;
 }
-/* line 791, ../sass/style.scss */
+/* line 925, ../sass/style.scss */
 main#agenda section.cal-month .clndr .clndr-controls .clndr-control-button span {
   display: inline-block;
 }
-/* line 796, ../sass/style.scss */
+/* line 930, ../sass/style.scss */
 main#agenda section.cal-month .clndr .clndr-controls .clndr-control-button.leftalign {
   float: left;
 }
-/* line 801, ../sass/style.scss */
+/* line 935, ../sass/style.scss */
 main#agenda section.cal-month .clndr .clndr-controls .clndr-control-button.rightalign {
   float: right;
 }
-/* line 808, ../sass/style.scss */
+/* line 942, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table {
   width: 100%;
 }
-/* line 812, ../sass/style.scss */
+/* line 946, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table thead {
   font-family: "citroenregular";
   font-size: 15px;
   color: #5b2645;
   text-transform: lowercase;
 }
-/* line 819, ../sass/style.scss */
+/* line 953, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody {
   font-family: Arial;
   font-size: 10px;
   color: #2e2e2e;
   text-align: left;
 }
-/* line 826, ../sass/style.scss */
+/* line 960, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td {
   border: 1px solid #d7d7d7;
   height: 100px;
   width: 14.28571%;
   vertical-align: top;
 }
-/* line 834, ../sass/style.scss */
+/* line 968, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td.Sam {
   background: #fafafa;
 }
-/* line 839, ../sass/style.scss */
+/* line 973, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td.Dim {
   background: #fafafa;
 }
-/* line 849, ../sass/style.scss */
+/* line 983, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td.event .day-contents .day {
   background: #5b2645;
   color: white;
 }
-/* line 859, ../sass/style.scss */
+/* line 993, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td div div.day {
   box-sizing: border-box;
-  padding: 5px 8px;
-  margin-bottom: 10px;
+	/* EDIT by tmenu */
+  padding: 5px 12px;
+  line-height: 20px;
+	/* END EDIT by tmenu */
 }
-/* line 865, ../sass/style.scss */
-main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-today {
+/* line 999, ../sass/style.scss */
+/* EDIT by tmenu */
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-item {
   box-sizing: border-box;
-  padding: 0 8px 0 0;
+  padding: 0 8px 0 5px;
   position: relative;
   height: 32px;
 }
-/* line 871, ../sass/style.scss */
+/* line 1005, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-today i {
   position: relative;
   top: 15%;
   display: inline-block;
-  width: 37px;
+  width: 26px;
+  height: 22px;
   text-align: center;
 }
-/* line 879, ../sass/style.scss */
+/* line 1013, ../sass/style.scss */
 main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-today span {
   display: inline-block;
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* END EDIT by tmenu */
+
+/*****************  CSS  ***********************/
+/* line 50, ../sass/style.scss */
+/* line 1032, ../sass/style.scss */
+main#login form div.identifiant {
+  position: relative;
+}
+
+/* line 55, ../sass/style.scss */
+/* line 1036, ../sass/style.scss */
+main#login form div.mdp {
+  position: relative;
+}
+
+/* line 60, ../sass/style.scss */
+/* line 1040, ../sass/style.scss */
+main#login form span.info {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -39px;
+  top: 12px;
+  background: url(../img/info.png) transparent no-repeat;
+  cursor: pointer;
+}
+
+/* line 330, ../sass/includes/_style.scss */
+/* line 1056, ../sass/style.scss */
+header .wrapper div.search {
+  float: right;
+  width: 150px;
+  height: 27px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 50px;
+  color: #184254;
+  font-family: "citroenlight";
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+
+/* line 345, ../sass/includes/_style.scss */
+/* line 1070, ../sass/style.scss */
+header .wrapper div.search form input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 121px;
+  height: 27px;
+}
+
+/* line 353, ../sass/includes/_style.scss */
+/* line 1079, ../sass/style.scss */
+header .wrapper div.search form button {
+  border: none;
+  outline: none;
+  background: url("../img/sprite.png") no-repeat scroll 5px -60px #7b7b7c;
+  border: medium none;
+  float: right;
+  height: 27px;
+  outline: medium none;
+  padding-top: 0;
+  width: 25px;
+}
+
+/* line 1090, ../sass/style.scss */
+header .wrapper div.search form button:hover {
+  background: url("../img/sprite.png") no-repeat scroll 5px -60px #4b4b4d;
+}
+
+/* line 606, ../sass/style.scss */
+/* line 1097, ../sass/style.scss */
+main#rubrique section.wrapper {
+  clear: both;
+  font-family: "citroenregular";
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #929292;
+}
+
+/* line 636, ../sass/style.scss */
+/* line 1107, ../sass/style.scss */
+main#rubrique section.wrapper div.article a {
+  /*padding: 27px;
+  margin: 8px 0;
+  height: 76px;
+  background: #first_color_hover;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 0 5px 5px 0;
+  box-sizing: border-box;
+  position: relative;
+  background: url("../img/sprite.png") no-repeat 853px -104px;
+  display: block;
+  border: solid 1px #cacaca;
+  border-left: none;*/
+  padding: 25px;
+  margin: 8px 0;
+  height: 76px;
+  display: inline-block;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  box-sizing: border-box;
+  position: relative;
+  background: url("../img/sprite.png") no-repeat 853px -110px;
+  background-color: #008896;
+  display: block;
+  border-left: none;
+}
+
+/* line 1137, ../sass/style.scss */
+main#rubrique section.wrapper div.article a:hover {
+  border: solid 3px #008896;
+  border-left: none;
+}
+
+/* line 1143, ../sass/style.scss */
+main#rubrique section.wrapper div.article {
+  border-left: solid 13px #008896;
+  border-radius: 5px;
+  margin: 18px 0;
+}
+
+/* line 649, ../sass/style.scss */
+/* line 1150, ../sass/style.scss */
+main#rubrique section.wrapper div.article a:after {
+  display: inline-block;
+  position: absolute;
+  width: 15;
+  height: 29px;
+  /*background: url("../img/sprite.png") no-repeat;*/
+  right: 30px;
+}
+
+/* line 1160, ../sass/style.scss */
+main#rubrique section.wrapper div.ssarticle a:hover {
+  border: solid 3px #008896;
+  border-left: none;
+}
+
+/* line 1166, ../sass/style.scss */
+main#rubrique section.wrapper div.ssarticle a {
+  height: 70px;
+  border: solid 3px #cacaca;
+  border-left: none;
+  background-color: #fff;
+  line-height: 15px;
+}
+
+/*****************  Plan du site  ***********************/
+/* line 1176, ../sass/style.scss */
+main#sitemap h1.titlepage {
+  font-family: "citroenbold";
+  font-size: 30px;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  background: url("../img/titlesubbar_black.png") no-repeat 0 bottom;
+  margin-top: 45px;
+  padding-bottom: 20px;
+}
+/* line 1187, ../sass/style.scss */
+main#sitemap ul {
+  text-transform: uppercase;
+  font-family: "citroenlight";
+  font-size: 12px;
+  color: #2e2e2e;
+  width: 184px;
+  float: left;
+  padding-left: 61px;
+  display: block;
+  padding-bottom: 50px;
+}
+/* line 1199, ../sass/style.scss */
+main#sitemap ul.first {
+  padding-left: 0;
+}
+/* line 1203, ../sass/style.scss */
+main#sitemap ul li {
+  margin: 10px 0;
+}
+/* line 1207, ../sass/style.scss */
+main#sitemap ul li a:hover {
+  color: #008896;
+}
+/* line 1210, ../sass/style.scss */
+main#sitemap ul li.title {
+  font-family: "citroenregular";
+  font-size: 20px;
+  padding-left: 25px;
+  background: url("../img/sprite.png") no-repeat 0 -206px;
+  margin: 45px 0;
+}
+/* line 1218, ../sass/style.scss */
+main#sitemap ul li.title2 {
+  font-family: "citroenregular";
+  font-size: 20px;
+  padding-left: 25px;
+  background: url("../img/sprite.png") no-repeat 0 -206px;
+  margin: 25px 0;
+  white-space: nowrap;
+}
+
+/* line 1229, ../sass/style.scss */
+.pre-footer-two.wrapper {
+  clear: both;
+}
+
+/* line 1235, ../sass/style.scss */
+header .wrapper {
+  max-width: 96%;
+}
+
+/* line 1241, ../sass/style.scss */
+#breadcrumb ul {
+  display: block;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/************   LIENS UTILES  ************/
+/* line 1250, ../sass/style.scss */
+h1.titlepage {
+  font-family: "citroenbold";
+  font-size: 30px;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  background: url("../img/titlesubbar_black.png") no-repeat 0 bottom;
+  margin-top: 45px;
+  padding-bottom: 20px;
+}
+
+/* line 1260, ../sass/style.scss */
+.titlepage.blue {
+  color: #194254;
+  background: url("../img/titlesubbar_blue.png") no-repeat 0 bottom;
+}
+
+/* line 1266, ../sass/style.scss */
+.titlepage.prune {
+  color: #194254;
+  background: url("../img/titlesubbar_prune.png") no-repeat 0 bottom;
+}
+
+/************ PAGE RUBRIQUE NIVEAU 5 *************/
+/* line 1281, ../sass/style.scss */
+main#rubrique_niveau5 .infoB.twoline {
+  position: relative;
+  display: inline-block;
+  /*width: 27px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 1291, ../sass/style.scss */
+main#rubrique_niveau5 .infoB.twoline span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: -69px;
+  left: -51px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #194254;
+  text-align: center;
+  font-family: "citroenlight";
+  background: #FFFFFF;
+  font-size: 15px;
+  padding: 9px 16px;
+  color: 194254;
+  z-index: 1;
+}
+/* line 1307, ../sass/style.scss */
+main#rubrique_niveau5 .infoB.twoline span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1018px;
+  z-index: 0;
+	/* EDIT by tmenu */
+  top: 40px;
+	/* END EDIT by tmenu */
+  left: 52px;
+}
+/* line 1324, ../sass/style.scss */
+main#rubrique_niveau5 .infoB.prune {
+  position: relative;
+  display: inline-block;
+  /*width: 30px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 1334, ../sass/style.scss */
+main#rubrique_niveau5 .infoB.prune span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 130px;
+  height: 17px;
+  bottom: 40px;
+  left: -55px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #5b2646;
+  text-align: center;
+  font-family: "citroenlight";
+  background: #FFFFFF;
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #5b2646;
+  z-index: 1;
+}
+/* line 1351, ../sass/style.scss */
+main#rubrique_niveau5 .infoB.prune span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1088px;
+  z-index: 0;
+  top: 23px;
+  left: 55px;
+}
+/* line 1367, ../sass/style.scss */
+main#rubrique_niveau5 h1 {
+  font-size: 30px;
+  font-family: "citroenbold";
+  color: #008896;
+  text-transform: uppercase;
+  width: 60%;
+  padding-top: 30px;
+}
+/* line 1376, ../sass/style.scss */
+main#rubrique_niveau5 h2 {
+  font-size: 24px;
+  font-family: "citroenlight";
+  color: #2e2e2e;
+  text-transform: uppercase;
+  width: 60%;
+	/* ADD by tmenu */
+  margin-bottom: 20px;
+	/* END ADD by tmenu */
+}
+/* line 1383, ../sass/style.scss */
+main#rubrique_niveau5 h2.titlebar {
+  font-size: 23px;
+  font-family: "citroenlight";
+  color: #194254;
+  text-transform: uppercase;
+  background: url(../img/titlesubbar_blue.png) no-repeat 0 bottom;
+  margin: 80px 0 35px 0;
+  padding-bottom: 16px;
+}
+/* line 1393, ../sass/style.scss */
+main#rubrique_niveau5 h3 {
+  font-size: 12px;
+  font-family: "citroenlight";
+  color: #008896;
+	/* EDIT by tmenu */
+  /*padding-top: 20px;*/
+  display: inline-block;
+	/* END EDIT by tmenu */
+}
+/* line 1399, ../sass/style.scss */
+main#rubrique_niveau5 h3 span {
+  color: #b8b8b8;
+}
+/* line 1404, ../sass/style.scss */
+main#rubrique_niveau5 p {
+  font-size: 18px;
+  font-family: "citroenlight";
+  color: #2e2e2e;
+}
+/* line 1409, ../sass/style.scss */
+main#rubrique_niveau5 p span.bordertxt {
+  border: solid 1px #2e2e2e;
+  padding: 5px;
+}
+/* line 1414, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5 #options {
+  display: inline-block;
+  margin-left: 40px;
+  color: #7b7b7c;
+  font-size: 1.4em;
+}
+/* END EDIT by tmenu */
+/* line 1420, ../sass/style.scss */
+main#rubrique_niveau5 #options2 {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+}
+/* line 1425, ../sass/style.scss */
+main#rubrique_niveau5 #options2 li {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 1429, ../sass/style.scss */
+main#rubrique_niveau5 #options2 li i {
+  width: 28px;
+  height: 25px;
+  display: block;
+}
+/* line 1435, ../sass/style.scss */
+main#rubrique_niveau5 #options2 li:last-child {
+  margin-right: 0;
+}
+/* line 1440, ../sass/style.scss */
+main#rubrique_niveau5 #options2 .first i {
+  background: url("../img/sprite.png") no-repeat 0 -664px;
+}
+/* line 1444, ../sass/style.scss */
+main#rubrique_niveau5 #options2 .second i {
+  background: url("../img/sprite.png") no-repeat 0 -546px;
+}
+/* line 1448, ../sass/style.scss */
+main#rubrique_niveau5 #options2 .third i {
+  background: url("../img/sprite.png") no-repeat 0 -606px;
+}
+/* line 1452, ../sass/style.scss */
+main#rubrique_niveau5 .addcalendar {
+	/* EDIT by tmenu */
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+	/* END EDIT by tmenu */
+}
+/* line 1456, ../sass/style.scss */
+main#rubrique_niveau5 .addcalendar i {
+  width: 28px;
+  height: 25px;
+  display: block;
+  background: url("../img/sprite.png") no-repeat 0 -664px;
+}
+/* line 1464, ../sass/style.scss */
+main#rubrique_niveau5 .resume_table {
+  width: 100%;
+  border: solid 1px #5b2646;
+  margin-top: 20px;
+}
+/* line 1469, ../sass/style.scss */
+/* EDIT by tmenu */
+/*main#rubrique_niveau5 .resume_table ul {
+  display: inline-block;
+  width: 100%;
+}
+/* line 1466, ../sass/style.scss */
+/*main#rubrique_niveau5 .resume_table ul li {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenregular";
+  color: #2e2e2e;
+  margin: 27px 0 27px 73px;
+  width: 25%;
+}
+/* line 1477, ../sass/style.scss */
+/*main#rubrique_niveau5 .resume_table ul:last-child {
+  margin-bottom: 35px;
+}
+/* line 1481, ../sass/style.scss */
+/*main#rubrique_niveau5 .resume_table ul.head {
+  background: #5b2646;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 1494, ../sass/style.scss */
+/* ADD by tmenu */
+main#rubrique_niveau5 .resume_table tr th,
+main#rubrique_niveau5 .resume_table tr td {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenregular";
+  color: #2e2e2e;
+  margin: 27px 0 27px 73px;
+  width: 25%;
+}
+
+main#rubrique_niveau5 .resume_table thead tr {
+  background: #5b2646;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+main#rubrique_niveau5 .resume_table thead tr th {
+  text-align: left;
+  color: #fff;
+  margin: 16px 0 16px 73px;
+}
+/* END ADD by tmenu */
+
+/* line 1504, ../sass/style.scss */
+main#rubrique_niveau5 .table_three {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 1508, ../sass/style.scss */
+main#rubrique_niveau5 .table_three div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 1513, ../sass/style.scss */
+main#rubrique_niveau5 .table_three div a {
+  display: block;
+}
+/* line 1518, ../sass/style.scss */
+main#rubrique_niveau5 .table_three div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin: 18px 0 18px 43px;
+  width: 28%;
+}
+/* line 1530, ../sass/style.scss */
+/* EDIT by tmenu */
+/*main#rubrique_niveau5 div.table_three div:hover {
+  background: #008896 url(../img/sprite.png) no-repeat 870px -713px;
+}
+/* line 1526, ../sass/style.scss */
+/*main#rubrique_niveau5 div.table_three div:hover span {
+  color: #fff;
+}
+/* line 1531, ../sass/style.scss */
+/*main#rubrique_niveau5 div.table_three ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 1534, ../sass/style.scss */
+/*main#rubrique_niveau5 div.table_three ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 43px;
+  width: 28%;
+}
+/* END EDIT by tmenu */
+
+/* ADD by tmenu */
+main#rubrique_niveau5 table.table_three {
+  width: 100%;
+  margin-top: 20px;
+}
+
+main#rubrique_niveau5 table.table_three tr {
+  border-bottom: solid 1px #e8e8e8;
+}
+
+main#rubrique_niveau5 table.table_three tr td,
+main#rubrique_niveau5 table.table_three tr th {
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  padding: 18px 0 18px 30px;
+  width: 28%;
+}
+
+main#rubrique_niveau5 .col_right table.table_three tr td,
+main#rubrique_niveau5 .col_left table.table_three tr td {
+  padding-right: 60px;
+}
+
+main#rubrique_niveau5 table.table_three tr th {
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  font-weight: normal;
+  text-align: left;
+}
+
+main#rubrique_niveau5 table.table_three tbody tr:hover {
+  background: #008896;
+  cursor: pointer;
+}
+
+main#rubrique_niveau5 table.table_three tbody tr:hover td {
+  color: #fff;
+}
+
+main#rubrique_niveau5 table.table_three tbody tr:hover td:nth-child(3) {
+  background: url(../img/sprite.png) no-repeat 260px -713px;
+}
+
+main#rubrique_niveau5 .col_right table.table_three tbody tr:hover td:nth-child(3),
+main#rubrique_niveau5 .col_left table.table_three tbody tr:hover td:nth-child(3) {
+  background-position: 110px -713px;
+}
+
+main#rubrique_niveau5 table.table_three thead tr {
+  border-bottom: solid 1px #e8e8e8;
+}
+
+main#rubrique_niveau5 table.table_three thead tr {
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+}
+/* */
+main#rubrique_niveau5 .wrapper .summary ul li {
+  font-family: "citroenlight";
+  font-size: 17px;
+  list-style: none;
+  color: #302b28;
+  margin: 0;
+}
+main#rubrique_niveau5 .wrapper .summary ul li a {
+  padding: 19px 0 19px 15px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+main#rubrique_niveau5 .wrapper .summary ul li a:before {
+  content: url(../img/footer-li.png);
+  margin-right: 20px;
+}
+main#rubrique_niveau5 .wrapper .summary ul li a:hover {
+  background: #008896;
+  color: #fff;
+}
+
+main#rubrique_niveau5 .wrapper .summary ul li ul {
+  margin: 0 0 0 40px;
+}
+/* END ADD by tmenu */
+
+/* line 1556, ../sass/style.scss */
+main#rubrique_niveau5 .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 1560, ../sass/style.scss */
+main#rubrique_niveau5 .table_two div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 1565, ../sass/style.scss */
+main#rubrique_niveau5 .table_two div a {
+  display: block;
+}
+/* line 1570, ../sass/style.scss */
+main#rubrique_niveau5 .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin: 18px 0 18px 43px;
+  width: 34%;
+}
+/* line 1582, ../sass/style.scss */
+main#rubrique_niveau5 .table_two div:hover {
+  background: #008896 url(../img/sprite.png) no-repeat 870px -713px;
+}
+/* line 1585, ../sass/style.scss */
+main#rubrique_niveau5 .table_two div:hover span {
+  color: #fff;
+}
+/* line 1590, ../sass/style.scss */
+main#rubrique_niveau5 .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 1593, ../sass/style.scss */
+main#rubrique_niveau5 .table_two ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 43px;
+  width: 34%;
+}
+/* line 1610, ../sass/style.scss */
+main#rubrique_niveau5 .table_one {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 1614, ../sass/style.scss */
+main#rubrique_niveau5 .table_one .first {
+  border-top: solid 1px #e8e8e8;
+}
+/* line 1618, ../sass/style.scss */
+main#rubrique_niveau5 .table_one div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  background: url(../img/sprite.png) no-repeat 320px -785px;
+}
+/* line 1624, ../sass/style.scss */
+main#rubrique_niveau5 .table_one div a {
+  display: block;
+}
+/* line 1629, ../sass/style.scss */
+main#rubrique_niveau5 .table_one div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin: 18px 0 18px 43px;
+  width: 73%;
+}
+/* line 1645, ../sass/style.scss */
+main#rubrique_niveau5 .table_one div:hover {
+  background: #008896 url(../img/sprite.png) no-repeat 320px -877px;
+}
+/* line 1648, ../sass/style.scss */
+main#rubrique_niveau5 .table_one div:hover span {
+  color: #fff;
+}
+/* line 1653, ../sass/style.scss */
+main#rubrique_niveau5 .table_one ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 1656, ../sass/style.scss */
+main#rubrique_niveau5 .table_one ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 43px;
+  width: 73%;
+}
+/* line 1670, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5 .col_left {
+  width: 45%;
+  display: inline-block;
+}
+/* line 1674, ../sass/style.scss */
+main#rubrique_niveau5 .col_right {
+  width: 45%;
+  display: inline-block;
+  float: right;
+}
+/* END EDIT by tmenu */
+/* line 1682, ../sass/style.scss */
+main#rubrique_niveau5 .article_similar ul {
+  display: inline-block;
+  width: 411px;
+}
+/* line 1686, ../sass/style.scss */
+main#rubrique_niveau5 .article_similar ul li {
+  border-bottom: solid 1px #e8e8e8;
+  color: #2e2e2e;
+  font-family: "citroenlight";
+  font-size: 15px;
+  box-sizing: border-box;
+}
+/* line 1693, ../sass/style.scss */
+main#rubrique_niveau5 .article_similar ul li a {
+  padding: 18px 0 18px 43px;
+  display: block;
+}
+/* line 1698, ../sass/style.scss */
+main#rubrique_niveau5 .article_similar ul li a:hover {
+  background: #008896;
+  color: #fff;
+}
+/* line 1705, ../sass/style.scss */
+main#rubrique_niveau5 .article_similar ul:last-child {
+  float: right;
+}
+
+/************************** Rubrique niveau 5 couleur DS *********************************/
+/* line 1719, ../sass/style.scss */
+/* ADD by tmenu */
+main#rubrique_niveau5_DS {
+  background: #000;
+}
+main#rubrique_niveau5_DS .wrapper {
+  margin-bottom: 50px;
+}
+main#rubrique_niveau5_DS .main-background {
+  height: 452px;
+  background: url(../img/bg_ds.png) no-repeat top center;
+}
+
+main#rubrique_niveau5_DS .wrapper:last-child {
+  margin-bottom: 0;
+}
+/* END ADD by tmenu */
+
+/* line 1723, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5_DS .separation_ds {
+  margin: 50px 0 20px 0;
+  background: url(../img/separation_ds.png) no-repeat bottom left;
+  height: 20px;
+}
+/* END EDIT by tmenu */
+/* line 1729, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB {
+  position: relative;
+  display: inline-block;
+  /*width: 27px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 1739, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: -50px;
+  left: -55px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #2f2726;
+  border: none;
+  text-align: center;
+  font-family: "citroenlight";
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #c4b7a6;
+  z-index: 1;
+}
+/* line 1755, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1334px;
+  z-index: 0;
+  top: 23px;
+  left: 55px;
+}
+/* line 1770, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB.twoline {
+  position: relative;
+  display: inline-block;
+  /*width: 27px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 1780, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB.twoline span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: -69px;
+  left: -51px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #2f2726;
+  border: none;
+  text-align: center;
+  font-family: "citroenlight";
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #c4b7a6;
+  z-index: 1;
+}
+/* line 1796, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB.twoline span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1334px;
+  z-index: 0;
+  top: 41px;
+  left: 52px;
+}
+/* line 1813, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB.prune {
+  position: relative;
+  display: inline-block;
+  /*width: 30px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 1823, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB.prune span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 130px;
+  height: 17px;
+  bottom: 40px;
+  left: -55px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #2f2726;
+  border: none;
+  text-align: center;
+  font-family: "citroenlight";
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #c4b7a6;
+  z-index: 1;
+}
+/* line 1840, ../sass/style.scss */
+main#rubrique_niveau5_DS .infoB.prune span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1334px;
+  z-index: 0;
+  top: 23px;
+  left: 55px;
+}
+/* line 1856, ../sass/style.scss */
+main#rubrique_niveau5_DS h1 {
+  font-size: 30px;
+  font-family: "citroenbold";
+  color: #ad0040;
+  text-transform: uppercase;
+  width: 60%;
+  padding-top: 30px;
+}
+/* line 1865, ../sass/style.scss */
+main#rubrique_niveau5_DS h2 {
+  font-size: 24px;
+  font-family: "citroenlight";
+  color: #c4b7a6;
+  text-transform: uppercase;
+  width: 60%;
+	/* ADD by tmenu */
+  margin-bottom: 20px;
+	/* END ADD by tmenu */
+}
+/* line 1872, ../sass/style.scss */
+main#rubrique_niveau5_DS h2.titlebar {
+  font-size: 23px;
+  font-family: "citroenlight";
+  color: #ad0040;
+  text-transform: uppercase;
+  /*background: url(../img/titlesubbar_blue.png) no-repeat 0 bottom;*/
+  margin: 40px 0 35px 0;
+  padding-bottom: 16px;
+}
+/* line 1882, ../sass/style.scss */
+main#rubrique_niveau5_DS h3 {
+  font-size: 12px;
+  font-family: "citroenlight";
+  color: #ad0040;
+	/* EDIT by tmenu */
+  /*padding-top: 20px;*/
+  display: inline-block;
+	/* END EDIT by tmenu */
+}
+/* line 1888, ../sass/style.scss */
+main#rubrique_niveau5_DS h3 span {
+  color: #b8b8b8;
+}
+/* line 1893, ../sass/style.scss */
+main#rubrique_niveau5_DS p {
+  font-size: 18px;
+  font-family: "citroenbold";
+  color: #c4b7a6;
+}
+/* line 1898, ../sass/style.scss */
+main#rubrique_niveau5_DS p span.bordertxt {
+  border: solid 1px #ad0040;
+  color: #ad0040;
+  font-family: "citroenlight";
+  padding: 5px;
+}
+/* line 1905, ../sass/style.scss */
+main#rubrique_niveau5_DS #options {
+	/* EDIT by tmenu */
+  display: inline-block;
+  margin-left: 40px;
+  color: #7b7b7c;
+  font-size: 1.4em;
+	/* END EDIT by tmenu */
+}
+/* line 1911, ../sass/style.scss */
+main#rubrique_niveau5_DS #options2 {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+}
+/* line 1916, ../sass/style.scss */
+main#rubrique_niveau5_DS #options2 li {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 1920, ../sass/style.scss */
+main#rubrique_niveau5_DS #options2 li i {
+  width: 28px;
+  height: 25px;
+  display: block;
+}
+/* line 1926, ../sass/style.scss */
+main#rubrique_niveau5_DS #options2 li:last-child {
+  margin-right: 0;
+}
+/* line 1931, ../sass/style.scss */
+main#rubrique_niveau5_DS #options2 .first i {
+  background: url("../img/sprite.png") no-repeat -118px -664px;
+}
+/* line 1935, ../sass/style.scss */
+main#rubrique_niveau5_DS #options2 .second i {
+  background: url("../img/sprite.png") no-repeat -117px -546px;
+}
+/* line 1939, ../sass/style.scss */
+main#rubrique_niveau5_DS #options2 .third i {
+  background: url("../img/sprite.png") no-repeat -118px -606px;
+}
+/* line 1944, ../sass/style.scss */
+main#rubrique_niveau5_DS .addcalendar {
+	/* EDIT by tmenu */
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+	/* END EDIT by tmenu */
+}
+/* line 1948, ../sass/style.scss */
+main#rubrique_niveau5_DS .addcalendar i {
+  width: 28px;
+  height: 25px;
+  display: block;
+  background: url("../img/sprite.png") no-repeat right -664px;
+}
+/* line 1956, ../sass/style.scss */
+main#rubrique_niveau5_DS .resume_table {
+  width: 100%;
+  border: solid 1px #2f2726;
+  margin-top: 20px;
+}
+/* line 1961, ../sass/style.scss */
+/* EDIT by tmenu */
+/*main#rubrique_niveau5_DS .resume_table ul {
+  display: inline-block;
+  width: 100%;
+}
+/* line 1965, ../sass/style.scss */
+main#rubrique_niveau5_DS .resume_table ul li {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenbold";
+  color: #c4b7a6;
+  margin: 27px 0 27px 73px;
+  width: 25%;
+}
+/* line 1976, ../sass/style.scss */
+main#rubrique_niveau5_DS .resume_table ul:last-child {
+  margin-bottom: 35px;
+}
+/* line 1980, ../sass/style.scss */
+main#rubrique_niveau5_DS .resume_table ul.head {
+  background: #2f2726;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 1986, ../sass/style.scss */
+main#rubrique_niveau5_DS .resume_table ul.head li {
+  color: #fff;
+  margin: 16px 0 16px 73px;
+}
+/* END EDIT by tmenu */
+/* ADD by tmenu */
+main#rubrique_niveau5_DS .resume_table tr th,
+main#rubrique_niveau5_DS .resume_table tr td {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenbold";
+  color: #c4b7a6;
+  margin: 27px 0 27px 73px;
+  width: 25%;
+}
+
+main#rubrique_niveau5_DS .resume_table thead tr {
+  background: #2f2726;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+main#rubrique_niveau5_DS .resume_table thead tr th {
+  text-align: left;
+  color: #fff;
+  margin: 16px 0 16px 73px;
+}
+/* END ADD by tmenu */
+/* EDIT by tmenu */
+/* line 1996, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2000, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2005, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three div a {
+  display: block;
+}
+/* line 2010, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  color: #c4b7a6;
+  margin: 18px 0 18px 43px;
+  width: 28%;
+}
+/* line 2022, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three div:hover {
+  background: #c4b7a6 url(../img/sprite.png) no-repeat 870px -713px;
+}
+/* line 2025, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three div:hover span {
+  color: #fff;
+}
+/* line 2030, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2033, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_three ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #FFF;
+  margin: 16px 0 16px 43px;
+  width: 28%;
+}
+/* END EDIT by tmenu */
+/* ADD by tmenu */
+main#rubrique_niveau5_DS table.table_three {
+  width: 100%;
+  margin-top: 20px;
+}
+
+main#rubrique_niveau5_DS table.table_three tr {
+  border-bottom: solid 1px #e8e8e8;
+}
+
+main#rubrique_niveau5_DS table.table_three tr td,
+main#rubrique_niveau5_DS table.table_three tr th {
+  font-size: 15px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  color: #c4b7a6;
+  padding: 18px 0 18px 30px;
+  width: 28%;
+}
+
+main#rubrique_niveau5_DS .col_right table.table_three tr td,
+main#rubrique_niveau5_DS .col_left table.table_three tr td {
+  padding-right: 60px;
+}
+
+main#rubrique_niveau5_DS table.table_three tr th {
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #FFF;
+  font-weight: normal;
+  text-align: left;
+}
+
+main#rubrique_niveau5_DS table.table_three tbody tr:hover {
+  background: #c4b7a6;
+  cursor: pointer;
+}
+
+main#rubrique_niveau5_DS table.table_three tbody tr:hover td {
+  color: #000;
+}
+
+main#rubrique_niveau5_DS table.table_three tbody tr:hover td:nth-child(3) {
+  background: url(../img/sprite.png) no-repeat 260px -713px;
+}
+
+main#rubrique_niveau5_DS .col_right table.table_three tbody tr:hover td:nth-child(3),
+main#rubrique_niveau5_DS .col_left table.table_three tbody tr:hover td:nth-child(3) {
+  background-position: 110px -713px;
+}
+
+main#rubrique_niveau5_DS table.table_three thead tr {
+  border-bottom: solid 1px #e8e8e8;
+}
+
+main#rubrique_niveau5_DS table.table_three thead tr {
+  font-size: 17px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+}
+/* */
+main#rubrique_niveau5_DS .wrapper .summary ul li {
+  font-family: "citroenbold";
+  font-size: 17px;
+  list-style: none;
+  color: #c4b7a6;
+  margin: 0;
+}
+main#rubrique_niveau5_DS .wrapper .summary ul li a {
+  padding: 19px 0 19px 15px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+main#rubrique_niveau5_DS .wrapper .summary ul li a:before {
+  content: url(../img/footer-li.png);
+  margin-right: 20px;
+}
+main#rubrique_niveau5_DS .wrapper .summary ul li a:hover {
+  background: #c4b7a6;
+  color: #000;
+}
+
+main#rubrique_niveau5_DS .wrapper .summary ul li ul {
+  margin: 0 0 0 40px;
+}
+/* END ADD by tmenu */
+
+/* line 2048, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2052, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2057, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two div a {
+  display: block;
+}
+/* line 2062, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  color: #c4b7a6;
+  margin: 18px 0 18px 43px;
+  width: 34%;
+}
+/* line 2074, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two div:hover {
+  background: #c4b7a6 url(../img/sprite.png) no-repeat 870px -713px;
+}
+/* line 2077, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two div:hover span {
+	/* EDIT by tmenu */
+  color: #000;
+	/* END EDIT by tmenu */
+}
+/* line 2082, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2085, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_two ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #FFF;
+  margin: 16px 0 16px 43px;
+  width: 34%;
+}
+/* line 2102, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2106, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one .first {
+  border-top: solid 1px #e8e8e8;
+}
+/* line 2110, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  background: url(../img/sprite.png) no-repeat 320px -1164px;
+}
+/* line 2116, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one div a {
+  display: block;
+}
+/* line 2121, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  color: #c4b7a6;
+  margin: 18px 0 18px 43px;
+  width: 73%;
+}
+/* line 2137, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one div:hover {
+  background: #c4b7a6 url(../img/sprite.png) no-repeat 320px -875px;
+}
+/* line 2140, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one div:hover span {
+	/* EDIT by tmenu */
+  color: #000;
+	/* END EDIT by tmenu */
+}
+/* line 2145, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2148, ../sass/style.scss */
+main#rubrique_niveau5_DS .table_one ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #FFF;
+  margin: 16px 0 16px 43px;
+  width: 73%;
+}
+/* line 2162, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5_DS .col_left {
+  width: 50%;
+  display: inline-block;
+}
+/* line 2166, ../sass/style.scss */
+main#rubrique_niveau5_DS .col_right {
+  width: 40%;
+  display: inline-block;
+  float: right;
+}
+/* END EDIT by tmenu */
+/* line 2167, ../sass/style.scss */
+main#rubrique_niveau5_DS .article_similar ul {
+  display: inline-block;
+  width: 411px;
+}
+/* line 2178, ../sass/style.scss */
+main#rubrique_niveau5_DS .article_similar ul li {
+  border-bottom: solid 1px #e8e8e8;
+  color: #c4b7a6;
+  font-family: "citroenbold";
+  font-size: 15px;
+  box-sizing: border-box;
+}
+/* line 2185, ../sass/style.scss */
+main#rubrique_niveau5_DS .article_similar ul li a {
+  padding: 18px 0 18px 43px;
+  display: block;
+}
+/* line 2190, ../sass/style.scss */
+main#rubrique_niveau5_DS .article_similar ul li a:hover {
+  background: #c4b7a6;
+	/* EDIT by tmenu */
+  color: #000;
+	/* END EDIT by tmenu */
+}
+/* line 2197, ../sass/style.scss */
+main#rubrique_niveau5_DS .article_similar ul:last-child {
+  float: right;
+}
+
+/* line 2207, ../sass/style.scss */
+.pre-footer-two.wrapper.DS {
+  text-align: center;
+  margin-bottom: -70px;
+  padding-bottom: 60px;
+  padding-top: 65px;
+  margin-top: 0;
+  background: #000;
+  width: 100%;
+}
+/* line 2216, ../sass/style.scss */
+.pre-footer-two.wrapper.DS article {
+  display: inline-block;
+  width: 169px;
+  height: 148px;
+  background: #c4b7a6;
+  font-family: "citroenregular";
+  font-size: 17px;
+	/* EDIT by tmenu */
+  color: #000;
+	/* END EDIT by tmenu */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 2231, ../sass/style.scss */
+.pre-footer-two.wrapper.DS article:last-child {
+  margin-right: 0;
+}
+/* line 2236, ../sass/style.scss */
+.pre-footer-two.wrapper.DS article div.img {
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: 35px;
+}
+/* line 2248, ../sass/style.scss */
+.pre-footer-two.wrapper.DS article p {
+  position: relative;
+  z-index: 1000;
+}
+/* line 2254, ../sass/style.scss */
+.pre-footer-two.wrapper.DS article a {
+  position: absolute;
+  z-index: 10000;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/************************** Rubrique niveau 5 couleur CITROEN *********************************/
+/* ADD by tmenu */
+main#rubrique_niveau5_citroen .wrapper {
+  margin-bottom: 50px;
+}
+/* line 2264, ../sass/style.scss */
+main#rubrique_niveau5_citroen .main-background {
+  height: 452px;
+  background: url("../img/bg_citroen.png") repeat-x center 77px;
+}
+
+main#rubrique_niveau5_citroen .wrapper:last-child {
+  margin-bottom: 0;
+}
+/* END ADD by tmenu */
+
+/* line 2276, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5_citroen .separation_citroen {
+  /*margin: 50px 0 20px 0;*/
+  background: url(../img/separation_citroen.png) no-repeat left;
+  height: 45px;
+}
+/* END EDIT by tmenu */
+/* line 2282, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB {
+  position: relative;
+  display: inline-block;
+  /*width: 27px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 2292, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: -50px;
+  left: -55px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: solide 1px #868689;
+  text-align: center;
+  font-family: "citroenlight";
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #2a2823;
+  z-index: 1;
+}
+/* line 2308, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1397px;
+  z-index: 0;
+  top: 23px;
+  left: 55px;
+}
+/* line 2324, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB.twoline {
+  position: relative;
+  display: inline-block;
+  /*width: 27px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 2334, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB.twoline span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: -69px;
+  left: -51px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  text-align: center;
+  font-family: "citroenlight";
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #2a2823;
+  z-index: 1;
+  border: 1px solid #868689;
+}
+/* line 2350, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB.twoline span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1397px;
+  z-index: 0;
+  top: 41px;
+  left: 52px;
+}
+/* line 2368, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB.prune {
+  position: relative;
+  display: inline-block;
+  /*width: 30px;
+  height: 30px;
+  right: 0;
+  top: 14px;*/
+  /*background:url(../img/info.png) transparent no-repeat;*/
+  cursor: pointer;
+}
+/* line 2378, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB.prune span.infoB-content {
+  display: none;
+  position: absolute;
+  width: 130px;
+  height: 17px;
+  bottom: 40px;
+  left: -70px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+  font-family: "citroenlight";
+  font-size: 15px;
+  padding: 9px 16px;
+  color: #2a2823;
+  z-index: 1;
+  border: 1px solid #868689;
+}
+/* line 2395, ../sass/style.scss */
+main#rubrique_niveau5_citroen .infoB.prune span.infoB-content:after {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  display: block;
+  content: "";
+  background: url(../img/sprite.png) no-repeat 0 -1397px;
+  z-index: 0;
+  top: 23px;
+  left: 70px;
+}
+/* line 2411, ../sass/style.scss */
+main#rubrique_niveau5_citroen h1 {
+  font-size: 30px;
+  font-family: "citroenbold";
+  color: #d62c35;
+  text-transform: uppercase;
+  width: 60%;
+  padding-top: 30px;
+}
+/* line 2420, ../sass/style.scss */
+main#rubrique_niveau5_citroen h2 {
+  font-size: 24px;
+  font-family: "citroenlight";
+  color: #2e2e2e;
+  text-transform: uppercase;
+  width: 60%;
+	/* ADD by tmenu */
+  margin-bottom: 20px;
+	/* END ADD by tmenu */
+}
+/* line 2427, ../sass/style.scss */
+main#rubrique_niveau5_citroen h2.titlebar {
+  font-size: 23px;
+  font-family: "citroenlight";
+  color: #d62c35;
+  text-transform: uppercase;
+  /*background: url(../img/titlesubbar_blue.png) no-repeat 0 bottom;*/
+	/* EDIT by tmenu */
+  margin: 10px 0 35px 0;
+	/* END EDIT by tmenu */
+  padding-bottom: 16px;
+}
+/* line 2437, ../sass/style.scss */
+main#rubrique_niveau5_citroen h3 {
+  font-size: 12px;
+  font-family: "citroenlight";
+  color: #d62c35;
+	/* EDIT by tmenu */
+  /*padding-top: 20px;*/
+  display: inline-block;
+	/* END EDIT by tmenu */
+}
+/* line 2443, ../sass/style.scss */
+main#rubrique_niveau5_citroen h3 span {
+  color: #b8b8b8;
+}
+/* line 2448, ../sass/style.scss */
+main#rubrique_niveau5_citroen p {
+  font-size: 18px;
+  font-family: "citroenlight";
+  color: #2e2e2e;
+}
+/* line 2453, ../sass/style.scss */
+main#rubrique_niveau5_citroen p span.bordertxt {
+  border: solid 1px #ad0040;
+  color: #d62c35;
+  font-family: "citroenlight";
+  padding: 5px;
+}
+/* line 2460, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options {
+	/* EDIT by tmenu */
+  display: inline-block;
+  margin-left: 40px;
+  color: #7b7b7c;
+  font-size: 1.4em;
+	/* END EDIT by tmenu */
+}
+/* line 2466, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options2 {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+}
+/* line 2471, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options2 li {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 2475, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options2 li i {
+  width: 28px;
+  height: 25px;
+  display: block;
+}
+/* line 2481, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options2 li:last-child {
+  margin-right: 0;
+}
+/* line 2486, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options2 .first i {
+  background: url("../img/sprite.png") no-repeat -118px -664px;
+}
+/* line 2490, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options2 .second i {
+  background: url("../img/sprite.png") no-repeat -53px -546px;
+}
+/* line 2494, ../sass/style.scss */
+main#rubrique_niveau5_citroen #options2 .third i {
+  background: url("../img/sprite.png") no-repeat -59px -606px;
+}
+/* line 2499, ../sass/style.scss */
+main#rubrique_niveau5_citroen .addcalendar {
+	/* EDIT by tmenu */
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+	/* END EDIT by tmenu */
+}
+/* line 2503, ../sass/style.scss */
+main#rubrique_niveau5_citroen .addcalendar i {
+  width: 28px;
+  height: 25px;
+  display: block;
+  background: url("../img/sprite.png") no-repeat -57px -664px;
+}
+/* line 2511, ../sass/style.scss */
+main#rubrique_niveau5_citroen .resume_table {
+  width: 100%;
+	/* EDIT by tmenu */
+  border: solid 1px #38383b;
+  margin-top: 20px;
+	/* END EDIT by tmenu */
+}
+/* line 2516, ../sass/style.scss */
+/* EDIT by tmenu */
+/*main#rubrique_niveau5_citroen .resume_table ul {
+  display: inline-block;
+  width: 100%;
+}
+/* line 2513, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen .resume_table ul li {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenregular";
+  color: #2e2e2e;
+  margin: 27px 0 27px 73px;
+  width: 25%;
+}
+/* line 2524, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen .resume_table ul:last-child {
+  margin-bottom: 35px;
+}
+/* line 2528, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen .resume_table ul.head {
+  background: #868689;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 2534, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen .resume_table ul.head li {
+  font-family: "citroenbold";
+  color: #fff;
+  margin: 16px 0 16px 73px;
+}
+/* END EDIT by tmenu */
+/* ADD by tmenu */
+main#rubrique_niveau5_citroen .resume_table tr th,
+main#rubrique_niveau5_citroen .resume_table tr td {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenregular";
+  color: #2e2e2e;
+  margin: 27px 0 27px 73px;
+  width: 25%;
+}
+
+main#rubrique_niveau5_citroen .resume_table thead tr {
+  background: #868689;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+main#rubrique_niveau5_citroen .resume_table thead tr th {
+  text-align: left;
+  color: #fff;
+  margin: 16px 0 16px 73px;
+}
+/* END ADD by tmenu */
+
+/* line 2552, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5_citroen div.table_three {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2549, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen div.table_three div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2554, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen div.table_three div a {
+  display: block;
+}
+/* line 2559, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen div.table_three div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2a2823;
+  margin: 18px 0 18px 43px;
+  width: 28%;
+}
+/* line 2571, ../sass/style.scss */
+/*main#rubrique_niveau5_citroen div.table_three div:hover {
+  background: #d62c35 url(../img/sprite.png) no-repeat 870px -713px;
+}
+/* line 2581, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_three div:hover span {
+  color: #fff;
+}
+/* line 2586, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_three ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2589, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_three ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  margin: 16px 0 16px 43px;
+  width: 28%;
+}
+/* END EDIT by tmenu */
+/* ADD by tmenu */
+main#rubrique_niveau5_citroen table.table_three {
+  width: 100%;
+  margin-top: 20px;
+}
+
+main#rubrique_niveau5_citroen table.table_three tr {
+  border-bottom: solid 1px #e8e8e8;
+}
+
+main#rubrique_niveau5_citroen table.table_three tr td,
+main#rubrique_niveau5_citroen table.table_three tr th {
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  padding: 18px 0 18px 30px;
+  width: 28%;
+}
+
+main#rubrique_niveau5_citroen .col_right table.table_three tr td,
+main#rubrique_niveau5_citroen .col_left table.table_three tr td {
+  padding-right: 60px;
+}
+
+main#rubrique_niveau5_citroen table.table_three tr th {
+  font-size: 17px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  text-align: left;
+}
+
+main#rubrique_niveau5_citroen table.table_three tbody tr:hover {
+  background: #d62c35;
+  cursor: pointer;
+}
+
+main#rubrique_niveau5_citroen table.table_three tbody tr:hover td {
+  color: #fff;
+}
+
+main#rubrique_niveau5_citroen table.table_three tbody tr:hover td:nth-child(3) {
+  background: url(../img/sprite.png) no-repeat 260px -713px;
+}
+
+main#rubrique_niveau5_citroen .col_right table.table_three tbody tr:hover td:nth-child(3),
+main#rubrique_niveau5_citroen .col_left table.table_three tbody tr:hover td:nth-child(3) {
+  background-position: 110px -713px;
+}
+
+main#rubrique_niveau5_citroen table.table_three thead tr {
+  border-bottom: solid 1px #e8e8e8;
+}
+
+main#rubrique_niveau5_citroen table.table_three thead tr {
+  font-size: 17px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+}
+/* */
+main#rubrique_niveau5_citroen .wrapper .summary ul li {
+  font-family: "citroenlight";
+  font-size: 17px;
+  list-style: none;
+  color: #302b28;
+  margin: 0;
+}
+main#rubrique_niveau5_citroen .wrapper .summary ul li a {
+  padding: 19px 0 19px 15px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+main#rubrique_niveau5_citroen .wrapper .summary ul li a:before {
+  content: url(../img/footer-li.png);
+  margin-right: 20px;
+}
+main#rubrique_niveau5_citroen .wrapper .summary ul li a:hover {
+  background: #d62c35;
+  color: #fff;
+}
+
+main#rubrique_niveau5_citroen .wrapper .summary ul li ul {
+  margin: 0 0 0 40px;
+}
+/* END ADD by tmenu */
+
+/* line 2597, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2601, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2606, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div a {
+  display: block;
+}
+/* line 2611, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2a2823;
+  margin: 18px 0 18px 43px;
+  width: 34%;
+}
+/* line 2623, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div:hover {
+  background: #d62c35 url(../img/sprite.png) no-repeat 870px -713px;
+}
+/* line 2626, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div:hover span {
+  color: #fff;
+}
+/* line 2631, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2634, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  margin: 16px 0 16px 43px;
+  width: 34%;
+}
+/* line 2651, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2655, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one .first {
+  border-top: solid 1px #e8e8e8;
+}
+/* line 2659, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  background: url(../img/sprite.png) no-repeat 320px -1256px;
+}
+/* line 2665, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div a {
+  display: block;
+}
+/* line 2670, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2a2823;
+  margin: 18px 0 18px 43px;
+  width: 73%;
+}
+/* line 2686, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div:hover {
+  background: #d62c35 url(../img/sprite.png) no-repeat 320px -875px;
+}
+/* line 2689, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div:hover span {
+  color: #fff;
+}
+/* line 2694, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2697, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  margin: 16px 0 16px 43px;
+  width: 73%;
+}
+/* line 2711, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5_citroen .col_left {
+  width: 45%;
+  display: inline-block;
+}
+/* line 2715, ../sass/style.scss */
+main#rubrique_niveau5_citroen .col_right {
+  width: 45%;
+  display: inline-block;
+  float: right;
+}
+/* END EDIT by tmenu */
+/* line 2723, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul {
+  display: inline-block;
+  width: 411px;
+}
+/* line 2727, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul li {
+  border-bottom: solid 1px #e8e8e8;
+  color: #2a2823;
+  font-family: "citroenlight";
+  font-size: 15px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+/* line 2735, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul li a {
+  padding: 18px 0 18px 43px;
+  display: block;
+}
+/* line 2740, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul li a:hover {
+  background: #d62c35;
+  color: #fff;
+}
+/* line 2747, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul:last-child {
+  float: right;
+}
+
+/* line 2757, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen {
+  text-align: center;
+  margin-bottom: -70px;
+  padding-bottom: 60px;
+  padding-top: 65px;
+  margin-top: 0;
+  width: 100%;
+}
+/* line 2765, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article {
+  display: inline-block;
+  width: 169px;
+  height: 148px;
+  background: #38383b;
+  font-family: "citroenregular";
+  font-size: 17px;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 2780, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article:last-child {
+  margin-right: 0;
+}
+/* line 2785, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article div.img {
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: 35px;
+}
+/* line 2797, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article p {
+  position: relative;
+  z-index: 1000;
+}
+/* line 2803, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article a {
+  position: absolute;
+  z-index: 10000;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* ADD by tmenu */
+
+/* popin */
+#popin-fade {
+    display: none;
+    background: #999;
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+    opacity: .60;
+    z-index: 1;
+}
+.popin-block {
+    display: none;
+    background: #fff;
+    padding: 40px;
+    float: left;
+    color: #000;
+    font-size: 1em;
+    text-align: left;
+    position: fixed;
+    top: 50%; left: 50%;
+    width: 600px;
+    z-index: 99999;
+    -webkit-box-shadow: 0px 0px 20px #000;
+    -moz-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.popin-block .popin-content {
+    max-height: 650px;
+    overflow-x : hidden;
+    overflow-y : auto;
+}
+.popin-block h2 {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    font-family: "citroenbold";
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 22px;
+    color: #184254;
+}
+.popin-block p {
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+.popin-block h2:before {
+    content: url("../img/h3-bg.png");
+    position: absolute;
+    margin-top: 20px;
+}
+.popin-block dl dt {
+    float: left;
+    width: 165px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
+    font-weight: 700;
+}
+.popin-block dl dd {
+    margin: 0 0 20px 185px;
+}
+a.popin-close {
+    color: #afafaf;
+    font-size: 2em;
+    text-align: center;
+    background: #000;
+    float: right;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    margin: -55px -55px 0 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+/* End popin */
+
+/* notifs options */
+#notif-out {
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+    opacity: 0;
+}
+#pre-header .wrapper #notifs .notifs-option {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+  margin-top: 8px;
+  background: red;
+  z-index: 3;
+}
+#pre-header .wrapper #notifs .notifs-option ul {
+  margin: 0;
+  padding: 0;
+  max-height: 255px;
+}
+#pre-header .wrapper #notifs .notifs-option ul li {
+  display: inline-block;
+  width: 398px;
+  height: 50px;
+  background: #fff;
+  border-left: 1px solid #008896;
+  border-right: 1px solid #008896;
+  border-bottom: 1px solid #008896;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 1.15em;
+  line-height: 1em;
+  line-height: 20px;
+  text-transform: none;
+}
+#pre-header .wrapper #notifs .notifs-option ul li.unread {
+  background: #184254;
+  color: #fff;
+}
+#pre-header .wrapper #notifs .notifs-option ul li a {
+  display: block;
+  padding: 5px 25px 5px 10px;
+}
+#pre-header .wrapper #notifs .notifs-option ul li a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+#pre-header .wrapper #notifs .notifs-option ul li.unread a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+#pre-header .wrapper #notifs .notifs-option ul li a .desc {
+  display: block;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#pre-header .wrapper #notifs .notifs-option ul li a .date {
+  display: block;
+  font-style: italic;
+}
+/* End notifs options */
+
+/* form new task */
+#popin-new-task form.new-task {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 590px;
+    margin: auto;
+    font-family: "citroenlight";
+}
+#popin-new-task form.new-task .new-task-row {
+    width: 100%;
+    margin: 8px 0;
+    padding: 0;
+}
+#popin-new-task form.new-task .new-task-submit-row {
+    text-align: right;
+    width: 100%;
+    margin: 16px 0 8px 0;
+    padding: 0;
+}
+#popin-new-task form.new-task .new-task-row label {
+    display: inline-block;
+    width: 100px;
+    line-height: 22px;
+}
+#popin-new-task form.new-task .new-task-row .new-task-input {
+    display: inline-block;
+    width: 486px;
+}
+#popin-new-task form.new-task .new-task-row .new-task-input input {
+    display: inline-block;
+    width: 480px;
+    height: 22px;
+    padding: 1px;
+}
+#popin-new-task form.new-task .new-task-row .new-task-textarea textarea {
+    display: inline-block;
+    width: 584px;
+    height: 60px;
+}
+
+#popin-new-task form.new-task .new-task-row .left,
+#popin-new-task form.new-task .new-task-row .right {
+    display: inline-block;
+    width: 290px;
+}
+#popin-new-task form.new-task .new-task-row .left {
+    margin-right: 5px;
+}
+#popin-new-task form.new-task .new-task-row .left label,
+#popin-new-task form.new-task .new-task-row .right label {
+    width: 100px;
+}
+#popin-new-task form.new-task .new-task-row .left .new-task-input,
+#popin-new-task form.new-task .new-task-row .right .new-task-input {
+    width: 182px;
+}
+#popin-new-task form.new-task .new-task-row .left .new-task-input input,
+#popin-new-task form.new-task .new-task-row .right .new-task-input input {
+    width: 180px;
+}
+#popin-new-task form.new-task .new-task-row .left .new-task-input select,
+#popin-new-task form.new-task .new-task-row .right .new-task-input select {
+    width: 184px;
+    height: 28px;
+}
+
+#popin-new-task form.new-task .datepicker {
+  background: url(../img/sprite.png) 160px -1590px no-repeat;
+        border: 1px solid #6b6b6b;
+}
+/* End form new task */
+
+
+
+
+
+main#agenda {
+    margin-top: 50px;
+}
+
+main#agenda .wrapper h2 {
+  color: #5b2645;
+  position: relative;
+  font-family: "citroenbold";
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-right: 61px;
+}
+
+main#agenda .wrapper h2:before {
+  content: url("../img/h3-bg-purple.png");
+  position: absolute;
+  top: 10px;
+  left: -2px;
+}
+
+main#agenda .wrapper #options {
+  float: right;
+  margin-top: 8px;
+}
+
+main#agenda .wrapper .right .btn.today {
+  margin-left: 10px;
+}
+
+main#agenda .wrapper .right .day-events {
+  height: 370px;
+  background: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+main#agenda .wrapper .right .switch-agenda {
+    position: relative;
+    text-align: right;
+    margin: 22px 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 31px;
+}
+
+main#agenda .wrapper .right .switch-agenda .label {
+    position: absolute;
+    top: 0;
+    right: 105px;
+}
+
+main#agenda .wrapper .right .switch-agenda a {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 31px;
+    line-height: 31px;
+}
+
+main#agenda .wrapper .right .switch-agenda a:first-of-type {
+    margin-right: -4px;
+}
+
+main#agenda .wrapper .right .switch-agenda a span {
+    display: inline-block;
+    width: 45px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    text-align: center;
+    font-family: "citroenlight";
+    font-size: 12px;
+    text-transform: none;
+    color: #b8b8b8;
+}
+
+main#agenda .wrapper .right .switch-agenda a:hover span {
+    color: #9d9d9d;
+}
+
+main#agenda .scrollable .section {
+  margin-top: 20px;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td.selected {
+  background: #5b2645;
+  color: white;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-more {
+    margin: 0 auto 5px auto;
+    content: '';
+    width: 28px;
+    height: 6px;
+    background: url(../img/icon-event-more.png);
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-item i.event-1 {
+  background: url(../img/icon-event-1.png);
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-item i.event-2 {
+  background: url(../img/icon-event-2.png);
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td div .event-item i{
+	display: inline-block;
+    height: 22px;
+    position: relative;
+    text-align: center;
+    top: 15%;
+    width: 26px;
+}
+main#agenda section.cal-month .clndr table.clndr-table tbody td.selected div .event-more {
+    background: url(../img/icon-event-more-today.png);
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td.selected div .event-item i.event-1 {
+  background: url(../img/icon-event-1-today.png);
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td.selected div .event-item i.event-2 {
+  background: url(../img/icon-event-2-today.png);
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td.day {
+  position: relative;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody .expanded {
+    position: absolute;
+    top: 0;
+    left: 130px;
+    width: 160px;
+    padding: 15px;
+    margin: -20px 0 0 20px;
+    border: 2px solid #5d2746;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-family: "citroenregular";
+    font-size: 16px;
+    color: #000;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody .expanded {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 125px;
+    min-width: 130px;
+    padding: 15px;
+    margin: -20px 0 0 20px;
+    border: 2px solid #5d2746;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-family: "citroenregular";
+    font-size: 16px;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody .expanded .arrow {
+    background: url(../img/event-more-arrow.png);
+    position: absolute;
+    top: 50px;
+    left: -16px;
+    width: 16px;
+    height: 28px;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody td.day:hover .expanded {
+    display: block;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody .expanded .event-item {
+    padding: 5px 0;
+    height: inherit;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody .expanded .event-item .event-img {
+    width: 25px
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody .expanded .event-item span {
+    float: left;
+    margin: -20px 0 0 40px;
+    font-family: "citroenregular";
+    font-size: 14px;
+}
+
+
+
+
+main#agenda section.cal-month .clndr table.clndr-table thead tr td {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+main#agenda section.cal-month .clndr table.clndr-table tbody tr td {
+    height: 30px;
+    line-height: 30px;
+}
+
+/* END ADD by tmenu */
+
+/* line 2604, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2608, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2613, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div a {
+  display: block;
+}
+/* line 2618, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2a2823;
+  margin: 18px 0 18px 43px;
+  width: 34%;
+}
+/* line 2630, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div:hover {
+  background: #d62c35 url(../img/sprite.png) no-repeat 870px -713px;
+}
+/* line 2633, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two div:hover span {
+  color: #fff;
+}
+/* line 2638, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2641, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_two ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  margin: 16px 0 16px 43px;
+  width: 34%;
+}
+/* line 2658, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2662, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one .first {
+  border-top: solid 1px #e8e8e8;
+}
+/* line 2666, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  background: url(../img/sprite.png) no-repeat 320px -1256px;
+}
+/* line 2672, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div a {
+  display: block;
+}
+/* line 2677, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2a2823;
+  margin: 18px 0 18px 43px;
+  width: 73%;
+}
+/* line 2693, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div:hover {
+  background: #d62c35 url(../img/sprite.png) no-repeat 320px -875px;
+}
+/* line 2696, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one div:hover span {
+  color: #fff;
+}
+/* line 2701, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2704, ../sass/style.scss */
+main#rubrique_niveau5_citroen .table_one ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  margin: 16px 0 16px 43px;
+  width: 73%;
+}
+/* line 2718, ../sass/style.scss */
+/* EDIT by tmenu */
+main#rubrique_niveau5_citroen .col_left {
+  width: 45%;
+  display: inline-block;
+}
+/* line 2722, ../sass/style.scss */
+main#rubrique_niveau5_citroen .col_right {
+  width: 45%;
+  display: inline-block;
+  float: right;
+}
+/* line 2730, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul {
+  display: inline-block;
+  width: 411px;
+}
+/* line 2734, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul li {
+  border-bottom: solid 1px #e8e8e8;
+  color: #2a2823;
+  font-family: "citroenlight";
+  font-size: 15px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+/* line 2742, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul li a {
+  padding: 18px 0 18px 43px;
+  display: block;
+}
+/* line 2747, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul li a:hover {
+  background: #d62c35;
+  color: #fff;
+}
+/* line 2754, ../sass/style.scss */
+main#rubrique_niveau5_citroen .article_similar ul:last-child {
+  float: right;
+}
+
+/* line 2764, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen {
+  text-align: center;
+  margin-bottom: -70px;
+  padding-bottom: 60px;
+  padding-top: 65px;
+  margin-top: 0;
+  width: 100%;
+}
+/* line 2772, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article {
+  display: inline-block;
+  width: 169px;
+  height: 148px;
+  background: #38383b;
+  font-family: "citroenregular";
+  font-size: 17px;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 2787, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article:last-child {
+  margin-right: 0;
+}
+/* line 2792, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article div.img {
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: 35px;
+}
+/* line 2804, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article p {
+  position: relative;
+  z-index: 1000;
+}
+/* line 2810, ../sass/style.scss */
+.pre-footer-two.wrapper.citroen article a {
+  position: absolute;
+  z-index: 10000;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* ADD by tmenu */
+
+
+
+/* popin */
+
+#popin-fade {
+	display: none;
+	background: #999;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .60;
+	z-index: 1;
+}
+
+.popin-block {
+	display: none;
+	background: #fff;
+	padding: 40px;
+	float: left;
+	color: #000;
+	font-size: 1em;
+	text-align: left;
+	position: fixed;
+	top: 50%; left: 50%;
+	width: 600px;
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.popin-block .popin-content {
+	max-height: 650px;
+	overflow-x : hidden;
+	overflow-y : auto;
+}
+
+.popin-block h2 {
+	display: block;
+	position: relative;
+	margin-bottom: 40px;
+	letter-spacing: 3px;
+	font-family: "citroenbold";
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 22px;
+	color: #184254;
+}
+
+.popin-block p {
+	margin-bottom: 20px;
+	padding-right: 10px;
+}
+
+.popin-block h2:before {
+	content: url("../img/h3-bg.png");
+	position: absolute;
+	margin-top: 20px;
+}
+
+.popin-block dl dt {
+	float: left;
+	width: 165px;
+	overflow: hidden;
+	clear: left;
+	text-align: right;
+	text-overflow: ellipsis;
+	white-space: no-wrap;
+	font-weight: 700;
+}
+
+.popin-block dl dd {
+    margin: 0 0 20px 185px;
+}
+
+a.popin-close {
+	color: #afafaf;
+    font-size: 2em;
+    text-align: center;
+    background: #000;
+    float: right;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    margin: -55px -55px 0 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* End popin */
+
+
+
+/* line 2823, ../sass/style.scss */
+.filterbox {
+  border: solid 1px #194254;
+  padding: 15px;
+  margin-top: 20px;
+}
+/* line 2828, ../sass/style.scss */
+.filterbox .recherche {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+  border-right: none;
+  border: solid 1px #ececec;
+  font-size: 15px;
+  color: #7b7b7c;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  height: 31px;
+  width: 666px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 2843, ../sass/style.scss */
+.filterbox .bouton_recherche {
+  background: url(../img/sprite.png) no-repeat 8px -459px #ececec;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+  height: 31px;
+  width: 31px;
+  border: none;
+  float: left;
+}
+/* line 2852, ../sass/style.scss */
+.filterbox .bouton_reset {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url(../img/sprite.png) no-repeat 129px -499px #194254;
+  font-family: "citroenlight";
+  font-size: 15px;
+  border: none;
+  height: 31px;
+  padding: 0 26px 0 13px;
+  color: #FFFFFF;
+  float: right;
+}
+
+
+.btn_blue {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #194254;
+  font-family: "citroenlight";
+  font-size: 15px;
+  border: none;
+  height: 31px;
+  padding: 0 13px 0 42px;
+  color: #FFFFFF;
+  float: left;
+  margin: 15px 10px 0 0;
+}
+
+.btn_blue.add_contact{
+	background: url(../img/sprite.png) no-repeat  9px -2129px #194254;
+	}
+
+.btn_blue.show_fav{
+	background: url(../img/sprite.png) no-repeat  9px -2184px #194254;
+	padding-left: 30px;
+	}
+
+/* line 2864, ../sass/style.scss */
+.filterbox ul {
+  display: inline-block;
+  font-family: "citroenregular";
+  font-size: 18px;
+  margin-top: 13px;
+}
+/* line 2871, ../sass/style.scss */
+.filterbox ul li {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+/* line 2878, ../sass/style.scss */
+.filterbox ul li.active a, .filterbox ul li a:hover {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: none repeat scroll 0 0 #194254;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: block;
+  line-height: 29px;
+}
+.filterbox ul li.active a{
+	font-family: "citroenbold";
+	}
+
+/************************** page LIENS UTILES *********************************/
+/* line 2896, ../sass/style.scss */
+main#liens_utiles .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2900, ../sass/style.scss */
+main#liens_utiles .table_two div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  background: url(../img/sprite.png) no-repeat 870px -277px;
+}
+/* line 2906, ../sass/style.scss */
+main#liens_utiles .table_two div a {
+  display: block;
+}
+/* line 2909, ../sass/style.scss */
+main#liens_utiles .table_two div a span:first-child {
+  width: 24%;
+}
+/* line 2912, ../sass/style.scss */
+main#liens_utiles .table_two div a span:last-child {
+  width: 57%;
+}
+/* line 2917, ../sass/style.scss */
+main#liens_utiles .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin: 28px 0 28px 43px;
+}
+/* line 2928, ../sass/style.scss */
+main#liens_utiles .table_two div:hover {
+  background: #99d6dc url(../img/sprite.png) no-repeat 870px -277px;
+}
+/* line 2934, ../sass/style.scss */
+main#liens_utiles .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 2937, ../sass/style.scss */
+main#liens_utiles .table_two ul.head li:first-child {
+  width: 24%;
+}
+/* line 2940, ../sass/style.scss */
+main#liens_utiles .table_two ul.head li:last-child {
+  width: 57%;
+}
+/* line 2944, ../sass/style.scss */
+main#liens_utiles .table_two ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 43px;
+}
+
+/* line 2960, ../sass/style.scss */
+.pagination {
+  font-family: "citroenlight";
+  font-size: 15px;
+  color: #194254;
+  text-transform: uppercase;
+  width: 340px;
+  margin: 60px auto 30px auto;
+}
+/* line 2968, ../sass/style.scss */
+.pagination li {
+  display: inline-block;
+  padding: 10px;
+}
+/* line 2972, ../sass/style.scss */
+.pagination li:first-child {
+  width: 71px;
+}
+/* line 2976, ../sass/style.scss */
+.pagination li.active a {
+  cursor: default;
+}
+/* line 2979, ../sass/style.scss */
+.pagination li.active, .pagination li a:hover {
+  font-family: "citroenbold";
+}
+
+/************************** page DERNIÈRES PUBLICATIONS *********************************/
+/* line 2991, ../sass/style.scss */
+main#dernieres_publications .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 2995, ../sass/style.scss */
+main#dernieres_publications .table_two div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  background: url(../img/sprite.png) no-repeat 870px -277px;
+}
+/* line 3001, ../sass/style.scss */
+main#dernieres_publications .table_two div a {
+  display: block;
+}
+/* line 3004, ../sass/style.scss */
+main#dernieres_publications .table_two div a span:first-child {
+  width: 24%;
+}
+/* line 3007, ../sass/style.scss */
+main#dernieres_publications .table_two div a span:last-child {
+  width: 57%;
+}
+/* line 3012, ../sass/style.scss */
+main#dernieres_publications .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin: 28px 0 28px 43px;
+}
+/* line 3023, ../sass/style.scss */
+main#dernieres_publications .table_two div:hover {
+  background: #99d6dc url(../img/sprite.png) no-repeat 870px -277px;
+}
+/* line 3029, ../sass/style.scss */
+main#dernieres_publications .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 3032, ../sass/style.scss */
+main#dernieres_publications .table_two ul.head li:first-child {
+  width: 24%;
+}
+/* line 3035, ../sass/style.scss */
+main#dernieres_publications .table_two ul.head li:last-child {
+  width: 57%;
+}
+/* line 3039, ../sass/style.scss */
+main#dernieres_publications .table_two ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 43px;
+}
+/* line 3052, ../sass/style.scss */
+main#dernieres_publications .morefilter {
+  display: block;
+  font-size: 15px;
+  font-family: "citroenregular";
+  color: #194254;
+  background: url(../img/sprite.png) no-repeat 88px -1471px;
+  padding-right: 23px;
+  float: right;
+  margin-top: 12px;
+}
+/* line 3063, ../sass/style.scss */
+main#dernieres_publications .morefilter.active {
+  background: url(../img/sprite.png) no-repeat 88px -1507px;
+}
+/* line 3067, ../sass/style.scss */
+main#dernieres_publications .boder_separation {
+  border-bottom: solid 1px #194254;
+  height: 1px;
+  width: 919px;
+  margin-left: -15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
+  clear: both;
+}
+/* line 3078, ../sass/style.scss */
+main#dernieres_publications .publication {
+  border-bottom: 1px solid #e8e8e8;
+  display: inline-block;
+  width: 100%;
+  background: url("../img/square_green.png") no-repeat right 109px;
+}
+/* line 3084, ../sass/style.scss */
+main#dernieres_publications .publication a {
+  display: block;
+}
+/* line 3089, ../sass/style.scss */
+main#dernieres_publications .publication span.title {
+  color: #302b28;
+  font-size: 20px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+}
+/* line 3098, ../sass/style.scss */
+main#dernieres_publications .publication span.maj {
+  color: #008896;
+  font-size: 15px;
+  font-family: "citroenregular";
+  width: 100%;
+  display: inline-block;
+}
+/* line 3105, ../sass/style.scss */
+main#dernieres_publications .publication ul {
+  font-size: 17px;
+  font-family: "citroenregular";
+  color: #909090;
+  display: inline-block;
+}
+/* line 3111, ../sass/style.scss */
+main#dernieres_publications .publication ul li {
+  display: inline-block;
+}
+/* line 3117, ../sass/style.scss */
+main#dernieres_publications .publication p {
+  font-size: 17px;
+  font-family: "citroenlight";
+  color: #302b28;
+  margin: 20px 0;
+  width: 840px;
+  padding-right: 80px;
+}
+/* line 3128, ../sass/style.scss */
+main#dernieres_publications .input_date {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url(../img/sprite.png) 99px -1588px no-repeat;
+  padding-left: 10px;
+  border: solid 1px #e4e4e4;
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  height: 31px;
+  box-sizing: border-box;
+  width: 130px;
+  color: #7b7b7c;
+  margin-right: 24px;
+}
+/* line 3143, ../sass/style.scss */
+main#dernieres_publications .line_form {
+  display: inline-block;
+  width: 100%;
+  margin: 9px 0;
+}
+/* line 3148, ../sass/style.scss */
+main#dernieres_publications .line_form label {
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+/* line 3159, ../sass/style.scss */
+.styled-select select {
+  display: inline-block;
+  background: transparent;
+  width: 268px;
+  padding: 5px 5px 5px 7px;
+  line-height: 1;
+  border: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  height: 31px;
+  box-sizing: border-box;
+  width: 159px;
+  color: #7b7b7c;
+  margin-right: -30px;
+}
+
+/* line 3179, ../sass/style.scss */
+.styled-select {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-table;
+  width: 138px;
+  height: 31px;
+  overflow: hidden;
+  background: url("../img/sprite.png") no-repeat 119px -1655px;
+  border: solid 1px #e4e4e4;
+  margin-right: 10px;
+  position: relative;
+  font-size: 15px;
+  font-family: "citroenregular";
+}
+
+/* line 3193, ../sass/style.scss */
+.styled-select option {
+  position: absolute;
+  font-size: 15px;
+  font-family: "citroenregular";
+}
+
+/* line 3198, ../sass/style.scss */
+.styled-select.first {
+  margin-left: 13px;
+}
+
+/************************** page TÂCHES EN ATTENTE DE RÉALISATION *********************************/
+/* line 3208, ../sass/style.scss */
+main#taches_en_attente h1 {
+  color: #5c2646;
+}
+/* line 3212, ../sass/style.scss */
+main#taches_en_attente #options {
+  margin-top: -50px;
+  float: right;
+}
+/* line 3216, ../sass/style.scss */
+main#taches_en_attente .filterbox {
+  border: solid 1px #5c2646;
+  padding: 15px;
+  margin-top: 20px;
+}
+/* line 3222, ../sass/style.scss */
+main#taches_en_attente .bouton_reset {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url(../img/sprite.png) no-repeat 129px -499px #5c2646;
+  font-family: "citroenlight";
+  font-size: 15px;
+  border: none;
+  height: 31px;
+  padding: 0 26px 0 13px;
+  color: #FFFFFF;
+  float: right;
+}
+/* line 3234, ../sass/style.scss */
+main#taches_en_attente .publication {
+  border-bottom: 1px solid #e8e8e8;
+  display: inline-block;
+  width: 100%;
+  background: url("../img/square_green.png") no-repeat right 109px;
+}
+/* line 3240, ../sass/style.scss */
+main#taches_en_attente .publication a {
+  display: block;
+}
+/* line 3245, ../sass/style.scss */
+main#taches_en_attente .publication span.title {
+  color: #302b28;
+  font-size: 20px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+}
+/* line 3254, ../sass/style.scss */
+main#taches_en_attente .publication span.maj {
+  color: #008896;
+  font-size: 15px;
+  font-family: "citroenregular";
+  width: 100%;
+  display: inline-block;
+}
+/* line 3261, ../sass/style.scss */
+main#taches_en_attente .publication ul {
+  font-size: 17px;
+  font-family: "citroenregular";
+  color: #909090;
+  display: inline-block;
+}
+/* line 3267, ../sass/style.scss */
+main#taches_en_attente .publication ul li {
+  display: inline-block;
+}
+/* line 3273, ../sass/style.scss */
+main#taches_en_attente .publication p {
+  font-size: 17px;
+  font-family: "citroenlight";
+  color: #302b28;
+  margin: 20px 0;
+  width: 840px;
+  padding-right: 80px;
+}
+/* line 3284, ../sass/style.scss */
+main#taches_en_attente .input_date {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url(../img/sprite.png) 99px -1588px no-repeat;
+  padding-left: 10px;
+  border: solid 1px #e4e4e4;
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  height: 31px;
+  box-sizing: border-box;
+  width: 130px;
+  color: #7b7b7c;
+  margin-right: 24px;
+}
+/* line 3299, ../sass/style.scss */
+main#taches_en_attente .line_form {
+  display: inline-block;
+  width: 100%;
+  margin: 9px 0;
+}
+/* line 3304, ../sass/style.scss */
+main#taches_en_attente .line_form label {
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 3312, ../sass/style.scss */
+main#taches_en_attente .scrollable {
+  margin-top: 20px;
+}
+/* line 3316, ../sass/style.scss */
+main#taches_en_attente .scrollable form {
+  height: auto;
+  width: 100%;
+  margin: 0 5px 0 0;
+}
+/* line 3322, ../sass/style.scss */
+main#taches_en_attente .scrollable h4 {
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #5b2645;
+  font-weight: 200;
+}
+/* line 3332, ../sass/style.scss */
+main#taches_en_attente .scrollable .element {
+  font-family: Arial;
+  font-size: 13px;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 19px;
+  padding: 19px 0;
+  position: relative;
+  width: 100%;
+}
+/* line 3343, ../sass/style.scss */
+main#taches_en_attente .scrollable .element .elmt-img {
+  float: left;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 3350, ../sass/style.scss */
+main#taches_en_attente .scrollable .element .elmt-img img {
+  display: inline-block;
+  width: auto;
+}
+/* line 3358, ../sass/style.scss */
+main#taches_en_attente .scrollable .element span {
+  display: inline-block;
+  float: left;
+  font-family: "citroenregular";
+  font-size: 15px;
+  color: #2a2823;
+}
+/* line 3368, ../sass/style.scss */
+main#taches_en_attente .scrollable .element input[type=checkbox] {
+  float: right;
+  position: relative;
+}
+/* line 3376, ../sass/style.scss */
+main#taches_en_attente .scrollable .section {
+  margin-top: 35px;
+}
+/* line 3380, ../sass/style.scss */
+main#taches_en_attente .scrollable .section:first-child {
+  margin-top: 0px;
+}
+/* line 3385, ../sass/style.scss */
+main#taches_en_attente .scrollable .section:last-child {
+  margin-bottom: 40px;
+}
+/* line 3391, ../sass/style.scss */
+main#taches_en_attente .btn_mycalendar {
+  display: block;
+  background: url("../img/sprite.png") no-repeat scroll 8px -2248px #5c2646;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "citroenlight";
+  font-size: 15px;
+  height: 31px;
+  width: 92px;
+  padding: 0 13px 0 33px;
+  line-height: 31px;
+  margin: 27px 0 40px 0;
+}
+
+/******************* PAGE RECHERCHE **************************/
+/* line 3413, ../sass/style.scss */
+main#recherche_result h2.titlebar {
+  font-size: 23px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  background: url(../img/titlesubbar_black.png) no-repeat 0 bottom;
+  margin: 80px 0 35px 0;
+  padding-bottom: 16px;
+  color: #000000;
+}
+/* line 3422, ../sass/style.scss */
+main#recherche_result h2.titlebar span {
+  color: #008896;
+  font-family: "citroenlight";
+}
+/* line 3427, ../sass/style.scss */
+main#recherche_result h2.titlebar span b {
+  font-family: "citroenbold";
+}
+/* line 3434, ../sass/style.scss */
+main#recherche_result .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 3438, ../sass/style.scss */
+main#recherche_result .table_two div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  background: url(../img/sprite.png) no-repeat 870px -277px;
+}
+/* line 3444, ../sass/style.scss */
+main#recherche_result .table_two div a {
+  display: block;
+}
+/* line 3447, ../sass/style.scss */
+main#recherche_result .table_two div a span:first-child {
+  width: 24%;
+}
+/* line 3450, ../sass/style.scss */
+main#recherche_result .table_two div a span:last-child {
+  width: 57%;
+}
+/* line 3455, ../sass/style.scss */
+main#recherche_result .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin: 28px 0 28px 43px;
+}
+/* line 3466, ../sass/style.scss */
+main#recherche_result .table_two div:hover {
+  background: #99d6dc url(../img/sprite.png) no-repeat 870px -277px;
+}
+/* line 3472, ../sass/style.scss */
+main#recherche_result .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 3475, ../sass/style.scss */
+main#recherche_result .table_two ul.head li:first-child {
+  width: 24%;
+}
+/* line 3478, ../sass/style.scss */
+main#recherche_result .table_two ul.head li:last-child {
+  width: 57%;
+}
+/* line 3482, ../sass/style.scss */
+main#recherche_result .table_two ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 43px;
+}
+/* line 3495, ../sass/style.scss */
+main#recherche_result .morefilter {
+  display: block;
+  font-size: 15px;
+  font-family: "citroenregular";
+  color: #194254;
+  background: url(../img/sprite.png) no-repeat 88px -1471px;
+  padding-right: 23px;
+  float: right;
+  margin-top: 12px;
+}
+/* line 3506, ../sass/style.scss */
+main#recherche_result .morefilter.active {
+  background: url(../img/sprite.png) no-repeat 88px -1507px;
+}
+/* line 3510, ../sass/style.scss */
+main#recherche_result .boder_separation {
+  border-bottom: solid 1px #194254;
+  height: 1px;
+  width: 919px;
+  margin-left: -15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
+  clear: both;
+}
+/* line 3521, ../sass/style.scss */
+main#recherche_result .publication {
+  border-bottom: 1px solid #e8e8e8;
+  display: inline-block;
+  width: 100%;
+  background: url("../img/square_green.png") no-repeat right 109px;
+}
+/* line 3527, ../sass/style.scss */
+main#recherche_result .publication a {
+  display: block;
+}
+/* line 3532, ../sass/style.scss */
+main#recherche_result .publication span.title {
+  color: #302b28;
+  font-size: 20px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+}
+/* line 3541, ../sass/style.scss */
+main#recherche_result .publication span.maj {
+  color: #008896;
+  font-size: 15px;
+  font-family: "citroenregular";
+  width: 100%;
+  display: inline-block;
+}
+/* line 3548, ../sass/style.scss */
+main#recherche_result .publication ul {
+  font-size: 17px;
+  font-family: "citroenregular";
+  color: #909090;
+  display: inline-block;
+}
+/* line 3554, ../sass/style.scss */
+main#recherche_result .publication ul li {
+  display: inline-block;
+}
+/* line 3560, ../sass/style.scss */
+main#recherche_result .publication p {
+  font-size: 17px;
+  font-family: "citroenlight";
+  color: #302b28;
+  margin: 20px 0;
+  width: 840px;
+  padding-right: 80px;
+}
+/* line 3571, ../sass/style.scss */
+main#recherche_result .input_date {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url(../img/sprite.png) 99px -1588px no-repeat;
+  padding-left: 10px;
+  border: solid 1px #e4e4e4;
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  height: 31px;
+  box-sizing: border-box;
+  width: 130px;
+  color: #7b7b7c;
+  margin-right: 24px;
+}
+/* line 3586, ../sass/style.scss */
+main#recherche_result .line_form {
+  display: inline-block;
+  width: 100%;
+  margin: 9px 0;
+}
+/* line 3591, ../sass/style.scss */
+main#recherche_result .line_form label {
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 3599, ../sass/style.scss */
+main#recherche_result .line_form.fixe {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  width: auto;
+}
+/* line 3605, ../sass/style.scss */
+main#recherche_result .line_form.fixe label {
+  margin-right: 0;
+}
+/* line 3610, ../sass/style.scss */
+main#recherche_result .line_form.fixe .styled-select.first {
+  margin-right: 10px;
+}
+/* line 3614, ../sass/style.scss */
+main#recherche_result .line_form.fixe .styled-select {
+  margin-right: 0;
+  background: url("../img/sprite.png") no-repeat scroll 119px -1712px;
+  border: 1px solid #000;
+}
+
+/*********************** page INCONTOURNABLE   ************************/
+/* line 3626, ../sass/style.scss */
+main#incontournables {
+  /*** TABS  ******/
+}
+/* line 3629, ../sass/style.scss */
+main#incontournables h1 {
+  margin-bottom: 45px;
+}
+/* line 3632, ../sass/style.scss */
+main#incontournables .table_four {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 3636, ../sass/style.scss */
+main#incontournables .table_four div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  position: relative;
+}
+/* line 3642, ../sass/style.scss */
+main#incontournables .table_four div a {
+  display: block;
+}
+/* line 3647, ../sass/style.scss */
+main#incontournables .table_four div .remove_item {
+  background: url(../img/sprite.png) no-repeat 7px -1811px;
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+}
+/* line 3658, ../sass/style.scss */
+main#incontournables .table_four div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  color: #2e2e2e;
+  margin: 18px 0 18px 23px;
+  width: 22%;
+}
+/* line 3669, ../sass/style.scss */
+main#incontournables .table_four div:hover {
+  background: #9ad7dc;
+}
+/* line 3672, ../sass/style.scss */
+main#incontournables .table_four div:hover .remove_item {
+  display: block;
+}
+/* line 3680, ../sass/style.scss */
+main#incontournables .table_four div.letter span {
+  font-size: 20px;
+  text-decoration: underline;
+}
+/* line 3688, ../sass/style.scss */
+main#incontournables .table_four div.letter:hover {
+  background: none;
+}
+/* line 3693, ../sass/style.scss */
+main#incontournables .table_four ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 3696, ../sass/style.scss */
+main#incontournables .table_four ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 23px;
+  width: 22%;
+}
+/* line 3710, ../sass/style.scss */
+main#incontournables .tabs li:first-child {
+  margin-right: -5px;
+}
+/* line 3714, ../sass/style.scss */
+main#incontournables .tabs li {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  height: 79px;
+  font-size: 22px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  line-height: 61px;
+  position: relative;
+}
+/* line 3729, ../sass/style.scss */
+main#incontournables .tabs a {
+  display: inline-block;
+  color: #194254;
+  text-decoration: none;
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 2px #194254;
+  box-sizing: border-box;
+}
+/* line 3738, ../sass/style.scss */
+main#incontournables .tabs a i {
+  background: url("../img/sprite.png") no-repeat scroll 0 -1913px;
+  display: none;
+  height: 19px;
+  left: 44%;
+  position: absolute;
+  top: 59px;
+  width: 47px;
+}
+/* line 3750, ../sass/style.scss */
+main#incontournables .tabs a.active {
+  background: #194254;
+  color: #fff;
+  border-bottom: none;
+  margin: none;
+}
+/* line 3756, ../sass/style.scss */
+main#incontournables .tabs a.active i {
+  display: block;
+}
+/* line 3765, ../sass/style.scss */
+main#incontournables .table_two {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 3770, ../sass/style.scss */
+main#incontournables .table_two #sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 3776, ../sass/style.scss */
+main#incontournables .table_two #sortable li {
+  position: relative;
+  height: 53px;
+  border-bottom: solid 1px #e8e8e8;
+  display: inline-block;
+  width: 100%;
+  font-family: "citroenlight";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2a2823;
+}
+/* line 3788, ../sass/style.scss */
+main#incontournables .table_two #sortable li a.article {
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 51px;
+  padding-left: 184px;
+  width: 100%;
+  z-index: 0;
+}
+/* line 3798, ../sass/style.scss */
+main#incontournables .table_two #sortable li i {
+  background: url("../img/sprite.png") no-repeat scroll 0 -2009px;
+  display: block;
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  left: 22px;
+  top: 15px;
+  cursor: pointer;
+}
+/* line 3813, ../sass/style.scss */
+main#incontournables .table_two .remove_item {
+  background: url(../img/sprite.png) no-repeat 7px -1811px;
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+}
+/* line 3827, ../sass/style.scss */
+main#incontournables .table_two #sortable li:hover {
+  background: #9ad7dc;
+}
+/* line 3830, ../sass/style.scss */
+main#incontournables .table_two #sortable li:hover .remove_item {
+  display: block;
+  z-index: 2;
+}
+/* line 3839, ../sass/style.scss */
+main#incontournables .table_two div {
+  position: relative;
+}
+/* line 3844, ../sass/style.scss */
+main#incontournables .table_two div a {
+  display: block;
+}
+/* line 3851, ../sass/style.scss */
+main#incontournables .table_two div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  color: #2e2e2e;
+  margin: 18px 0 18px 23px;
+  width: 22%;
+}
+/* line 3862, ../sass/style.scss */
+main#incontournables .table_two div:hover {
+  background: #9ad7dc;
+}
+/* line 3865, ../sass/style.scss */
+main#incontournables .table_two div:hover .remove_item {
+  display: block;
+}
+/* line 3873, ../sass/style.scss */
+main#incontournables .table_two div.letter:hover {
+  background: none;
+}
+/* line 3878, ../sass/style.scss */
+main#incontournables .table_two ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 3881, ../sass/style.scss */
+main#incontournables .table_two ul.head li {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 23px;
+  width: 14%;
+}
+
+/******************* PAGE CONTACTS UTILES **************************/
+/* line 3902, ../sass/style.scss */
+main#contacts_utiles {
+  padding-bottom: 50px;
+}
+/* line 3905, ../sass/style.scss */
+main#contacts_utiles h2.titlebar {
+  font-size: 23px;
+  font-family: "citroenbold";
+  text-transform: uppercase;
+  background: url(../img/titlesubbar_black.png) no-repeat 0 bottom;
+  margin: 80px 0 35px 0;
+  padding-bottom: 16px;
+  color: #000000;
+}
+/* line 3914, ../sass/style.scss */
+main#contacts_utiles h2.titlebar span {
+  color: #008896;
+  font-family: "citroenlight";
+}
+/* line 3919, ../sass/style.scss */
+main#contacts_utiles h2.titlebar span b {
+  font-family: "citroenbold";
+}
+/* line 3927, ../sass/style.scss */
+main#contacts_utiles .morefilter {
+  display: block;
+  font-size: 15px;
+  font-family: "citroenregular";
+  color: #194254;
+  background: url(../img/sprite.png) no-repeat 88px -1471px;
+  padding-right: 23px;
+  float: right;
+  margin-top: 12px;
+}
+/* line 3938, ../sass/style.scss */
+main#contacts_utiles .morefilter.active {
+  background: url(../img/sprite.png) no-repeat 88px -1507px;
+}
+/* line 3942, ../sass/style.scss */
+main#contacts_utiles .boder_separation {
+  border-bottom: solid 1px #194254;
+  height: 1px;
+  width: 919px;
+  margin-left: -15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
+  clear: both;
+}
+/* line 3954, ../sass/style.scss */
+main#contacts_utiles .input_date {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url(../img/sprite.png) 99px -1588px no-repeat;
+  padding-left: 10px;
+  border: solid 1px #e4e4e4;
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  height: 31px;
+  box-sizing: border-box;
+  width: 130px;
+  color: #7b7b7c;
+  margin-right: 24px;
+}
+/* line 3969, ../sass/style.scss */
+main#contacts_utiles .line_form {
+  display: inline-block;
+  width: 100%;
+  margin: 9px 0;
+}
+/* line 3974, ../sass/style.scss */
+main#contacts_utiles .line_form label {
+  font-size: 15px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 3983, ../sass/style.scss */
+main#contacts_utiles .styled-select {
+  margin: 0;
+  background: url("../img/sprite.png") no-repeat scroll 147px -1712px;
+}
+/* line 3987, ../sass/style.scss */
+main#contacts_utiles .styled-select select {
+  width: 199px;
+}
+/* line 3992, ../sass/style.scss */
+main#contacts_utiles .boder_separation {
+  margin-top: 0;
+}
+/* line 3997, ../sass/style.scss */
+main#contacts_utiles .table_four {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 4001, ../sass/style.scss */
+main#contacts_utiles .table_four div {
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 1px #e8e8e8;
+  position: relative;
+}
+/* line 4007, ../sass/style.scss */
+main#contacts_utiles .table_four div a {
+  display: block;
+}
+/* line 4012, ../sass/style.scss */
+main#contacts_utiles .table_four div .remove_item {
+  background: url(../img/sprite.png) no-repeat 7px -1811px;
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+}
+/* line 4023, ../sass/style.scss */
+main#contacts_utiles .table_four div span {
+  display: inline-table;
+  font-size: 15px;
+  font-family: "citroenlight";
+  color: #2e2e2e;
+  margin: 28px 0 28px 23px;
+  width: 22%;
+}
+/* line 4034, ../sass/style.scss */
+main#contacts_utiles .table_four div:hover {
+  background: #9ad7dc;
+}
+/* line 4037, ../sass/style.scss */
+main#contacts_utiles .table_four div:hover .remove_item {
+  display: block;
+}
+/* line 4045, ../sass/style.scss */
+main#contacts_utiles .table_four div.letter span {
+  font-size: 20px;
+  text-decoration: underline;
+}
+/* line 4053, ../sass/style.scss */
+main#contacts_utiles .table_four div.letter:hover {
+  background: none;
+}
+/* line 4058, ../sass/style.scss */
+main#contacts_utiles .table_four ul.head {
+  border-bottom: solid 1px #e8e8e8;
+}
+/* line 4061, ../sass/style.scss */
+main#contacts_utiles .table_four ul.head li {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "citroenregular";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #008896;
+  margin: 16px 0 16px 23px;
+  width: 22%;
+}
+
+/****************** POPIN BASIC ********************/
+/* line 4082, ../sass/style.scss */
+main#incontournables .table_four div#basic-modal-content {
+  display: none;
+}
+
+/* line 4083, ../sass/style.scss */
+#basic-modal-content {
+  display: none;
+}
+
+/* Overlay */
+/* line 4086, ../sass/style.scss */
+#simplemodal-overlay {
+  background: #000000;
+}
+
+/* Container */
+/* line 4090, ../sass/style.scss */
+#simplemodal-container {
+  height: 530px;
+  width: 510px;
+  color: #2a2823;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 12px;
+}
+/* line 4099, ../sass/style.scss */
+#simplemodal-container .simplemodal-data {
+  padding: 40px 8px;
+  color: #2a2823;
+}
+/* line 4105, ../sass/style.scss */
+#simplemodal-container .simplemodal-data ul li {
+  font-family: "citroenlight";
+  font-size: 15px;
+  padding: 10px 0;
+}
+/* line 4111, ../sass/style.scss */
+#simplemodal-container .simplemodal-data ul li span {
+  display: inline-table;
+  width: 265px;
+}
+/* line 4117, ../sass/style.scss */
+#simplemodal-container .simplemodal-data ul li span:first-child {
+  font-family: "citroenregular";
+  text-align: right;
+  margin-right: 10px;
+  width: 173px;
+}
+/* line 4128, ../sass/style.scss */
+#simplemodal-container a {
+  color: #2a2823;
+}
+/* line 4133, ../sass/style.scss */
+#simplemodal-container a.modalCloseImg {
+  background: #000000;
+  font-family: "citroenlight";
+  font-size: 23px;
+  color: #FFFFFF;
+  line-height: 39px;
+  text-align: center;
+  width: 41px;
+  height: 41px;
+  display: inline;
+  z-index: 3200;
+  position: absolute;
+  top: -15px;
+  right: -16px;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 4151, ../sass/style.scss */
+#simplemodal-container a.modalCloseImg:after {
+  content: "X";
 }

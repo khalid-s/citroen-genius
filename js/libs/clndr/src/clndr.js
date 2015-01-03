@@ -1,5 +1,5 @@
 /*
- *               ~ CLNDR v1.2.5 ~
+ *               ~ CLNDR v1.2.3 ~
  * ==============================================
  *       https://github.com/kylestetz/CLNDR
  * ==============================================
@@ -334,7 +334,7 @@
       i++;
     }
 
-    // if we want to force six rows of calendar, now's our Last Chance to add another row.
+    // if we want to force six rows of calendar, now's our last chance to add another row.
     // if the 42 seems explicit it's because we're creating a 7-row grid and 6 rows of 7 is always 42!
     if(this.options.forceSixRows && daysArray.length !== 42 ) {
       var start = moment(daysArray[daysArray.length - 1].date).add(1, 'days');
@@ -433,7 +433,6 @@
       date: day
     });
   };
-
   Clndr.prototype.render = function() {
     // get rid of the previous set of calendar parts.
     // TODO: figure out if this is the right way to ensure proper garbage collection?
@@ -850,17 +849,6 @@
       this.options.events = $.merge(this.options.events, this.addMultiDayMomentObjectsToEvents(events));
     } else {
       this.options.events = $.merge(this.options.events, this.addMomentObjectToEvents(events));
-    }
-
-    this.render();
-    return this;
-  };
-
-  Clndr.prototype.removeEvents = function(matchingFunction) {
-    for (var i = this.options.events.length-1; i >= 0; i--) {
-      if(matchingFunction(this.options.events[i]) == true) {
-        this.options.events.splice(i, 1);
-      }
     }
 
     this.render();

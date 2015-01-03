@@ -23,28 +23,23 @@
             <form action="#">
                 <div class="identifiant">
                     <label for="identifiant">identifiant</label>
-                    <input type="text" name="identifiant">
-                    <span class="info identifiant">
-                        <span class="info-content identifiant">
-                            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
-                        </span>
-                    </span>
-                    
+                    <input type="text" name="Identifiant" placeholder="Identifiant">
+                    <span class="error identifiant">Identifiant incorrect</span>
                 </div><!--  end .identifiant -->
 
                 <div class="mdp">
                     <label for="mdp">mot de passe</label>
-                    <input type="password" class="mdp" name="mdp">
+                    <input type="password" class="mdp" name="mdp" placeholder="Mot de passe">
                     <span class="info mdp">
                         <span class="info-content mdp">
                             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
                         </span>
                     </span>
-                    
+                    <span class="error mdp">Mot de passe incorrect</span>
                 </div><!--  end .mdp -->
 
                 <div class="btn-submit">
-                    <button type="submit" class="btn">Connexion</button>
+                    <input type="submit" class="btn" value="Connexion">
                 </div>
 
                 <div class="remember">
@@ -58,13 +53,43 @@
     <div id="sub-footer" class="login">
         <div class="wrapper">
             <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Crédits</a></li>
+                <li><a href="#" rel="popin-legal" class="popin-link">Mentions légales</a></li>
+                <li><a href="#" rel="popin-credits" class="popin-link">Crédits</a></li>
                 <li><a href="#">Suggestion</a></li>
                 <li><a href="#">Plan du site</a></li>
             </ul>
         </div>
     </div>
+
+    <div id="popin-legal" class="popin-block">
+        <div class="popin-content">
+            <h2>Mentions légales</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet velit velit. Pellentesque efficitur ligula vitae ex congue, vitae imperdiet tortor pretium. Vivamus varius fermentum aliquet. Curabitur malesuada dolor nec nulla malesuada laoreet. Donec sodales molestie turpis vitae porttitor. Duis tempus, sapien a hendrerit ornare, purus odio vulputate dui, vitae lacinia lectus dui ac lectus. Curabitur elementum vitae justo a finibus. Sed nec facilisis leo. Maecenas a lectus in lectus consequat facilisis nec ut sapien. In in nibh ex. Phasellus pretium suscipit efficitur. Donec ut mi non tortor volutpat faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lacus lectus, vestibulum in tincidunt quis, convallis in nunc. Donec cursus, arcu maximus pulvinar congue, lorem sem interdum mi, a ullamcorper dolor ligula sit amet libero.</p>
+
+            <p>Praesent maximus eros a libero vestibulum maximus. Cras non leo sed tellus fringilla finibus. Etiam pharetra pretium est vitae gravida. Aliquam sollicitudin nulla lorem, eget iaculis est cursus et. In ullamcorper aliquam neque, sit amet viverra velit pretium eget. Phasellus semper dui nulla, id suscipit nisi sagittis vitae. Vestibulum id maximus risus.</p>
+
+            <p>Aenean consectetur gravida tortor, in tincidunt tellus efficitur quis. Praesent placerat sapien ut ante convallis, sit amet consectetur metus rutrum. Suspendisse potenti. Maecenas purus turpis, pulvinar vitae faucibus et, porta sit amet est. Quisque lacus risus, accumsan eget eleifend vitae, feugiat quis quam. Sed velit lectus, egestas id tristique a, lacinia at libero. Duis vestibulum gravida metus, quis venenatis diam suscipit ut. Nulla in ligula finibus, pulvinar lectus ultrices, laoreet nisi. Ut sit amet metus sit amet sapien vestibulum faucibus in sed tellus. Nunc vel porttitor enim.</p>
+
+            <p>Nunc laoreet fringilla nibh. Duis condimentum nulla ac ipsum eleifend, sit amet pretium ante tincidunt. In in interdum magna. Aliquam lectus ligula, cursus congue facilisis sit amet, commodo vel nisi. Morbi hendrerit, nisi et efficitur interdum, turpis ante finibus lectus, eu varius augue risus nec nisi. Etiam euismod purus sit amet blandit viverra. Suspendisse eget neque sem. Aliquam massa diam, malesuada at velit eu, eleifend ornare dolor.</p>
+
+            <p>Sed vestibulum vitae arcu sed tincidunt. In ac luctus velit. Fusce neque lectus, vestibulum eget ante vel, consectetur tempus velit. Quisque vel sodales ante, in faucibus nunc. Nam sed cursus est. Integer feugiat, ante eget hendrerit sagittis, erat arcu pharetra elit, a rutrum tellus nisi nec sapien. In quis tellus congue nunc consectetur hendrerit. Suspendisse laoreet consectetur dolor, ut ornare elit aliquam non.</p>
+        </div>
+    </div><!-- END .popin-block -->
+
+    <div id="popin-credits" class="popin-block">
+        <div class="popin-content">
+            <h2>Crédits</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet velit velit. Pellentesque efficitur ligula vitae ex congue, vitae imperdiet tortor pretium. Vivamus varius fermentum aliquet. Curabitur malesuada dolor nec nulla malesuada laoreet. Donec sodales molestie turpis vitae porttitor. Duis tempus, sapien a hendrerit ornare, purus odio vulputate dui, vitae lacinia lectus dui ac lectus. Curabitur elementum vitae justo a finibus. Sed nec facilisis leo. Maecenas a lectus in lectus consequat facilisis nec ut sapien. In in nibh ex. Phasellus pretium suscipit efficitur. Donec ut mi non tortor volutpat faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lacus lectus, vestibulum in tincidunt quis, convallis in nunc. Donec cursus, arcu maximus pulvinar congue, lorem sem interdum mi, a ullamcorper dolor ligula sit amet libero.</p>
+
+            <p>Praesent maximus eros a libero vestibulum maximus. Cras non leo sed tellus fringilla finibus. Etiam pharetra pretium est vitae gravida. Aliquam sollicitudin nulla lorem, eget iaculis est cursus et. In ullamcorper aliquam neque, sit amet viverra velit pretium eget. Phasellus semper dui nulla, id suscipit nisi sagittis vitae. Vestibulum id maximus risus.</p>
+
+            <p>Aenean consectetur gravida tortor, in tincidunt tellus efficitur quis. Praesent placerat sapien ut ante convallis, sit amet consectetur metus rutrum. Suspendisse potenti. Maecenas purus turpis, pulvinar vitae faucibus et, porta sit amet est. Quisque lacus risus, accumsan eget eleifend vitae, feugiat quis quam. Sed velit lectus, egestas id tristique a, lacinia at libero. Duis vestibulum gravida metus, quis venenatis diam suscipit ut. Nulla in ligula finibus, pulvinar lectus ultrices, laoreet nisi. Ut sit amet metus sit amet sapien vestibulum faucibus in sed tellus. Nunc vel porttitor enim.</p>
+
+            <p>Nunc laoreet fringilla nibh. Duis condimentum nulla ac ipsum eleifend, sit amet pretium ante tincidunt. In in interdum magna. Aliquam lectus ligula, cursus congue facilisis sit amet, commodo vel nisi. Morbi hendrerit, nisi et efficitur interdum, turpis ante finibus lectus, eu varius augue risus nec nisi. Etiam euismod purus sit amet blandit viverra. Suspendisse eget neque sem. Aliquam massa diam, malesuada at velit eu, eleifend ornare dolor.</p>
+
+            <p>Sed vestibulum vitae arcu sed tincidunt. In ac luctus velit. Fusce neque lectus, vestibulum eget ante vel, consectetur tempus velit. Quisque vel sodales ante, in faucibus nunc. Nam sed cursus est. Integer feugiat, ante eget hendrerit sagittis, erat arcu pharetra elit, a rutrum tellus nisi nec sapien. In quis tellus congue nunc consectetur hendrerit. Suspendisse laoreet consectetur dolor, ut ornare elit aliquam non.</p>
+        </div>
+    </div><!-- END .popin-block -->
 
     <!-- block js -->
     <script type="text/javascript" src="../js/libs/unslider/src/unslider.js"></script>
@@ -74,6 +99,7 @@
     <script type="text/javascript" src="../js/libs/jquery-mousewheel/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="../js/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="../js/libs/Picker/jquery.fs.picker.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery-placeholder/jquery.placeholder.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
 
     <!-- <script src="../js/dist/min.js"></script> -->

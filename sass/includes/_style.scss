@@ -2,8 +2,8 @@
 @import "compass";
 // @import "compass/reset";
 @import "normalize";
-@import "susy";
-@import "breakpoint";
+/*@import "susy";
+@import "breakpoint";*/
 @import "jquery.mCustomScrollbar";
 @import "jquery.fs.picker";
 
@@ -46,7 +46,7 @@ a
 
 .wrapper
 {
-    max-width: $xl-screen;
+    width: $xl-screen;
     margin: 0 auto;
     position: relative;
     // background:rgba(255,0,0,0.1);
@@ -76,7 +76,7 @@ li
 }
 
 
-h2
+main#home h2
 {
     color: $second_color;
     position: relative;
@@ -94,7 +94,7 @@ h2
     }
 }
 
-h3
+main#home h3, .home-prefooter h3
 {
     font-family: "citroenbold";
     font-size: 22px;
@@ -119,13 +119,49 @@ h3
 
     .wrapper
     {
-        max-width: none;
+        width: 100%;
+		
+		#notifs
+		{
+			float: right;
+			background: #002d3d;
+			min-height: 32px;
+			width: 32px;
+			position: relative;
+			cursor: pointer;
+			margin-right: 3px;
+			
+			i
+            {
+                display: inline-block;
+                margin: 5px 0px 0px 10px;
+                width: 22px;
+                height: 19px;
+                background:url(../img/sprite.png) no-repeat 0 -415px;
+                float: left;
+            }
+				span.red_circle{
+					font-family: "citroenlight";
+					border-radius: 20px;
+					background: red;
+					font-size: 9px;
+					text-align: center;
+					display: block;
+					width: 13px;
+					height: 13px;
+					line-height: 14px;
+					position: absolute;
+					top: 4px;
+					right: 2px;
+					}
+		}
+		
         #accnt
         {
             float: right;
             background: #002d3d;
             min-height: 32px;
-            width: 190px;
+            width: 160px;
             position: relative;
             cursor: pointer;
 
@@ -153,6 +189,7 @@ h3
                 display: none;
                 margin-top: 2px;
                 background:red;
+				z-index: 3;
 
                 ul
                 {
@@ -217,7 +254,7 @@ header
     margin-top: 10px;
     .wrapper
     {
-        max-width: 920px;
+        width: 100%;
         div.logo
         {
             float: left;
@@ -290,10 +327,11 @@ header
                             height: auto;
                             width: 334px;
                             color:$first-color;
-
+							
                             &:hover
                             {
                                 color: $first_color_hover;
+								font-weight: bold;
                             }
 
                             &:last-child
@@ -305,7 +343,7 @@ header
                     &:hover, &:active
                     {
                         color: $first_color_hover;
-
+						
                         .hover-border
                         {
                             display: inline-block;
@@ -315,6 +353,7 @@ header
                             position: absolute;
                             left: 0;
                             bottom: 0;
+							
                         }
 
                         // ul
@@ -668,6 +707,25 @@ header
         width: 65px;
         height: 65px;
         background:url(../img/up-btn.png) no-repeat;
+        right: -174px;
+        bottom: 0px;
+        cursor: pointer;
+        display: none;
+
+    }
+}
+
+.up-btn-wrapper.DS
+{
+    max-width: 920px;
+    position: relative;
+    margin: 0 auto;
+    .up-btn
+    {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        background:url(../img/up-btn-DS.png) no-repeat;
         right: -174px;
         bottom: 0px;
         cursor: pointer;

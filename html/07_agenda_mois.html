@@ -5,6 +5,8 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>07_agenda_month</title>
     <link rel="stylesheet" href="../css/style.css">
+    <!-- css date picker -->
+    <link rel="stylesheet" href="../css/jquery-ui-1.9.2.css">
 
     <!-- Import jquery 2.1.1 in case there are some jQ code in the page which executes before doc.ready -->
     
@@ -14,28 +16,85 @@
 </head>
 <body>
     <div id="pre-header">
-            <div class="wrapper">
-                <div id="accnt">
-                    <i></i>
-                    <span>julie mouchon Rotrig...</span>
-                    <div class="clear"></div>
-                    <div class="accnt-option">
-                        <ul>
-                            <li><a href="#"><i class="my-accnt"></i>Mon Compte</a></li>
-                            <li><a href="#"><i class="disconnect"></i>Deconnexion</a></li>
-                        </ul>
-                    </div>
+        <div class="wrapper">
+            <div id="accnt">
+                <span>julie mouchon Rotrig...</span>
+                <div class="clear"></div>
+                <div class="accnt-option">
+                    <ul>
+                        <li><a href="#"><i class="my-accnt"></i>Mon Compte</a></li>
+                        <li><a href="#"><i class="disconnect"></i>Deconnexion</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="#">Liens utiles</a></li>
-                    <li><a href="#">contacts utiles</a></li>
-                    <li><a href="#">dernières publications</a></li>
-                    <li><a href="#">incontournables</a></li>
-                    <li><a href="#">mon rapport</a></li>
-                    <li><a href="#">agenda</a></li>
-                    <li><a href="#">crm manager</a></li>
-                </ul>
             </div>
+            <div id="notifs">
+                <i>
+                    <span class="red_circle">4</span>
+                </i>
+                <div class="clear"></div>
+                <div class="notifs-option">
+                    <ul>
+                        <li class="unread">
+                            <a href="#">
+                                <span class="desc">Commander et Installer les plaques showroom des véhicules Citroën</span>
+                                <span class="date">22 décembre 2014 à 10h40</span>
+                            </a>
+                        </li>
+                        <li class="unread">
+                            <a href="#">
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                <div class="date">22 décembre 2014 à 10h40</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                <div class="date">22 décembre 2014 à 10h40</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                <div class="date">22 décembre 2014 à 10h40</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                <div class="date">22 décembre 2014 à 10h40</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                <div class="date">22 décembre 2014 à 10h40</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                <div class="date">22 décembre 2014 à 10h40</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                <div class="date">22 décembre 2014 à 10h40</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">Liens utiles</a></li>
+                <li><a href="#">contacts utiles</a></li>
+                <li><a href="#">dernières publications</a></li>
+                <li><a href="#">incontournables</a></li>
+                <li><a href="#">mon rapport</a></li>
+                <li><a href="#">agenda</a></li>
+                <li><a href="#">crm manager</a></li>
+            </ul>
+        </div>
 
         <div class="clear"></div>
     </div><!-- end #pre-header -->
@@ -114,51 +173,54 @@
 
         </div>
         <div class="clear"></div>
+
+        <div id="breadcrumb">
+            <div class="wrapper">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Agenda</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
 
     <main id="agenda">
-        <div class="wrapper">
+        <!-- content -->
+        <div class="content wrapper">
             <div id="options">
-                
                 <ul>
                     <li class="first">
-                        <a href="#">
+                        <a href="#" class="infoB prune">
                             <img src="../img/options-first.png" alt="#">
+                            <span class="infoB-content">
+                                Partager
+                            </span>
                         </a>
+                        
                     </li>
                     <li class="second">
-                        <a href="#">
+                        <a href="#" class="infoB prune">
                             <img src="../img/options-second.png" alt="#">
-                        </a>
-                    </li>
-                    <li class="third">
-                        <a href="#">
-                            <img src="../img/options-third.png" alt="#">
+                            <span class="infoB-content">
+                                Imprimer
+                            </span>
                         </a>
                     </li>
                 </ul>
             </div><!-- End #options -->
-        </div><!-- End .wrapper -->
 
-
-        <!-- content -->
-
-        <div class="content wrapper">
             <h2>Agenda</h2>
             
             <div class="left">
-                
                 <div class="left-content">
                     <div class="selectionne">
-                        <span class="day-word">Dix Manche</span>
+                        <span class="day-word">Mercredi</span>
                         <div class="date">
-                            <span class="day">13</span>
-                            <span class="month">oct</span>
+                            <span class="day">17</span>
+                            <span class="month">dec</span>
                             <span class="year">2014</span>
                         </div>
-
-                        <!-- <a href="#" class="agenda today btn">Afficher la date du jour</a> -->
                         <div class="clear"></div>
                     </div>
                     
@@ -168,84 +230,87 @@
                 
                 <!-- possibility to add class active to the 2 following links to keep the hover effect on  -->
                 <a href="#" class="btn btn-style-2">Tâche en cours</a>
-                
                 <a href="#" class="btn btn-style-2"><span>+</span> Ajouter une tache</a>
-
             </div><!-- end .left -->
 
             <div class="right">
-                <a href="#" class="btn btn-style-2">Revenir à la date du jour</a>
-                <div class="scrollable">
-                    <form action="#">
-                        <div class="section">
-                            <h4>événements</h4>
+                <div class="day-events">
+                    <a href="#" class="btn btn-style-2 today">Revenir à la date du jour</a>
+                    <div class="scrollable">
+                        <form action="#">
+                            <div class="section">
+                                <h4>événements</h4>
 
-                            <div class="element">
-                                <div class="elmt-img"><img src="../img/scrollable-first.png" alt=""></div>
+                                <div class="element">
+                                    <span>13:00 PLV Installer dans le showroom</span>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="element">
+                                    <span>14:00 Présenter la C3 Brésil </span>
+                                    <div class="clear"></div>
+                                </div>
+                            </div><!-- end .evenements -->
+
+                            <div class="section">
+                                <h4>taches à réaliser</h4>
                                 
-                                <span>PLV Installer dans le showroom</span>
-                                <div class="clear"></div>
-                            </div>
+                                <div class="element">
+                                    <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                    
+                                    <input checked="checked" class="checkbox" id="checkbox_4" name="checkbox_4" type="checkbox" value="One">
+                                    <label for="checkbox_4"></label>
 
-                            <div class="element">
-                                <div class="elmt-img"><img src="../img/scrollable-second.png" alt=""></div>
-
-                                <span>Présenter la C3 Brésil </span>
-                                <div class="clear"></div>
-                            </div>
-
-                            <div class="element">
-                                <div class="elmt-img"><img src="../img/scrollable-third.png" alt=""></div>
-
-                                <span>Livrer la C3 Brésil </span>
-                                <div class="clear"></div>
-                            </div>
-                        </div><!-- end .evenements -->
-
-                        <div class="section">
-                            <h4>taches à réaliser</h4>
-                            
-                            <div class="element">
-                                <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                    <span>PLV Installer dans le showroom</span>
+                                    <div class="clear"></div>
+                                </div>
                                 
-                                <input checked="checked" class="checkbox" id="checkbox_4" name="checkbox_4" type="checkbox" value="One">
-                                <label for="checkbox_4"></label>
+                                <div class="element">
+                                    <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                    
+                                    <input class="checkbox" id="checkbox_5" name="checkbox_5" type="checkbox" value="One">
+                                    <label for="checkbox_5"></label>
 
-                                <span>PLV Installer dans le showroom</span>
-                                <div class="clear"></div>
-                            </div>
-                            
-                            <div class="element">
-                                <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                    <span>PLV Installer dans le showroom</span>
+                                    <div class="clear"></div>
+                                </div>
                                 
-                                <input class="checkbox" id="checkbox_5" name="checkbox_5" type="checkbox" value="One">
-                                <label for="checkbox_5"></label>
+                                <div class="element">
+                                    <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
+                                    
+                                    <input class="checkbox" id="checkbox_6" name="checkbox_6" type="checkbox" value="One">
+                                    <label for="checkbox_6"></label>
 
-                                <span>PLV Installer dans le showroom</span>
-                                <div class="clear"></div>
+                                    <span>PLV Installer dans le showroom</span>
+                                    <div class="clear"></div>
+                                </div>
+
                             </div>
-                            
-                            <div class="element">
-                                <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
-                                
-                                <input class="checkbox" id="checkbox_6" name="checkbox_6" type="checkbox" value="One">
-                                <label for="checkbox_6"></label>
+                        </form>
 
-                                <span>PLV Installer dans le showroom</span>
-                                <div class="clear"></div>
-                            </div>
+                    </div><!-- end .scrollable -->
+                </div><!-- end .day-event -->
 
-                        </div>
-                    </form>
-
-                </div><!-- end .scrollable -->
+                <div class="switch-agenda">
+                    <span class="label">
+                        Affichage :
+                    </span>
+                    <a href="#" class="week">
+                        <img src="../img/agenda-week.png" alt="" />
+                        <span>Semaine</span>
+                    </a>
+                    <a href="#" class="month">
+                        <img src="../img/agenda-month-activated.png" alt="" />
+                        <span>Mois</span>
+                    </a>
+                </div><!-- end .switch-agenda -->
             </div><!-- end .right -->
             
             <div class="clear"></div>
+
             <section class="cal-month">
-                
-                <div class="cal">
-                    <script type="text/template" id="template-calendar">
+                <div id="cal-agenda">
+                    <script type="text/template" id="template-calendar-agenda">
                         <div class="clndr-controls">
                             <div class='clndr-control-button leftalign'>
                                 <span class='clndr-previous-button'><img src="../img/calendar-big-previous.png" alt=""></span>
@@ -279,20 +344,35 @@
                                                     <div class='day'><%= days[d].day %></div>
 
                                                     <% if(days[d].events.length > 0) { %>
-                                                        <div class='event-today'>
-                                                            <i><img src="<%= days[d].events[0].img %>" alt=""></i>
-                                                            <span><%= days[d].events[0].title %></span>
+                                                        <div class='event-item'>
+                                                            <i class="icon-event <%= days[d].events[0].event_name %>"></i>
+                                                            <span class="lib"><%= days[d].events[0].title %></span>
                                                         </div>
                                                     <% } %>
                                                     <% if(days[d].events.length > 1) { %>
-                                                        <div class='event-today'>
-                                                            <i><img src="<%= days[d].events[1].img %>" alt=""></i>
-                                                            <span><%= days[d].events[1].title %></span>
+                                                        <div class='event-item'>
+                                                            <i class="icon-event <%= days[d].events[1].event_name %>"></i>
+                                                            <span class="lib"><%= days[d].events[1].title %></span>
                                                         </div>
                                                     <% } %>
-
+                                                    <% if(days[d].events.length > 2) { %>
+                                                        <div class='event-more'></div>
+                                                    <% } %>
 
                                                 </div>
+
+                                                <% if(days[d].events.length > 2) { %>
+                                                    <div class="expanded">
+                                                        <div class="arrow"></div>
+                                                        <% for (k = 0; k < days[d].events.length; k++) { %>
+                                                            <div class="event-item">
+                                                                <div class="event-img"><img src="<%= days[d].events[k].img %>" alt=""></div>
+                                                                <span><%= days[d].events[k].title %></span>
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                        <% } %>
+                                                    </div>
+                                                <% } %>
                                             </td>
                                         <% } %>
                                     </tr>
@@ -344,19 +424,49 @@
         
     </div>
 
-        <div id="sub-footer">
-            <div class="wrapper">
-                <ul>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Crédits</a></li>
-                    <li><a href="#">Suggestion</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                </ul>
-            </div>
-        </div>
+    <div id="sub-footer">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#" rel="popin-legal" class="popin-link">Mentions légales</a></li>
+                <li><a href="#" rel="popin-credits" class="popin-link">Crédits</a></li>
+                <li><a href="#">Suggestion</a></li>
+                <li><a href="#">Plan du site</a></li>
+            </ul>
+            <div id="popin-legal" class="popin-block">
+                <div class="popin-content">
+                    <h2>Mentions légales</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet velit velit. Pellentesque efficitur ligula vitae ex congue, vitae imperdiet tortor pretium. Vivamus varius fermentum aliquet. Curabitur malesuada dolor nec nulla malesuada laoreet. Donec sodales molestie turpis vitae porttitor. Duis tempus, sapien a hendrerit ornare, purus odio vulputate dui, vitae lacinia lectus dui ac lectus. Curabitur elementum vitae justo a finibus. Sed nec facilisis leo. Maecenas a lectus in lectus consequat facilisis nec ut sapien. In in nibh ex. Phasellus pretium suscipit efficitur. Donec ut mi non tortor volutpat faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lacus lectus, vestibulum in tincidunt quis, convallis in nunc. Donec cursus, arcu maximus pulvinar congue, lorem sem interdum mi, a ullamcorper dolor ligula sit amet libero.</p>
 
+                    <p>Praesent maximus eros a libero vestibulum maximus. Cras non leo sed tellus fringilla finibus. Etiam pharetra pretium est vitae gravida. Aliquam sollicitudin nulla lorem, eget iaculis est cursus et. In ullamcorper aliquam neque, sit amet viverra velit pretium eget. Phasellus semper dui nulla, id suscipit nisi sagittis vitae. Vestibulum id maximus risus.</p>
+
+                    <p>Aenean consectetur gravida tortor, in tincidunt tellus efficitur quis. Praesent placerat sapien ut ante convallis, sit amet consectetur metus rutrum. Suspendisse potenti. Maecenas purus turpis, pulvinar vitae faucibus et, porta sit amet est. Quisque lacus risus, accumsan eget eleifend vitae, feugiat quis quam. Sed velit lectus, egestas id tristique a, lacinia at libero. Duis vestibulum gravida metus, quis venenatis diam suscipit ut. Nulla in ligula finibus, pulvinar lectus ultrices, laoreet nisi. Ut sit amet metus sit amet sapien vestibulum faucibus in sed tellus. Nunc vel porttitor enim.</p>
+
+                    <p>Nunc laoreet fringilla nibh. Duis condimentum nulla ac ipsum eleifend, sit amet pretium ante tincidunt. In in interdum magna. Aliquam lectus ligula, cursus congue facilisis sit amet, commodo vel nisi. Morbi hendrerit, nisi et efficitur interdum, turpis ante finibus lectus, eu varius augue risus nec nisi. Etiam euismod purus sit amet blandit viverra. Suspendisse eget neque sem. Aliquam massa diam, malesuada at velit eu, eleifend ornare dolor.</p>
+
+                    <p>Sed vestibulum vitae arcu sed tincidunt. In ac luctus velit. Fusce neque lectus, vestibulum eget ante vel, consectetur tempus velit. Quisque vel sodales ante, in faucibus nunc. Nam sed cursus est. Integer feugiat, ante eget hendrerit sagittis, erat arcu pharetra elit, a rutrum tellus nisi nec sapien. In quis tellus congue nunc consectetur hendrerit. Suspendisse laoreet consectetur dolor, ut ornare elit aliquam non.</p>
+                </div>
+            </div><!-- END .popin-block -->
+
+            <div id="popin-credits" class="popin-block">
+                <div class="popin-content">
+                    <h2>Crédits</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet velit velit. Pellentesque efficitur ligula vitae ex congue, vitae imperdiet tortor pretium. Vivamus varius fermentum aliquet. Curabitur malesuada dolor nec nulla malesuada laoreet. Donec sodales molestie turpis vitae porttitor. Duis tempus, sapien a hendrerit ornare, purus odio vulputate dui, vitae lacinia lectus dui ac lectus. Curabitur elementum vitae justo a finibus. Sed nec facilisis leo. Maecenas a lectus in lectus consequat facilisis nec ut sapien. In in nibh ex. Phasellus pretium suscipit efficitur. Donec ut mi non tortor volutpat faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lacus lectus, vestibulum in tincidunt quis, convallis in nunc. Donec cursus, arcu maximus pulvinar congue, lorem sem interdum mi, a ullamcorper dolor ligula sit amet libero.</p>
+
+                    <p>Praesent maximus eros a libero vestibulum maximus. Cras non leo sed tellus fringilla finibus. Etiam pharetra pretium est vitae gravida. Aliquam sollicitudin nulla lorem, eget iaculis est cursus et. In ullamcorper aliquam neque, sit amet viverra velit pretium eget. Phasellus semper dui nulla, id suscipit nisi sagittis vitae. Vestibulum id maximus risus.</p>
+
+                    <p>Aenean consectetur gravida tortor, in tincidunt tellus efficitur quis. Praesent placerat sapien ut ante convallis, sit amet consectetur metus rutrum. Suspendisse potenti. Maecenas purus turpis, pulvinar vitae faucibus et, porta sit amet est. Quisque lacus risus, accumsan eget eleifend vitae, feugiat quis quam. Sed velit lectus, egestas id tristique a, lacinia at libero. Duis vestibulum gravida metus, quis venenatis diam suscipit ut. Nulla in ligula finibus, pulvinar lectus ultrices, laoreet nisi. Ut sit amet metus sit amet sapien vestibulum faucibus in sed tellus. Nunc vel porttitor enim.</p>
+
+                    <p>Nunc laoreet fringilla nibh. Duis condimentum nulla ac ipsum eleifend, sit amet pretium ante tincidunt. In in interdum magna. Aliquam lectus ligula, cursus congue facilisis sit amet, commodo vel nisi. Morbi hendrerit, nisi et efficitur interdum, turpis ante finibus lectus, eu varius augue risus nec nisi. Etiam euismod purus sit amet blandit viverra. Suspendisse eget neque sem. Aliquam massa diam, malesuada at velit eu, eleifend ornare dolor.</p>
+
+                    <p>Sed vestibulum vitae arcu sed tincidunt. In ac luctus velit. Fusce neque lectus, vestibulum eget ante vel, consectetur tempus velit. Quisque vel sodales ante, in faucibus nunc. Nam sed cursus est. Integer feugiat, ante eget hendrerit sagittis, erat arcu pharetra elit, a rutrum tellus nisi nec sapien. In quis tellus congue nunc consectetur hendrerit. Suspendisse laoreet consectetur dolor, ut ornare elit aliquam non.</p>
+                </div>
+            </div><!-- END .popin-block -->
+        </div>
     </div>
     
+    <!-- script datepicker -->
+    <script type="text/javascript" src="../js/libs/datePicker/jquery.191.js"></script>
+    <script type="text/javascript" src="../js/libs/datePicker/jquery-ui-1.9.2.custom.min.js"></script>
 
     <!-- block js -->
     <script type="text/javascript" src="../js/libs/unslider/src/unslider.js"></script>
@@ -366,6 +476,7 @@
     <script type="text/javascript" src="../js/libs/jquery-mousewheel/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="../js/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="../js/libs/Picker/jquery.fs.picker.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery-placeholder/jquery.placeholder.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
 
     <!-- <script src="../js/dist/min.js"></script> -->

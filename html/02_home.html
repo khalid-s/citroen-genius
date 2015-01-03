@@ -5,6 +5,8 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>02_home</title>
     <link rel="stylesheet" href="../css/style.css">
+    <!-- css date picker -->
+    <link rel="stylesheet" href="../css/jquery-ui-1.9.2.css">
 
     <!-- Import jquery 2.1.1 in case there are some jQ code in the page which executes before doc.ready -->
     
@@ -16,13 +18,70 @@
     <div id="pre-header">
             <div class="wrapper">
                 <div id="accnt">
-                    <i></i>
                     <span>julie mouchon Rotrig...</span>
                     <div class="clear"></div>
                     <div class="accnt-option">
                         <ul>
                             <li><a href="#"><i class="my-accnt"></i>Mon Compte</a></li>
                             <li><a href="#"><i class="disconnect"></i>Deconnexion</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="notifs">
+                    <i>
+                    	<span class="red_circle">4</span>
+                    </i>
+                    <div class="clear"></div>
+                    <div class="notifs-option">
+                        <ul>
+                            <li class="unread">
+                                <a href="#">
+                                    <span class="desc">Commander et Installer les plaques showroom des véhicules Citroën</span>
+                                    <span class="date">22 décembre 2014 à 10h40</span>
+                                </a>
+                            </li>
+                            <li class="unread">
+                                <a href="#">
+                                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                    <div class="date">22 décembre 2014 à 10h40</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                    <div class="date">22 décembre 2014 à 10h40</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                    <div class="date">22 décembre 2014 à 10h40</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                    <div class="date">22 décembre 2014 à 10h40</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                    <div class="date">22 décembre 2014 à 10h40</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                    <div class="date">22 décembre 2014 à 10h40</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis vitae ex pulvinar maximus tempor eu libero.</div>
+                                    <div class="date">22 décembre 2014 à 10h40</div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -76,15 +135,7 @@
                         <!-- Hover border effect -->
                         <span class="hover-border"></span>
                     </li>
-                    <li>
-                        <div class="image">
-                            <img src="../img/nav-animer.png" alt="">
-                        </div>
-                        <span>animer</span>
-                        <!-- Hover border effect -->
-                        <span class="hover-border"></span>
-                    </li>
-                    <li>
+                     <li>
                         <div class="image">
                             <img src="../img/nav-vendre.png" alt="">
                         </div>
@@ -97,6 +148,14 @@
                             <img src="../img/nav-livrer.png" alt="">
                         </div>
                         <span>livrer</span>
+                        <!-- Hover border effect -->
+                        <span class="hover-border"></span>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="../img/nav-animer.png" alt="">
+                        </div>
+                        <span>animer</span>
                         <!-- Hover border effect -->
                         <span class="hover-border"></span>
                     </li>
@@ -124,39 +183,47 @@
                     <ul>
                     <!-- The image can EITHER be in background set like this -->
                         <li style="background:url(../img/slider/1.png) no-repeat">
+                        <a href="#" class="linkban">
                             <h3>Simplydrive1</h3>
                             
                             <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
                             
-                            <a href="#" class="btn">En savoir plus</a>
+                            <span class="btn">En savoir plus</span>
                             <!-- <img src="../img/slider/1.png" /> -->
+                         </a>
                         </li>
 
                         <!-- OR have the image like this. The difference is that in bg the image must be of width and height of the slider while in this one the image is set absolute to le li with position top:0 and right:0 -->
                         <li>
-                            <h3>Simplydrive2</h3>
-                            
-                            <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
-
-                            
-                            <a href="#" class="btn">En savoir plus</a>
-                            <img src="../img/slider/3.png" alt="">
+                        	<a href="#" class="linkban">
+                                <h3>Simplydrive2</h3>
+                                
+                                <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
+    
+                                
+                                <span class="btn">En savoir plus</span>
+                                <img src="../img/slider/3.png" alt="">
+                            </a>
                         </li>
-                        <li style="background:url(../img/slider/3.png) no-repeat">
-                            <h3>Simplydrive3</h3>
+                        <li style="background:url(../img/slider/1.png) no-repeat">
+                        <a href="#" class="linkban">
+                            <h3>Simplydrive1</h3>
                             
                             <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
                             
-                            <a href="#" class="btn">En savoir plus</a>
-                            <!-- <img src="../img/slider/3.png" /> -->
+                            <span class="btn">En savoir plus</span>
+                            <!-- <img src="../img/slider/1.png" /> -->
+                         </a>
                         </li>
-                        <li style="background:url(../img/slider/4.png) no-repeat">
-                            <h3>Simplydrive4</h3>
+                        <li style="background:url(../img/slider/1.png) no-repeat">
+                        <a href="#" class="linkban">
+                            <h3>Simplydrive1</h3>
                             
                             <span>LA SOLUTION POUR CONDUIRE L’ESPRIT LIBRE</span>
                             
-                            <a href="#" class="btn">En savoir plus</a>
-                            <!-- <img src="../img/slider/4.png" /> -->
+                            <span class="btn">En savoir plus</span>
+                            <!-- <img src="../img/slider/1.png" /> -->
+                         </a>
                         </li>
                     </ul>
                     <div class="clear"></div>
@@ -171,18 +238,16 @@
 
         <div class="content wrapper">
             <h2>Agenda</h2>
-            
             <div class="left">
-                
-                <div class="left-content">
+            	<div class="left-content">
                     <div class="selectionne">
                         <div class="date">
-                            <span class="day">13</span>
-                            <span class="month">november</span>
+                            <span class="day">17</span>
+                            <span class="month">decembre</span>
                             <span class="year">2014</span>
                         </div>
 
-                        <a href="#" class="agenda today btn">Afficher la date du jour</a>
+                        <a href="#" class="agenda today btn clndr-today-button">Afficher la date du jour</a>
                         <div class="clear"></div>
                     </div>
                     
@@ -193,29 +258,23 @@
                                 <h4>événements</h4>
 
                                 <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-first.png" alt=""></div>
-                                    
                                     <span>PLV Installer dans le showroom</span>
                                     <div class="clear"></div>
                                 </div>
 
                                 <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-second.png" alt=""></div>
-
                                     <span>Présenter la C3 Brésil </span>
                                     <div class="clear"></div>
                                 </div>
 
                                 <div class="element">
-                                    <div class="elmt-img"><img src="../img/scrollable-third.png" alt=""></div>
-
                                     <span>Livrer la C3 Brésil </span>
                                     <div class="clear"></div>
                                 </div>
                             </div><!-- end .evenements -->
 
                             <div class="section">
-                                <h4>taches à réaliser</h4>
+                                <h4>tâches du jour</h4>
                                 
                                 <div class="element">
                                     <div class="elmt-img"><img src="../img/scrollable-fourth.png" alt=""></div>
@@ -256,12 +315,12 @@
                 <!-- possibility to add class active to the 2 following links to keep the hover effect on  -->
                 <a href="#" class="btn btn-style-2">Tâche en cours</a>
                 
-                <a href="#" class="btn btn-style-2"><span>+</span> Ajouter une tache</a>
+                <a href="#" class="btn btn-style-2 popin-link" rel="popin-new-task"><span>+</span> Ajouter une tache</a>
 
             </div><!-- end .left -->
 
             <div class="right">
-                <div class="cal">
+                <div class="cal" id="cal">
                     <script type="text/template" id="template-calendar">
                         <div class="clndr-controls">
                             <div class='clndr-control-button'>
@@ -313,6 +372,74 @@
         </div>
     </main>
 
+    <div id="popin-new-task" class="popin-block">
+        <div class="popin-content">
+            <h2>Nouvelle tâche</h2>
+
+            <form class="new-task">
+                <div class="new-task-row">
+                    <label for="task_title">Titre de la tâche :</label>
+                    <div class="new-task-input">
+                        <input type="text" name="task_title" id="task_title" />
+                    </div>
+                </div>
+                <div class="new-task-row">
+                    <div class="left">
+                        <label for="task_start_date">Date de début :</label>
+                        <div class="new-task-input">
+                            <input type="text" name="task_start_date" id="task_start_date" class="datepicker" />
+                        </div>
+                    </div>
+                    <div class="right">
+                        <label for="task_end_date">Date de fin :</label>
+                        <div class="new-task-input">
+                            <input type="text" name="task_end_date" id="task_end_date" class="datepicker" />
+                        </div>
+                    </div>
+                </div>
+                <div class="new-task-row">
+                    <div class="left">
+                        <label for="task_start_time">Heure de début :</label>
+                        <div class="new-task-input">
+                            <select name="task_start_time" id="task_start_time">
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <label for="task_end_time">Heure de fin :</label>
+                        <div class="new-task-input">
+                            <select name="task_end_time" id="task_end_time">
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-task-row">
+                    <label for="task_place">Lieu :</label>
+                    <div class="new-task-input">
+                        <input type="text" name="task_place" id="task_place" />
+                    </div>
+                </div>
+                <div class="new-task-row">
+                    <label for="task_participants">Participant(s) :</label>
+                    <div class="new-task-textarea">
+                        <textarea name="task_participants" id="task_participants"></textarea>
+                    </div>
+                </div>
+                <div class="new-task-row">
+                    <label for="task_place">Description :</label>
+                    <div class="new-task-textarea">
+                        <textarea name="task_description" id="task_description"></textarea>
+                    </div>
+                </div>
+                <div class="new-task-submit-row">
+                    <button type="button" class="popin-close">Annuler</button> <button type="submit">Valider</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="home-prefooter">
         <div class="wrapper">
             <div class="left">
@@ -330,7 +457,7 @@
             </div><!-- end left -->
 
             <div class="right">
-                <h3>dernières publication</h3>
+                <h3>dernières publications</h3>
 
                 <ul>
                     <li><a href="#">Lorem ipstum dolor Dol amet,adipscing. </a></li>
@@ -347,26 +474,56 @@
             
             <div class="clear"></div>
         </div><!-- end wrapper -->
+    	
+    </div><!-- end prefooter -->
     
-        <div class="up-btn-wrapper">
-            
-            <div class="up-btn"></div>
-            
-        </div>
-
-        <div id="sub-footer">
-            <div class="wrapper">
-                <ul>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Crédits</a></li>
-                    <li><a href="#">Suggestion</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                </ul>
-            </div>
-        </div>
-
+    <div class="up-btn-wrapper">
+        <div class="up-btn"></div>
     </div>
-    
+
+    <div id="sub-footer">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#" rel="popin-legal" class="popin-link">Mentions légales</a></li>
+                <li><a href="#" rel="popin-credits" class="popin-link">Crédits</a></li>
+                <li><a href="#">Suggestion</a></li>
+                <li><a href="#">Plan du site</a></li>
+            </ul>
+            <div id="popin-legal" class="popin-block">
+                <div class="popin-content">
+                    <h2>Mentions légales</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet velit velit. Pellentesque efficitur ligula vitae ex congue, vitae imperdiet tortor pretium. Vivamus varius fermentum aliquet. Curabitur malesuada dolor nec nulla malesuada laoreet. Donec sodales molestie turpis vitae porttitor. Duis tempus, sapien a hendrerit ornare, purus odio vulputate dui, vitae lacinia lectus dui ac lectus. Curabitur elementum vitae justo a finibus. Sed nec facilisis leo. Maecenas a lectus in lectus consequat facilisis nec ut sapien. In in nibh ex. Phasellus pretium suscipit efficitur. Donec ut mi non tortor volutpat faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lacus lectus, vestibulum in tincidunt quis, convallis in nunc. Donec cursus, arcu maximus pulvinar congue, lorem sem interdum mi, a ullamcorper dolor ligula sit amet libero.</p>
+
+                    <p>Praesent maximus eros a libero vestibulum maximus. Cras non leo sed tellus fringilla finibus. Etiam pharetra pretium est vitae gravida. Aliquam sollicitudin nulla lorem, eget iaculis est cursus et. In ullamcorper aliquam neque, sit amet viverra velit pretium eget. Phasellus semper dui nulla, id suscipit nisi sagittis vitae. Vestibulum id maximus risus.</p>
+
+                    <p>Aenean consectetur gravida tortor, in tincidunt tellus efficitur quis. Praesent placerat sapien ut ante convallis, sit amet consectetur metus rutrum. Suspendisse potenti. Maecenas purus turpis, pulvinar vitae faucibus et, porta sit amet est. Quisque lacus risus, accumsan eget eleifend vitae, feugiat quis quam. Sed velit lectus, egestas id tristique a, lacinia at libero. Duis vestibulum gravida metus, quis venenatis diam suscipit ut. Nulla in ligula finibus, pulvinar lectus ultrices, laoreet nisi. Ut sit amet metus sit amet sapien vestibulum faucibus in sed tellus. Nunc vel porttitor enim.</p>
+
+                    <p>Nunc laoreet fringilla nibh. Duis condimentum nulla ac ipsum eleifend, sit amet pretium ante tincidunt. In in interdum magna. Aliquam lectus ligula, cursus congue facilisis sit amet, commodo vel nisi. Morbi hendrerit, nisi et efficitur interdum, turpis ante finibus lectus, eu varius augue risus nec nisi. Etiam euismod purus sit amet blandit viverra. Suspendisse eget neque sem. Aliquam massa diam, malesuada at velit eu, eleifend ornare dolor.</p>
+
+                    <p>Sed vestibulum vitae arcu sed tincidunt. In ac luctus velit. Fusce neque lectus, vestibulum eget ante vel, consectetur tempus velit. Quisque vel sodales ante, in faucibus nunc. Nam sed cursus est. Integer feugiat, ante eget hendrerit sagittis, erat arcu pharetra elit, a rutrum tellus nisi nec sapien. In quis tellus congue nunc consectetur hendrerit. Suspendisse laoreet consectetur dolor, ut ornare elit aliquam non.</p>
+                </div>
+            </div><!-- END .popin-block -->
+
+            <div id="popin-credits" class="popin-block">
+                <div class="popin-content">
+                    <h2>Crédits</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet velit velit. Pellentesque efficitur ligula vitae ex congue, vitae imperdiet tortor pretium. Vivamus varius fermentum aliquet. Curabitur malesuada dolor nec nulla malesuada laoreet. Donec sodales molestie turpis vitae porttitor. Duis tempus, sapien a hendrerit ornare, purus odio vulputate dui, vitae lacinia lectus dui ac lectus. Curabitur elementum vitae justo a finibus. Sed nec facilisis leo. Maecenas a lectus in lectus consequat facilisis nec ut sapien. In in nibh ex. Phasellus pretium suscipit efficitur. Donec ut mi non tortor volutpat faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lacus lectus, vestibulum in tincidunt quis, convallis in nunc. Donec cursus, arcu maximus pulvinar congue, lorem sem interdum mi, a ullamcorper dolor ligula sit amet libero.</p>
+
+                    <p>Praesent maximus eros a libero vestibulum maximus. Cras non leo sed tellus fringilla finibus. Etiam pharetra pretium est vitae gravida. Aliquam sollicitudin nulla lorem, eget iaculis est cursus et. In ullamcorper aliquam neque, sit amet viverra velit pretium eget. Phasellus semper dui nulla, id suscipit nisi sagittis vitae. Vestibulum id maximus risus.</p>
+
+                    <p>Aenean consectetur gravida tortor, in tincidunt tellus efficitur quis. Praesent placerat sapien ut ante convallis, sit amet consectetur metus rutrum. Suspendisse potenti. Maecenas purus turpis, pulvinar vitae faucibus et, porta sit amet est. Quisque lacus risus, accumsan eget eleifend vitae, feugiat quis quam. Sed velit lectus, egestas id tristique a, lacinia at libero. Duis vestibulum gravida metus, quis venenatis diam suscipit ut. Nulla in ligula finibus, pulvinar lectus ultrices, laoreet nisi. Ut sit amet metus sit amet sapien vestibulum faucibus in sed tellus. Nunc vel porttitor enim.</p>
+
+                    <p>Nunc laoreet fringilla nibh. Duis condimentum nulla ac ipsum eleifend, sit amet pretium ante tincidunt. In in interdum magna. Aliquam lectus ligula, cursus congue facilisis sit amet, commodo vel nisi. Morbi hendrerit, nisi et efficitur interdum, turpis ante finibus lectus, eu varius augue risus nec nisi. Etiam euismod purus sit amet blandit viverra. Suspendisse eget neque sem. Aliquam massa diam, malesuada at velit eu, eleifend ornare dolor.</p>
+
+                    <p>Sed vestibulum vitae arcu sed tincidunt. In ac luctus velit. Fusce neque lectus, vestibulum eget ante vel, consectetur tempus velit. Quisque vel sodales ante, in faucibus nunc. Nam sed cursus est. Integer feugiat, ante eget hendrerit sagittis, erat arcu pharetra elit, a rutrum tellus nisi nec sapien. In quis tellus congue nunc consectetur hendrerit. Suspendisse laoreet consectetur dolor, ut ornare elit aliquam non.</p>
+                </div>
+            </div><!-- END .popin-block -->
+        </div>
+    </div>
+
+    <!-- script datepicker -->
+    <script type="text/javascript" src="../js/libs/datePicker/jquery.191.js"></script>
+    <script type="text/javascript" src="../js/libs/datePicker/jquery-ui-1.9.2.custom.min.js"></script>
 
     <!-- block js -->
     <script type="text/javascript" src="../js/libs/unslider/src/unslider.js"></script>
